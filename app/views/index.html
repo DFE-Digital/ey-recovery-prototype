@@ -1,0 +1,55 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+    Early Years Provider- Prototypes
+{% endblock %}
+
+{% block main %}
+<div class="full-BGstrip" style="background-color:#f3f2f1;">
+    <div class="govuk-width-container">
+        <main class="govuk-main-wrapper govuk-!-padding-0">
+
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-full">
+                    {% include "includes/misc/tvs-nav-started.html" %}
+                </div>
+            </div>
+
+        </main>
+    </div>
+</div>
+
+<div class="govuk-width-container">
+    <div class="govuk-main-wrapper">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <h2 class="govuk-heading-l">Prototype sections</h2>
+            <p class="govuk-body">The sections of Early Years Provider that have functional prototypes.</p>
+            <h2 class="govuk-heading-m">logged out</h2>
+            <ul class="govuk-list">
+              <li>
+                <a href="/templates/public/training-overview" class="govuk-link">Service start page</a>
+              </li>
+
+            </ul>
+            <hr class="govuk-section-break govuk-section-break--visible govuk-section-break--l">
+            <h2 class="govuk-heading-m">logged in</h2>
+            <ul class="govuk-list">
+              <li>
+          -
+              </li>
+
+            </ul>
+          </div>
+          <div class="govuk-grid-column-one-third">
+            <h2 class="govuk-heading-m">Notes on prototyping</h2>
+            <p classs="govuk-body"></p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>Add links to the list as new sections are prototyped so it's easy for everyone to find them</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
