@@ -15,7 +15,7 @@ Early Years Foundation
 {% block main %}
 
 </br>	<!-- START MAST -->
-<div class="full-BGstrip" style="background-color:#1d70b8;">
+<div class="full-BGstrip" style="background-color:#e0dfdf;">
         <div class="govuk-width-container">
                 <main class="govuk-main-wrapper">
                         <div class="govuk-grid-row">
@@ -25,9 +25,7 @@ Early Years Foundation
                                         <h1 class="govuk-heading-l">Brain development in the early years</h1>
                                         <p class="govuk-caption-m">Neuroscience research has shown us that early childhood is a time of tremendous brain development. </p>
                                         <p class="govuk-caption-m">This course, written by paediatric research scientist Dr Jane Reed and nursery manager Kate Smith, describes how a child’s brain develops from birth to age 5 and gives advice and tips for early years educators. </p>
-
-                                    
-
+                                   
                       {# {{ govukCheckboxes({
                         idPrefix: "",
                         name: "",
@@ -101,15 +99,41 @@ Early Years Foundation
                         <h3 class="govuk-heading-s">About this training course</h3>
                         <li>takes around 45 minutes to complete</li>
                         <li>pause and restart as much as you like</li>
-                        <li>starts with a quiz to test your current knowledge/li>
+                        <li>starts with a quiz to test your current knowledge</li>
                         <li>includes interactive exercises, videos and case studies</li>
                         </br>
                         <p class="govuk-body">At the end of each course you will be able to download a personalised certificate of completion.</p>
                         <p class="govuk-body">If you complete all the courses in this series on child development and pass an optional test, you will be able to download a certificate that recognises your achievement. </p>
 
                 </div>
+
+                <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-one-third">
+                                <img src="/public/images/home/1.png" alt="" style="width:90px;height:90px;>
+                        </div>
+                </div>
+
+                <div class="govuk-grid-column-one-third">
+                                <p>Jane Reed</p>
+                                <p>Jane is a paediatric research scientist at the Early Years Research Centre, specialising in brain development.</p>
+                 </div>
+                 <div class="govuk-grid-column-one-third">
+                        <img src="/public/images/home/2.png" alt="" style="width:90px;height:90px;>
+                </div>
         </div>
-</div>          
+
+        <div class="govuk-grid-column-one-third">
+                        <p>Kate Smith</p>
+                        <p>Kate manages a chain of 3 nurseries in Lincolnshire. She is passionate about early years brain development.</p>
+         </div>
+                </div>
+
+        </div>
+
+        
+</div>     
+
+
 
   {# pulls in default gov uk template #}
   {{super()}}
