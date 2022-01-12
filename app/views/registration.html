@@ -1,0 +1,204 @@
+
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block main %}
+
+	<div class="govuk-width-container">
+			<main class="govuk-main-wrapper govuk-!-margin-bottom-8">
+
+				<div class="govuk-grid-row">
+
+					<div class="govuk-grid-column-two-thirds-from-desktop">
+
+                        {% from "govuk/components/input/macro.njk" import govukInput %}
+                        {% from "govuk/components/fieldset/macro.njk" import govukFieldset %}
+                        {% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{{ govukBackLink({
+  text: "Back",
+  href: "login"
+}) }}
+                        {% call govukFieldset({
+                          legend: {
+                            text: "Create an early years training account",
+                            classes: "govuk-fieldset__legend--l",
+                            isPageHeading: true
+                          }
+                        }) %}
+                                                
+                          {{ govukInput({
+                            label: {
+                              text: "First name"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            id: "first-name",
+                            name: "first-name",
+                            autocomplete: "first-name"
+                          }) }}
+
+                          {{ govukInput({
+                            label: {
+                              text: "Last name"
+                            },
+
+                            classes: "govuk-!-width-two-thirds",
+                            id: "last-name",
+                            name: "last-name",
+                            autocomplete: "last-name"
+                          }) }}
+                          <h3 class="govuk-heading-s">Your addresss</h3>
+
+                          {{ govukInput({
+                            label: {
+                              text: "Building and street"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            id: "first-name",
+                            name: "first-name",
+                            autocomplete: "first-name"
+                          }) }}
+                        
+                          {{ govukInput({
+                            label: {
+                              text: "Town or city"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            id: "first-name",
+                            name: "first-name",
+                            autocomplete: "first-name"
+                          }) }}
+
+                          {{ govukInput({
+                            label: {
+                              text: "Post code"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            id: "first-name",
+                            name: "first-name",
+                            autocomplete: "first-name"
+                          }) }}
+
+                          {{ govukInput({
+                            label: {
+                              text: "Country"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            id: "first-name",
+                            name: "first-name",
+                            autocomplete: "first-name"
+                          }) }}
+
+                          {{ govukInput({
+                            label: {
+                              text: "Email address"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            id: "email",
+                            name: "email",
+                            type: "email",
+                            autocomplete: "email",
+                            spellcheck: false
+                          }) }}
+
+                          <h3 class="govuk-heading-s">Ofstead</h3>
+
+                          {{ govukInput({
+                            label: {
+                              text: "Ofsted number (URN)"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            id: "email",
+                            name: "email",
+                            type: "email",
+                            autocomplete: "email",
+                            spellcheck: false
+                          }) }}
+
+                          {{ govukInput({
+                            label: {
+                              text: "Ofstead rating"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            id: "first-name",
+                            name: "first-name",
+                            autocomplete: "first-name"
+                          }) }}
+
+                          <h3 class="govuk-heading-s">Settings</h3>
+
+                          {{ govukInput({
+                            label: {
+                              text: "Setting type"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            id: "first-name",
+                            name: "first-name",
+                            autocomplete: "first-name"
+                          }) }}
+                          
+                          {{ govukInput({
+                            label: {
+                              text: "Setting name"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            id: "first-name",
+                            name: "first-name",
+                            autocomplete: "first-name"
+                          }) }}
+                        
+
+                          
+                          {{ govukInput({
+                            label: {
+                              text: "Role"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            id: "first-name",
+                            name: "first-name",
+                            autocomplete: "first-name"
+                          }) }}
+
+
+                          {{ govukInput({
+                            label: {
+                              text: "Level of education"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            hint: {
+                                text: "i.e Level 2, 3"
+                              },
+                            id: "first-name",
+                            name: "first-name",
+                            autocomplete: "first-name"
+                          }) }}
+
+                          {{ govukInput({
+                            label: {
+                              text: "Length of time in sector"
+                            },
+                            classes: "govuk-!-width-two-thirds",
+                            id: "first-name",
+                            name: "first-name",
+                            autocomplete: "first-name"
+                          }) }}
+
+                          {% from "govuk/components/button/macro.njk" import govukButton %}
+                          {{ govukButton({
+                            text: "Create an account"
+                          }) }}
+
+                        {% endcall %}
+
+					</div>
+
+
+
+				</div>
+
+			</main>
+	</div>
+{% endblock %}
