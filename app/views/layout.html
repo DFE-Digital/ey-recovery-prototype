@@ -68,7 +68,7 @@
     navigation: [
   
       {
-        href: "/sign-in",
+        href: "/sign-in1",
         text: "Sign in",
         active: true if (navActive == "sign-in")
       } if sectionActive == "public service",
@@ -189,10 +189,10 @@
             <nav class="moj-primary-navigation" aria-label="Primary navigation">
               <ul class="moj-primary-navigation__list">
                   <li class="moj-primary-navigation__item">
-                    <a class="moj-primary-navigation__link" href="/templates/public/training-overview" >Home</a>
+                    <a class="moj-primary-navigation__link" href="/templates/public/home" {{'aria-current="page"' if primaryNavActive == 'service start'}}>Home</a>
                   </li>
                   <li class="moj-primary-navigation__item">
-                    <a class="moj-primary-navigation__link" href="/templates/public/training-overview" {{'aria-current="page"' if primaryNavActive == 'service start'}} >Training</a>
+                    <a class="moj-primary-navigation__link" href="/templates/public/training-overview"  >Training</a>
                   </li>
                 </ul>
             </nav>
@@ -200,6 +200,8 @@
         </div>
       </div>
     </div>
+
+    
     <div class="govuk-width-container">
       {% if backLink %}
         {{ govukBackLink({
@@ -210,6 +212,40 @@
       {% endif %}
     </div>
   {% endif %}
+
+  {% if sectionActive == "public service1" %}
+  <div class="moj-primary-navigation">
+    <div class="govuk-width-container">
+      <div class="moj-primary-navigation__container">
+        <div class="moj-primary-navigation__nav">
+          <nav class="moj-primary-navigation" aria-label="Primary navigation">
+            <ul class="moj-primary-navigation__list">
+                <li class="moj-primary-navigation__item">
+                  <a class="moj-primary-navigation__link" href="/templates/public/training-overview" >Home</a>
+                </li>
+                <li class="moj-primary-navigation__item">
+                  <a class="moj-primary-navigation__link" href="/templates/public/training-overview" ' if primaryNavActive == 'service start1'}} >Training</a>
+                </li>
+                                  <li class="moj-primary-navigation__item">
+                    <a class="moj-primary-navigation__link" href="/templates/public/training-overview" {{'aria-current="page"' if primaryNavActive == 'service start1'}} >My courses</a>
+                  </li>
+              </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="govuk-width-container">
+    {% if backLink %}
+      {{ govukBackLink({
+        text: backText,
+        href: backLink,
+        classes: "govuk-!-margin-top-3"
+      }) }}
+    {% endif %}
+  </div>
+{% endif %}
 
 {% endif %}
 
