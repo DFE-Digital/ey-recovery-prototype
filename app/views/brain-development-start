@@ -14,7 +14,7 @@ Early Years Foundation
 
 {% block main %}
 
-</br>	<!-- START MAST -->
+	<!-- START MAST -->
 <div class="full-BGstrip" style="background-color:#b1b4b6;">
         <div class="govuk-width-container">
                 <main class="govuk-main-wrapper">
@@ -28,17 +28,7 @@ Early Years Foundation
 
                                     
 
-                      {# {{ govukCheckboxes({
-                        idPrefix: "",
-                        name: "",
-                        classes: "govuk-checkboxes--small ss-input",
-                        fieldset: {
-                    
-                        },
-                        items: [
-                          {
-             
-                      } | decorateAttributes(data, "data.searchFilter.jobRole")) }} #}
+                   
 
                                                  
                                 </div>
