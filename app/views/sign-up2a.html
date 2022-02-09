@@ -25,13 +25,13 @@
 
                         {% call govukFieldset({
                           legend: {
-                            text: "About your setting",
+                            text: "Confirm your setting details",
                             classes: "govuk-fieldset__legend--l",
                             isPageHeading: true
                           }
                         }) %}
 
-                        <p class="govuk-body">We're asking for this so we can make sure the training is relevant to your setting.</p>    
+                        <p class="govuk-body">Your training progress won’t be shared with anyone without your permission</p>    
 
                         <div class="govuk-grid-row">
                             
@@ -39,42 +39,33 @@
                                 
                                 <div class="govuk-form-group">
 
-                                    <label class="govuk-label" for="address-postcode">
-                                        Post code
-                                    </label>
-                                    <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"> 
-
-                                </br>
-                            </br>
-                       
-                                    
-                                    <label class="govuk-label" for="address-postcode">
-                                        Ofsted number (optional)
-                                    </label>
-                                    
-                                    <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" autocomplete="postal-code"> 
-                                    
+          
                                 </div>
-                                <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
-                                    Search again
-                                  </button>
+                       
                             </div>
                         
                           </div>
                           <div class="govuk-form-group">
                             <label class="govuk-label" for="national-insurance-number">
-                                Post code
+                                Setting name
                             </label>
                         <div id="national-insurance-number-hint" class="govuk-hint">
-                            SE1 4NM
+                            Little Stars Childminders
                         </div>
                           <div class="govuk-form-group">              
-                              
                             <label class="govuk-label" for="national-insurance-number">
-                                Ofsted number (URN)
+                                Address
                             </label>
                         <div id="national-insurance-number-hint" class="govuk-hint">
-                             473727222
+                            21 High Street, Banbury, Oxfordshire, OX12 9PB
+                        </div>
+                          <div class="govuk-form-group">     
+                              
+                            <label class="govuk-label" for="national-insurance-number">
+                                Ofsted number
+                            </label>
+                        <div id="national-insurance-number-hint" class="govuk-hint">
+                            EY498934
                         </div>
                      </div>
 
@@ -85,17 +76,11 @@
                                 Ofsted rating
                             </label>
                         <div id="national-insurance-number-hint" class="govuk-hint">
-                             4
+                             Good
                         </div>
                      </div>
 
-                     <div class="govuk-form-group">
-                        <label class="govuk-label" for="national-insurance-number">
-                            Setting name
-                        </label>
-                    <div id="national-insurance-number-hint" class="govuk-hint">
-                        Name
-                    </div>
+      
                  </div>
 
                  <div class="govuk-form-group">
@@ -103,7 +88,7 @@
                         Setting type
                     </label>
                 <div id="national-insurance-number-hint" class="govuk-hint">
-                    Type
+                    Childminder
                 </div>
              </div>
             
