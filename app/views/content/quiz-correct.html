@@ -1,0 +1,260 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+{% set bodyClasses = "app-home-alt" %}
+{% set sectionActive = "public service" %}
+{% set primaryNavActive = "service start" %}
+
+{% block beforeContent %}
+{# beforeContent is reseting default phase banner #}
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Supporting physical development in the early years overview</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Course start</a>
+      </li>
+    </ol>
+  </div>
+  </div>
+
+<div class="govuk-width-container">
+
+  
+    <main class="govuk-main-wrapper">
+  
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+       
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                {{ govukAccordion({
+                    id: "accordion-with-summary-sections",
+                    items: [
+                      {
+                        heading: {
+                          text: "Introduction"
+                        },
+                   
+                        content: {
+                          html:
+                          '<ul class="govuk-list">
+                              <li>
+                                <a class="govuk-link" href="#">Intro</a>
+                              </li>
+                     
+                          </ul>'
+                        }
+                      },
+                          {
+                        heading: {
+                          text: "Module 1:  Body systems and physical development"
+                        },
+                  
+                        content: {
+                          html:
+                          '<ul class="govuk-list">
+                              <li>
+                                <a class="govuk-link" href="#">Respiratory system</a>
+                              </li>
+                              <li>
+                                <a class="govuk-link" href="#">Nervous system</a>
+                              </li>
+
+                              <li>
+                                <a class="govuk-link" href="#">Circulatory system </a>
+                              </li>
+                              <li>
+                                <a class="govuk-link" href="#">Musculoskeletal system</a>
+                              </li>
+      
+                          </ul>'
+                        }
+                      },
+                              {
+                        heading: {
+                          text: "Module 2: Movement and learning"
+                        },
+                      
+                        content: {
+                          html:
+                          '<ul class="govuk-list">
+                              <li>
+                                <a class="govuk-link" href="#">Text 1</a>
+                              </li>
+                              <li>
+                                <a class="govuk-link" href="#">Text 2</a>
+                              </li>
+     
+                          </ul>'
+                        }
+                      },
+                      {
+                        heading: {
+                          text: "Module 3: Developing movement"
+                        },
+               
+                        content: {
+                          html:
+                          '<ul class="govuk-list">
+                              <li>
+                                <a class="govuk-link" href="#">Text 1</a>
+                              </li>
+                              <li>
+                                <a class="govuk-link" href="#">Text 2</a>
+                              </li>
+     
+                          </ul>'
+                        }
+                      },
+                      {
+                        heading: {
+                          text: "Module 4: The role of the practitioner in supporting physical development"
+                        },
+             
+                        content: {
+                          html:
+                          '<ul class="govuk-list">
+                              <li>
+                                <a class="govuk-link" href="#">Text 1</a>
+                              </li>
+                              <li>
+                                <a class="govuk-link" href="#">Text 2</a>
+                              </li>
+     
+                          </ul>'
+                        }
+                      },
+                                  {
+                        heading: {
+                          text: "Summary and next steps"
+                        },
+                  
+                        content: {
+                          html:
+                          '<ul class="govuk-list">
+                              <li>
+                                <a class="govuk-link" href="#">Course recap</a>
+                              </li>
+                              <li>
+                                <a class="govuk-link" href="#">Course feedback</a>
+                              </li>
+                              <li>
+                                <a class="govuk-link" href="#">Download your certificate</a>
+                              </li>
+                         
+                          </ul>'
+                        }
+                      }
+
+                      
+                    ]
+                  }) }}
+    
+
+            </div>
+          
+          </div>
+          
+        </div>
+  
+        <div class="govuk-grid-column-two-thirds">
+
+          <h1 class="govuk-heading-l">Quiz title</h1>
+
+   
+          <p class="govuk-body govuk-!-font-weight-bold">What is Lorem Ipsum? </p>
+  
+          <p class="govuk-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+              text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
+              five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release 
+              of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+              Lorem Ipsum </p>
+
+              <img src="/public/images/home/image4.jpg" width="200" height="300" alt="">
+            </br>
+        </br>
+
+        <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+            <div class="govuk-notification-banner__header">
+              <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                Well done you are correct
+              </h2>
+            </div>
+            <div class="govuk-notification-banner__content">
+              <h3 class="govuk-notification-banner__heading">
+                Lorem Ipsum is simply dummy text
+              </h3>
+              <p class="govuk-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+                Lorem Ipsum </p>
+            </div>
+          </div>
+         
+            <ul class="govuk-list govuk-list--bullet">
+            <li>Question 1 - Wrong</li>
+            <li>Question 2 - Wrong</li>
+            <li>Question 3 - Correct</li>
+            </ul>
+  
+            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+            <button class="govuk-button govuk-button--secondary"  data-module="govuk-button">Previous</button > </br>
+
+              {{ govukButton({
+                "text": "Next",
+                href: "/feedback"
+              }) }}
+            
+
+              {{ govukCheckboxes({
+                idPrefix: "waste",
+                name: "waste",
+                fieldset: {
+                  legend: {
+          
+                    isPageHeading: true,
+                    classes: "govuk-fieldset__legend--l"
+                  }
+                },
+                hint: {
+         
+                },
+                items: [
+                  {
+                    value: "carcasses",
+                    text: "Mark as complete"
+                  },
+           
+                  {
+                  
+                  }
+                ]
+              }) }}
+
+               
+               
+        </div>
+      </div>
+  
+    </main>
+  </div>
+
+  {{super()}}
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
