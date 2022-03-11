@@ -87,7 +87,9 @@ $govuk-assets-path: '/govuk/assets/';
 @import "legacy/jul-job-alerts";
 
 // Application Prototype - October 2020
-
+.align-right {
+  float: right;
+}
 
 .gem-c-feedback {
   background: #fff;
