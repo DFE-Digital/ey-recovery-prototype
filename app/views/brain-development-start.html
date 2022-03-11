@@ -15,330 +15,331 @@ Early Years Foundation
 {% block main %}
 
 <div class="govuk-width-container">
-<div class="govuk-breadcrumbs">
-  <ol class="govuk-breadcrumbs__list">
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="#">Home</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="#">Supporting physical development in the early years overview</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="#">Course start</a>
-    </li>
-  </ol>
-</div>
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Supporting physical development in the early years overview</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Course start</a>
+      </li>
+    </ol>
+  </div>
 </div>
 
-</br>	<!-- START MAST -->
+</br> <!-- START MAST -->
 <div class="full-BGstrip" style="background-color:	#f3f2f1;">
-        <div class="govuk-width-container">
-                <main class="govuk-main-wrapper">
-                        <div class="govuk-grid-row">
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
 
-                                <!-- START INTRO -->
-                                <div class="govuk-grid-column-two-thirds  ">
-                                        <h1 class="govuk-heading-l ">Brain development in the early years</h1>
-                                        <p class="govuk-caption-m">The rapid changes that happen in the brain in a child’s first years lay critical foundations for later childhood and adult life. </p>
-                                        <p class="govuk-caption-m">TAs an early years practitioner you can play a significant role in encouraging and supporting brain development.</p>
+        <!-- START INTRO -->
+        <div class="govuk-grid-column-two-thirds  ">
+          <h1 class="govuk-heading-l ">Brain development in the early years</h1>
+          <p class="govuk-caption-m">The rapid changes that happen in the brain in a child’s first years lay critical
+            foundations for later childhood and adult life. </p>
+          <p class="govuk-caption-m">TAs an early years practitioner you can play a significant role in encouraging and
+            supporting brain development.</p>
 
-                                        <p class="govuk-caption-m">This module will reinforce your understanding of how the brain develops and how to consider factors affecting brain development when planning for your setting. </p>
+          <p class="govuk-caption-m">This module will reinforce your understanding of how the brain develops and how to
+            consider factors affecting brain development when planning for your setting. </p>
 
-                                      	{{ govukButton({
-                                          "text": "Start",
-                                          href: "/introduction"
-                                        }) }}
-                        </div>
-                </main>
+          {{ govukButton({
+          "text": "Start",
+          href: "/introduction"
+          }) }}
         </div>
+    </main>
+  </div>
 </div>
 <!-- END BESPOKE MAST -->
 
 <div class="govuk-width-container">
-        <div class="govuk-grid-row">
-        </br>
-            {{govukTag({
-                text: "X modules",
-                classes: "govuk-tag--green"
-            })}}
+  <div class="govuk-grid-row">
+    </br>
+    {{govukTag({
+    text: "X modules",
+    classes: "govuk-tag--green"
+    })}}
 
-                    {{govukTag({
-                text: "X topics",
-                classes: "govuk-tag--green"
-            })}}
+    {{govukTag({
+    text: "X topics",
+    classes: "govuk-tag--green"
+    })}}
 
-            {{govukTag({
-                text: "2 hours",
-                classes: "govuk-tag--green"
-            })}}
+    {{govukTag({
+    text: "2 hours",
+    classes: "govuk-tag--green"
+    })}}
 
-        </div>
+  </div>
 </div>
 
 <div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
 
-        <main class="govuk-main-wrapper">
+      {{ govukAccordion({
+        id: "accordion-with-summary-sections",
+        items: [
+          {
+            heading: {
+              text: "Introduction"
+            },
+            summary: {
+              text: "Introduction to the brain development in the early years module"
+            },
+            content: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <a class="govuk-link" href="introduction">Introduction to the brain development in the early years module</a>&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
 
-                <div class="govuk-grid-row">
-                  {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
+                  </li>
 
-                  {{ govukAccordion({
-                    id: "accordion-with-summary-sections",
-                    items: [
+              </ul>'
+            }
+          },
+              {
+            heading: {
+              text: "The developing brain"
+            },
+            summary: {
+              text: "This section will consider the expected pattern of brain and language development for children up to 5 years old.   "
+            },
+            content: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <a class="govuk-link" href="#">Introduction to the developing brain</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;
+
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">Brain development before birth</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+
+                  </li>
+
+                  <li>
+                    <a class="govuk-link" href="#">Brain development from 0-5</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp; &nbsp;  &nbsp;   &nbsp; &nbsp;  &nbsp; &nbsp;
+
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">Factors affecting brain development</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;
+
+                  </li>
+
+              </ul>'
+            }
+          },
+                  {
+            heading: {
+              text: "How children learn"
+            },
+            summary: {
+              text: "Summary"
+            },
+            content: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <a class="govuk-link" href="#">Introduction to how children learn</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">How brain development affects learning</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">Theories of learning</a> &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">The role of the early years practitioner</a> &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+
+
+              </ul>'
+            }
+          },
+          {
+            heading: {
+              text: "Development of social and emotional skills"
+            },
+            summary: {
+              text: "Summary"
+            },
+            content: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <a class="govuk-link" href="#">Introduction to the development of social and emotional skills</a> &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">How social and emotional skills develop</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">Supporting skill development </a> &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">How social and emotional skills affect learning and behaviour</a> &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+
+              </ul>'
+            }
+          },
+          {
+            heading: {
+              text: "Building positive relationships"
+            },
+            summary: {
+              text: "Summary"
+            },
+            content: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <a class="govuk-link" href="#">Introduction to building positive relationships</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">Introduction to attachment theory</a>    &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">Supporting children to develop positive relationships</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">How positive relationships affect learning and behaviour</a>    &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+
+              </ul>'
+            }
+          },
+
+          {
+            heading: {
+              text: "Supporting self-regulation"
+            },
+            summary: {
+              text: "Summary"
+            },
+            content: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <a class="govuk-link" href="#">Introduction to supporting self-regulation</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">Why self-regulation is important</a>    &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">How self-regulation affects learning and behaviour</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="#">Strategies for supporting self-regulation</a>    &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag--blue">
+                      Completed
+                      </strong>
+                  </li>
+
+              </ul>'
+            }
+          },
                       {
-                        heading: {
-                          text: "Introduction"
-                        },
-                        summary: {
-                          text: "Introduction to the brain development in the early years module"
-                        },
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="introduction">Introduction to the brain development in the early years module</a>&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+            heading: {
+              text: "Summary and next steps"
+            },
+            summary: {
+              text: "Summary"
+            },
+            content: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <a class="govuk-link" href="/recap">Recap and further reading</a>  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
 
-                              </li>
+                    <strong class="govuk-tag align-right">
+                      Not started
+                    </strong>
 
-                          </ul>'
-                        }
-                      },
-                          {
-                        heading: {
-                          text: "The developing brain"
-                        },
-                        summary: {
-                          text: "This section will consider the expected pattern of brain and language development for children up to 5 years old.   "
-                        },
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="#">Introduction to the developing brain</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="feedback">End of module assessment</a>     &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag align-right">
+                      Not started
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="feedback">Confidence check</a>     &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag align-right">
+                      Not started
+                      </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="certificate">Download your certificate</a>   &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
+                    <strong class="govuk-tag align-right">
+                      Not started
+                      </strong>
+                  </li>
 
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Brain development before birth</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-
-                              </li>
-
-                              <li>
-                                <a class="govuk-link" href="#">Brain development from 0-5</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;   &nbsp; &nbsp;  &nbsp;   &nbsp; &nbsp;  &nbsp; &nbsp;
-
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Factors affecting brain development</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp; &nbsp;
-
-                              </li>
-
-                          </ul>'
-                        }
-                      },
-                              {
-                        heading: {
-                          text: "How children learn"
-                        },
-                        summary: {
-                          text: "Summary"
-                        },
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="#">Introduction to how children learn</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">How brain development affects learning</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Theories of learning</a> &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">The role of the early years practitioner</a> &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
+              </ul>'
+            }
+          }
 
 
-                          </ul>'
-                        }
-                      },
-                      {
-                        heading: {
-                          text: "Development of social and emotional skills"
-                        },
-                        summary: {
-                          text: "Summary"
-                        },
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="#">Introduction to the development of social and emotional skills</a> &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">How social and emotional skills develop</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Supporting skill development </a> &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">How social and emotional skills affect learning and behaviour</a> &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-
-                          </ul>'
-                        }
-                      },
-                      {
-                        heading: {
-                          text: "Building positive relationships"
-                        },
-                        summary: {
-                          text: "Summary"
-                        },
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="#">Introduction to building positive relationships</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Introduction to attachment theory</a>    &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Supporting children to develop positive relationships</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">How positive relationships affect learning and behaviour</a>    &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-
-                          </ul>'
-                        }
-                      },
-
-                      {
-                        heading: {
-                          text: "Supporting self-regulation"
-                        },
-                        summary: {
-                          text: "Summary"
-                        },
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="#">Introduction to supporting self-regulation</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Why self-regulation is important</a>    &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">How self-regulation affects learning and behaviour</a> &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Strategies for supporting self-regulation</a>    &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag--blue">
-                                  Completed
-                                  </strong>
-                              </li>
-
-                          </ul>'
-                        }
-                      },
-                                  {
-                        heading: {
-                          text: "Summary and next steps"
-                        },
-                        summary: {
-                          text: "Summary"
-                        },
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="/recap">Recap and further reading</a>  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-
-                                <strong class="govuk-tag">
-                                 Not started
-                                </strong>
-
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="feedback">End of module assessment</a>     &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag">
-                                  Not started
-                                 </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="feedback">Confidence check</a>     &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag">
-                                  Not started
-                                 </strong>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="certificate">Download your certificate</a>   &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;
-                                <strong class="govuk-tag">
-                                  Not started
-                                 </strong>
-                              </li>
-
-                          </ul>'
-                        }
-                      }
-
-
-                    ]
-                  }) }}
+        ]
+      }) }}
 
 
 
 
 
-                </div>
-        </div>
+    </div>
+  </div>
 </div>
 
   {# pulls in default gov uk template #}
