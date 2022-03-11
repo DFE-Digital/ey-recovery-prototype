@@ -87,3 +87,61 @@ $govuk-assets-path: '/govuk/assets/';
 @import "legacy/jul-job-alerts";
 
 // Application Prototype - October 2020
+
+
+.gem-c-feedback {
+  background: #fff;
+  margin-top: 30px;
+}
+
+.gem-c-feedback__prompt {
+  background-color: #1d70b8;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.gem-c-feedback__prompt-questions {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding: 15px 25px 0;
+  box-sizing: border-box;
+}
+
+.gem-c-feedback__prompt-question {
+  vertical-align: top;
+  display: inline-block;
+  margin: 10px 20px;
+  font-weight: 700;
+  color: govuk-colour("white");
+}
+
+.gem-c-feedback__option-list {
+  display: inline-block;
+  margin-right: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.gem-c-feedback__prompt-link {
+  position: relative;
+  font-family: "GDS Transport",arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  background: transparent;
+  box-shadow: 0 2px 0 #fff;
+  border: 1px #fff solid;
+  min-width: 100px;
+}
+
+@media only screen and (max-width: 350px) {
+  .gem-c-feedback__prompt-link {
+    min-width: 10px;
+  }
+}
