@@ -88,14 +88,6 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Application Prototype - October 2020
 
-.js-enabled {
-  .gem-c-feedback__js-show,
-  .gem-c-feedback__prompt-success,
-  .gem-c-feedback__prompt-questions,
-  .gem-c-feedback__error-summary {
-    display: inline-block;
-  }
-}
 
 .gem-c-feedback {
   background: #fff;
@@ -105,13 +97,8 @@ $govuk-assets-path: '/govuk/assets/';
 .gem-c-feedback__prompt {
   background-color: #1d70b8;
   color: #fff;
-  outline: 0;
-}
-
-.gem-c-feedback__prompt:after {
-  content: "";
-  display: block;
-  clear: both;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .gem-c-feedback__prompt-questions {
@@ -136,14 +123,6 @@ $govuk-assets-path: '/govuk/assets/';
   margin: 0;
   padding: 0;
   margin-top: 10px;
-}
-
-.gem-c-feedback__option-list-item {
-  display: inline-block;
-}
-
-.gem-c-feedback__option-list-item:first-child {
-  margin-right: 20px;
 }
 
 .gem-c-feedback__prompt-link {
