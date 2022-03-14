@@ -28,192 +28,179 @@ Early Years Foundation
       </li>
     </ol>
   </div>
-  </div>
+</div>
 
 <div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-quarter">
+          {{ govukAccordion({
+              id: "accordion-with-summary-sections",
+              items: [
+                {
+                  heading: {
+                    text: "Introduction"
+                  },
+
+                  content: {
+                    html:
+                    '<ul class="govuk-list">
+                        <li>
+                          <a class="govuk-link" href="#">Intro</a>
+                        </li>
+
+                    </ul>'
+                  }
+                },
+                    {
+                  heading: {
+                    text: "Module 1:  Body systems and physical development"
+                  },
+
+                  content: {
+                    html:
+                    '<ul class="govuk-list">
+                        <li>
+                          <a class="govuk-link" href="#">Respiratory system</a>
+                        </li>
+                        <li>
+                          <a class="govuk-link" href="#">Nervous system</a>
+                        </li>
+
+                        <li>
+                          <a class="govuk-link" href="#">Circulatory system </a>
+                        </li>
+                        <li>
+                          <a class="govuk-link" href="#">Musculoskeletal system</a>
+                        </li>
+
+                    </ul>'
+                  }
+                },
+                        {
+                  heading: {
+                    text: "Module 2: Movement and learning"
+                  },
+
+                  content: {
+                    html:
+                    '<ul class="govuk-list">
+                        <li>
+                          <a class="govuk-link" href="#">Text 1</a>
+                        </li>
+                        <li>
+                          <a class="govuk-link" href="#">Text 2</a>
+                        </li>
+
+                    </ul>'
+                  }
+                },
+                {
+                  heading: {
+                    text: "Module 3: Developing movement"
+                  },
+
+                  content: {
+                    html:
+                    '<ul class="govuk-list">
+                        <li>
+                          <a class="govuk-link" href="#">Text 1</a>
+                        </li>
+                        <li>
+                          <a class="govuk-link" href="#">Text 2</a>
+                        </li>
+
+                    </ul>'
+                  }
+                },
+                {
+                  heading: {
+                    text: "Module 4: The role of the practitioner in supporting physical development"
+                  },
+
+                  content: {
+                    html:
+                    '<ul class="govuk-list">
+                        <li>
+                          <a class="govuk-link" href="#">Text 1</a>
+                        </li>
+                        <li>
+                          <a class="govuk-link" href="#">Text 2</a>
+                        </li>
+
+                    </ul>'
+                  }
+                },
+                            {
+                  heading: {
+                    text: "Summary and next steps"
+                  },
+
+                  content: {
+                    html:
+                    '<ul class="govuk-list">
+                        <li>
+                          <a class="govuk-link" href="#">Course recap</a>
+                        </li>
+                        <li>
+                          <a class="govuk-link" href="#">Course feedback</a>
+                        </li>
+                        <li>
+                          <a class="govuk-link" href="#">Download your certificate</a>
+                        </li>
+
+                    </ul>'
+                  }
+                }
 
 
-    <main class="govuk-main-wrapper">
-
-      <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-                {{ govukAccordion({
-                    id: "accordion-with-summary-sections",
-                    items: [
-                      {
-                        heading: {
-                          text: "Introduction"
-                        },
-
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="#">Intro</a>
-                              </li>
-
-                          </ul>'
-                        }
-                      },
-                          {
-                        heading: {
-                          text: "Module 1:  Body systems and physical development"
-                        },
-
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="#">Respiratory system</a>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Nervous system</a>
-                              </li>
-
-                              <li>
-                                <a class="govuk-link" href="#">Circulatory system </a>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Musculoskeletal system</a>
-                              </li>
-
-                          </ul>'
-                        }
-                      },
-                              {
-                        heading: {
-                          text: "Module 2: Movement and learning"
-                        },
-
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="#">Text 1</a>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Text 2</a>
-                              </li>
-
-                          </ul>'
-                        }
-                      },
-                      {
-                        heading: {
-                          text: "Module 3: Developing movement"
-                        },
-
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="#">Text 1</a>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Text 2</a>
-                              </li>
-
-                          </ul>'
-                        }
-                      },
-                      {
-                        heading: {
-                          text: "Module 4: The role of the practitioner in supporting physical development"
-                        },
-
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="#">Text 1</a>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Text 2</a>
-                              </li>
-
-                          </ul>'
-                        }
-                      },
-                                  {
-                        heading: {
-                          text: "Summary and next steps"
-                        },
-
-                        content: {
-                          html:
-                          '<ul class="govuk-list">
-                              <li>
-                                <a class="govuk-link" href="#">Course recap</a>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Course feedback</a>
-                              </li>
-                              <li>
-                                <a class="govuk-link" href="#">Download your certificate</a>
-                              </li>
-
-                          </ul>'
-                        }
-                      }
-
-
-                    ]
-                  }) }}
+              ]
+            }) }}
 
 
 
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="govuk-grid-column-two-thirds">
-          <h2 class="govuk-heading-m">Get your certificate</h2>
-          <p class="govuk-body">Congratulations. You have now completed this course. </p>
-
-          <p class="govuk-body">You can now <a class="govuk-link" href="sign-up">download a PDF certificate</a>  to share or print yourself. </p>
-
-          <p class="govuk-body">If the name or setting on your certificate is not what you expect, you can update them in your profile settings. </p>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
-
-          <img src="/public/images/certificate.png" alt="">
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
-
-          <ul class="govuk-list">
-            <li>
-              <a class="govuk-link" href="#">Download your certificate as a PDF to share or print yourself</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Share by email</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Share on Facebook</a>
-            </li>
-            <li>
-              <a class="govuk-link" href="#">Download a digital badge for your website</a>
-            </li>
-          </ul>
-
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
-
-            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Previous</button > </br>
-               <button class="govuk-button" data-module="govuk-button">Finish</button>
-
-
-
-        </div>
       </div>
 
-    </main>
-  </div>
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m">Get your certificate</h2>
+        <p class="govuk-body">Congratulations. You have now completed this course. </p>
 
-  {{super()}}
+        <p class="govuk-body">You can now <a class="govuk-link" href="sign-up">download a PDF certificate</a>  to share or print yourself. </p>
+
+        <p class="govuk-body">If the name or setting on your certificate is not what you expect, you can update them in your profile settings. </p>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+        <img src="/public/images/certificate.png" alt="">
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="#">Download your certificate as a PDF to share or print yourself</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Share by email</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Share on Facebook</a>
+          </li>
+          <li>
+            <a class="govuk-link" href="#">Download a digital badge for your website</a>
+          </li>
+        </ul>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Previous</button>
+        <button class="govuk-button align-right" data-module="govuk-button">Finish</button>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+{{super()}}
 {% endblock %}
 
 {% block content %}
