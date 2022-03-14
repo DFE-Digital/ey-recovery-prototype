@@ -54,7 +54,10 @@ div.govuk-accordion {
     padding: 0;
 
     .govuk-accordion__section {
-        border-bottom: 1px solid #b1b4b6;
+        // Above section says that this should not be deleted. As it looks like it is unused, I have just commented out
+        // so that if it is being used, this can be readded easily
+        
+        // border-bottom: 1px solid #b1b4b6;
     }
 }
 
