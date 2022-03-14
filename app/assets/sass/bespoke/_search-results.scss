@@ -537,6 +537,10 @@ div.govuk-accordion {
   }
   div.govuk-accordion__section {
     .govuk-accordion__section-header {
+
+      // Above section says that this should not be deleted. As it looks like it is unused, I have just commented out
+      // so that if it is being used, this can be readded easily
+      
       // border-top: 0px solid #b1b4b6;
       // padding: 10px 0 10px 0;
 
