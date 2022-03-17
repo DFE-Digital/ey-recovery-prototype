@@ -34,6 +34,19 @@ const newRender = (path, res, next, ...args) => {
   })
 }
 
+// Run this code when a form is submitted to 'part-of-brain'
+router.post('/quiz-1-answer', function (req, res) {
+
+  var partOfBrain = req.session.data['part-of-brain']
+
+  if (partOfBrain == "Occipital lobes"){
+    res.redirect('/brain-development/quiz-1-right')
+  } else {
+    res.redirect('/brain-development/quiz-1-wrong')
+  }
+
+})
+
 router.all('*', function(req, res, next){
   res.locals.query = req.query
   next()
