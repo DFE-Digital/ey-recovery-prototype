@@ -1,5 +1,5 @@
-# teaching-vacancies-prototype
-A research prototype for the Teaching Vacancies service
+# early-years-foundation-recovery
+A research prototype for the Early years Recovery
 
 ## Set up
 
