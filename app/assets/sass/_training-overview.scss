@@ -1,0 +1,48 @@
+@media (min-width: 50em) {
+  .app-card-container {
+    display: flex;
+  }
+  .app-card-container > div {
+    width: 25%;
+    padding: 0 15px;
+  }
+  .app-card-container > div:first-child {
+    padding-left: 0;
+  }
+  .app-card-container > div:last-child {
+    padding-right: 0;
+  }
+}
+
+.app-image-card {
+  margin-bottom: 20px;
+}
+
+.app-image-card h3 {
+  color: inherit;
+}
+
+.app-image-card .govuk-hint {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+}
+
+.app-image-card a {
+  display: block;
+  text-decoration: none;
+}
+
+.app-image-card a h3 {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.1em;
+}
+
+.app-image-card img {
+  margin-bottom: 5px;
+}
+
+img { 
+  width: 100%;
+}
