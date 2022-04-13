@@ -31,31 +31,11 @@ $govuk-assets-path: '/govuk/assets/';
   line-height: 1.14286;
 }
 
-@media print {
-  .moj-side-navigation {
-    font-family: sans-serif;
-  }
-}
-
 @media (min-width: 40.0625em) {
   .moj-side-navigation {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.25;
-  }
-}
-
-@media print {
-  .moj-side-navigation {
-    font-size: 14pt;
-    line-height: 1.2;
-  }
-}
-
-@media (max-width: 40.0525em) {
-  .moj-side-navigation {
-    display: flex;
-    overflow-x: scroll;
   }
 }
 
@@ -66,71 +46,15 @@ $govuk-assets-path: '/govuk/assets/';
   }
 }
 
-.moj-side-navigation__title {
-  font-family: "GDS Transport", arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.25;
-  color: #505a5f;
-  font-weight: normal;
-  margin: 0;
-  padding: 10px;
-  padding-left: 14px;
-}
-
-@media print {
-  .moj-side-navigation__title {
-    font-family: sans-serif;
-  }
-}
-
-@media (min-width: 40.0625em) {
-  .moj-side-navigation__title {
-    font-size: 19px;
-    font-size: 1.1875rem;
-    line-height: 1.31579;
-  }
-}
-
-@media print {
-  .moj-side-navigation__title {
-    font-size: 14pt;
-    line-height: 1.15;
-  }
-}
-
-@media (max-width: 40.0525em) {
-  .moj-side-navigation__title {
-    display: none;
-  }
-}
-
 .moj-side-navigation__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-@media (max-width: 40.0525em) {
-  .moj-side-navigation__list {
-    display: flex;
-    margin: 0;
-    white-space: nowrap;
-  }
-}
-
 @media (min-width: 40.0625em) {
   .moj-side-navigation__list {
     margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 40.0525em) {
-  .moj-side-navigation__item {
-    display: flex;
   }
 }
 
@@ -143,16 +67,6 @@ $govuk-assets-path: '/govuk/assets/';
   text-decoration: none;
 }
 
-@media (max-width: 40.0525em) {
-  .moj-side-navigation__item a,
-  .moj-side-navigation__item a:link,
-  .moj-side-navigation__item a:visited {
-    border-bottom: 4px solid transparent;
-    padding: 15px;
-    padding-bottom: 11px;
-  }
-}
-
 @media (min-width: 40.0625em) {
   .moj-side-navigation__item a,
   .moj-side-navigation__item a:link,
@@ -163,19 +77,6 @@ $govuk-assets-path: '/govuk/assets/';
   }
 }
 
-.moj-side-navigation__item a:hover {
-  border-color: #5694ca;
-}
-
-.moj-side-navigation__item a:focus {
-  color: #0b0c0c;
-  background-color: #ffdd00;
-  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
-  border-color: #0b0c0c;
-  border-left-color: transparent;
-  position: relative;
-}
-
 .moj-side-navigation__item--active a:link,
 .moj-side-navigation__item--active a:visited {
   border-color: #1d70b8;
@@ -183,28 +84,15 @@ $govuk-assets-path: '/govuk/assets/';
   font-weight: bold;
 }
 
-.moj-side-navigation__item--active a:focus {
-  color: #0b0c0c;
-  background-color: #ffdd00;
-  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
-  border-color: #0b0c0c;
-  border-left-color: transparent;
-}
-
 @media (min-width: 40.0625em) {
   .moj-side-navigation__item--active a:link,
   .moj-side-navigation__item--active a:visited {
     background-color: #f3f2f1;
   }
-  .moj-side-navigation__item--active a:focus {
-    color: #0b0c0c;
-    background-color: #ffdd00;
-    border-color: transparent;
-  }
 }
 
-// ----------------------------------------------------
-// ----------------------------------------------------
+/* ----------------------------------------------------
+ ---------------------------------------------------- */
 
 @media (min-width: 50em) {
   .app-card-container {
@@ -247,40 +135,8 @@ $govuk-assets-path: '/govuk/assets/';
   text-underline-offset: 0.1em;
 }
 
-.app-image-card a:focus {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.app-image-card a:focus h3 {
-  background-color: #ffdd00;
-  color: #0b0c0c;
-  box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
-  text-decoration: none;
-}
-
 .app-image-card img {
   margin-bottom: 5px;
-}
-
-@media (max-width: 49.9375em) {
-  .app-image-card {
-    margin-bottom: 20px;
-  }
-}
-
-@media (min-width: 25em) and (max-width: 50em) {
-  .app-image-card a {
-    display: flex;
-    align-items: flex-start;
-  }
-  .app-image-card img {
-    margin-right: 15px;
-    width: 35%;
-  }
-  .app-image-card .app-image-card__content {
-    flex: 1;
-  }
 }
 
 img { 
