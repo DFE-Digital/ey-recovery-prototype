@@ -1,3 +1,5 @@
+/* TRAINING OVERVIEW */
+
 @media (min-width: 50em) {
   .app-card-container {
     display: flex;
@@ -45,4 +47,52 @@
 
 img { 
   width: 100%;
+}
+
+
+.app-search-form-container {
+  padding: 20px;
+  color: #fff;
+  background: url("/public/images/homed/TVS-logo.png") no-repeat 100% 10px/120px auto #f3f2f1;
+}
+
+.app-search-form-container .govuk-label,
+.app-search-form-container .govuk-hint,
+.app-search-form-container .govuk-link,
+.app-search-form-container h1 {
+  color: #141414;
+}
+
+.app-search-form-container h1 {
+  padding-right: 100px;
+}
+
+@media (min-width: 50em) {
+  .app-search-form-container {
+    padding: 30px;
+    background: url("/public/images/home/TdVS-logo.png") no-repeat 100% 10px/150px auto #f3f2f1;
+  }
+  .app-search-form-container h1 {
+    padding-right: 150px;
+  }
+  .app-search-form-container .govuk-button,
+  .app-search-form-container .govuk-form-group {
+    margin: 0;
+  }
+}
+
+.app-search-form-inner > div:last-child {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 50em) {
+  .app-search-form-inner {
+    display: flex;
+    align-items: end;
+  }
+  .app-search-form-inner > div {
+    width: 33.33%;
+    padding-right: 30px;
+  }
 }
