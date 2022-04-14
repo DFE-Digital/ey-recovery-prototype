@@ -49,15 +49,10 @@
     containerClasses: "govuk-width-container",
     navigation: [
       {
-        href: "/templates/public/01-service-start",
-        text: "Find a teaching job",
-        active: true if navActive == "start"
-      } if not hideNav,
-      {
         href: "/prototypes/application/expanded/sign-in",
         text: "Sign in",
         active: true if navActive == "sign-in"
-      } if not hideNav
+      }
     ]
   }) }}
 
@@ -68,15 +63,6 @@
       },
       html: 'This is a new service - <a class="govuk-link" href="#">your feedback</a> will help us to improve it.'
     }) }}
-    {% if not hideNav %}
-      {% if backLink %}
-        {{ govukBackLink({
-          text: backText,
-          href: backLink,
-          classes: "govuk-!-margin-top-3"
-        }) }}
-      {% endif %}
-    {% endif %}
   </div>
 
   {% if sectionActive == "public service" %}
