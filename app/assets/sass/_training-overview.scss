@@ -53,7 +53,7 @@ img {
 .app-search-form-container {
   padding: 20px;
   color: #fff;
-  background: url("/public/images/homed/TVS-logo.png") no-repeat 100% 10px/120px auto #f3f2f1;
+  background: #f3f2f1;
 }
 
 .app-search-form-container .govuk-label,
@@ -70,7 +70,7 @@ img {
 @media (min-width: 50em) {
   .app-search-form-container {
     padding: 30px;
-    background: url("/public/images/home/TdVS-logo.png") no-repeat 100% 10px/150px auto #f3f2f1;
+    background: #f3f2f1;
   }
   .app-search-form-container h1 {
     padding-right: 150px;
