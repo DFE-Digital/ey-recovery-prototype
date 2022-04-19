@@ -66,14 +66,19 @@
     "navigationClasses": "govuk-header__navigation--end",
     "productName": serviceName,
     navigation: [
+    {
+      href: "brain-development/my-training",
+      text: "My learning",
+      active: true if (navActive == "job-alert")
+    } if sectionActive == "public service",
       {
-        href: "#",
-        text: "Create a job alert",
+        href: "my-acccount/manage-account",
+        text: "My account",
         active: true if (navActive == "job-alert")
       } if sectionActive == "public service",
       {
-        href: "/prototypes/application/expanded/sign-in",
-        text: "Sign in",
+        href: "#",
+        text: "Sign out",
         active: true if (navActive == "sign-in")
       } if sectionActive == "public service",
       {
@@ -185,7 +190,7 @@
     </div>
   {% endif %}
 
-  {% if sectionActive == "public servicel" %}
+  {% if sectionActive == "public servicet" %}
     <div class="moj-primary-navigation">
       <div class="govuk-width-container">
         <div class="moj-primary-navigation__container">
