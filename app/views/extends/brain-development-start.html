@@ -15,7 +15,7 @@ Early Years Foundation
 {% block main %}
 
 </br> <!-- START MAST -->
-<div class="full-BGstrip" style="background-color:	#f3f2f1;">
+<div class="full-BGstrip brain-development-start-BGstrip">
   <div class="govuk-width-container">
     <main class="govuk-main-wrapper">
       <div class="govuk-grid-row">
@@ -54,80 +54,198 @@ Early Years Foundation
 <div class="govuk-width-container">
   <div class="govuk-grid-row">
     </br>
-    {{govukTag({
-    text: "3 modules",
-    classes: "govuk-tag--green"
-    })}}
+    {% block govukTags %}
+      {{govukTag({
+      text: "3 modules",
+      classes: "govuk-tag--green"
+      })}}
 
-    {{govukTag({
-    text: "12 topics",
-    classes: "govuk-tag--green"
-    })}}
+      {{govukTag({
+      text: "12 topics",
+      classes: "govuk-tag--green"
+      })}}
 
-    {{govukTag({
-    text: "45 minnutes",
-    classes: "govuk-tag--green"
-    })}}
+      {{govukTag({
+      text: "45 minnutes",
+      classes: "govuk-tag--green"
+      })}}
+    {% endblock %}
 
   </div>
 </div>
 
 <div class="govuk-width-container">
-
   <main class="govuk-main-wrapper">
-
     <div class="govuk-grid-row">
-
-      <h1 class="govuk-heading-m ">Module 1: The science of brain development in the early years</h1>
-      <table class="govuk-table">
-        <thead class="govuk-table__head">
-        </thead>
-        <dl class="govuk-summary-list">
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Brain development before birth
-            </dt>
-            <dd class="govuk-summary-list__value">
-              Not started
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="./brain-development-start1">
-                Start<span class="govuk-visually-hidden"> name</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              Rapid changes in young children
-            </dt>
-            <dd class="govuk-summary-list__value">
-              50% complete
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Continue<span class="govuk-visually-hidden"> date of birth</span>
-              </a>
-            </dd>
-          </div>
-          <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">
-              How the brain develops
-            </dt>
-            <dd class="govuk-summary-list__value">
-              100% complete%
-            </dd>
-            <dd class="govuk-summary-list__actions">
-              <a class="govuk-link" href="#">
-                Complete<span class="govuk-visually-hidden"> address</span>
-              </a>
-            </dd>
-          </div>
-
-        </dl>
-      </table>
-
+      {% block govukTable %}
+        {{ govukTable({
+          caption: "Module 1: The science of brain development in the early years",
+          captionClasses: "govuk-table__caption--m",
+          firstCellIsHeader: true,
+          rows: [
+            [
+              {
+                text: "Brain development before birth",
+                classes: 'govuk-!-width-one-third'
+              },
+              {
+                text: "Not started",
+                classes: 'govuk-!-width-one-third'
+              },
+              {
+                html: "<a href='./brain-development-start1'>Start</a>",
+                format: "numeric",
+                classes: 'govuk-!-width-one-third'
+              }
+            ],
+            [
+              {
+                text: "Rapid changes in young children	"
+              },
+              {
+                text: "50% complete"
+              },
+              {
+                html: "<a href='#'>Continue</a>",
+                format: "numeric"
+              }
+            ],
+            [
+              {
+                text: "How the brain develops"
+              },
+              {
+                text: "100% complete%"
+              },
+              {
+                html: "<a href='#'>Complete</a>",
+                format: "numeric"
+              }
+            ]
+          ]
+        }) }}
+      {% endblock %}
     </div>
+  </main>
 </div>
+
+<div class="govuk-width-container">
+    
+  <main class="govuk-main-wrapper">
+      
+          <div class="govuk-grid-row">
+
+              <h1 class="govuk-heading-m ">Module 1: The science of brain development in the early years</h1>
+              <table class="govuk-table">
+                  <thead class="govuk-table__head">
+                  </thead>
+                  <dl class="govuk-summary-list">
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          Brain development before birth
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          100%
+                        </dd>
+                        <dd class="govuk-summary-list__actions">
+                          <a class="govuk-link" href="/brain-development-start1">
+                            View<span class="govuk-visually-hidden"> name</span>
+                          </a>
+                        </dd>
+                      </div>
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          Rapid changes in young children
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          50%
+                        </dd>
+                        <dd class="govuk-summary-list__actions">
+                          <a class="govuk-link" href="#">
+                            Continue<span class="govuk-visually-hidden"> date of birth</span>
+                          </a>
+                        </dd>
+                      </div>
+                      <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key">
+                          How the brain develops
+                        </dt>
+                        <dd class="govuk-summary-list__value">
+                          Not started
+                        </dd>
+                        <dd class="govuk-summary-list__actions">
+                          <a class="govuk-link" href="#">
+                           Begin <span class="govuk-visually-hidden"> address</span>
+                          </a>
+                        </dd>
+                      </div>
+               
+                    </dl>
+                    <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+                      <div class="govuk-accordion__section ">
+                        <div class="govuk-accordion__section-header">
+                          <h2 class="govuk-accordion__section-heading">
+                            <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                              Module 2: How children learn
+                            </span>
+                          </h2>
+                        </div>
+                        <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                          <p class='govuk-body'>How brain development affects learning</p>
+                          <p class='govuk-body'>The role of early years education</p>
+                          <p class='govuk-body'>Setting positive and realistic expectations</p>
+                        </div>
+                      </div>
+                      <div class="govuk-accordion__section ">
+                        <div class="govuk-accordion__section-header">
+                          <h2 class="govuk-accordion__section-heading">
+                            <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                              Module 3: Emotional and social skill
+                            </span>
+                          </h2>
+                        </div>
+                        <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                          <p class='govuk-body'>How brain development affects learning</p>
+                          <p class='govuk-body'>The role of early years education</p>
+                          <p class='govuk-body'>Setting positive and realistic expectations</p>
+                        </div>
+                      </div>
+                      <div class="govuk-accordion__section ">
+                        <div class="govuk-accordion__section-header">
+                          <h2 class="govuk-accordion__section-heading">
+                            <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                              Module 4: Secure relationships
+                            </span>
+                          </h2>
+                        </div>
+                        <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                          <p class='govuk-body'>How secure relationships affect behaviour and learning</p>
+                          <p class='govuk-body'>Introduction to attachment theory</p>
+                          <p class='govuk-body'>Helping children develop secure relationships</p>
+                        </div>
+                      </div>
+                      <div class="govuk-accordion__section ">
+                        <div class="govuk-accordion__section-header">
+                          <h2 class="govuk-accordion__section-heading">
+                            <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                              Module 5: Self-regulation
+                            </span>
+                          </h2>
+                        </div>
+                        <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-4">
+                          <p class='govuk-body'>Why self-regulation is important</p>
+                          <p class='govuk-body'>How emotional development affects behaviour</p>
+                          <p class='govuk-body'>Tips for supporting self-regulation</p>
+                        </div>
+                      </div>
+                    </div>
+                </table>      
+
+               
+
+               
+          </div>
+  </div>
 </div>
 
 {# pulls in default gov uk template #}
