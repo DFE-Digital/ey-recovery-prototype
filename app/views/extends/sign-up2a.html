@@ -1,0 +1,100 @@
+
+{% extends "layout.html" %}
+{% block main %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-!-margin-bottom-8">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        {{ govukBackLink({
+        text: "Back",
+        href: "./sign-up2"
+        }) }}
+
+        {% call govukFieldset({
+          legend: {
+            text: "About your setting",
+            classes: "govuk-fieldset__legend--l",
+            isPageHeading: true
+          }
+        }) %}
+
+        <p class="govuk-body">We're asking for this so we can make sure the training is relevant to your setting.</p>
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="address-postcode">
+                Post code
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text"
+                autocomplete="postal-code">
+              </br>
+              </br>
+              <label class="govuk-label" for="address-postcode">
+                Ofsted number (optional)
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text"
+                autocomplete="postal-code">
+            </div>
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Search again
+            </button>
+          </div>
+        
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="national-insurance-number">
+            Post code
+          </label>
+          <div id="national-insurance-number-hint" class="govuk-hint">
+            SE1 4NM
+          </div>
+          <div class="govuk-form-group">
+        
+            <label class="govuk-label" for="national-insurance-number">
+              Ofsted number (URN)
+            </label>
+            <div id="national-insurance-number-hint" class="govuk-hint">
+              473727222
+            </div>
+          </div>
+        
+        </div>
+        
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="national-insurance-number">
+            Ofsted rating
+          </label>
+          <div id="national-insurance-number-hint" class="govuk-hint">
+            4
+          </div>
+        </div>
+        
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="national-insurance-number">
+            Setting name
+          </label>
+          <div id="national-insurance-number-hint" class="govuk-hint">
+            Name
+          </div>
+        </div>
+        
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="national-insurance-number">
+            Setting type
+          </label>
+          <div id="national-insurance-number-hint" class="govuk-hint">
+            Type
+          </div>
+        </div>
+          
+        {{ govukButton({
+          "text": "Continue",
+          href: "./sign-up4"
+        }) }}
+        {% endcall %}
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
