@@ -47,55 +47,55 @@
 }
 
 /* ==========================================================================
- #PRIMARY NAVIGATION
+ #PRIMARY NAVIGATION (Grey bar with blue links)
 ========================================================================== */
-.moj-primary-navigation {
+.primary-navigation {
   background-color: #f3f2f1;
 }
 
-.moj-primary-navigation__container {
+.primary-navigation__container {
   margin: 0 15px;
   font-size: 0;
   text-align: justify;
 }
 
 @media (min-width: 40.0625em) {
-  .moj-primary-navigation__container {
+  .primary-navigation__container {
     margin: 0 30px;
   }
 }
 
 @media (min-width: 1020px) {
-  .moj-primary-navigation__container {
+  .primary-navigation__container {
     margin: 0 auto;
   }
 }
 
-.moj-primary-navigation__container:after {
+.primary-navigation__container:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-.moj-primary-navigation__nav {
+.primary-navigation__nav {
   text-align: left;
 }
 
 @media (min-width: 48.0625em) {
-  .moj-primary-navigation__nav {
+  .primary-navigation__nav {
     display: inline-block;
     vertical-align: middle;
   }
 }
 
-.moj-primary-navigation__list {
+.primary-navigation__list {
   font-size: 0;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.moj-primary-navigation__item {
+.primary-navigation__item {
   font-family: "GDS Transport", arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -109,18 +109,18 @@
 }
 
 @media (min-width: 40.0625em) {
-  .moj-primary-navigation__item {
+  .primary-navigation__item {
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.31579;
   }
 }
 
-.moj-primary-navigation__item:last-child {
+.primary-navigation__item:last-child {
   margin-right: 0;
 }
 
-.moj-primary-navigation__link {
+.primary-navigation__link {
   font-family: "GDS Transport", arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -134,27 +134,27 @@
   font-weight: bold;
 }
 
-.moj-primary-navigation__link:link {
+.primary-navigation__link:link {
   color: #1d70b8;
 }
 
-.moj-primary-navigation__link:visited {
+.primary-navigation__link:visited {
   color: #4c2c92;
 }
 
-.moj-primary-navigation__link:link,
-.moj-primary-navigation__link:visited {
+.primary-navigation__link:link,
+.primary-navigation__link:visited {
   color: #1d70b8;
 }
 
-.moj-primary-navigation__link[aria-current] {
+.primary-navigation__link[aria-current] {
   color: #1d70b8;
   position: relative;
   text-decoration: none;
   font-weight: bold;
 }
 
-.moj-primary-navigation__link[aria-current]:before {
+.primary-navigation__link[aria-current]:before {
   background-color: #1d70b8;
   content: "";
   display: block;
