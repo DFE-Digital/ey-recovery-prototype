@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+{% set bodyClasses = "app-home-alt" %}
+{% set sectionActive = "public service" %}
+{% set primaryNavActive = "service start" %}
+
+{% block beforeContent %}
+{# beforeContent is reseting default phase banner #}
+{% endblock %}
+
+{% block main %}
+
+</br> <!-- START MAST -->
+<div class="full-BGstrip" style="background-color:	#f3f2f1;">
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+
+        <!-- START INTRO -->
+        <div class="govuk-grid-column-two-thirds  ">
+          <h1 class="govuk-heading-l ">Brain development in the early years</h1>
+          <p class="govuk-caption-m">Neuroscience research has shown us that early childhood is a time of tremendous
+            brain development. </p>
+          <p class="govuk-caption-m">This course, written by paediatric research scientist Dr Jane Reed and nursery
+            manager Kate Smith, describes how a child’s brain develops from birth to age 5 and gives advice and tips for
+            early years educators. </p>
+
+
+
+          {# {{ govukCheckboxes({
+          idPrefix: "",
+          name: "",
+          classes: "govuk-checkboxes--small ss-input",
+          fieldset: {
+
+          },
+          items: [
+          {
+
+          } | decorateAttributes(data, "data.searchFilter.jobRole")) }} #}
+
+
+
+        </div>
+    </main>
+  </div>
+</div>
+<!-- END BESPOKE MAST -->
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    </br>
+    {{govukTag({
+    text: "3 modules",
+    classes: "govuk-tag--green"
+    })}}
+
+    {{govukTag({
+    text: "12 topics",
+    classes: "govuk-tag--green"
+    })}}
+
+    {{govukTag({
+    text: "45 minnutes",
+    classes: "govuk-tag--green"
+    })}}
+
+  </div>
+</div>
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+
+      <h1 class="govuk-heading-m ">Module 1: The science of brain development in the early years</h1>
+      <table class="govuk-table">
+        <thead class="govuk-table__head">
+        </thead>
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Brain development before birth
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Not started
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="./brain-development-start1">
+                Start<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Rapid changes in young children
+            </dt>
+            <dd class="govuk-summary-list__value">
+              50% complete
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Continue<span class="govuk-visually-hidden"> date of birth</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              How the brain develops
+            </dt>
+            <dd class="govuk-summary-list__value">
+              100% complete%
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Complete<span class="govuk-visually-hidden"> address</span>
+              </a>
+            </dd>
+          </div>
+
+        </dl>
+      </table>
+
+    </div>
+</div>
+</div>
+
+{# pulls in default gov uk template #}
+{{super()}}
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
