@@ -66,6 +66,7 @@
     }) }}
   </div>
 
+  {% if displayPrimaryNav == true %}
   <div class="primary-navigation">
     <div class="govuk-width-container">
       <div class="primary-navigation__container">
@@ -89,15 +90,17 @@
       </div>
     </div>
   </div>
-    <div class="govuk-width-container">
-      {% if backLink %}
-        {{ govukBackLink({
-          text: backText,
-          href: backLink,
-          classes: "govuk-!-margin-top-3"
-        }) }}
-      {% endif %}
-    </div>
+  {% endif %}
+  
+  <div class="govuk-width-container">
+    {% if backLink %}
+      {{ govukBackLink({
+        text: backText,
+        href: backLink,
+        classes: "govuk-!-margin-top-3"
+      }) }}
+    {% endif %}
+  </div>
 
 {% endblock %}
 
