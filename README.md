@@ -11,3 +11,14 @@ node.js - version 16.x.x
 4. Run ```npm start``` to start the project
 
 More detailed guidance is available on the prototype docs
+
+## File structure
+Every view file used is listed in the 'extends' folder. These are then called, as necessary, in a folder corresponding to each sprint milestone, with the following:
+```
+{% extends "../extends/[FILE NAME]" %}
+```
+To create a new page:
+1. add it to the 'extends' folder
+2. add its corresponding file to the correct sprint milestone folder
+3. add the extends line above
+4. You can then override the code, as appropriate.
