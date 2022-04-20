@@ -78,10 +78,9 @@
               <li class="primary-navigation__item">
                 <a class="primary-navigation__link" href="#">Training</a>
               </li>
-              {% if sectionActive == "public service1" %}
+              {% if displayMyCourses == true %}
                 <li class="primary-navigation__item">
-                  <a class="primary-navigation__link" href="./training-overview"
-                    {{'aria-current="page"' if primaryNavActive == ' service start1'}}>My courses</a>
+                  <a class="primary-navigation__link" href="./training-overview" aria-current="page">My courses</a>
                 </li>
               {% endif %}
             </ul>
