@@ -2,8 +2,12 @@
   padding: 25px;
   background-color: rgba(255, 255, 255, 0.849);
 
-  a {
-    color: #000000 !important;
+  a.govuk-link {
+    color: #000 !important;
+  }
+  
+  .govuk-button {
+    color: #fff;
   }
 }
 
@@ -29,4 +33,9 @@
 
 .brain-development-BGstrip-grey {
   background-color:#e0dfdf;
+}
+
+.course-creator-image {
+  width: 90px;
+  height: 90px;
 }
