@@ -49,8 +49,7 @@
     containerClasses: "govuk-width-container",
     navigation: [
       {
-        href: "./sign-in" if milestone != "sprint25",
-        href: "./sign-in1" if milestone == "sprint25",
+        href: "./sign-in1" if milestone == "sprint25" else "./sign-in",
         text: "Sign in",
         active: true if navActive == "sign-in"
       }
