@@ -24,3 +24,10 @@ $govuk-assets-path: '/govuk/assets/';
 @import "layout";
 @import "sign-in";
 @import "home";
+
+// USED ACROSS PAGES
+
+.course-creator-image {
+  width: 90px;
+  height: 90px;
+}
