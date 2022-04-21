@@ -1,0 +1,114 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+{% set bodyClasses = "app-home-alt" %}
+{% set sectionActive = "public service" %}
+{% set primaryNavActive = "service start" %}
+
+{% block beforeContent %}
+{# beforeContent is reseting default phase banner #}
+{% endblock %}
+
+{% block main %}
+
+<!-- START MAST -->
+<div class="full-BGstrip">
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="app-search-form-container govuk-!-margin-bottom-6">
+            <h1 class="govuk-heading-l">About our training courses</h1>
+            <p class="govuk-body">This course is suitable for people aged 16 and over who need to be qualified in first aid as they care for babies and children in a professional setting.
+
+              This course, written by Paediatric Emergency Medicine consultant Dr John Williams and nursery manager Kate Smith, can be counted as evidence for an NVQ in childcare and education and is recognised by Ofsted. .</p>
+          </div>
+        </div>
+      </div>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                    Introduction
+                  </span>
+                </h2>
+                <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2">
+                  This course, written by Paediatric Emergency Medicine consultant Dr John Williams and nursery manager Kate Smith, can be counted as evidence for an NVQ in childcare and education and is recognised by Ofsted.
+                </div>
+              </div>
+              <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                <p class='govuk-body'>This course, written by Paediatric Emergency Medicine consultant Dr John Williams and nursery manager Kate Smith, can be counted as evidence for an NVQ in childcare and education and is recognised by Ofsted.</p>
+              </div>
+            </div>
+            <div class="govuk-accordion__section ">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                    Brain development in the early years
+                  </span>
+                </h2>
+                <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2">
+                  This course, written by Paediatric Emergency Medicine consultant Dr John Williams and nursery manager Kate Smith, can be counted as evidence for an NVQ in childcare and education and is recognised by Ofsted.
+                </div>
+              </div>
+              <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                <p class="govuk-heading-s">Learning Outcomes</p>
+                <p class='govuk-body'>
+                  This course covers how to help a baby or child who:
+                </p>
+                  <ul class='govuk-body'>
+                    <li>is unresponsive and breathing</li>
+                    <li>is bleeding</li>
+                    <li>is choking</li>
+                    <li>is burnt or has a scald</li>
+                    <li>has an object in their eye, ear or nose</li>
+                    <li>has hypothermia or heat exhaustion</li>
+                    <li>has sickness or a fever</li>
+                    <li>is unresponsive and not breathing, including the use of an automated external defibrillator (AED)</li>
+                  </ul>
+                  <p class="govuk-heading-s">About this training course</p>
+                  <ul class='govuk-body'>
+                    <li>takes around 2 hours to complete</li>
+                    <li>pause and restart as much as you like</li>
+                    <li>includes interactive exercises, videos and case studies</li>
+                    <li>download a personalised certificate when you finish the course</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="govuk-button" data-module="govuk-button">
+        Enroll now
+      </button>
+    </main>
+  </div>
+</div>
+
+<!--Feedback Section-->
+<!-- div id="feedback" class="govuk-width-container govuk-!-padding-top-4" role="dialog" aria-label="feedback">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full govuk-!-padding-left-9 govuk-!-padding-right-9">
+      <div class="gem-c-feedback">
+        <div class="gem-c-feedback__prompt">
+          <div class="gem-c-feedback__prompt-questions">
+            <h2 class="govuk-heading-s gem-c-feedback__prompt-question">Sign up to be alerted when we release new modules</h2>
+            <button class="govuk-button gem-c-feedback__prompt-link">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!--End of Feedback Section-->
+<!-- END BESPOKE MAST -->
+
+{# pulls in default gov uk template #}
+
+{% endblock %}
