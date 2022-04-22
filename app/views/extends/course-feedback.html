@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+{% import "partials/likert.html" as likert %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Supporting physical development in the early years overview</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Confidence check</a>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            {% include "partials/accordion-with-summary-sections.html" %}
+          </div>
+        </div>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-m">Course feedback</h2>
+        <p class="govuk-body">To help DfE to measure our impact, please answer the below questions.
+          Answers will be anonymous, and we will not know what you individually select. </p>
+
+        <p class="govuk-body">To what extent do you agree with the following statements. </p>
+        
+        {{ likert.form (
+          "1. How confident do you feel about your ability to describe the body systems and their 
+          relationship to moving and learning?"
+        )}}
+        {{ likert.form (
+          "2. How confident do you feel about your ability to explain the importance of
+          movement skills to the overall health, wellbeing and development of young children."
+        )}}
+        {{ likert.form (
+          "3. How confident do you feel about your ability to identify the appropriate physical
+          and movement activities for each age and stage of development from 0 to 5 years"
+        )}}
+        {{ likert.form (
+          "4. How confident do you feel about your ability to work with parents to
+          support the physical development of all children?"
+        )}}
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-body govuk-!-font-weight-bold"
+              for="more-detail">
+              Is there anything else you’d like to tell us about this course?
+            </label>
+          </h1>
+
+          <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"
+            aria-describedby="more-detail-hint"></textarea>
+        </div>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Previous</button > </br>
+        {{ govukButton ({
+          text: "Next",
+          href: "/course-feedback"
+        }) }}
+      </div>
+    </main>
+  </div>
+
+  {{super()}}
+{% endblock %}
