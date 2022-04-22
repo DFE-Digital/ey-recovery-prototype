@@ -25,7 +25,7 @@ Early Years Foundation
 </div>
 
 </br>	<!-- START MAST -->
-<div class="full-BGstrip" style="background-color: #f3f2f1;">
+<div class="full-BGstrip brain-development-start-BGstrip">
   <div class="govuk-width-container">
     <main class="govuk-main-wrapper">
       <div class="govuk-grid-row">
@@ -39,10 +39,12 @@ Early Years Foundation
             Kate Smith, describes how a child develops physically from birth to age 5 and gives advice and tips for early years
             educators. </p>
 
-          {{ govukButton({
-            "text": "Continue course",
-            href: "/recap"
-          }) }}
+          {% block callToAction %}
+            {{ govukButton({
+              "text": "Continue course",
+              href: "/recap"
+            }) }}
+          {% endblock %}
         </div>
       </div>
     </main>
@@ -73,6 +75,7 @@ Early Years Foundation
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
+      {% block accordion %}
       {{ govukAccordion({
         id: "accordion-with-summary-sections",
         items: [
@@ -253,7 +256,8 @@ Early Years Foundation
             }
           }
         ]
-      }) }}           
+      }) }}
+      {% endblock %}        
     </div>
   </div>
 </div>          
