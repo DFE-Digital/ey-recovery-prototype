@@ -34,11 +34,13 @@
 
           <p class="govuk-body"><a href=" " class="govuk-link">Forgotten your password?</a></p>
 
-          {{ govukButton({
-            "text": "Sign in",
-            href: "./my-training"
-          }) }}
-
+          {% block govukButton %}
+            {{ govukButton({
+              "text": "Sign in",
+              href: "./my-training"
+            }) }}
+          {% endblock %}
+          
 					</div>
 
 					<div class="govuk-grid-column-one-third-from-desktop">

@@ -19,7 +19,9 @@
           }
         }) %}
 
-        <p class="govuk-body">We're asking for this so we can make sure the training is relevant to your setting.</p>    
+        {% block subtitle %}
+          <p class="govuk-body">We're asking for this so we can make sure the training is relevant to your setting.</p>    
+        {% endblock %}
 
         {{ govukInput({
           label: {
@@ -30,7 +32,8 @@
           name: "first-name",
           autocomplete: "first-name"
         }) }}
-
+        
+        {% block ofsted %}
           {{ govukInput({
             label: {
               text: "Find your settings using your ofsted number (optional)"
@@ -40,6 +43,7 @@
             name: "first-name",
             autocomplete: "first-name"
           }) }}
+        {% endblock %}
 
                       
           {{ govukButton({
