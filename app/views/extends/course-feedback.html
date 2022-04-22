@@ -9,19 +9,22 @@ Early Years Foundation
 
 <div class="govuk-width-container">
   {% block breadcrumbs %}
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Supporting physical development in the early years overview</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Confidence check</a>
-      </li>
-    </ol>
-  </div>
+    {{ govukBreadcrumbs({
+      items: [
+        {
+          text: "Home",
+          href: "#"
+        },
+        {
+          text: "Supporting physical development in the early years overview",
+          href: "#"
+        },
+        {
+          text: "Confidence check",
+          href: "#"
+        }
+      ]
+    }) }}
   {% endblock %}
 </div>
 
