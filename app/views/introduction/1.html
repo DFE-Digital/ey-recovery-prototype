@@ -15,16 +15,15 @@ Early Years Foundation
 {% block main %}
 
 <div class="govuk-width-container">
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-
-      <li class="govuk-breadcrumbs__list-item">
-         <a class="govuk-breadcrumbs__link" href="#">Understanding child development and the EYFS</a>
-      </li>
-
-    </ol>
-  </div>
-  </div>
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Understanding child development and the EYFS",
+        href: "1"
+      }
+    ]
+  }) }}
+</div>
 
 <div class="govuk-width-container">
 
