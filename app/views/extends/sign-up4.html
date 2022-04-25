@@ -22,60 +22,63 @@
 
       <p class="govuk-body">We're asking for this so we can make sure you are receiving the most relevant information.</p>    
 
-      {{ govukSelect({
-        id: "sort",
-        name: "sort",
-        label: {
-          text: "What early years qualifiction(s) do you have?"
-        },
-        items: [
-        {
-          value: "updated",
-          text: "Please select",
-          selected: true
-        },
-        {
-          value: "published",
-          text: "Level 1  "
-        },
+      {% block select1%}
+        {{ govukSelect({
+          id: "sort",
+          name: "sort",
+          label: {
+            text: "What early years qualifiction(s) do you have?"
+          },
+          items: [
+          {
+            value: "updated",
+            text: "Please select",
+            selected: true
+          },
           {
             value: "published",
-            text: "Level 2  "
+            text: "Level 1"
           },
+            {
+              value: "published",
+              text: "Level 2"
+            },
 
-          {
-            value: "views",
-            text: "Leve1 3"
+            {
+              value: "views",
+              text: "Leve1 3"
+            },
+            {
+              value: "comments",
+              text: "Leve1 4"
+            }
+          ]
+        }) }}
+      {% endblock %}
+      
+      {% block select2 %}
+        {{ govukSelect({
+          id: "sort",
+          name: "sort",
+          label: {
+            text: "How long have you worked in early years?"
           },
+          items: [
           {
-            value: "comments",
-            text: "Leve1 4"
-          }
-        ]
-      }) }}
-
-      {{ govukSelect({
-        id: "sort",
-        name: "sort",
-        label: {
-          text: "How long have you worked in early years?"
-        },
-        items: [
-        {
-          value: "updated",
-          text: "Please select",
-          selected: true
-        },
-        {
-          value: "published",
-          text: "Under a year  "
-        },
-
+            value: "updated",
+            text: "Please select",
+            selected: true
+          },
           {
             value: "published",
-            text: " 1 to 2 years"
+            text: "Under a year  "
           },
-
+          
+          {
+            value: "published",
+            text: "1 to 2 years"
+          },
+          
           {
             value: "views",
             text: "2 to 3 years"
@@ -84,9 +87,10 @@
             value: "comments",
             text: "Over 4 years"
           }
-        ]
-      }) }}
-
+          ]
+        }) }}
+      {% endblock %}
+      
       {{ govukButton({
         "text": "Continue",
         href: "./brain-development-start"
