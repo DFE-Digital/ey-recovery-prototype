@@ -1,2 +1,9 @@
-{% extends "../extends/sign-in1.html" %}
+{% extends "../sprint-25/sign-in.html" %}
 {% set milestone = "sprint25" %}
+
+{% block govukButton %}
+  {{ govukButton({
+    "text": "Sign in",
+    href: "./my-training"
+  }) }}
+{% endblock %}

@@ -12,8 +12,12 @@
           href: "brain-development"
         }) }}
 
-        <h1 class="govuk-heading-l">Sign in</h1>
-        <p class="govuk-body">Enter your details to access training material.</p>
+        {% block heading %}
+          <h1 class="govuk-heading-l">Sign in</h1>
+        {% block subheading %}
+        {% endblock %}
+          <p class="govuk-body">Enter your details to access training material.</p>
+        {% endblock %}
         {{ govukInput({
           id: "email-address",
           name: "_email-address",
@@ -36,10 +40,12 @@
 
         <p class="govuk-body"><a href=" " class="govuk-link">Forgotten your password?</a></p>
 
-        {{ govukButton({
-          "text": "Sign in",
-          href: "./brain-development-start"
-        }) }}
+        {% block govukButton %}
+          {{ govukButton({
+            "text": "Sign in",
+            href: "./brain-development-start"
+          }) }}
+        {% endblock %}
 
       </div>
 
