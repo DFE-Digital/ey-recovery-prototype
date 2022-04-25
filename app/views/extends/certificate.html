@@ -7,22 +7,24 @@ Early Years Foundation
 {% block main %}
 
 <div class="govuk-width-container">
-  {{ govukBreadcrumbs({
-    items: [
-      {
-        text: "Home",
-        href: "#"
-      },
-      {
-        text: "Supporting physical development in the early years overview",
-        href: "#"
-      },
-      {
-        text: "Confidence check",
-        href: "#"
-      }
-    ]
-  }) }}
+  {% block breadcrumbs %}
+    {{ govukBreadcrumbs({
+      items: [
+        {
+          text: "Home",
+          href: "#"
+        },
+        {
+          text: "Supporting physical development in the early years overview",
+          href: "#"
+        },
+        {
+          text: "Confidence check",
+          href: "#"
+        }
+      ]
+    }) }}
+  {% endblock %}
   
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
