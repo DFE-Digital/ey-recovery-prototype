@@ -60,7 +60,9 @@
           </li>
           <li>
             <a class="govuk-link" href="#">
+              {% block relatedLinkThree %}
               Statutory framework
+              {% endblock %}
             </a>
           </li>
         </ul>
@@ -68,6 +70,7 @@
     </aside>
   </div>
 {% endblock %}
+
 {% block courseCreators %}
   <div class="govuk-grid-column-full">
     <br>

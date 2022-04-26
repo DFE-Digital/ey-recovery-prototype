@@ -9,7 +9,7 @@ Early Years Foundation
 {% block main %}
   </br> <!-- START MAST -->
   {% block BGstrip %}
-    <div class="full-BGstrip brain-development-BGstrip-blue">
+  <div class="full-BGstrip brain-development-BGstrip-blue">
   {% endblock %}
     <div class="govuk-width-container">
       <main class="govuk-main-wrapper">
@@ -42,7 +42,9 @@ Early Years Foundation
                   <li>no previous knowledge required</li>
                   <li>certificate on completion</li>
                   </br>
+                  {% block share %}
                   <a href="#" class="govuk-link">share this course</a>
+                  {% endblock %}
                 </ul>
                 </br>
                 {% block callToAction %}
