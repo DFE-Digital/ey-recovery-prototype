@@ -1,1 +1,46 @@
-{% extends "../sprint-26-week-2/certificate.html" %}
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+{% set displayPrimaryNav = true %}
+
+{% block main %}
+<div class="govuk-width-container">
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Supporting physical development in the early years overview",
+        href: "#"
+      }
+    ]
+  }) }}
+</div>
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Get your certificate</h1>
+
+        <p class="govuk-body">Congratulations. You have now completed this course. </p>
+        <p class="govuk-body">You can now <a class="govuk-link" href="./sign-up">download a PDF certificate</a> to share
+          or print yourself. </p>
+        <p class="govuk-body">If the name or setting on your certificate is not what you expect, you can update them in
+          your profile settings. </p>
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+        <img src="/public/images/certificate.png" alt="">
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+        <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="./test-1-q3">Previous</a>
+        <a class="govuk-button align-right" data-module="govuk-button" href="./home">Finish</a>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+{{super()}}
+{% endblock %}
