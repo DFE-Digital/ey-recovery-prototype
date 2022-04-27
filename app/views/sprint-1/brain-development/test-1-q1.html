@@ -40,6 +40,7 @@ Early Years Foundation
         </br>
         </br>
         
+        {% block question %}
         {{ govukRadios({
           idPrefix: "part-of-brain",
           name: "part-of-brain",
@@ -63,13 +64,16 @@ Early Years Foundation
             }
           ]
         }) }}
+        {% endblock %}
 
         {% block notificationBanner %}
         {% endblock %}
 
         <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+        {% block buttons %}
         <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="recap">Previous</a>
         <a class="govuk-button align-right" data-module="govuk-button" href="test-1-q1-right">Next</a>
+        {% endblock %}
       </div>
     </div>
   </main>

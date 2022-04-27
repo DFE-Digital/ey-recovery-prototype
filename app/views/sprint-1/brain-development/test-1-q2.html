@@ -1,0 +1,40 @@
+{% extends "./test-1-q1.html" %}
+
+{% block question %}
+{{ govukRadios({
+  idPrefix: "piaget",
+  name: "piaget",
+  fieldset: {
+    legend: {
+      text: "What did Piaget call the concept of understanding an object which you cannot see still exists?",
+      isPageHeading: true,
+      classes: "govuk-fieldset__legend--l"
+    }
+  },
+  items: [
+    {
+      value: "Object preference",
+      text: "Object preference",
+      checked: true if wrong
+    },
+    {
+      value: "Object permanence",
+      text: "Object permanence",
+      checked: true if right
+    },
+    {
+      value: "Object processing",
+      text: "Object processing"
+    },
+    {
+      value: "Object probability",
+      text: "Object probability"
+    }
+  ]
+}) }}
+{% endblock %}
+        
+{% block buttons %}
+  <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="test-1-q1">Previous</a>
+  <a class="govuk-button align-right" data-module="govuk-button" href="test-1-q2-right">Next</a>
+{% endblock %}
