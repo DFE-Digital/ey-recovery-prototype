@@ -14,8 +14,8 @@
 
         {% block heading %}
           <h1 class="govuk-heading-l">Sign in</h1>
-        {% block subheading %}
         {% endblock %}
+        {% block subheading %}
           <p class="govuk-body">Enter your details to access training material.</p>
         {% endblock %}
         {{ govukInput({
@@ -52,8 +52,10 @@
       <div class="govuk-grid-column-one-third-from-desktop">
         <div class="app-sidebar">
           <h2 class="govuk-heading-m">Don't have an account yet?</h2>
+          {% block createAccount %}
           <p class="govuk-body"><a class="govuk-link" href="./registration">Create an account</a> to access training
             material.</p>
+          {% endblock %}
         </div>
       </div>
     </div>
