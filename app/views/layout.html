@@ -67,17 +67,17 @@
     "productName": serviceName,
     navigation: [
     {
-      href: "brain-development/my-training",
+      href: "/brain-development/my-training",
       text: "My learning",
       active: true if (navActive == "job-alert")
     } if sectionActive == "public service",
       {
-        href: "my-account/manage-account",
+        href: "#",
         text: "My account",
         active: true if (navActive == "job-alert")
       } if sectionActive == "public service",
       {
-        href: "#",
+        href: "/home-signed-out",
         text: "Sign out",
         active: true if (navActive == "sign-in")
       } if sectionActive == "public service",

@@ -31,31 +31,38 @@
                         }) %}
 
                         <p class="govuk-body">Your training progress won’t be shared with anyone without your permission. </p>
+                        {{ govukInput({
+                          label: {
+                            text: "Your setting's postcode",
+                            classes: "govuk-input--width-10",
+                            isPageHeading: true
+                          },
+                          classes: "govuk-input--width-10",
+                          hint: {
+                            text: "If you have multiple locations, enter the one where you work most often"
+                          },
+                          id: "width-10",
+                          name: "width-10"
+                        }) }}
 
                         {{ govukInput({
                           label: {
-                            text: "Find your setting using your post code"
-                          },
-                          classes: "govuk-!-width-two-thirds",
-                          id: "first-name",
-                          name: "first-name",
-                          autocomplete: "first-name"
-                        }) }}
-
-                          {{ govukInput({
-                            label: {
-                              text: "Or find your setting’s details using the Ofsted number"
-                            },
+                            text: "Your setting's Ofsted number",
                             classes: "govuk-!-width-two-thirds",
-                            id: "first-name",
-                            name: "first-name",
-                            autocomplete: "first-name"
-                          }) }}
+                            isPageHeading: true
+                          },
+                          classes: "govuk-input--width-10",
+                          hint: {
+                            text: "This might start with EY followed by 6 numbers, or it might be an 8 letter number."
+                          },
+                          id: "event-name",
+                          name: "event-name"
+                        }) }}
 
 
                           {{ govukButton({
                             "text": "Continue",
-                            href: "/sign-up2a"
+                            href: "/brain-development/my-learning-not-started"
                         }) }}
 
                         {% endcall %}
