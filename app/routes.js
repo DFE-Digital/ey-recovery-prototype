@@ -435,4 +435,20 @@ router.post('/assets/views/job_alerts2/create-1', function (req, res) {
     
   })
 
+  //routing for incorrect/correct quiz results
+  router.post('/brain-development/test-result', (req, res) => {
+    // Make a variable and give it the value from 'quiz result value in radio buttons'
+    const quizResult = req.session.data['quiz-result'];
+  
+    // Check whether the variable matches a condition
+    if (quizResult === 'correct') {
+      // Send user to next page
+      res.redirect('/brain-development/test-1-pass');
+    } else {
+      // Send user to ineligible page
+      res.redirect('/brain-development/test-1-fail');
+    }
+  });
+
+
 module.exports = router
