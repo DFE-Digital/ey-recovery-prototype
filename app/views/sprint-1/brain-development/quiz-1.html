@@ -28,49 +28,48 @@ Early Years Foundation
           Check your learning
         </h1>
         <div class="govuk-form-group">
-            <form class="form" action="../quiz-1-answer" method="post">
+          <form class="form" action="/quiz-1-answer" method="post">
 
-              {{ govukRadios({
-                idPrefix: "part-of-brain",
-                name: "part-of-brain",
-                fieldset: {
-                  legend: {
-                    text: "Which part of the brain makes sense of the information that comes from our eyes?",
-                    isPageHeading: true,
-                    classes: "govuk-fieldset__legend--l"
-                  }
+            {{ govukRadios({
+              idPrefix: "part-of-brain",
+              name: "part-of-brain",
+              fieldset: {
+                legend: {
+                  text: "Which part of the brain makes sense of the information that comes from our eyes?",
+                  isPageHeading: true,
+                  classes: "govuk-fieldset__legend--l"
+                }
+              },
+              items: [
+                {
+                  value: "Occipital lobes",
+                  text: "Occipital lobes",
+                  checked: true if right
                 },
-                items: [
-                  {
-                    value: "Occipital lobes",
-                    text: "Occipital lobes",
-                    checked: true if right
-                  },
-                  {
-                    value: "Parietal lobes",
-                    text: "Parietal lobes",
-                    checked: true if wrong
-                  },
-                  {
-                    value: "Cerebellum",
-                    text: "Cerebellum"
-                  },
-                  {
-                    value: "Brain stem",
-                    text: "Brain stem"
-                  }
-                ]
-              }) }}
+                {
+                  value: "Parietal lobes",
+                  text: "Parietal lobes",
+                  checked: true if wrong
+                },
+                {
+                  value: "Cerebellum",
+                  text: "Cerebellum"
+                },
+                {
+                  value: "Brain stem",
+                  text: "Brain stem"
+                }
+              ]
+            }) }}
 
-              {% block notificationBanner %}
-              {% endblock %}
+            {% block notificationBanner %}
+            {% endblock %}
 
-              <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
 
-              <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="brain-parts">Previous</a>
-              <a class="govuk-button align-right" data-module="govuk-button" href="quiz-1-right">Next </a>
-            </form>
-          </div>
+            <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="brain-parts">Previous</a>
+            <button class="govuk-button align-right" data-module="govuk-button">Next</button>
+          </form>
         </div>
       </div>
     </main>
