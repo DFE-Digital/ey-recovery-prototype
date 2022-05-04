@@ -91,10 +91,12 @@
         }) }}
       {% endblock %}
       
-      {{ govukButton({
-        "text": "Continue",
-        href: "./brain-development-start"
-      }) }}
+      {% block callToAction %}
+        {{ govukButton({
+          "text": "Continue",
+          href: "./brain-development-start"
+        }) }}
+      {% endblock %}
 
       {% endcall %}
 
