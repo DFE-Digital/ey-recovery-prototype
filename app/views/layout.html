@@ -67,12 +67,17 @@
     "productName": serviceName,
     navigation: [
     {
+      href: "/home-existing",
+      text: "Home",
+      active: true if (navActive == "job-alert")
+    } if sectionActive == "public service",
+    {
       href: "/brain-development/my-training",
       text: "My learning",
       active: true if (navActive == "job-alert")
     } if sectionActive == "public service",
       {
-        href: "#",
+        href: "my-account/manage-account",
         text: "My account",
         active: true if (navActive == "job-alert")
       } if sectionActive == "public service",
