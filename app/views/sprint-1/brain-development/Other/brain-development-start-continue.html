@@ -1,1 +1,8 @@
-{% extends "../sprint-26-week-2/brain-development-start-continue.html" %}
+{% extends "../../../sprint-26-week-2/brain-development-start-continue.html" %}
+
+{% block callToAction %}
+  {{ govukButton({
+    "text": "Continue topic",
+    href: "../brain-development-start"
+  }) }}
+{% endblock %}
