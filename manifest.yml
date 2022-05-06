@@ -1,9 +1,9 @@
 ---
  applications:
- - name: teaching-vacancies-prototype
+ - name: eye-recovery
    memory: 256M
    buildpacks:
    - nodejs_buildpack
    env:
-     USERNAME: teaching
-     PASSWORD: vacancies
+     USERNAME: early
+     PASSWORD: recovery
