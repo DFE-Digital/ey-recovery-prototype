@@ -69,6 +69,19 @@ Early Years Foundation
         </div>
 
         <div class="govuk-grid-column-two-thirds">
+          <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+            <h2 class="govuk-error-summary__title" id="error-summary-title">
+              There is a problem
+            </h2>
+            <div class="govuk-error-summary__body">
+              <ul class="govuk-list govuk-error-summary__list">
+                <li>
+                  <a href="#filled">You must select an answer</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
           <span class="govuk-caption-l">Page 5 of 11</span>
           <h1 class="govuk-heading-l">
             Check your learning
@@ -78,13 +91,16 @@ Early Years Foundation
        
             <form class="form" action="quiz-1-answer" method="post">
 
-              <div class="govuk-form-group">
+              <div class="govuk-form-group govuk-form-group--error">
                 <fieldset class="govuk-fieldset">
                   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                     <h2 class="govuk-fieldset__heading">
                       Which part of the brain makes sense of the information that comes from our eyes?
                     </h2>
                   </legend>
+                  <p id="where-do-you-live-error" class="govuk-error-message">
+                    <span class="govuk-visually-hidden">Error:</span> Select an answer
+                  </p>
                   <div class="govuk-radios" data-module="govuk-radios">
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="where-do-you-live" name="quiz-answer" type="radio" value="filled">
