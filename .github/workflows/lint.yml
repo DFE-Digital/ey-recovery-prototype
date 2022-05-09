@@ -1,3 +1,5 @@
+# https://djlint.com
+# ------------------------------------------------------------------------------
 ---
 name: lint
 on:
@@ -15,4 +17,5 @@ jobs:
       name: Run linter
       run: |
         pip install djlint
-        djlint . --lint
+        djlint ./app/views --profile=nunjucks --lint
+        djlint ./app/views --profile=nunjucks --check
