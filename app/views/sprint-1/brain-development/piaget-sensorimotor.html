@@ -32,9 +32,13 @@ Early Years Foundation
           Jean Piaget and the sensorimotor stage
         </h1>
 
-        <img src="/public/images/piaget.jpg" width="200" height="300" alt="">
+        {% block image %}
+          <img class="cover-img" src="/public/images/piaget.jpg">
+        {% endblock %}
         </br>
         </br>
+
+        {% block mainContent %}
 
         <p class="govuk-body">Jean Piaget was a Swiss psychologist who carried out research into how children develop.
           Piaget’s research showed that babies' development started with a set of reflexes and travelled through a
@@ -70,6 +74,8 @@ Early Years Foundation
           <li>the promotion of social interaction and peer teaching </li>
           <li>that children need opportunities to test inconsistencies in their thoughts </li>
         </ul>
+
+        {% endblock %}
 
         <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
         <a class="govuk-button govuk-button--secondary" data-module="govuk-button"
