@@ -1,4 +1,4 @@
-{% macro appCardContainer(link, img, title, subtitle, tagContent = '', tagColour = '') %}
+{% macro appCardContainer(link, img, title, subtitle, tagContent = '', tagColour = '', buttonText = '', buttonHref = '#') %}
   <div class="app-image-card">
     <a href={{ link }} class="govuk-body govuk-link govuk-!-font-weight-bold">
       <img src={{ img }} alt="">
@@ -10,6 +10,11 @@
         {% endif %}
         <span class="govuk-hint">{{ title }}</span>
         <h3 class="govuk-heading-s govuk-link">{{ subtitle }}</h3>
+        {% if buttonText != '' %}
+        <a href={{buttonHref}} role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+          {{buttonText}}
+        </a>
+        {% endif %}
       </div>
     </a>
   </div>
