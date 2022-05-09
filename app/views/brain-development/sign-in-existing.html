@@ -42,7 +42,19 @@
 								}
 							}) }}
 
-							<p class="govuk-body"><a href="/registration/forgot-password" class="govuk-link">Forgotten your password?</a></p>
+							<details class="govuk-details" data-module="govuk-details">
+								<summary class="govuk-details__summary">
+								  <span class="govuk-details__summary-text">
+									Problems signing in?
+								  </span>
+								</summary>
+								<div class="govuk-details__text">
+									<p class="govuk-body"><a href="/registration/forgot-password" class="govuk-link">Forgotten your password</a></p>
+									<p class="govuk-body"><a href="/registration/sign-in-errors/different-problem" class="govuk-link">Other problems signing in</a></p>
+								</div>
+							  </details>
+
+							
 
 							{{ govukButton({
 								"text": "Sign in",
