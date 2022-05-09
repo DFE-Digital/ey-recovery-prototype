@@ -9,6 +9,7 @@ Early Years Foundation
 
 {% block main %}
 
+{% block breadcrumbs %}
 <div class="govuk-width-container">
   {{ govukBreadcrumbs({
     items: [
@@ -19,7 +20,7 @@ Early Years Foundation
     ]
   }) }}
 </div>
-
+{% endblock %}
 
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
