@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% from "partials/pagination.html" import pagination %}
 
 {% block pageTitle %}
 Early Years Foundation
@@ -24,7 +25,9 @@ Early Years Foundation
 
       <div class="govuk-grid-column-two-thirds">
 
-        <span class="govuk-caption-l">Topic 2 of 13</span>
+        {% block pagination %}
+          {{ pagination (2,13, "Topic")}}
+        {% endblock %}
         <h1 class="govuk-heading-l">
           The developing brain
         </h1>

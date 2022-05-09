@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% from "partials/pagination.html" import pagination %}
 
 {% block pageTitle %}
 Early Years Foundation
@@ -24,7 +25,9 @@ Early Years Foundation
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-        <span class="govuk-caption-l">Topic 7 of 13</span>
+        {% block pagination %}
+          {{ pagination (7,13, "Topic")}}
+        {% endblock %}
         <h1 class="govuk-heading-l">
           Jean Piaget and the sensorimotor stage
         </h1>
