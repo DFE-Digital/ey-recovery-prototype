@@ -1,4 +1,5 @@
 
+const { Console } = require('console')
 const express = require('express')
 const router = express.Router()
 const path = require('path')
@@ -450,5 +451,21 @@ router.post('/assets/views/job_alerts2/create-1', function (req, res) {
     }
   });
 
+  //routing for quiz 1 validation
+  router.post('/brain-development/quiz-1-answer', (req, res) => {
+    // Make a variable and give it the value from 'quiz result value in radio buttons'
+    var quizAnswer = req.session.data['quiz-answer'];
+
+        // Check whether the variable matches a condition
+    if(quizAnswer === 'filled') {
+      //Radio button is checked
+
+      // Send user to next page
+      res.redirect('/brain-development/quiz-1-right');
+    } else {
+      // Send user to error page
+      res.redirect('/brain-development/quiz-1-error');
+    }
+  });
 
 module.exports = router

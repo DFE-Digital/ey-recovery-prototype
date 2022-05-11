@@ -1,0 +1,47 @@
+
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block main %}
+
+	<div class="govuk-width-container">
+			<main class="govuk-main-wrapper govuk-!-margin-bottom-8">
+
+				<div class="govuk-grid-row">
+
+					<div class="govuk-grid-column-two-thirds-from-desktop">
+
+                        {% from "govuk/components/input/macro.njk" import govukInput %}
+                        {% from "govuk/components/fieldset/macro.njk" import govukFieldset %}
+                        {% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{{ govukBackLink({
+  text: "Back",
+  href: "/registration/check-your-email"
+}) }}
+                        <h1>Resend your confirmation</h1>
+						<p>Enter your email address to resend a confirmation email.</p>
+
+
+						<div class="govuk-form-group">
+							<label class="govuk-label" for="event-name">
+							  Email address
+							</label>
+							<input class="govuk-input" id="event-name" name="event-name" type="text">
+						  </div>
+
+
+						<button class="govuk-button" data-module="govuk-button" >Send email</button> <br>
+						<a class="govuk-body govuk-link" href="">Go back to check your email</a>
+					</div>
+
+
+
+				</div>
+
+			</main>
+	</div>
+{% endblock %}
