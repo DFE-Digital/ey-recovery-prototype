@@ -9,13 +9,13 @@ The potential impact of limited child development knowledge
 {% set primaryNavActive = "service start" %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+  {# beforeContent is reseting default phase banner #}
 {% endblock %}
 
 {% block main %}
 
-<div class="govuk-width-container">
-  {{ govukBreadcrumbs({
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
     items: [
       {
         text: "Understanding child development and the EYFS",
@@ -31,26 +31,11 @@ The potential impact of limited child development knowledge
       }
     ]
   }) }}
-</div>
+  </div>
 
-<div class="govuk-width-container">
-
-
+  <div class="govuk-width-container">
     <main class="govuk-main-wrapper">
-
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-
-
-            </div>
-
-          </div>
-
-        </div>
-
         <div class="govuk-grid-column-two-thirds">
 
           <span class="govuk-caption-l">Page 7 of 21</span>
@@ -84,35 +69,29 @@ The potential impact of limited child development knowledge
 
             <p class="govuk-body">Do you have a child or children who are disengaged or disruptive? </p>
 
-              <p class="govuk-body">What strategies have you tried so far and have they made a difference?</p>
+            <p class="govuk-body">What strategies have you tried so far and have they made a difference?</p>
 
-              <p class="govuk-body">Have you: </p>
+            <p class="govuk-body">Have you: </p>
 
-              <ul class="govuk-list govuk-list--bullet">
-                <li>considered the child holistically?</li>
-                <li>looked at each area of development? </li>
-                <li>evaluated the environment? </li>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>considered the child holistically?</li>
+              <li>looked at each area of development? </li>
+              <li>evaluated the environment? </li>
 
-              </ul>
+            </ul>
 
-              <p class="govuk-body">Children can quickly become labelled as behaving in a certain way and this becomes their accepted behaviour. Behaviour always has a cause, but have you been able to work out the true cause?</p>
+            <p class="govuk-body">Children can quickly become labelled as behaving in a certain way and this becomes their accepted behaviour. Behaviour always has a cause, but have you been able to work out the true cause?</p>
 
-              <p class="govuk-body">How could further knowledge regarding child development support this? </p>
+            <p class="govuk-body">How could further knowledge regarding child development support this? </p>
 
-              <p class="govuk-body">What do your colleagues think?</p>
+            <p class="govuk-body">What do your colleagues think?</p>
 
           </div>
 
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
 
-
-
-            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
-
-            <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-1-3">Previous</a>
-            <a class="govuk-button align-right" data-module="govuk-button" href="1-1-1-5">Next</a>
-
-
-
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-1-3">Previous</a>
+          <a class="govuk-button align-right" data-module="govuk-button" href="1-1-1-5">Next</a>
 
         </div>
       </div>
@@ -120,9 +99,5 @@ The potential impact of limited child development knowledge
     </main>
   </div>
 
-  {{super()}}
-{% endblock %}
-
-{% block content %}
-
+  {{ super() }}
 {% endblock %}

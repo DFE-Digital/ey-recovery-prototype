@@ -9,13 +9,13 @@ How understanding child development benefits the wider support network
 {% set primaryNavActive = "service start" %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+  {# beforeContent is reseting default phase banner #}
 {% endblock %}
 
 {% block main %}
 
-<div class="govuk-width-container">
-  {{ govukBreadcrumbs({
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
     items: [
       {
         text: "Understanding child development and the EYFS",
@@ -31,26 +31,11 @@ How understanding child development benefits the wider support network
       }
     ]
   }) }}
-</div>
+  </div>
 
-<div class="govuk-width-container">
-
-
+  <div class="govuk-width-container">
     <main class="govuk-main-wrapper">
-
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-
-
-            </div>
-
-          </div>
-
-        </div>
-
         <div class="govuk-grid-column-two-thirds">
 
           <span class="govuk-caption-l">Page 6 of 21</span>
@@ -63,7 +48,7 @@ How understanding child development benefits the wider support network
           <h2 class="govuk-heading-m">Promoting positive relationships with parents</h2>
 
           <p class="govuk-body">The foundations of parent partnerships are built on trust. Demonstrating your knowledge of child development will give parents confidence in your ability to care for their child. Confident parents will be keen to share information and strategies with you. This will benefit both you and the child.</p>
-          
+
           <p class="govuk-body">It is crucial that you are able to have honest dialogue with parents to ensure they fully appreciate their child's needs. This includes when additional support is needed and how support can be given at home to enable their child to flourish. </p>
 
           <img src="/public/images/home/reading-living-room.jpg" alt="">
@@ -105,30 +90,17 @@ How understanding child development benefits the wider support network
                 <li>does the activity achieve its intended purpose?</li>
                 <li>how could it be improved?</li>
               </ul>
-            
             </p>
           </div>
 
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
 
-
-
-            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
-
-            <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-1-2">Previous</a>
-            <a class="govuk-button align-right" data-module="govuk-button" href="1-1-1-4">Next</a>
-
-
-
-
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-1-2">Previous</a>
+          <a class="govuk-button align-right" data-module="govuk-button" href="1-1-1-4">Next</a>
         </div>
       </div>
-
     </main>
   </div>
 
-  {{super()}}
-{% endblock %}
-
-{% block content %}
-
+  {{ super() }}
 {% endblock %}
