@@ -1,9 +1,9 @@
 ---
  applications:
- - name: eye-recovery
+ - name: child-development-training-prototype
    memory: 256M
    buildpacks:
    - nodejs_buildpack
    env:
-     USERNAME: early
+     USERNAME: eye
      PASSWORD: recovery
