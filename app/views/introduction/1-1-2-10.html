@@ -9,13 +9,13 @@ Being a role model for communication
 {% set primaryNavActive = "service start" %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+  {# beforeContent is reseting default phase banner #}
 {% endblock %}
 
 {% block main %}
 
-<div class="govuk-width-container">
-  {{ govukBreadcrumbs({
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
     items: [
       {
         text: "Understanding child development and the EYFS",
@@ -31,25 +31,13 @@ Being a role model for communication
       }
     ]
   }) }}
-</div>
+  </div>
 
-<div class="govuk-width-container">
-
+  <div class="govuk-width-container">
 
     <main class="govuk-main-wrapper">
 
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-
-
-            </div>
-
-          </div>
-
-        </div>
 
         <div class="govuk-grid-column-two-thirds">
 
@@ -83,8 +71,6 @@ Being a role model for communication
 
           <p class="govuk-body">Promoting positive handling and use of resources such as books and including them in the daily routine will help children to understand their importance and encourage further independent exploration.  </p>
 
-
-
           <div class="govuk-inset-text">
             <h2 class="govuk-heading-m">Practitioner prompt</h2>
 
@@ -99,14 +85,10 @@ Being a role model for communication
 
           <p class="govuk-body">The communication and language module of this training (coming soon) will consider the stages of development, the practitioner’s role and effective practice in further detail.  </p>
 
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
 
-            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
-
-            <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-2-9">Previous</a>
-            <a class="govuk-button align-right" data-module="govuk-button" href="1-2">Next</a>
-
-
-
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-2-9">Previous</a>
+          <a class="govuk-button align-right" data-module="govuk-button" href="1-2">Next</a>
 
         </div>
       </div>
@@ -114,9 +96,6 @@ Being a role model for communication
     </main>
   </div>
 
-  {{super()}}
+  {{ super() }}
 {% endblock %}
 
-{% block content %}
-
-{% endblock %}

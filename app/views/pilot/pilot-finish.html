@@ -8,13 +8,13 @@ You have now finished this module
 {% set primaryNavActive = "service start" %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+  {# beforeContent is reseting default phase banner #}
 {% endblock %}
 
 {% block main %}
 
-<div class="govuk-width-container">
-  {{ govukBreadcrumbs({
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
     items: [
       {
         text: "Understanding child development and the EYFS",
@@ -22,25 +22,13 @@ You have now finished this module
       }
     ]
   }) }}
-</div>
+  </div>
 
-<div class="govuk-width-container">
-
+  <div class="govuk-width-container">
 
     <main class="govuk-main-wrapper">
 
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-
-
-            </div>
-
-          </div>
-
-        </div>
 
         <div class="govuk-grid-column-two-thirds">
 
@@ -53,28 +41,17 @@ You have now finished this module
           <h2 class="govuk-heading-m">
             Help us improve this training
           </h2>
-        
-          
-          <p class="govuk-body">This module is the first part of a child development training course that the Department for Education is creating for early years practitioners. 
+
+          <p class="govuk-body">This module is the first part of a child development training course that the Department for Education is creating for early years practitioners.</p>
 
           <p class="govuk-body">As one of the first practitioners to take this training, we would really appreciate your feedback, so we can make it better for everyone. Please fill in our feedback form to tell us what you think. </p>
 
           <a class="govuk-button" data-module="govuk-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfd-KUz1kUIXfxbymDy4v-Tpyr6ohqc4C8z_Mkpw0WyqpTf7g/viewform?usp=sf_link">Tell us what you think</a>
 
-
-
-
-
-
         </div>
       </div>
-
     </main>
   </div>
 
-  {{super()}}
-{% endblock %}
-
-{% block content %}
-
+  {{ super() }}
 {% endblock %}
