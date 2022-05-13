@@ -9,12 +9,13 @@ Module overview: Understanding child development and the EYFS
 {% set primaryNavActive = "service start" %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+  {# beforeContent is reseting default phase banner #}
 {% endblock %}
 
 {% block main %}
 
-</br> <!-- START MAST -->
+</br>
+<!-- START MAST -->
 <div class="full-BGstrip" style="background-color:	#f3f2f1;">
   <div class="govuk-width-container">
     <main class="govuk-main-wrapper">
@@ -26,21 +27,18 @@ Module overview: Understanding child development and the EYFS
           <p class="govuk-caption-m">This module has 2 topics. You must complete the topics in the order shown. You must complete a topic before you can start the next one.  </p>
           <p class="govuk-caption-m">As an early years practitioner, understanding how children develop will enable you to meet the needs of all the children in your care. This module will help you to reflect on why knowledge of child development is important and help you to effectively implement the EYFS. It also considers the impact of the coronavirus (COVID-19) pandemic on children.</p>
 
-
           {{ govukButton({
           "text": "Start",
           href: " 1"
           }) }}
         </div>
-    </main>
+      </main>
+    </div>
   </div>
-</div>
-<!-- END BESPOKE MAST -->
+  <!-- END BESPOKE MAST -->
 
-<div class="govuk-width-container">
-  <div class="govuk-grid-row">
-    </br>
-
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row"></br>
 
     {{govukTag({
     text: "1 hour 30 minutes for this module",
@@ -134,10 +132,7 @@ Module overview: Understanding child development and the EYFS
   </div>
 </div>
 
-  {# pulls in default gov uk template #}
-  {{super()}}
+{# pulls in default gov uk template #}
+{{ super() }}
 {% endblock %}
 
-{% block content %}
-
-{% endblock %}

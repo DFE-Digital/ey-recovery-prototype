@@ -9,13 +9,13 @@ Doing the best for each child in your care
 {% set primaryNavActive = "service start" %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+  {# beforeContent is reseting default phase banner #}
 {% endblock %}
 
 {% block main %}
 
-<div class="govuk-width-container">
-  {{ govukBreadcrumbs({
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
     items: [
       {
         text: "Understanding child development and the EYFS",
@@ -31,25 +31,13 @@ Doing the best for each child in your care
       }
     ]
   }) }}
-</div>
+  </div>
 
-<div class="govuk-width-container">
-
+  <div class="govuk-width-container">
 
     <main class="govuk-main-wrapper">
 
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-
-
-            </div>
-
-          </div>
-
-        </div>
 
         <div class="govuk-grid-column-two-thirds">
 
@@ -58,37 +46,32 @@ Doing the best for each child in your care
             Doing the best for each child in your care
           </h1>
 
-
           <p class="govuk-body">To support children to reach their potential you will need to have high expectations for each and every child in your care. You will recognise that every child deserves to have an equal chance at success.  </p>
 
           <p class="govuk-body">“Children who may struggle in their early learning are not ‘low ability’. We do not know what their potential might be. Every child can make progress with the right support.” (Development Matters, 2021). </p>
 
-          <p class="govuk-body">Whilst it is essential that we acknowledge impacting factors such as difficult life experiences, an identified SEND or being from a disadvantaged background, these factors should not be seen as barriers to success but as an opportunity to offer tailored support. </p>       
-          
+          <p class="govuk-body">Whilst it is essential that we acknowledge impacting factors such as difficult life experiences, an identified SEND or being from a disadvantaged background, these factors should not be seen as barriers to success but as an opportunity to offer tailored support. </p>
 
           <p class="govuk-body">This topic includes:</p>
 
           <ul class="govuk-list govuk-list--bullet">
-          <li>acknowledging children’s individual strengths </li>
-          <li>empowering children</li>
-          <li>supporting individual potential</li>
-          <li>successful enabling environments</li>
-          <li>a balanced approach to learning:
+            <li>acknowledging children’s individual strengths </li>
+            <li>empowering children</li>
+            <li>supporting individual potential</li>
+            <li>successful enabling environments</li>
+            <li>a balanced approach to learning:
 
             <ul class="govuk-list govuk-list--bullet">
-              <li>child led play</li>
-              <li>adult led activities</li>
-            </ul>
-          
+                <li>child led play</li>
+                <li>adult led activities</li>
+              </ul>
+
           </ul>
 
-            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
 
-            <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-2">Previous</a>
-            <a class="govuk-button align-right" data-module="govuk-button" href="1-2-1-1">Next</a>
-
-
-
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-2">Previous</a>
+          <a class="govuk-button align-right" data-module="govuk-button" href="1-2-1-1">Next</a>
 
         </div>
       </div>
@@ -96,9 +79,6 @@ Doing the best for each child in your care
     </main>
   </div>
 
-  {{super()}}
+  {{ super() }}
 {% endblock %}
 
-{% block content %}
-
-{% endblock %}

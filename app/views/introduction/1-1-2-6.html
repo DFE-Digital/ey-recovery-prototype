@@ -9,13 +9,13 @@ The impact of the COVID-19 pandemic on knowledge and understanding of the world
 {% set primaryNavActive = "service start" %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+  {# beforeContent is reseting default phase banner #}
 {% endblock %}
 
 {% block main %}
 
-<div class="govuk-width-container">
-  {{ govukBreadcrumbs({
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
     items: [
       {
         text: "Understanding child development and the EYFS",
@@ -31,25 +31,13 @@ The impact of the COVID-19 pandemic on knowledge and understanding of the world
       }
     ]
   }) }}
-</div>
+  </div>
 
-<div class="govuk-width-container">
-
+  <div class="govuk-width-container">
 
     <main class="govuk-main-wrapper">
 
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-
-
-            </div>
-
-          </div>
-
-        </div>
 
         <div class="govuk-grid-column-two-thirds">
 
@@ -72,14 +60,10 @@ The impact of the COVID-19 pandemic on knowledge and understanding of the world
 
           <p class="govuk-body">Some children may have had limited opportunities to participate in day trips and travel, and so less chance to experience new environments. They may have spent longer periods of time staying inside their home, possibly with use of a garden.  </p>
 
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
 
-            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
-
-            <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-2-5">Previous</a>
-            <a class="govuk-button align-right" data-module="govuk-button" href="1-1-2-7">Next</a>
-
-
-
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-2-5">Previous</a>
+          <a class="govuk-button align-right" data-module="govuk-button" href="1-1-2-7">Next</a>
 
         </div>
       </div>
@@ -87,9 +71,5 @@ The impact of the COVID-19 pandemic on knowledge and understanding of the world
     </main>
   </div>
 
-  {{super()}}
-{% endblock %}
-
-{% block content %}
-
+  {{ super() }}
 {% endblock %}
