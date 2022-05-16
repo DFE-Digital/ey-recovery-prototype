@@ -13,97 +13,32 @@ Module overview: Understanding child development and the EYFS
 {% endblock %}
 
 {% block main %}
-  <br>
   <!-- START MAST -->
-  <div class="full-BGstrip background-color-grey">
-    <div class="govuk-width-container">
-      <main class="govuk-main-wrapper">
-
-        <!-- START INTRO -->
-        <div class="govuk-grid-row">
-          <div class="govuk-width-container">
-            <h1 class="govuk-heading-l ">Understanding child development and the EYFS</h1>
-            <p class="govuk-caption-m">This module has 2 sections. You must complete the sections and the topics in those sections in the order shown. 
-              You must complete a section before you can start the next one.</p>
-            <p class="govuk-caption-m">As an early years practitioner, understanding how children develop will enable you to meet the needs of all the 
-              children in your care. This module will help you to reflect on why knowledge of child development is important and help you to effectively 
-              implement the EYFS. It also considers the impact of the coronavirus (COVID-19) pandemic on children.</p>
-            {{ govukButton({
-              "text": "Start",
-              href: " 1"
-            }) }}
-
-          </div>
-        </div>
-      </main>
-    </div>
-  </div>
-
   <div class="govuk-width-container">
-    <main class="govuk-main-wrapper">
+    <main class="govuk-main-wrapper govuk-!-margin-top-4">
+      <div class="govuk-grid-row background-color-grey govuk-!-padding-top-7 govuk-!-padding-bottom-7 govuk-!-margin-bottom-7">
+        <div class="govuk-!-padding-left-7 govuk-!-padding-right-7">
+          <h1 class="govuk-heading-l ">Understanding child development and the EYFS</h1>
+          <p class="govuk-caption-m">This module has 2 sections. You must complete the sections and the topics in those sections in the order shown. 
+            You must complete a section before you can start the next one.</p>
+          <p class="govuk-caption-m">As an early years practitioner, understanding how children develop will enable you to meet the needs of all the 
+            children in your care. This module will help you to reflect on why knowledge of child development is important and help you to effectively 
+            implement the EYFS. It also considers the impact of the coronavirus (COVID-19) pandemic on children.</p>
+          {{ govukButton({
+            "text": "Start",
+            href: " 1"
+          }) }}
+        </div>
+      </div>
+
       <!-- END BESPOKE MAST -->
       <div class="govuk-grid-row">
         {{ govukTag({
           text: "1 hour 30 minutes for this module",
-          classes: "govuk-tag--green"
+          classes: "govuk-tag--green govuk-!-margin-bottom-4"
         }) }}
-        <br>
-        <br>
 
-        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-with-summary-sections">
-          <div class="govuk-accordion__section ">
-            <div class="govuk-accordion__section-header">
-              <h2 class="govuk-accordion__section-heading">
-                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-1">
-                  An informed approach to care and education
-                </span>
-              </h2>
-              <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-1">
-                This first section of the module covers the importance of understanding child development and factors affecting how children develop, including the impact of the COVID-19 pandemic.
-              </div>
-            </div>
-            <div id="accordion-with-summary-sections-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-1">
-              <ul class="govuk-list">
-                <li>
-                  <a class="govuk-link" href="1-1.html">Section introduction</a>
-                </li>
-                <li>
-                  <a class="govuk-link" href="1-1-1.html">The importance of understanding child development</a>
-                </li>
-                <li>
-                  <a class="govuk-link" href="1-1-2.html">Factors affecting children’s development</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="govuk-accordion__section ">
-            <div class="govuk-accordion__section-header">
-              <h2 class="govuk-accordion__section-heading">
-                <span class="govuk-accordion__section-button" id="accordion-with-summary-sections-heading-2">
-                  A positive approach to care and education
-                </span>
-              </h2>
-              <div class="govuk-accordion__section-summary govuk-body" id="accordion-with-summary-sections-summary-2">
-                An informed approach to care and education must be completed before you begin this section
-              </div>
-            </div>
-            <div id="accordion-with-summary-sections-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-with-summary-sections-heading-2">
-              <ul class="govuk-list">
-                <li>
-                  <a class="govuk-link" href="1-2">Section introduction</a>
-                </li>
-                <li>
-                  <a class="govuk-link" href="1-2-1">Doing the best for each child in your care</a>
-                </li>
-                <li>
-                  <a class="govuk-link" href="1-2-2">Effective implementation of the EYFS</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {# {{ govukAccordion({
+        {{ govukAccordion({
           id: "accordion-with-summary-sections",
           items: [
             {
@@ -151,7 +86,7 @@ Module overview: Understanding child development and the EYFS
               }
             }
           ]
-        }) }} #}
+        }) }}
       </div>
     </main>
   </div>
