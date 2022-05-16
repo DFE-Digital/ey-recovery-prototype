@@ -60,20 +60,6 @@ processPage(baseUrl + 'introduction/recap');
 processPage(baseUrl + 'pilot/pilot-finish');
 processPage(baseUrl + 'pilot/pilot-start');
 
-/// I'm not sure any of these pages still exist...
-// processPage(baseUrl + 'development/brain-development-overview-existing');
-// processPage(baseUrl + 'module-intro');
-// processPage(baseUrl + 'submodule-intro');
-// processPage(baseUrl + 'topic-intro');
-// processPage(baseUrl + 'brain-parts');
-// processPage(baseUrl + 'quiz-1');
-// processPage(baseUrl + 'quiz-1-right');
-// processPage(baseUrl + 'development-birth-two');
-// processPage(baseUrl + 'piaget-sensorimotor');
-// processPage(baseUrl + 'piaget-current-research');
-// processPage(baseUrl + 'relationships-emotions');
-// processPage(baseUrl + 'recap');
-// processPage(baseUrl + 'test-intro');
 
 // process page for accessibility issues. Takes a URL of a page.
 function processPage(url)
