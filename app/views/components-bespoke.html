@@ -1,0 +1,45 @@
+
+{% extends "layout.html" %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block main %}
+
+	<div class="govuk-width-container">
+			<main class="govuk-main-wrapper govuk-!-margin-bottom-8">
+
+				<div class="govuk-grid-row">
+
+					<div class="govuk-grid-column-two-thirds-from-desktop">
+
+                        {% from "govuk/components/input/macro.njk" import govukInput %}
+                        {% from "govuk/components/fieldset/macro.njk" import govukFieldset %}
+                        {% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+
+{{ govukBackLink({
+  text: "Back",
+  href: "sign-in"
+}) }}
+                        <h1>Bespoke components for EYFS</h1>
+						<p>Components unique to EYFS training courses</p>
+						<h2>Practioner prompt</h2>
+
+						<div class="govuk-inset-text prompt govuk-!-padding-bottom-6">
+							<h3>Practioner prompt</h3>
+							<p>Do you do this in your setting?</p>
+						</div>
+
+
+
+
+					</div>
+
+
+
+				</div>
+
+			</main>
+	</div>
+{% endblock %}
