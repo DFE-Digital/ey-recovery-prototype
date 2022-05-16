@@ -5,33 +5,17 @@ Module overview: Understanding child development and the EYFS
 {% endblock %}
 
 {% set bodyClasses = "app-home-alt" %}
-{% set sectionActive = "public service" %}
+
 {% set primaryNavActive = "service start" %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+  {# beforeContent is reseting default phase banner #}
 {% endblock %}
 
 {% block main %}
 
-<div class="govuk-width-container">
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Understanding child development and the EYFS</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="#">Module start</a>
-      </li>
-    </ol>
-  </div>
-</div>
-
-
-</br> <!-- START MAST -->
+</br>
+<!-- START MAST -->
 <div class="full-BGstrip" style="background-color:	#f3f2f1;">
   <div class="govuk-width-container">
     <main class="govuk-main-wrapper">
@@ -43,27 +27,23 @@ Module overview: Understanding child development and the EYFS
           <p class="govuk-caption-m">This module has 2 sections. You must complete the sections and the topics in those sections in the order shown. You must complete a section before you can start the next one.  </p>
           <p class="govuk-caption-m">As an early years practitioner, understanding how children develop will enable you to meet the needs of all the children in your care. This module will help you to reflect on why knowledge of child development is important and help you to effectively implement the EYFS. It also considers the impact of the coronavirus (COVID-19) pandemic on children.</p>
 
-
           {{ govukButton({
-          "text": "Start",
-          href: " 1"
+            "text": "Start",
+            href: " 1"
           }) }}
         </div>
-    </main>
+      </main>
+    </div>
   </div>
-</div>
-<!-- END BESPOKE MAST -->
+  <!-- END BESPOKE MAST -->
 
-<div class="govuk-width-container">
-  <div class="govuk-grid-row">
-    </br>
-
-
-    {{govukTag({
-    text: "1 hour 30 minutes for this module",
-    classes: "govuk-tag--green"
-    })}}
-
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row"></br>
+      {{ govukTag({
+        text: "1 hour 30 minutes for this module",
+        classes: "govuk-tag--green"
+      }) }}
+    </div>
   </div>
 </div>
 
@@ -77,50 +57,41 @@ Module overview: Understanding child development and the EYFS
             heading: {
               html:
               '<ul class="govuk-list">
-                  <li>
-                    <h2 class="govuk-heading-m">An informed approach to care and education</h2>
-
-
-                  </li>
-
+                <li>
+                  <h2 class="govuk-heading-m">An informed approach to care and education</h2>
+                </li>
               </ul>'
             },
             summary: {
               html:
               '<ul class="govuk-list">
-                  <li>
-                    <p class="govuk-body">This first section of the module covers the importance of understanding child development and factors affecting how children develop, including the impact of the COVID-19 pandemic.  </p>
+                <li>
+                  <p class="govuk-body">This first section of the module covers the importance of understanding child development and factors affecting how children develop, including the impact of the COVID-19 pandemic.</p>
+                </li>
               </ul>'
-
             },
             content: {
               html:
               '<ul class="govuk-list">
                 <li>
-                  <a class="govuk-link" href="1-1.html">Section introduction </a>
-
+                  <a class="govuk-link" href="1-1.html">Section introduction</a>
                 </li>
-                  <li>
-                    <a class="govuk-link" href="1-1-1.html">The importance of understanding child development </a>
-
-                  <li>
-                    <a class="govuk-link" href="1-1-2.html">Factors affecting children’s development  </a>
-
-                  </li>
-
-
-
+                <li>
+                  <a class="govuk-link" href="1-1-1.html">The importance of understanding child development</a>
+                </li>
+                <li>
+                  <a class="govuk-link" href="1-1-2.html">Factors affecting children’s development</a>
+                </li>
               </ul>'
             }
           },
-              {
+          {
             heading: {
               html:
               '<ul class="govuk-list">
-                  <li>
-                    <h2 class="govuk-heading-m">A positive approach to care and education</h2>
-                  </li>
-
+                <li>
+                  <h2 class="govuk-heading-m">A positive approach to care and education</h2>
+                </li>
               </ul>'
 
             },
@@ -133,28 +104,21 @@ Module overview: Understanding child development and the EYFS
                 <li>
                   <a class="govuk-link" href="1-2">Section introduction</a>
                 </li>
-
                 <li>
-                    <a class="govuk-link" href="1-2-1">Doing the best for each child in your care</a>
-                  </li>
-                  <li>
-                    <a class="govuk-link" href="1-2-2">Effective implementation of the EYFS</a>
-
-                  </li>
+                  <a class="govuk-link" href="1-2-1">Doing the best for each child in your care</a>
+                </li>
+                <li>
+                  <a class="govuk-link" href="1-2-2">Effective implementation of the EYFS</a>
+                </li>
               </ul>'
             }
           }
         ]
       }) }}
-
     </div>
-  </div>
+  </main>
 </div>
 
-  {# pulls in default gov uk template #}
-  {{super()}}
-{% endblock %}
-
-{% block content %}
-
+{# pulls in default gov uk template #}
+{{ super() }}
 {% endblock %}

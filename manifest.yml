@@ -1,9 +1,9 @@
 ---
  applications:
- - name: teaching-vacancies-prototype
+ - name: child-development-training-prototype
    memory: 256M
    buildpacks:
    - nodejs_buildpack
    env:
-     USERNAME: teaching
-     PASSWORD: vacancies
+     USERNAME: eye
+     PASSWORD: recovery

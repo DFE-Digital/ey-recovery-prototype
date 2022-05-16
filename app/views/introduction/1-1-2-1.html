@@ -5,17 +5,17 @@ Nature versus nurture
 {% endblock %}
 
 {% set bodyClasses = "app-home-alt" %}
-{% set sectionActive = "public service" %}
+
 {% set primaryNavActive = "service start" %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+  {# beforeContent is reseting default phase banner #}
 {% endblock %}
 
 {% block main %}
 
-<div class="govuk-width-container">
-  {{ govukBreadcrumbs({
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
     items: [
       {
         text: "Understanding child development and the EYFS",
@@ -31,25 +31,13 @@ Nature versus nurture
       }
     ]
   }) }}
-</div>
+  </div>
 
-<div class="govuk-width-container">
-
+  <div class="govuk-width-container">
 
     <main class="govuk-main-wrapper">
 
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-
-
-            </div>
-
-          </div>
-
-        </div>
 
         <div class="govuk-grid-column-two-thirds">
 
@@ -65,43 +53,36 @@ Nature versus nurture
           <p class="govuk-body">The debate raises questions including: </p>
 
           <ul class="govuk-list govuk-list--bullet">
-          <li>how do we become the person we are? </li>
-          <li>are we born pre programmed to develop in a certain way despite environmental influences? </li>
-          <li>to what extent will our experiences and opportunities shape us? </li>
+            <li>how do we become the person we are? </li>
+            <li>are we born pre programmed to develop in a certain way despite environmental influences? </li>
+            <li>to what extent will our experiences and opportunities shape us? </li>
           </ul>
 
           <p class="govuk-body">The children in your care will experience a broad range of influences that could potentially shape their learning and development. Some examples could include: </p>
 
           <ul class="govuk-list govuk-list--bullet">
-          <li>adverse experiences including violence and abuse  </li>
-          <li>physical factors including housing conditions  </li>
-          <li>financial factors  - determining access to resources, activities and experiences   </li>
-          <li>exposure and access to physical activity, adequate sleep and a healthy diet   </li>
-          <li>family beliefs and culture  </li>
-          <li>exposure to social interaction and communication   </li>
-          <li>specialised knowledge - for example many children will know about dinosaurs because their parents or carers have shared this with them  </li>
-          <li>having English as a second language  </li>
-          <li>medical conditions or illnesses resulting in prolonged periods of missed learning   </li>
-          <li>the impact of stereotypical views and discrimination   </li>
-          <li>the impact of the coronavirus (COVID-19) pandemic  </li>
+            <li>adverse experiences including violence and abuse  </li>
+            <li>physical factors including housing conditions  </li>
+            <li>financial factors  - determining access to resources, activities and experiences   </li>
+            <li>exposure and access to physical activity, adequate sleep and a healthy diet   </li>
+            <li>family beliefs and culture  </li>
+            <li>exposure to social interaction and communication   </li>
+            <li>specialised knowledge - for example many children will know about dinosaurs because their parents or carers have shared this with them  </li>
+            <li>having English as a second language  </li>
+            <li>medical conditions or illnesses resulting in prolonged periods of missed learning   </li>
+            <li>the impact of stereotypical views and discrimination   </li>
+            <li>the impact of the coronavirus (COVID-19) pandemic  </li>
 
           </ul>
-
 
           <p class="govuk-body">Your role is to ensure that any potential influences don’t become barriers and to ensure that every child has access to all learning and development opportunities. </p>
 
           <p class="govuk-body">A robust understanding of children’s expected development will further support you to ensure that the choices you make as a practitioner and the quality of the environment that children experience will support children to progress and succeed. </p>
 
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
 
-
-
-            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
-
-            <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-2">Previous</a>
-            <a class="govuk-button align-right" data-module="govuk-button" href="1-1-2-2">Next </a>
-
-
-
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-2">Previous</a>
+          <a class="govuk-button align-right" data-module="govuk-button" href="1-1-2-2">Next</a>
 
         </div>
       </div>
@@ -109,9 +90,5 @@ Nature versus nurture
     </main>
   </div>
 
-  {{super()}}
-{% endblock %}
-
-{% block content %}
-
+  {{ super() }}
 {% endblock %}

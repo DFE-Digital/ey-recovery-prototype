@@ -5,17 +5,17 @@ How understanding child development benefits the child
 {% endblock %}
 
 {% set bodyClasses = "app-home-alt" %}
-{% set sectionActive = "public service" %}
+
 {% set primaryNavActive = "service start" %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+  {# beforeContent is reseting default phase banner #}
 {% endblock %}
 
 {% block main %}
 
-<div class="govuk-width-container">
-  {{ govukBreadcrumbs({
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
     items: [
       {
         text: "Understanding child development and the EYFS",
@@ -31,26 +31,11 @@ How understanding child development benefits the child
       }
     ]
   }) }}
-</div>
+  </div>
 
-<div class="govuk-width-container">
-
-
+  <div class="govuk-width-container">
     <main class="govuk-main-wrapper">
-
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-
-
-            </div>
-
-          </div>
-
-        </div>
-
         <div class="govuk-grid-column-two-thirds">
 
           <span class="govuk-caption-l">Page 4 of 21</span>
@@ -71,10 +56,10 @@ How understanding child development benefits the child
           <p class="govuk-body">When you provide an enabling environment, children will experience:</p>
 
           <ul class="govuk-list govuk-list--bullet">
-          <li>problem solving opportunities </li>
-          <li>appropriate challenge</li>
-          <li>managed risk</li>
-          <li>opportunities to learn, rehearse and then remember new knowledge and skills</li>
+            <li>problem solving opportunities </li>
+            <li>appropriate challenge</li>
+            <li>managed risk</li>
+            <li>opportunities to learn, rehearse and then remember new knowledge and skills</li>
           </ul>
 
           <p class="govuk-body">This will help them to develop their resilience. Resilient children will approach activities and experiences with high self-efficacy and a strong “I can” attitude. Their exploration will help them to develop their knowledge and skills.</p>
@@ -88,10 +73,10 @@ How understanding child development benefits the child
           <p class="govuk-body">Early help can successfully:</p>
 
           <ul class="govuk-list govuk-list--bullet">
-          <li>minimise and remove the potential risk factors preventing children from achieving their full potential </li>
-          <li>reduce opportunities for children to become disengaged, isolated or withdrawn</li>
-          <li>reduce the time needed for children to become secure in their understanding and development</li>
-          <li>improve outcomes for children with effective integration of specialist support where appropriate</li>
+            <li>minimise and remove the potential risk factors preventing children from achieving their full potential </li>
+            <li>reduce opportunities for children to become disengaged, isolated or withdrawn</li>
+            <li>reduce the time needed for children to become secure in their understanding and development</li>
+            <li>improve outcomes for children with effective integration of specialist support where appropriate</li>
           </ul>
 
           <h2 class="govuk-heading-m">
@@ -114,27 +99,14 @@ How understanding child development benefits the child
             What strategies are put in place as a result?</p>
           </div>
 
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
 
-
-
-
-            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
-
-            <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-1">Previous</a>
-            <a class="govuk-button align-right" data-module="govuk-button" href="1-1-1-2">Next</a>
-
-
-
-
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-1">Previous</a>
+          <a class="govuk-button align-right" data-module="govuk-button" href="1-1-1-2">Next</a>
         </div>
       </div>
-
     </main>
   </div>
 
-  {{super()}}
-{% endblock %}
-
-{% block content %}
-
+  {{ super() }}
 {% endblock %}

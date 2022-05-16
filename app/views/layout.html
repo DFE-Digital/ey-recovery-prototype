@@ -80,16 +80,7 @@
         href: "/home-signed-out",
         text: "Sign out",
         active: true if (navActive == "sign-in")
-      } if sectionActive == "public service",
-      {
-        href: "#",
-        text: "My account",
-        active: true if (navActive == "my-acccount")
-      } if sectionActive == "hiring staff",
-      {
-        href: "#",
-        text: "Sign out"      
-      } if sectionActive == "hiring staff"
+      } if sectionActive == "public service"
     ]
   }) }}
 
@@ -98,7 +89,7 @@
       tag: {
         text: "prototype"
       },
-      html: 'This is a new service - <a class="govuk-link" href="https://forms.office.com/Pages/ResponsePage.aspx?id=yXfS-grGoU2187O4s0qC-aiKGDnipfVEqxoNQuHjBbtUQVJGRTI1VFJNRDlYM0xaU1lNR1hPRUxGMiQlQCN0PWcu">your feedback</a> will help us to improve it.'
+      html: 'This is a new service - <a class="govuk-link" href="https://forms.office.com/Pages/ResponsePage.aspx?id=yXfS-grGoU2187O4s0qC-aiKGDnipfVEqxoNQuHjBbtUQVJGRTI1VFJNRDlYM0xaU1lNR1hPRUxGMiQlQCN0PWcu" target="_blank">your feedback</a> will help us to improve it.'
     }) }}
   </div>
 

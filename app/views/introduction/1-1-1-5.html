@@ -5,17 +5,17 @@ How improved child development knowledge supports outstanding practice: scaffold
 {% endblock %}
 
 {% set bodyClasses = "app-home-alt" %}
-{% set sectionActive = "public service" %}
+
 {% set primaryNavActive = "service start" %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+  {# beforeContent is reseting default phase banner #}
 {% endblock %}
 
 {% block main %}
 
-<div class="govuk-width-container">
-  {{ govukBreadcrumbs({
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
     items: [
       {
         text: "Understanding child development and the EYFS",
@@ -31,26 +31,11 @@ How improved child development knowledge supports outstanding practice: scaffold
       }
     ]
   }) }}
-</div>
+  </div>
 
-<div class="govuk-width-container">
-
-
+  <div class="govuk-width-container">
     <main class="govuk-main-wrapper">
-
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-
-
-            </div>
-
-          </div>
-
-        </div>
-
         <div class="govuk-grid-column-two-thirds">
 
           <span class="govuk-caption-l">Page 8 of 21</span>
@@ -78,43 +63,30 @@ How improved child development knowledge supports outstanding practice: scaffold
 
           <p class="govuk-body">Offering these temporary levels of successive support ensures that children develop the confidence and self belief needed to become secure in their knowledge and skills before becoming ready to attempt the next challenge.     </p>
 
-
           <div class="govuk-inset-text">
             <h2 class="govuk-heading-m">Practitioner prompt</h2>
 
             <p class="govuk-body">Can you think of a child in your care who is struggling with a particular skill or knowledge and understanding? </p>
 
-              <p class="govuk-body">Are they at the expected level of development? </p>
-              <p class="govuk-body">Are the instructions, demonstrations or level of support being offered too challenging? </p>
-              <p class="govuk-body">Have they become secure in the foundation knowledge needed to attempt the task? </p>
-              <p class="govuk-body">If you were to write step by step instructions, which step are they at confidently? </p>
-              <p class="govuk-body">What would the next step be for their expected level? </p>
-              <p class="govuk-body">How will you temporarily offer supportive steps to help them get there? </p>
-              <p class="govuk-body">You have just successfully scaffolded learning! </p>
-
+            <p class="govuk-body">Are they at the expected level of development? </p>
+            <p class="govuk-body">Are the instructions, demonstrations or level of support being offered too challenging? </p>
+            <p class="govuk-body">Have they become secure in the foundation knowledge needed to attempt the task? </p>
+            <p class="govuk-body">If you were to write step by step instructions, which step are they at confidently? </p>
+            <p class="govuk-body">What would the next step be for their expected level? </p>
+            <p class="govuk-body">How will you temporarily offer supportive steps to help them get there? </p>
+            <p class="govuk-body">You have just successfully scaffolded learning! </p>
 
           </div>
 
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
 
-
-
-            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
-
-            <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-1-4">Previous</a>
-            <a class="govuk-button align-right" data-module="govuk-button" href="1-1-1-6">Next </a>
-
-
-
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-1-1-4">Previous</a>
+          <a class="govuk-button align-right" data-module="govuk-button" href="1-1-1-6">Next</a>
 
         </div>
       </div>
-
     </main>
   </div>
 
-  {{super()}}
-{% endblock %}
-
-{% block content %}
-
+  {{ super() }}
 {% endblock %}

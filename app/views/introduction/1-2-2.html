@@ -5,17 +5,17 @@ Effective implementation of the EYFS
 {% endblock %}
 
 {% set bodyClasses = "app-home-alt" %}
-{% set sectionActive = "public service" %}
+
 {% set primaryNavActive = "service start" %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+  {# beforeContent is reseting default phase banner #}
 {% endblock %}
 
 {% block main %}
 
-<div class="govuk-width-container">
-  {{ govukBreadcrumbs({
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
     items: [
       {
         text: "Understanding child development and the EYFS",
@@ -31,25 +31,13 @@ Effective implementation of the EYFS
       }
     ]
   }) }}
-</div>
+  </div>
 
-<div class="govuk-width-container">
-
+  <div class="govuk-width-container">
 
     <main class="govuk-main-wrapper">
 
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-one-third">
-
-          <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-
-
-            </div>
-
-          </div>
-
-        </div>
 
         <div class="govuk-grid-column-two-thirds">
 
@@ -58,22 +46,19 @@ Effective implementation of the EYFS
             Effective implementation of the EYFS 
           </h1>
 
-
           <p class="govuk-body">When implemented effectively, the mandatory EYFS framework will ensure that all children are kept safe and healthy in an inclusive environment that promotes independence and ensures that no child gets left behind.     </p>
 
           <p class="govuk-body">This topic includes: </p>
 
           <ul class="govuk-list govuk-list--bullet">
-          <li>an effective EYFS   </li>
-          <li>effective assessment  </li>
+            <li>an effective EYFS   </li>
+            <li>effective assessment  </li>
+          </ul>
 
-            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
 
-            <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-2-1-6">Previous</a>
-            <a class="govuk-button align-right" data-module="govuk-button" href="1-2-2-1">Next </a>
-
-
-
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="1-2-1-6">Previous</a>
+          <a class="govuk-button align-right" data-module="govuk-button" href="1-2-2-1">Next</a>
 
         </div>
       </div>
@@ -81,9 +66,5 @@ Effective implementation of the EYFS
     </main>
   </div>
 
-  {{super()}}
-{% endblock %}
-
-{% block content %}
-
+  {{ super() }}
 {% endblock %}
