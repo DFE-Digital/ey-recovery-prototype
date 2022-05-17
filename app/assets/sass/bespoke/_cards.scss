@@ -1,16 +1,4 @@
-.wrapper--grey {
-    background-color: #E5E5E5;
-    padding: $govuk-spacing-scale-4;
-    @include govuk-responsive-margin($govuk-spacing-responsive-6, "bottom");
-  }
-  
-  section {
-    @include govuk-responsive-margin($govuk-spacing-responsive-9, "bottom");
-  }
-  
-  $govuk-card-border : $govuk-blue;
-  $govuk-card-selected-background-colour : $govuk-blue;
-  $govuk-card-selected-foreground-colour : $govuk-white;
+
   
   .govuk-card__flex-container {
     display: flex;
