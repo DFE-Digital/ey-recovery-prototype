@@ -8,8 +8,8 @@ Early Years Foundation
 
 {% block main %}
 
-<div class="govuk-width-container">
-  {{ govukBreadcrumbs({
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
     items: [
       {
         text: "Home",
@@ -25,9 +25,10 @@ Early Years Foundation
       }
     ]
   }) }}
-</div>
+  </div>
 
-</br> <!-- START MAST -->
+</br>
+<!-- START MAST -->
 <div class="full-BGstrip BGstrip-grey">
   <div class="govuk-width-container">
     <main class="govuk-main-wrapper">
@@ -40,67 +41,79 @@ Early Years Foundation
           <details class="govuk-details" data-module="govuk-details">
             <summary class="govuk-details__summary">
               <span class="govuk-details__summary-text">
-                How does it work?
+                Check your learning
               </span>
             </summary>
             <div class="govuk-details__text">
-              <h1 class="govuk-heading-m">Check your learning</h1>
+
               <p class="govuk-body">Throughout the course there are activities to check you understand what you have learned. 
                 You will be able to see if you get these questions right or wrong. The scores for these activities are not recorded and 
                 they do not count towards the certificate of achievement.</p>
+            </div>
+          </details>
 
-                <h1 class="govuk-heading-m">Saving your progress</h1>
-                <p class="govuk-body">Your progress is automatically saved as you move through the module. You can sign out or 
-                  close the browser at any time without losing your progress.  When you next login, you can restart from where you left off. </p>
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                Saving your progress
+              </span>
+            </summary>
+            <div class="govuk-details__text">
 
-                  <h1 class="govuk-heading-m">End of module quiz
-                  </h1>
-                <p class="govuk-body">Once you have completed all of the topics, there is an end of module quiz. This end of module quiz  
-                  is not aimed to provide a pass or fail. It is here for you to revisit what you have learned and the impact on your practice. </p>
+              <p class="govuk-body">Your progress is automatically saved as you move through the module. 
+                You can sign out or close the browser at any time without losing your progress.  When you next login, you can restart from where you left off. </p>
+            </div>
+          </details>
 
-                  <p class="govuk-body">If you want to receive a certificate of achievement for this module, you need to receive an overall score of at least 66%.
-                  </p>
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                End of module quiz
+              </span>
+            </summary>
+            <div class="govuk-details__text">
 
-                  <p class="govuk-body">If you do not score 66%, you will be able to see which questions you got wrong. 
-                    You can repeat the test to improve your score as many times as you want to.
-                  </p>
+              <p class="govuk-body">Once you have completed all of the topics, there is an end of module quiz. 
+                This end of module quiz  is not aimed to provide a pass or fail. It is here for you to revisit what you have learned and the impact on your practice. </p>
 
-                  <h1 class="govuk-heading-m">Practitioner prompts
-                  </h1>
-                <p class="govuk-body">You will see practitioner prompts throughout the course. </p>
-                <p class="govuk-body">You can buy:</p>
-                <ul class="govuk-list govuk-list--bullet">
-                  <li>encourage you to reflect on your current practice</li>
-                  <li>introduce you to new strategies</li>
-                  <li>reinforce effective teaching and learning  </li>
-                  <li>help you to think about what you’ve learnt  </li>
-                </ul>
+              <p class="govuk-body">If you want to receive a certificate of achievement for this module, you need to receive an overall score of at least 66%.</p>
 
+              <p class="govuk-body">If you do not score 66%, you will be able to see which questions you got wrong. 
+                You can repeat the test to improve your score as many times as you want to.</p>
+
+              <b>Practitioner prompts </b>
+              <p class="govuk-body">You will see practitioner prompts throughout the course.</p>
+
+              <p class="govuk-body">These prompts are intended to:</p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>encourage you to reflect on your current practice  </li>
+                <li>introduce you to new strategies</li>
+                <li>help you to think about what you’ve learnt</li>
+              </ul>
             </div>
           </details>
 
           {{ govukButton({
-          "text": "Repeat test",
-          href: "topic-intro"
+            "text": "Repeat test",
+            href: "topic-intro"
           }) }}
         </div>
-    </main>
+      </main>
+    </div>
   </div>
-</div>
-<!-- END BESPOKE MAST -->
+  <!-- END BESPOKE MAST -->
 
-<div class="govuk-width-container">
-  <div class="govuk-grid-row">
-    </br>
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row"></br>
     {{govukTag({
-    text: "15 topics",
-    classes: "govuk-tag--green"
-    })}}
+      text: "15 topics",
+      classes: "govuk-tag--green"
+    }) }}
 
     {{govukTag({
-    text: "3 hours",
-    classes: "govuk-tag--green"
-    })}}
+      text: "3 hours",
+      classes: "govuk-tag--green"
+    }) }}
 
   </div>
 </div>
@@ -108,8 +121,6 @@ Early Years Foundation
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
-      {% from "govuk/components/accordion/macro.njk" import govukAccordion %}
-
       {{ govukAccordion({
         id: "accordion-with-summary-sections",
         items: [
@@ -442,7 +453,6 @@ Early Years Foundation
                         Not started
                       </strong>
                   </li>
-
               </ul>'
             }
           }
@@ -452,6 +462,6 @@ Early Years Foundation
   </div>
 </div>
 
-  {# pulls in default gov uk template #}
-  {{super()}}
+{# pulls in default gov uk template #}
+{{super()}}
 {% endblock %}
