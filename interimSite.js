@@ -22,12 +22,6 @@ const baseUrl = 'https://child-development-training-prototype.london.cloudapps.d
 
 
 // This is the list of pages to test. It's a simple baseUrl + page slug combination.
-processPage(baseUrl);
-processPage(baseUrl + 'home-existing');
-processPage(baseUrl + 'introduction/introduction-overview');
-processPage(baseUrl + 'introduction/1');
-processPage(baseUrl + 'introduction/1-1');
-processPage(baseUrl + 'introduction/1-1-1');
 processPage(baseUrl + 'introduction/1-1-1-1');
 processPage(baseUrl + 'introduction/1-1-1-2');
 processPage(baseUrl + 'introduction/1-1-1-3');
@@ -35,7 +29,7 @@ processPage(baseUrl + 'introduction/1-1-1-4');
 processPage(baseUrl + 'introduction/1-1-1-5');
 processPage(baseUrl + 'introduction/1-1-1-6');
 processPage(baseUrl + 'introduction/1-1-1-7');
-processPage(baseUrl + 'introduction/1-1-2');
+processPage(baseUrl + 'introduction/1-1-1');
 processPage(baseUrl + 'introduction/1-1-2-1');
 processPage(baseUrl + 'introduction/1-1-2-2');
 processPage(baseUrl + 'introduction/1-1-2-3');
@@ -46,21 +40,25 @@ processPage(baseUrl + 'introduction/1-1-2-7');
 processPage(baseUrl + 'introduction/1-1-2-8');
 processPage(baseUrl + 'introduction/1-1-2-9');
 processPage(baseUrl + 'introduction/1-1-2-10');
-
-/// I'm not sure any of these pages still exist...
-// processPage(baseUrl + 'development/brain-development-overview-existing');
-// processPage(baseUrl + 'module-intro');
-// processPage(baseUrl + 'submodule-intro');
-// processPage(baseUrl + 'topic-intro');
-// processPage(baseUrl + 'brain-parts');
-// processPage(baseUrl + 'quiz-1');
-// processPage(baseUrl + 'quiz-1-right');
-// processPage(baseUrl + 'development-birth-two');
-// processPage(baseUrl + 'piaget-sensorimotor');
-// processPage(baseUrl + 'piaget-current-research');
-// processPage(baseUrl + 'relationships-emotions');
-// processPage(baseUrl + 'recap');
-// processPage(baseUrl + 'test-intro');
+processPage(baseUrl + 'introduction/1-1-2');
+processPage(baseUrl + 'introduction/1-1');
+processPage(baseUrl + 'introduction/1-2-1-1');
+processPage(baseUrl + 'introduction/1-2-1-2');
+processPage(baseUrl + 'introduction/1-2-1-3');
+processPage(baseUrl + 'introduction/1-2-1-4');
+processPage(baseUrl + 'introduction/1-2-1-5');
+processPage(baseUrl + 'introduction/1-2-1-6');
+processPage(baseUrl + 'introduction/1-2-1');
+processPage(baseUrl + 'introduction/1-2-2-1');
+processPage(baseUrl + 'introduction/1-2-2-2');
+processPage(baseUrl + 'introduction/1-2-2');
+processPage(baseUrl + 'introduction/1-2');
+processPage(baseUrl + 'introduction/1');
+processPage(baseUrl + 'introduction/introduction-overview-pilot');
+processPage(baseUrl + 'introduction/recap');
+processPage(baseUrl + 'pilot/pilot-finish');
+processPage(baseUrl + 'pilot/pilot-start');
+processPage(baseUrl);
 
 // process page for accessibility issues. Takes a URL of a page.
 function processPage(url)
@@ -106,5 +104,3 @@ function dumpResults(url, results)
         console.log("\t\t" + results.issues[0].context);
     }
 }
-interimSite.js
-Displaying interimSite.js.
