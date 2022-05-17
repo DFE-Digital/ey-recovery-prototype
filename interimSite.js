@@ -22,13 +22,6 @@ const baseUrl = 'https://child-development-training-prototype.london.cloudapps.d
 
 
 // This is the list of pages to test. It's a simple baseUrl + page slug combination.
-processPage(baseUrl);
-processPage(baseUrl + 'pilot/pilot-finish');
-processPage(baseUrl + 'pilot/pilot-start');
-processPage(baseUrl + 'introduction/introduction-overview-pilot');
-processPage(baseUrl + 'introduction/1');
-processPage(baseUrl + 'introduction/1-1');
-processPage(baseUrl + 'introduction/1-1-1');
 processPage(baseUrl + 'introduction/1-1-1-1');
 processPage(baseUrl + 'introduction/1-1-1-2');
 processPage(baseUrl + 'introduction/1-1-1-3');
@@ -36,7 +29,7 @@ processPage(baseUrl + 'introduction/1-1-1-4');
 processPage(baseUrl + 'introduction/1-1-1-5');
 processPage(baseUrl + 'introduction/1-1-1-6');
 processPage(baseUrl + 'introduction/1-1-1-7');
-processPage(baseUrl + 'introduction/1-1-2');
+processPage(baseUrl + 'introduction/1-1-1');
 processPage(baseUrl + 'introduction/1-1-2-1');
 processPage(baseUrl + 'introduction/1-1-2-2');
 processPage(baseUrl + 'introduction/1-1-2-3');
@@ -47,6 +40,8 @@ processPage(baseUrl + 'introduction/1-1-2-7');
 processPage(baseUrl + 'introduction/1-1-2-8');
 processPage(baseUrl + 'introduction/1-1-2-9');
 processPage(baseUrl + 'introduction/1-1-2-10');
+processPage(baseUrl + 'introduction/1-1-2');
+processPage(baseUrl + 'introduction/1-1');
 processPage(baseUrl + 'introduction/1-2-1-1');
 processPage(baseUrl + 'introduction/1-2-1-2');
 processPage(baseUrl + 'introduction/1-2-1-3');
@@ -58,7 +53,12 @@ processPage(baseUrl + 'introduction/1-2-2-1');
 processPage(baseUrl + 'introduction/1-2-2-2');
 processPage(baseUrl + 'introduction/1-2-2');
 processPage(baseUrl + 'introduction/1-2');
+processPage(baseUrl + 'introduction/1');
+processPage(baseUrl + 'introduction/introduction-overview-pilot');
 processPage(baseUrl + 'introduction/recap');
+processPage(baseUrl + 'pilot/pilot-finish');
+processPage(baseUrl + 'pilot/pilot-start');
+processPage(baseUrl);
 
 // process page for accessibility issues. Takes a URL of a page.
 function processPage(url)
