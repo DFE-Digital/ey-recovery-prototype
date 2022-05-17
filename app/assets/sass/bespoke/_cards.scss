@@ -11,18 +11,18 @@
   }
   
   .govuk-card {
-    @include govuk-responsive-margin($govuk-spacing-responsive-6, "bottom");
-    @include govuk-responsive-padding($govuk-spacing-responsive-6, "bottom");
-    border-bottom: 3px solid $govuk-card-border;
+    @include govuk-responsive-margin("bottom");
+    @include govuk-responsive-padding( "bottom");
+    border-bottom: 3px solid;
     box-sizing: border-box;
   }
   
   .govuk-card--contained {
-    background-color: $govuk-grey-4;
+    background-color: #E5E5E5;
   }
   
   .govuk-card--contained--on-background {
-    background-color: $govuk-white;
+    background-color: #fff;
   }
   
   .govuk-card--borderless {
@@ -44,19 +44,19 @@
   }
   
   .govuk-card--selectable:hover {
-    background-color: $govuk-card-selected-background-colour;
+    background-color: #1D70B8;
   }
   
   .govuk-card--selectable:hover > .govuk-card__content > h3,
   .govuk-card--selectable:hover > .govuk-card__content > p,
   .govuk-card--selectable:hover > .govuk-card__content > h3 > a,
   .govuk-card--selectable:hover > .govuk-card__actions > ul > li > a {
-    color: $govuk-card-selected-foreground-colour !important;
+    color: #1D70B8 !important;
   }
   
   .govuk-card--selectable:hover > .govuk-card__content > h3 > a:hover,
   .govuk-card--selectable:hover > .govuk-card__actions > ul > li > a:hover {
-    color: lighten($govuk-light-blue, 30%) !important;
+    color: lighten(#1D70B8, 30%) !important;
   }
   
   .govuk-card--selectable > a {
@@ -82,7 +82,7 @@
   }
   
   .govuk-card__content {
-    @include govuk-responsive-padding($govuk-spacing-responsive-4, "top");
+    @include govuk-responsive-padding("top");
     padding-bottom: 0;
   }
   
@@ -91,22 +91,22 @@
   }
   
   .govuk-card__content p + p {
-    @include govuk-responsive-margin($govuk-spacing-responsive-4, "top");
+    @include govuk-responsive-margin("top");
   }
   
   .govuk-card--contained .govuk-card__content {
-    @include govuk-responsive-padding($govuk-spacing-responsive-4, "left");
-    @include govuk-responsive-padding($govuk-spacing-responsive-4, "right");
+    @include govuk-responsive-padding("left");
+    @include govuk-responsive-padding("right");
   }
   
   .govuk-card__actions {
-    @include govuk-responsive-padding($govuk-spacing-responsive-4, "top");
+    @include govuk-responsive-padding("top");
     padding-bottom: 0;
   }
   
   .govuk-card--contained  .govuk-card__actions {
-    @include govuk-responsive-padding($govuk-spacing-responsive-4, "left");
-    @include govuk-responsive-padding($govuk-spacing-responsive-4, "right");
+    @include govuk-responsive-padding("left");
+    @include govuk-responsive-padding("right");
   }
   
   .govuk-card__actions > .govuk-c-button {
