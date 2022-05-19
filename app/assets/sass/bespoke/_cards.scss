@@ -105,3 +105,40 @@
     margin-bottom: 0;
   }
   
+  .govuk-card__height{
+    min-height:300px;
+  }
+
+  @media screen and (max-width:1320px) {
+    .govuk-card__height{
+      min-height:375px;
+    }
+  }
+
+    @media screen and (max-width:1037px) {
+      .govuk-card__height{
+        min-height:410px;
+      }
+    }
+
+    @media screen and (max-width:912px) {
+      .govuk-card__height{
+        min-height:430px;
+      }
+    }
+
+    @media screen and (max-width:885px) {
+      .govuk-card__height{
+        min-height:500px;
+      }
+    }
+    @media screen and (max-width:812px) {
+      .govuk-card__height{
+        min-height:530px;
+      }
+    }
+    @media screen and (max-width:812px) {
+      .govuk-card__height{
+        min-height:220px;
+      }
+    }
