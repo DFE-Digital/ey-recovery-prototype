@@ -55,9 +55,9 @@
     color: #fff !important;
   }
   
-  .govuk-card--selectable:hover > .govuk-card__content > h3 > a:hover,
-  .govuk-card--selectable:hover > .govuk-card__actions > ul > li > a:hover {
-    color: lighten(#1D70B8, 30%) !important;
+  .govuk-card--selectable:hover .govuk-card__content a,
+  .govuk-card--selectable:hover  .govuk-card__actions  ul > li > a:hover {
+    color: lighten(#fff, 30%) !important;
   }
   
   .govuk-card--selectable > a {
