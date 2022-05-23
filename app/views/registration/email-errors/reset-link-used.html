@@ -20,11 +20,12 @@
 
 {{ govukBackLink({
   text: "Back",
-  href: "/registration/check-your-email"
+  href: "sign-in"
 }) }}
-                        <h1>Resend your confirmation</h1>
-						<p>If you haven’t received an email from us containing a link to validate your email, please check your spam folder. 
-							</p>
+                        <h1>Password reset link has already been used</h1>
+
+						<p>The password reset link you clicked has already been used.</p>
+						<p>To request a new password reset link, enter your email address.</p> 
 
 
 						<div class="govuk-form-group">
@@ -34,9 +35,8 @@
 							<input class="govuk-input" id="event-name" name="event-name" type="text">
 						  </div>
 
+						<button class="govuk-button">Next</button>
 
-						<button class="govuk-button" data-module="govuk-button" >Send email</button> <br>
-						<a class="govuk-body govuk-link" href="">Go back to check your email</a>
 					</div>
 
 
