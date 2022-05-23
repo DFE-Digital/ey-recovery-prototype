@@ -14,6 +14,7 @@ Early Years Foundation
 
 {% block main %}
 
+{% block breadcrumbs %}
 <div class="govuk-width-container">
   {{ govukBreadcrumbs({
     items: [
@@ -31,6 +32,7 @@ Early Years Foundation
       }
     ]
   }) }}
+  {% endblock %}
 
   <main class="govuk-main-wrapper">
 
@@ -75,11 +77,13 @@ Early Years Foundation
 
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
 
-          <button class="govuk-button govuk-button--secondary"  data-module="govuk-button">Previous</button > </br>
-          {{ govukButton({
-            "text": "Next",
-            href: "./feedback"
-          }) }}
+          {% block navigation %}
+            <button class="govuk-button govuk-button--secondary"  data-module="govuk-button">Previous</button > </br>
+            {{ govukButton({
+              "text": "Next",
+              href: "./feedback"
+            }) }}
+          {% endblock %}
       </div>
     </div>
   </main>
