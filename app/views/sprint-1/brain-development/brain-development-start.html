@@ -44,10 +44,12 @@ Early Years Foundation
           <p class="govuk-caption-m">This module will reinforce your understanding of how the brain develops and how to
             consider factors affecting brain development when planning for your setting. </p>
 
+          {% block startButton %}
           {{ govukButton({
             "text": "Start",
             href: "module-intro"
           }) }}
+          {% endblock %}
         </div>
     </main>
   </div>
