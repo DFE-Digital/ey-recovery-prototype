@@ -22,6 +22,10 @@ $govuk-assets-path: '/govuk/assets/';
 @import "layout";
 @import "sign-in";
 @import "training-overview";
+@import "bespoke/interrupt-card";
+@import "bespoke/info-bubble";
+@import "bespoke/prompt";
+@import "bespoke/cards";
 
 // USED ACROSS PAGES
 
