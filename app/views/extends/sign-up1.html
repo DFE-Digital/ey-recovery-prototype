@@ -41,10 +41,12 @@
           autocomplete: "last-name"
         }) }}
 
+        {% block continueButton %}
         {{ govukButton({
           "text": "Continue",
           href: "./sign-up2"
         }) }}
+        {% endblock %}
 
         {% endcall %}
       </div>
