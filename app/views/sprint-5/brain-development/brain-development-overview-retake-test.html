@@ -4,27 +4,30 @@
 Early Years Foundation
 {% endblock %}
 
-{% set displayPrimaryNav = true %}
+{% set bodyClasses = "app-home-alt" %}
+{% set sectionActive = "public service" %}
+{% set primaryNavActive = "service start" %}
+
+{% block beforeContent %}
+{# beforeContent is reseting default phase banner #}
+{% endblock %}
 
 {% block main %}
 
-  <div class="govuk-width-container">
-    {{ govukBreadcrumbs({
-    items: [
-      {
-        text: "Home",
-        href: "app/views/home-existing"
-      },
-      {
-        text: "Brain development in the early years",
-        href: "#"
-      }
-    ]
-  }) }}
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="app/views/home-existing">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Brain development in the early years</a>
+      </li>
+    </ol>
   </div>
+</div>
 
-</br>
-<!-- START MAST -->
+</br> <!-- START MAST -->
 <div class="full-BGstrip BGstrip-grey">
   <div class="govuk-width-container">
     <main class="govuk-main-wrapper">
@@ -33,30 +36,30 @@ Early Years Foundation
         <!-- START INTRO -->
         <div class="govuk-width-container ">
           <h1 class="govuk-heading-l ">Brain development in the early years</h1>
-          <p class="govuk-caption-m">This course has 15 topics. You must complete the topics in the order shown. You must complete a topic before you can start the next one.  </p>
+          <p class="govuk-caption-m">This course has 15 topics. You must complete the topics in the order shown. You must complete a topic before you can start the next one.</p>
 
           {{ govukButton({
-          "text": "Resume training",
-          href: "piaget-sensorimotor"
+            "text": "Retake end of module test",
+            href: "test-intro"
           }) }}
         </div>
-      </main>
-    </div>
+    </main>
   </div>
-  <!-- END BESPOKE MAST -->
+</div>
+<!-- END BESPOKE MAST -->
 
-  <div class="govuk-width-container">
-    <div class="govuk-grid-row"></br>
-    {{govukTag({
-    text: "15 topics",
-    classes: "govuk-tag--green"
-    })}}
+<div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    </br>
+    {{ govukTag({
+      text: "15 topics",
+      classes: "govuk-tag--green"
+    }) }}
 
-    {{govukTag({
-    text: "3 hours",
-    classes: "govuk-tag--green"
-    })}}
-
+    {{ govukTag({
+      text: "3 hours",
+      classes: "govuk-tag--green"
+    }) }}
   </div>
 </div>
 
@@ -95,7 +98,7 @@ Early Years Foundation
                     <a class="govuk-link" href="module-intro.html">Introduction to the brain development in the early years module</a>
 
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                     </strong>
                   </li>
 
@@ -110,7 +113,7 @@ Early Years Foundation
                     <h2 class="govuk-heading-m">Brain development and how children learn</h2>
 
                     <strong class="govuk-tag govuk-tag--purple align-right">
-                      In progress
+                     Complete
                     </strong>
                   </li>
 
@@ -123,6 +126,7 @@ Early Years Foundation
             content: {
               html:
               '<ul class="govuk-list">
+
                   <li>
                     <a class="govuk-link" href="#">Brain development before birth</a>
                     <strong class="govuk-tag align-right">
@@ -133,14 +137,14 @@ Early Years Foundation
                   <li>
                     <a class="govuk-link" href="#">Piagets theory of cognitive development from 0 to 5 year</a> 
                     <strong class="govuk-tag align-right">
-                      In progress
-                    </strong>
+                      Complete
+                      </strong>
                   </li>
                   <li>
                     <a class="govuk-link" href="#">Factors affecting brain development</a>
                     <strong class="govuk-tag align-right">
-                      Not started
-                    </strong>
+                      Complete
+                      </strong>
                   </li>
 
               </ul>'
@@ -154,7 +158,7 @@ Early Years Foundation
                     <h2 class="govuk-heading-m">How children learn</h2>
 
                     <strong class="govuk-tag govuk-tag--purple align-right">
-                      Not started
+                      Complete
                     </strong>
                   </li>
 
@@ -170,25 +174,25 @@ Early Years Foundation
                   <li>
                     <a class="govuk-link" href="#">Introduction to how children learn</a> 
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
                   <li>
                     <a class="govuk-link" href="#">How brain development affects learning</a> 
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
                   <li>
                     <a class="govuk-link" href="#">Theories of learning</a> 
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
                   <li>
                     <a class="govuk-link" href="#">The role of the early years practitioner</a> 
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
 
@@ -204,7 +208,7 @@ Early Years Foundation
                     <h2 class="govuk-heading-m">Development of social and emotional skills</h2>
 
                     <strong class="govuk-tag govuk-tag--purple align-right">
-                      Not started
+                      Complete
                     </strong>
                   </li>
 
@@ -221,25 +225,25 @@ Early Years Foundation
                   <li>
                     <a class="govuk-link" href="#">Introduction to the development of social and emotional skills</a> 
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
                   <li>
                     <a class="govuk-link" href="#">How social and emotional skills develop</a> 
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
                   <li>
                     <a class="govuk-link" href="#">Supporting skill development </a>
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
                   <li>
                     <a class="govuk-link" href="#">How social and emotional skills affect learning and behaviour</a> 
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
 
@@ -254,7 +258,7 @@ Early Years Foundation
                     <h2 class="govuk-heading-m">Building positive relationships</h2>
 
                     <strong class="govuk-tag govuk-tag--purple align-right">
-                      Not started
+                      Complete
                     </strong>
                   </li>
 
@@ -272,19 +276,19 @@ Early Years Foundation
                   <li>
                     <a class="govuk-link" href="#">Introduction to attachment theory</a>  
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
                   <li>
                     <a class="govuk-link" href="#">Supporting children to develop positive relationships</a> 
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
                   <li>
                     <a class="govuk-link" href="#">How positive relationships affect learning and behaviour</a>    
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
 
@@ -300,7 +304,7 @@ Early Years Foundation
                     <h2 class="govuk-heading-m">Supporting self-regulation</h2>
 
                     <strong class="govuk-tag govuk-tag--purple align-right">
-                      Not started
+                      Complete
                     </strong>
                   </li>
 
@@ -317,25 +321,25 @@ Early Years Foundation
                   <li>
                     <a class="govuk-link" href="#">Introduction to supporting self-regulation</a> 
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
                   <li>
                     <a class="govuk-link" href="#">Why self-regulation is important</a>   
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
                   <li>
                     <a class="govuk-link" href="#">How self-regulation affects learning and behaviour</a> 
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
                   <li>
                     <a class="govuk-link" href="#">Strategies for supporting self-regulation</a>   
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                       </strong>
                   </li>
 
@@ -350,7 +354,7 @@ Early Years Foundation
                     <h2 class="govuk-heading-m">Summary and next steps</h2>
 
                     <strong class="govuk-tag govuk-tag--purple align-right">
-                      Not started
+                    In progress
                     </strong>
                   </li>
 
@@ -367,14 +371,14 @@ Early Years Foundation
                     <a class="govuk-link" href="/recap">Recap and further reading</a>  
 
                     <strong class="govuk-tag align-right">
-                      Not started
+                      Complete
                     </strong>
 
                   </li>
                   <li>
-                    <a class="govuk-link" href="feedback">End of module assessment</a>     
+                    <a class="govuk-link" href="test-intro">End of module assessment</a>     
                     <strong class="govuk-tag align-right">
-                      Not started
+                      In progress
                       </strong>
                   </li>
                   <li>
@@ -399,6 +403,6 @@ Early Years Foundation
   </div>
 </div>
 
-{# pulls in default gov uk template #}
-{{super()}}
+  {# pulls in default gov uk template #}
+  {{super()}}
 {% endblock %}
