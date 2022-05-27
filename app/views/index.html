@@ -8,7 +8,7 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column">
+    <div class="govuk-grid-column-full">
       <h1 class="govuk-heading-xl">
         Prototype your service using GOV.UK Prototype Kit
         <span class="govuk-caption-xl">{{releaseVersion}}</span>
@@ -17,28 +17,49 @@
   
     <div class="govuk-grid-column-two-thirds">
       <h2 class="govuk-heading-m">Prototype versions</h2>
-      <h3 class="govuk-heading-s">Sprint 24</h3>
+
+      <h2 class="govuk-heading-s">Sprint 5</h2>
       <ul class="govuk-list govuk-list--bullet">
-        <li><a href="./sprint-24/training-overview.html">Service start page</a></li>
-      </ul>
-      
-      <h3 class="govuk-heading-s">Sprint 25</h3>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="./sprint-25/home.html">Service start page</a></li>
+        <li><a href="sprint-5/home-existing" class="govuk-link">User enrolling from the home page</a></li>
+        <li><a href="sprint-5/brain-development/my-training" class="govuk-link">Finished module 1 and module 2 in progress</a></li>
+        <li><a href="sprint-5/brain-development/my-learning-not-started" class="govuk-link">User not started any modules</a></li>
+        <li><a href="sprint-5/brain-development/my-training-in-progress" class="govuk-link">1st module in progress</a></li>
+        <li><a href="sprint-5/brain-development/my-training-completed" class="govuk-link">1st module completed and module 2 not started</a></li>
+        <li><a href="/brain-development/my-learning-all-completed" class="govuk-link">All available modules completed</a></li>
       </ul>
 
-      <h3 class="govuk-heading-s">Sprint 26</h3>
+      <h2 class="govuk-heading-s">Sprint 4 scenarios</h2>
+      <ul class="govuk-list">
+        <li>
+          <a href="/home-existing" class="govuk-link">Existing user and they have already started the course via my training
+            page - Fail</a>
+        </li>
+      </ul>
+
+      <h2 class="govuk-heading-s">Not navigable errors or unhappy paths</h2>
+      <ul class="govuk-list">
+        <li>
+          <a href="/registration/sign-in-errors/account-locked" class="govuk-link">Account has been locked</a>
+        </li>
+        <li> <a href="/registration/email-errors/reset-link-expired" class="govuk-link">Reset link expired</a></li>
+        <li> <a href="/registration/email-errors/reset-link-used" class="govuk-link">Reset link used</a></li>
+        <li> <a href="service-unavailable" class="govuk-link">Service unavailable</a></li>
+        <li> <a href="/registration/email-errors/email-used">Email already registered</a></li>
+        <li> <a href="/registration/email-errors/password-mismatch">Passwords don't match</a></li>
+        <li> <a href="/registration/email-errors/email-invalid">Email not valid</a></li>
+        <li> <a href="/registration/sign-in-errors/ofsted-error" class="govuk-link">Ofsted error</a></li>
+        <li> <a href="/registration/new-password" class="govuk-link">Choose a new password</a></li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Sprint 3</h3>
+      <ul class="govuk-list govuk-list--number">
+        <li><a href="./sprint-3/home-existing" class="govuk-link">Existing user and they have already started the course via my training page - Fail</a></li>
+      </ul>
+
+      <h3 class="govuk-heading-s">Sprint 2</h3>
       <ol class="govuk-list govuk-list--number">
-        <li><a href="./sprint-26/home.html">User already has a training account and has started a course</a></li>
-        <li><a href="./sprint-26/email">User is finding service for the first time - Email 1</a></li>
-        <li><a href="./sprint-26/email1">User is finding service for the first time - Email 2</a></li>
-      </ol>
-      
-      <h3 class="govuk-heading-s">Sprint 26 Week 2</h3>
-      <ol class="govuk-list govuk-list--number">
-        <li><a href="./sprint-26-week-2/home.html">User already has a training account and has started a course</a></li>
-        <li><a href="./sprint-26-week-2/email">User is finding service for the first time - Email 1</a></li>
-        <li><a href="./sprint-26-week-2/email1">User is finding service for the first time - Email 2</a></li>
+        <li><a href="./sprint-2/home-existing.html">Existing user and they have already started the course via my training page - Fail</a></li>
+        <li><a href="./sprint-2/brain-development/test-pass/home-existing">Existing user and they have already started the course view overview page - Pass</a></li>
       </ol>
       
       <h3 class="govuk-heading-s">Sprint 1</h3>
@@ -47,17 +68,31 @@
         <li><a href="./sprint-1/start/email">User is finding service for the first time - Email 1</a></li>
         <li><a href="./sprint-1/start/email1">User is finding service for the first time - Email 2</a></li>
       </ol>
-
-      <h3 class="govuk-heading-s">Sprint 2</h3>
+      
+      <h3 class="govuk-heading-s">Sprint 26 Week 2</h3>
       <ol class="govuk-list govuk-list--number">
-        <li><a href="./sprint-2/home-existing.html">Existing user and they have already started the course via my training page - Fail</a></li>
-        <li><a href="./sprint-2/brain-development/test-pass/home-existing">Existing user and they have already started the course view overview page - Pass</a></li>
+        <li><a href="./sprint-26-week-2/home.html">User already has a training account and has started a course</a></li>
+        <li><a href="./sprint-26-week-2/email">User is finding service for the first time - Email 1</a></li>
+        <li><a href="./sprint-26-week-2/email1">User is finding service for the first time - Email 2</a></li>
       </ol>
 
-      <h3 class="govuk-heading-s">Sprint 3</h3>
-      <ul class="govuk-list govuk-list--number">
-        <li><a href="./sprint-3/home-existing" class="govuk-link">Existing user and they have already started the course via my training page - Fail</a></li>
+      <h3 class="govuk-heading-s">Sprint 26</h3>
+      <ol class="govuk-list govuk-list--number">
+        <li><a href="./sprint-26/home.html">User already has a training account and has started a course</a></li>
+        <li><a href="./sprint-26/email">User is finding service for the first time - Email 1</a></li>
+        <li><a href="./sprint-26/email1">User is finding service for the first time - Email 2</a></li>
+      </ol>
+      
+      <h3 class="govuk-heading-s">Sprint 25</h3>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="./sprint-25/home.html">Service start page</a></li>
       </ul>
+
+      <h3 class="govuk-heading-s">Sprint 24</h3>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="./sprint-24/training-overview.html">Service start page</a></li>
+      </ul>
+
 
       <h2 class="govuk-heading-m">Examples and documentation</h2>
       <ul class="govuk-list govuk-list--bullet">
@@ -78,4 +113,5 @@
       </ul>
     </div>
   </div>
+</div>
 {% endblock %}
