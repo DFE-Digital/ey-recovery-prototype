@@ -48,13 +48,6 @@
   GOV.UK Prototype Kit
 {% endblock %}
 
-{% if data.settings.useAltHeader and not data.settings.showPrimaryNav  %}
-  {% set bodyClasses = "govuk-width-container-ls app-alt-header__on" %}
-{% elseif data.settings.showPrimaryNav and not data.settings.useAltHeader %}
-  {% set bodyClasses = "govuk-width-container-ls app-primary-nav__on" %}
-{% elseif data.settings.useAltHeader and data.settings.showPrimaryNav %}
-  {% set bodyClasses = "govuk-width-container-ls app-alt-header__on app-primary-nav__on" %}
-{% endif %}
 
 {% block header %}
 
@@ -87,23 +80,13 @@
 
         <ul id="navigation" class="govuk-header__navigation-list">
           <li class="govuk-header__navigation-item">
-            <a class="govuk-header__link" href="home-existing">
+            <a class="govuk-header__link" href="home-signed-out">
               Home
             </a>
           </li>
           <li class="govuk-header__navigation-item">
-            <a class="govuk-header__link" href="/brain-development/my-training">
-             My learning
-            </a>
-          </li>
-          <li class="govuk-header__navigation-item">
-            <a class="govuk-header__link" href="/my-account/manage-account">
-              My account
-            </a>
-          </li>
-          <li class="govuk-header__navigation-item">
-            <a class="govuk-header__link" href="/home-signed-out">
-              Sign out
+            <a class="govuk-header__link" href="brain-development/sign-in-existing">
+              Sign in
             </a>
           </li>
         
@@ -123,10 +106,12 @@
   </p>
 </div>
 
-  
 {% endblock %}
 
+{% block beforeContent %}
 
+
+{% endblock %}
 
 {% set mainClasses = mainClasses | default("govuk-main-wrapper--auto-spacing") %}
 
