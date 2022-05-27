@@ -47,7 +47,24 @@
     serviceUrl: "/",
     "classes": "app-default-header",
     containerClasses: "govuk-width-container",
-    navigation: [
+    navigation:[
+      {
+        href: "home-existing",
+        text: "Home"
+      },
+      {
+        href: "/brain-development/my-training",
+        text: "My learning"
+      },
+      {
+        href: "/my-account/manage-account",
+        text: "My account"
+      },
+      {
+        href: "/home-signed-out",
+        text: "Sign out",
+        active: true if (navActive == "sign-in")
+      },
       {
         href: "./sign-in1" if milestone == "sprint25" else "./sign-in",
         text: "Sign in",

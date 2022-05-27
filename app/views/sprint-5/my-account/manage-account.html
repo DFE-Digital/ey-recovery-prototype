@@ -4,24 +4,27 @@
 Early Years Foundation
 {% endblock %}
 
-{% set bodyClasses = "app-home-alt" %}
-{% set sectionActive = "public service" %}
-{% set primaryNavActive = "service start" %}
-
-{% block beforeContent %}
-  {# beforeContent is reseting default phase banner #}
-{% endblock %}
+{% set displayPrimaryNav = true %}
 
 {% block main %}
 
-  <div class="govuk-width-container">
+<div class="govuk-width-container">
+
+  </div>
+
+<div class="govuk-width-container">
+
+
     <main class="govuk-main-wrapper">
+
       <div class="govuk-grid-row">
+
         <div class="govuk-grid-column-two-thirds">
+        
           <h1 class="govuk-heading-l">
             Manage your account
           </h1>
-
+         
           <h2 class="govuk-heading-m">Your details </h2>
           <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
           <dl class="govuk-summary-list">
@@ -46,7 +49,7 @@ Early Years Foundation
                 jane.smith@email.com
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
+                <a class="govuk-link" href="change-email">
                   Change<span class="govuk-visually-hidden"> date of birth</span>
                 </a>
               </dd>
@@ -59,7 +62,7 @@ Early Years Foundation
                 Password last changed on 7 December 2020
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
+                <a class="govuk-link" href="change-password">
                   Change<span class="govuk-visually-hidden"> address</span>
                 </a>
               </dd>
@@ -78,7 +81,7 @@ Early Years Foundation
                 EC1F OPS
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
+                <a class="govuk-link" href="change-setting">
                   Change<span class="govuk-visually-hidden"> name</span>
                 </a>
               </dd>
@@ -91,7 +94,7 @@ Early Years Foundation
                 2383293
               </dd>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="#">
+                <a class="govuk-link" href="change-setting">
                   Change<span class="govuk-visually-hidden"> date of birth</span>
                 </a>
               </dd>
@@ -103,7 +106,7 @@ Early Years Foundation
           <p class="govuk-body">You will no longer be able to access the training modules and any progress or certificates you have earned will be lost. </p>
           <p class="govuk-body">Check the box to indicate your acceptance.</p>
 
-          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+          <div class="govuk-checkboxes govuk!-margin-bottom-6" data-module="govuk-checkboxes">
             <div class="govuk-checkboxes__item">
               <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
               <label class="govuk-label govuk-checkboxes__label" for="waste">
@@ -111,12 +114,13 @@ Early Years Foundation
                 This cannot be undone.
               </label>
             </div>
-          </div>
         </div>
-      </main>
-    </div>
+        <a class="govuk-button govuk-button--warning govuk-!-margin-top-4" href="account-delete-sure">
+          Delete account
+        </a>
+      </div>
+    </main>
+  </div>
 
-    {{super()}}
-  {% endblock %}
-
-  {% block content %}{% endblock %}
+  {{super()}}
+{% endblock %}
