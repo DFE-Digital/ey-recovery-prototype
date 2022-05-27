@@ -1,4 +1,4 @@
-{% extends "layout-sign-out.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
 Early Years Foundation
@@ -21,10 +21,10 @@ Early Years Foundation
   <div class="govuk-width-container">
     <main class="govuk-main-wrapper">
       <div class="govuk-grid-row">
-        <div class="govuk-grid-column-full">
+        <div class="govuk-grid-column-full govuk-!-margin-bottom-4">
           {{ govukBackLink({
             text: "Back",
-            href: "/home-signed-out"
+            href: "/home-existing"
           }) }}
           <h1 class="govuk-heading-l">About this training course</h1>
           <p>This training course will give you a thorough understanding of the most important aspects of child development in the early years.</p>
@@ -49,25 +49,7 @@ Early Years Foundation
           </div>
 
 
-    <div class="govuk-grid-row">
-        <div class="govuk-grid-column-two-thirds">
-          <div class="app-search-form-container govuk-!-margin-bottom-4">
-            <h2 class="govuk-heading-m">Ready to get started?</h2>
-            <p>Enrol on this course and begin the first module. You will need to sign in or create an account before starting a module.</p>
-            <p> <a class="govuk-button" data-module="govuk-button" style="margin-right:10px;"
-                href="/registration/create-an-account">
-                Create an account
-              </a> or <a href="brain-development/sign-in-existing">sign in</a></p>
-  
-              </div>
-         
-        <!--   <div class="app-search-form-container govuk-!-margin-bottom-6">
-          
-            <p class="govuk-body">This course is suitable for people aged 16 and over who need to be qualified in first aid as they care for babies and children in a professional setting.
-             This course, written by Paediatric Emergency Medicine consultant Dr John Williams and nursery manager Kate Smith, can be counted as evidence for an NVQ in childcare and education and is recognised by Ofsted. .</p>
-          </div>-->
-        </div>
-      </div>
+   
 
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">

@@ -1,16 +1,21 @@
-{% extends "layout.html" %}
+{% extends "layout-sign-out.html" %}
 
 {% block pageTitle %}
 Early Years Foundation
 {% endblock %}
 
-{% set bodyClasses = "app-home-alt" %}
-{% set sectionActive = "public service1" %}
-{% set primaryNavActive = "service start1" %}
-{% set loggedIn = true %}
 
 {% block beforeContent %}
-{# beforeContent is reseting default phase banner #}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+     Prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
 {% endblock %}
 
 {% block main %}
