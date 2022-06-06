@@ -69,7 +69,7 @@
         text: "Sign in",
         active: true if navActive == "sign-in"
       } if loggedIn == false
-    ]
+    ] if removeAllLinks != true
   }) }}
 
   <div class="govuk-width-container">
@@ -78,7 +78,7 @@
         text: "prototype"
       },
       html: 'This is a new service - <a class="govuk-link" href="#">your feedback</a> will help us to improve it.'
-    }) }}
+    }) if removePrototypeBanner != true }} 
   </div>
 
   {% if displayPrimaryNav == true %}

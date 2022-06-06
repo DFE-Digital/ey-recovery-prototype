@@ -1,5 +1,8 @@
 {% extends "layout.html" %}
 
+{% set milestone = 'sprint-6' %}
+{% set removeAllLinks = true %}
+
 {% block main %}
 
 <div class="govuk-width-container">
@@ -12,7 +15,7 @@
 					text: "Back",
 					href: "../sign-in"
 				}) }}
-				<h1>Account locked</h1>
+				<h1 class='govuk-heading-l'>Account locked</h1>
 
 				<p class="govuk-body">Your account has been locked</p>
 				<p class="govuk-body"><a href="forgot-password">Reset your password</a> to unlock your account immediately.</p>
