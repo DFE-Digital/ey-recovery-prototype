@@ -7,15 +7,36 @@ node.js - version 16.x.x
 ## Getting started
 1. Clone the repository
 2. Make sure you have the correct version of node.js installed
-3. Run ```npm install ``` to install dependencies
+3. Run ```npm install``` to install dependencies
 4. Run ```npm start``` to start the project
 
 More detailed guidance is available on the prototype docs
 
 ## File structure
+To add a milestone, create a folder in `app/views` with the name of the milestone (e.g. 'sprint-5'), and either:
+1. copy over the files needed from the previous sprint, making the changes necessary
+2. inherit from the file in the previous milestone and overwrite them
+
+### Inheriting files
+
 Many of the files inherit from previous versions, either in a previous milestone or in the 'extends' folder. These are then called, as necessary, in a later file with the following:
 ```
 {% extends "../[PREVIOUS MILESTONE]/[FILE NAME]" %}
+```
+
+### Overwriting
+As the project uses Nunjucks, files can easily be inherited as above. To make changes to the inherted version:
+1. Create a block in the original file: 
+```
+{% block BlockName %}
+  // Code to be overwritten
+{% endblock %}
+```
+2. Overwrite the block in the new file:
+```
+{% block BlockName %}
+  // New code
+{% endblock %}
 ```
 
 ## Add CloudFoundry/Government PaaS for releases
@@ -35,3 +56,14 @@ Rosetta is not installed. To install it, run `softwareupdate --install-rosetta`
 
 You may get a permissions error on step 5 above. If so, run the following, as recommended in the output:
 `sudo chown -R $(whoami) /usr/local/share/zsh /usr/local/share/zsh/site-functions`. Retry step 5.
+
+## Rationale
+
+If you look back in the version history, you will see it branch off. A large amount of retrospective changes were made, in a branch called `clean-start` for several reasons:
+1. Remove references to Get Into Teaching, where the prototype had originally been copied and pasted from
+2. Remove other system files and images that were accidentally brought into the repo
+3. DRY up code
+4. Update version of the prototype kit to latest version
+
+The `master` branch reflects the default branch before the changes, and the `main` branch is the default branch after the changes.
+The milestones, reflected in the folder structure, should have corresponding tags in both branches.
