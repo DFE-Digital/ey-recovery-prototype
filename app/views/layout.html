@@ -49,27 +49,26 @@
     containerClasses: "govuk-width-container",
     navigation:[
       {
-        href: "home-existing",
+        href: "/" + milestone + "/home-existing" if loggedIn != false else "/" + milestone + "/home-signed-out",
         text: "Home"
       },
       {
-        href: "/brain-development/my-training",
+        href: "/" + milestone + "/brain-development/my-training",
         text: "My learning"
-      },
+      } if loggedIn != false,
       {
-        href: "/my-account/manage-account",
+        href: "/" + milestone + "/my-account/manage-account",
         text: "My account"
-      },
+      } if loggedIn != false,
       {
-        href: "/home-signed-out",
-        text: "Sign out",
-        active: true if (navActive == "sign-in")
-      },
+        href: "/" + milestone + "/home-signed-out",
+        text: "Sign out"
+      } if loggedIn != false,
       {
-        href: "./sign-in1" if milestone == "sprint25" else "./sign-in",
+        href: "/" + milestone + "/sign-in1" if milestone == "sprint25" else "/" + milestone + "/brain-development/sign-in-existing",
         text: "Sign in",
         active: true if navActive == "sign-in"
-      }
+      } if loggedIn == false
     ]
   }) }}
 
