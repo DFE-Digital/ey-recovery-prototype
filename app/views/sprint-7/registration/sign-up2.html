@@ -23,6 +23,72 @@
         }) %}
 
         <p class="govuk-body">Your training progress won’t be shared with anyone without your permission. </p>
+        <p class="govuk-hint">If you work in multiple settings, choose the one where you work most often.</p>
+
+      
+                {% set textHtml %}
+        {{ govukInput({
+          id: "contact-by-text",
+          name: "contact-by-text",
+          type: "tel",
+          autocomplete: "tel",
+          classes: "govuk-!-width-one-third",
+          label: {
+            text: "Other setting"
+          }
+        }) }}
+        {% endset -%}
+
+        {{ govukRadios({
+          idPrefix: "setting-type",
+          name: "setting-type",
+          fieldset: {
+            legend: {
+              text: "Your setting type"
+            }
+          },
+          hint: {
+            text: "Select one."
+          },
+          items: [
+            {
+              value: "prvnursery",
+              text: "Private nursery"
+            },
+            {
+              value: "pubnursery",
+              text: "Public nursery"
+            },
+            {
+              value: "childminder",
+              text: "Childminder"
+            },
+            {
+              value: "freesch",
+              text: "Free school"
+            },
+            {
+              value: "locauth",
+              text: "Local authority maintained school"
+            },
+            {
+              value: "indschool",
+              text: "Independent school"
+            },
+            {
+              value: "specialschool",
+              text: "Special school"
+            },
+            {
+              value: "other",
+              text: "Other",
+              conditional: {
+                html: textHtml
+              }
+            }
+          ]
+        }) }}
+
         {{ govukInput({
           label: {
             text: "Your setting's postcode",
@@ -30,9 +96,6 @@
             isPageHeading: true
           },
           classes: "govuk-input--width-10",
-          hint: {
-            text: "If you have multiple locations, enter the one where you work most often."
-          },
           id: "width-10",
           name: "width-10"
         }) }}
