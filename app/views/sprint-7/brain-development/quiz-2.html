@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% set milestone = 'sprint-6' %}
+{% set milestone = 'sprint-7' %}
 
 {% block pageTitle %}
 Early Years Foundation
@@ -33,7 +33,7 @@ Early Years Foundation
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
   
-          <span class="govuk-caption-l">Page 9 of 12</span>
+          <span class="govuk-caption-l">Page 9 of 13</span>
           <h1 class="govuk-heading-l">
             Check your understanding
           </h1>
@@ -49,17 +49,18 @@ Early Years Foundation
                   environment and time would benefit their brain development in the sensorimotor stage.
                 </p>
               </legend>
+              <form action="quiz-answer-2" method="post">
               <div class="govuk-radios" data-module="govuk-radios">
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio"
-                    value="england">
+                  <input class="govuk-radios__input" id="answer" name="answer" type="radio"
+                    value="true">
                   <label class="govuk-label govuk-radios__label" for="where-do-you-live">
                     True
                   </label>
                 </div>
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio"
-                    value="scotland">
+                  <input class="govuk-radios__input" id="answer-2" name="answer" type="radio"
+                    value="false">
                   <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
                     False
                   </label>
@@ -74,8 +75,8 @@ Early Years Foundation
   
           <a class="govuk-button govuk-button--secondary" data-module="govuk-button"
             href="piaget-current-research">Previous</a>
-          <a class="govuk-button align-right" data-module="govuk-button" href="quiz-2-wrong">Submit answer</a>
-  
+          <button class="govuk-button align-right" data-module="govuk-button" type="submit">Submit answer</a>
+        </form>
         </div>
       </div>
   

@@ -8,7 +8,10 @@ Early Years Foundation
 
 
 
+{% block main %}
+
 <div class="govuk-width-container">
+  {% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
   {{ govukBreadcrumbs({
     items: [
       {
@@ -22,15 +25,10 @@ Early Years Foundation
       {
         text: "The developing brain",
         href: "#"
-      },
-      {
-        text: "Check your learning",
-        href: "#"
       }
     ]
   }) }}
 </div>
-
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
@@ -40,7 +38,7 @@ Early Years Foundation
           Check your learning
         </h1>
 
-        <form class="form" action="quiz-1-answer" method="post">
+        <form class="form" action="quiz-1-right" method="post">
 
           <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
@@ -92,6 +90,4 @@ Early Years Foundation
     </div>
   </main>
 </div>
-
-{{super()}}
 {% endblock %}
