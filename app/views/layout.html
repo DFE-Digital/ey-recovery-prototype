@@ -72,15 +72,6 @@
     ] if removeAllLinks != true
   }) }}
 
-  <div class="govuk-width-container">
-    {{ govukPhaseBanner({
-      tag: {
-        text: "prototype"
-      },
-      html: 'This is a new service - <a class="govuk-link" href="#">your feedback</a> will help us to improve it.'
-    }) if removePrototypeBanner != true }} 
-  </div>
-
   {% if displayPrimaryNav == true %}
   <div class="primary-navigation">
     <div class="govuk-width-container">

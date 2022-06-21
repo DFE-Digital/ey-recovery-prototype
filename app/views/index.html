@@ -1,137 +1,29 @@
 
 {% extends "layout.html" %}
-{% set removeAllLinks = true %}
 
 {% block pageTitle %}
-  Home – GOV.UK Prototype Kit
+Child development training for experts and mentors pilot
 {% endblock %}
+
+{% set removeAllLinks = true %}
 
 {% block content %}
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <h1 class="govuk-heading-xl">
-        Prototype your service using GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-    </div>
-  
-    <div class="govuk-grid-column-two-thirds">
-      <h2 class="govuk-heading-m">Prototype versions</h2>
-       
-      <h2 class="govuk-heading-s">Sprint 7 scenarios</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="sprint-7/brain-development/my-training">User returning to 2nd module - 1st module already completed </a></li>
-        <li><a href="sprint-7/brain-development/video-content">Video with transcript</a></li>
-        <li><a href="sprint-7/reforms/article-2">Reforms: Article with Harvard referencing</a></li>
-        <li><a href="sprint-7/reforms/article-1">Reforms: Article with footnotes</a></li>
-        <li><a href="sprint-7/components-bespoke">Bespoke components (quotes styling & cards)</a></li>
-        <li><a href="sprint-7/brain-development/my-learning-fail">User fails first attempt at module test</a></li>
-        <li><a href="sprint-7/interim-unavailable">Interim solution unavailable</a></li>
-
-      </ul>
-
-
-
-      <h2 class="govuk-heading-s">Sprint 6 scenarios</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="sprint-6/home-signed-out">User sent course by a manager - start from beginning </a></li>
-        <li><a href="sprint-6/home-signed-out">You've started the training and want to carry on </a></li>
-      </ul>
-
-      <h2 class="govuk-heading-s">Sprint 5 scenarios</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="sprint-5/home-existing" class="govuk-link">User enrolling from the home page</a></li>
-        <li><a href="sprint-5/brain-development/my-training" class="govuk-link">Finished module 1 and module 2 in progress</a></li>
-        <li><a href="sprint-5/brain-development/my-learning-not-started" class="govuk-link">User not started any modules</a></li>
-        <li><a href="sprint-5/brain-development/my-training-in-progress" class="govuk-link">1st module in progress</a></li>
-        <li><a href="sprint-5/brain-development/my-training-completed" class="govuk-link">1st module completed and module 2 not started</a></li>
-        <li><a href="sprint-5/brain-development/my-learning-all-completed" class="govuk-link">All available modules completed</a></li>
-      </ul>
-
-      <h2 class="govuk-heading-s">Sprint 4 scenarios</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          <a href="sprint-4/home-existing" class="govuk-link">Existing user and they have already started the course via my training
-            page - Fail</a>
-        </li>
-      </ul>
-
-      <h2 class="govuk-heading-s">Not navigable errors or unhappy paths</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="sprint-7/registration/sign-in-errors/unlock-link-expired" class="govuk-link">Account lock link expired</a></li>
-        <li><a href="sprint-6/registration/sign-in-errors/account-locked" class="govuk-link">Account has been locked</a></li>
-        <li><a href="sprint-5/registration/email-errors/reset-link-expired" class="govuk-link">Reset link expired</a></li>
-        <li><a href="sprint-5/registration/email-errors/reset-link-used" class="govuk-link">Reset link used</a></li>
-        <li><a href="sprint-5/service-unavailable" class="govuk-link">Service unavailable</a></li>
-        <li><a href="sprint-5/registration/email-errors/email-used">Email already registered</a></li>
-        <li><a href="sprint-5/registration/email-errors/password-mismatch">Passwords don't match</a></li>
-        <li><a href="sprint-5/registration/email-errors/email-invalid">Email not valid</a></li>
-        <li><a href="sprint-5/registration/sign-in-errors/ofsted-error" class="govuk-link">Ofsted error</a></li>
-        <li><a href="sprint-5/registration/new-password" class="govuk-link">Choose a new password</a></li>
-      </ul>
-
-      <h3 class="govuk-heading-s">Sprint 3</h3>
-      <ul class="govuk-list govuk-list--number">
-        <li><a href="./sprint-3/home-existing" class="govuk-link">Existing user and they have already started the course via my training page - Fail</a></li>
-      </ul>
-
-      <h3 class="govuk-heading-s">Sprint 2</h3>
-      <ol class="govuk-list govuk-list--number">
-        <li><a href="./sprint-2/home-existing.html">Existing user and they have already started the course via my training page - Fail</a></li>
-        <li><a href="./sprint-2/brain-development/test-pass/home-existing">Existing user and they have already started the course view overview page - Pass</a></li>
-      </ol>
-      
-      <h3 class="govuk-heading-s">Sprint 1</h3>
-      <ol class="govuk-list govuk-list--number">
-        <li><a href="./sprint-1/home.html">User already has a training account and has started a course</a></li>
-        <li><a href="./sprint-1/start/email">User is finding service for the first time - Email 1</a></li>
-        <li><a href="./sprint-1/start/email1">User is finding service for the first time - Email 2</a></li>
-      </ol>
-      
-      <h3 class="govuk-heading-s">Sprint 26 Week 2</h3>
-      <ol class="govuk-list govuk-list--number">
-        <li><a href="./sprint-26-week-2/home.html">User already has a training account and has started a course</a></li>
-        <li><a href="./sprint-26-week-2/email">User is finding service for the first time - Email 1</a></li>
-        <li><a href="./sprint-26-week-2/email1">User is finding service for the first time - Email 2</a></li>
-      </ol>
-
-      <h3 class="govuk-heading-s">Sprint 26</h3>
-      <ol class="govuk-list govuk-list--number">
-        <li><a href="./sprint-26/home.html">User already has a training account and has started a course</a></li>
-        <li><a href="./sprint-26/email">User is finding service for the first time - Email 1</a></li>
-        <li><a href="./sprint-26/email1">User is finding service for the first time - Email 2</a></li>
-      </ol>
-      
-      <h3 class="govuk-heading-s">Sprint 25</h3>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="./sprint-25/home.html">Service start page</a></li>
-      </ul>
-
-      <h3 class="govuk-heading-s">Sprint 24</h3>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="./sprint-24/training-overview.html">Service start page</a></li>
-      </ul>
-
-
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          <a href="/docs/tutorials-and-examples">Tutorials and templates</a>
-        </li>
-        <li>
-          <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="govuk-grid-column-one-third">
-      <h2 class="govuk-heading-m">Notes on prototyping</h2>
-      <p classs="govuk-body"></p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>Add links to the list as new sections are prototyped so it's easy for everyone to find them</li>
-      </ul>
+      <h1 class="govuk-heading-l">Sorry, this service in unavailable</h1>
+      <p class="govuk-body">The prototype version of Child development training 
+        is no longer available. It has been replaced with a more complete 
+        version of the service.</p>
+      <p class="govuk-body">We've sent instructions on how to access the updated
+        training course to the email address you used to sign up for the prototype
+        service.
+      </p>
+      <p class="govuk-body">If you have not received this email, you can use this
+        link to <a href="#">access the more complete Child development course</a>.
+      </p>
     </div>
   </div>
 </div>
 {% endblock %}
+
