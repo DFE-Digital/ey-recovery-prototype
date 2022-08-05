@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-11' %}
+
+{% block pageTitle %}
+Secure relationships
+{% endblock %}
+
+
+{% block beforeContent %}
+{# beforeContent is reseting default phase banner #}
+{% endblock %}
+
+{% block main %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-quarter"></div>
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l">Page 6 of 10</span>
+        <h1 class="govuk-heading-l">
+         Supporting secure relationships
+        </h1>
+
+        <!-- 
+          <img src="/public/images/brain-diagram.jpg"  alt="Parts of the brain">
+          </br>
+          </br>
+        -->
+
+        <p class="govuk-body">Every child in an EYFS environment will be assigned a key person.</p>
+
+        <p class="govuk-body">As a child’s key person you will ensure they settle into the setting and receive care tailored to their individual needs. </p>
+
+        <p class="govuk-body">As part of this role, you will need to:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>support the child to feel emotionally secure when their parents or carers are not there</li>
+          <li>ensure the child feels safe and offer reassurance</li>
+          <li>promote the child’s language development</li>
+          <li>attend to the child’s personal care needs</li>
+          <li>develop strong partnerships with the child’s parents or carers</li>
+          <li>complete observation, assessment and planning</li>
+          <li>promote the child’s independence</li>
+        
+
+        </ul>
+
+        <div class="govuk-inset-text prompt govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m">Practitioner prompt</h2>
+
+          <p class="govuk-body">How does the key person role work in your setting? How many children are you the key person for?</p>
+          <p class="govuk-body">What are your responsibilities?</p>
+
+          <p class="govuk-body">In your role as a key person, how have you supported a specific child? What are their next steps?</p>
+
+         
+
+        </div>
+     <p class="govuk-body">It will be clear that a child has achieved secure relationships when they:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>seek you out for reassurance if they are worried</li>
+          <li>want to share their success</li>
+          <li>look for comfort when they are tired</li>
+          <li>are able to wait without becoming anxious</li>
+          <li>are responsive to discipline</li>
+          <li>know they are valued</li>
+       
+        
+        </ul>
+
+     
+ 
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+        <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="limited-development-knowledge">Previous</a>
+        <a class="govuk-button align-right" data-module="govuk-button" href="emotional-development">Save and continue</a>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+{{super()}}
+{% endblock %}
