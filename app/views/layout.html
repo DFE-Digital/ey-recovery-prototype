@@ -53,9 +53,15 @@
         text: "Home"
       },
       {
-        href: "/" + milestone + "/brain-development/my-training",
-        text: "My learning"
+        href: "/" + milestone + "/social-emotional/my-training-m3" if milestone =="sprint-11" else "/" + milestone + "brain-development/my-training",
+        text: "My modules"
       } if loggedIn != false,
+
+      {
+        href: "/" + milestone + "/learning-log",
+        text: "Learning log" if milestone == "sprint-11"
+      } if loggedIn != false,
+
       {
         href: "/" + milestone + "/my-account/manage-account",
         text: "My account"

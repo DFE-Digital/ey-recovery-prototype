@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-11' %}
+
+{% block pageTitle %}
+The environment
+{% endblock %}
+
+
+{% block beforeContent %}
+{# beforeContent is reseting default phase banner #}
+{% endblock %}
+
+{% block main %}
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-quarter"></div>
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l">Page 3 of 10</span>
+        <h1 class="govuk-heading-l">
+          The environment
+        </h1>
+
+      
+
+        <p class="govuk-body">Children’s brains respond to and develop from the environment they experience. The quality of the environment will impact on the child’s acquisition of skills, knowledge and language.</p>
+
+        <p class="govuk-body">Positive influences within the early years environment will encourage the myelination of neurones. </p>
+
+        <p class="govuk-body">Characteristics of a positive environment include:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>physical exercise activities</li>
+          <li>exposure to both new and unfamiliar activities</li>
+          <li>peer interaction</li>
+          <li>developing and testing language skills</li>
+          <li>child led activities and experiences</li>
+          <li>adult led activities and experiences</li>
+          <li>experience of managing risk and challenge</li>
+          <li>promotion of all areas of learning</li>
+          <li>adult interaction</li>
+
+        </ul>
+
+        <p class="govuk-body">Negative influences such as social isolation, a lack of stimulation and limited exposure to language and communication will weaken the quality of the myelin. </p>
+        <p class="govuk-body">Prolonged exposure to negative influences will potentially:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li>impact upon a child’s ability to carry out basic tasks</li>
+          <li>result in incidents of unwanted behaviour if the child is not challenged or engaged</li>
+          <li>restrict language and communication development</li>
+          <li>result in emotional outbursts</li>
+          <li>lead to mental health concerns</li>
+          <li>result in a very short attention span</li>
+          <li>result in children becoming withdrawn and isolated</li>
+        
+        </ul>
+
+        <h2 class="govuk-heading-m">Routines</h2>
+        <p class="govuk-body">Children require routines to ensure that they are able to relax and feel comfortable. When children know which staff will work with them and what will happen next, they will be relaxed and ready to learn.</p>
+
+        <div class="govuk-inset-text prompt govuk-!-padding-bottom-6">
+          <h2 class="govuk-heading-m">Practitioner prompt</h2>
+
+          <p class="govuk-body">You can support children by using visual reminders of the daily routine and what comes next. At regular points in the day you can review the routine so that children can revisit what has been completed and what will come next.</p>
+
+          <p class="govuk-body">You can encourage older children to get involved in deciding some parts of the routine. This will encourage responsibility, choice and independence.</p>
+
+         
+
+        </div>
+
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+        <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="">Previous</a>
+        <a class="govuk-button align-right" data-module="govuk-button" href="enabling-environments">Save and continue</a>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+{{super()}}
+{% endblock %}
