@@ -1,0 +1,75 @@
+
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-6' %}
+
+
+
+{% block main %}
+
+	<div class="govuk-width-container">
+    {{ govukBackLink({
+      text: "Back",
+      href: "about-you"
+    }) }}
+    
+			<main class="govuk-main-wrapper govuk-!-margin-bottom-8">
+
+				<div class="govuk-grid-row">
+
+					<div class="govuk-grid-column-two-thirds-from-desktop">
+
+
+<h1 class="govuk-heading-l">Which of the following best describes your role?</h1>
+<p class="govuk-hint">Role means XYZ.</p>
+					
+{{ govukRadios({
+  idPrefix: "role",
+  name: "role",
+  fieldset: {
+    legend: {
+      text: "Your role"
+    }
+  },
+  hint: {
+    text: "Select one."
+  },
+  items: [
+    {
+      value: "roledirector",
+      text: "Owner or director"
+    },
+    {
+      value: "rolemanager",
+      text: "Manager or team leader"
+    },
+    {
+      value: "rolepractitioner",
+      text: "Practitioner"
+    },
+    {
+      value: "roletrainee",
+      text: "Trainee"
+    },
+    {
+      value: "roleschool",
+      text: "Student or studying"
+    }
+  
+  
+    
+  ]
+}) }}
+
+
+
+
+  
+        
+            <br>
+            <a href="local-authority" class="govuk-button govuk-!-margin-top-2">Continue</a>
+        </div>
+      </div>
+			</main>
+	</div>
+{% endblock %}

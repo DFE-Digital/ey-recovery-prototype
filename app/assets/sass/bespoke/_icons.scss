@@ -1,0 +1,51 @@
+.govuk-prompt{
+margin-bottom: 40px;
+    margin-top: 40px;
+   
+    background-color: #BFE3E0;
+    color: #212b32;
+    border-top: 10px solid #28A197;
+
+    padding-top: 0!important;
+    padding-left:20px;
+    padding-bottom:10px;
+
+
+}
+
+.govuk-prompt__grey{
+    margin-bottom: 40px;
+        margin-top: 40px;
+       
+        background-color: #EDEFF1;
+        color: #212b32;
+        border-top: 10px solid #28A197;
+    
+        padding-top: 0!important;
+        padding-left:20px;
+        padding-bottom:10px;
+    
+    }
+    
+
+
+.govuk-prompt__icon{
+    background-color: #28A197;
+    color: #212b32;
+    display: inline-block;
+    margin: 0 0 8px -33px;
+    padding: 8px 20px;
+    position: relative;
+    top: -16px;
+}
+
+.govuk-prompt h2{
+    text-align: left;
+    display: block;
+    padding-left:45px;
+    margin-top:-55px;
+}
+.govuk-prompt p{
+    padding-left:45px;
+    
+}

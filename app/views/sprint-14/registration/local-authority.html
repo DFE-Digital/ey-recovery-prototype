@@ -1,0 +1,40 @@
+
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-6' %}
+
+
+
+{% block main %}
+
+	<div class="govuk-width-container">
+    {{ govukBackLink({
+      text: "Back",
+      href: "about-you"
+    }) }}
+    
+			<main class="govuk-main-wrapper govuk-!-margin-bottom-8">
+
+				<div class="govuk-grid-row">
+
+					<div class="govuk-grid-column-two-thirds-from-desktop">
+
+
+<h1 class="govuk-heading-l">What local authority do you work in?</h1>
+<p class="govuk-hint">A local authority is....</p>
+
+					
+
+
+
+
+          <div class="govuk-!-margin-bottom-8"></div>
+  
+          <a href="" class="govuk-body govuk-link">I don't work in a local authority, or I work across multiple local authorities<a>
+            <br>
+            <a href="role" class="govuk-button govuk-!-margin-top-6">Continue</a>
+        </div>
+      </div>
+			</main>
+	</div>
+{% endblock %}
