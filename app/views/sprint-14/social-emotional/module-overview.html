@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% set milestone = 'sprint-11' %}
+{% set milestone = 'sprint-14' %}
 
 {% block pageTitle %}
 Early Years Foundation
@@ -15,10 +15,10 @@ Early Years Foundation
     items: [
       {
         text: "Home",
-        href: "app/views/home-existing"
+        href: "/sprint-14/home-existing"
       },
       {
-        text: "Brain development in the early years",
+        text: "Supporting children’s personal, social and emotional development",
         href: "#"
       }
     ]
@@ -40,8 +40,8 @@ Early Years Foundation
           </p>
 
           {{ govukButton({
-          "text": "Resume training",
-          href: "/sprint-11/prompts/the-environment"
+          "text": "Start training",
+          href: "about-interrupt"
           }) }}
         </div>
       </main>
@@ -78,7 +78,7 @@ Early Years Foundation
                     <h2 class="govuk-heading-m">Development of personal, social and emotional skills</h2>
 
                     <strong class="govuk-tag govuk-tag--purple align-right">
-                      Complete
+                      Not started
                     </strong>
                   </li>
 
@@ -121,7 +121,7 @@ Early Years Foundation
                     <h2 class="govuk-heading-m">Building secure relationships</h2>
 
                     <strong class="govuk-tag govuk-tag--purple align-right">
-                      In progress
+                     Not started
                     </strong>
                   </li>
 
@@ -143,6 +143,46 @@ Early Years Foundation
 
                   <li>
                     <a class="govuk-link" href="#"> Social and emotional development: 2 to 3 years old </a> 
+                    <strong class="govuk-tag align-right">
+                    Not started
+                    </strong>
+                  </li>
+                 
+
+              </ul>'
+            }
+          },
+
+          {
+            heading: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <h2 class="govuk-heading-m">Summary and next steps</h2>
+
+                    <strong class="govuk-tag govuk-tag--purple align-right">
+                     Not started
+                    </strong>
+                  </li>
+
+              </ul>'
+
+            },
+            summary: {
+              text: "Building secure relationships must be completed before you begin this section "
+            },
+            content: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <a class="govuk-link" href="#">Recap and further reading</a>
+                    <strong class="govuk-tag align-right">
+                     Not started
+                      </strong>
+                  </li>
+
+                  <li>
+                    <a class="govuk-link" href="#"> End of module quiz </a> 
                     <strong class="govuk-tag align-right">
                     Not started
                     </strong>
