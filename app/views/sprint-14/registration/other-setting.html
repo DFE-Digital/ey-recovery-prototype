@@ -1,0 +1,47 @@
+
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+
+
+{% block main %}
+
+	<div class="govuk-width-container">
+    {{ govukBackLink({
+      text: "Back",
+      href: "about-you"
+    }) }}
+    
+			<main class="govuk-main-wrapper govuk-!-margin-bottom-8">
+
+				<div class="govuk-grid-row">
+
+					<div class="govuk-grid-column-two-thirds-from-desktop">
+
+
+<h1 class="govuk-heading-l">What other setting type do you work in?</h1>
+
+<p class="govuk-hint">If you work in multiple settings, choose the one where you work most often.</p>
+					
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="event-name">
+    Enter the setting type you work in
+  </label>
+  <input class="govuk-input" id="event-name" name="event-name" type="text">
+</div>
+
+
+
+          <div class="govuk-!-margin-bottom-6"></div>
+  
+       
+       
+            <a href="local-authority" class="govuk-button govuk-!-margin-top-6">Continue</a>
+        </div>
+      </div>
+			</main>
+	</div>
+{% endblock %}
+

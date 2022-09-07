@@ -23,12 +23,40 @@
 <h1 class="govuk-heading-l">What local authority do you work in?</h1>
 <p class="govuk-hint">A local authority is....</p>
 
-					
+<div class="govuk-!-margin-bottom-5">
+  <label for="local-authority" class="govuk-visually-hidden">
+      School name
+  </label>
+
+  <select class="govuk-select form-control" name="local-authority" id="local-authority">
+    <option value="" selected>Select your local authority</option>
+    <option value="Sefton Metropolitan Borough Council">Sefton Metropolitan Borough Council</option>
+    <option value="Sedgemoor District Council">Sedgemoor District Council</option>
+    <option value="Selby District Council">Selby District Council</option>
+    <option value="Sevenoaks District Council">Sevenoaks District Council</option>
+    <option value="Somerset County Council">Somerset County Council</option>
+    <option value="Southend-on-Sea Borough Council">Southend-on-Sea Borough Council</option>
+    <option value="Mid Sussex District Council">Mid Sussex District Council</option>
+    <option value="North Somerset Council">North Somerset Council</option>
+    <option value="North Yorkshire County Council">North Yorkshire County Council</option>
+    <option value="Norfolk County Council">Norfolk County Council</option>
+    <option value="Essex County Council">Essex County Council</option>
+    <option value="Northumberland Council">Northumberland Council</option>
+    <option value="London Borough of Newham">London Borough of Newham</option>
+    <option value="Manchester City Council">Manchester City Council</option>
+    <option value="Barrow-in-Furness Borough Council">Barrow-in-Furness Borough Council</option>
+    <option value="Blackburn with Darwen Borough Council">Blackburn with Darwen Borough Council</option>
+    <option value="Chelmsford City Council">Chelmsford City Council</option>
+    <option value="City of York Council">City of York Council</option>
+    <option value="Bradford Metropolitan District Council">Bradford Metropolitan District Council</option>                                                      
+  </select>
+</div>
 
 
 
 
-          <div class="govuk-!-margin-bottom-8"></div>
+
+          <div class="govuk-!-margin-bottom-6"></div>
   
           <a href="" class="govuk-body govuk-link">I don't work in a local authority, or I work across multiple local authorities<a>
             <br>
@@ -37,4 +65,21 @@
       </div>
 			</main>
 	</div>
+{% endblock %}
+{% block pageScripts %}
+    <link rel="stylesheet" href="/public/javascripts/accessible-autocomplete.min.css">
+    <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+    <script>
+        accessibleAutocomplete.enhanceSelectElement({
+            defaultValue: '',
+            selectElement: document.getElementById('local-authority'),
+            minLength: 3,
+            tNoResults: function() { return 'No local authorities found.'; }
+        });
+    </script>
+     <script>
+        function goBack() {
+         window.history.back();
+        }
+     </script>
 {% endblock %}

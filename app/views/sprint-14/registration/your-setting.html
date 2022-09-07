@@ -24,13 +24,40 @@
 <p class="govuk-hint">Your training progress won’t be shared with anyone without your permission.</p>
 <p class="govuk-hint">If you work in multiple settings, choose the one where you work most often.</p>
 					
+<div class="govuk-!-margin-bottom-5">
+  <label for="setting-type" class="govuk-visually-hidden">
+      School name
+  </label>
+
+  <select class="govuk-select form-control" name="setting-type" id="setting-type">
+    <option value="" selected>Select your setting type</option>
+    <option value="Private nursery">Private nursery</option>
+    <option value="Public nursery">Public nursery</option>
+    <option value="Childminder as part of an agency">Childminder as part of an agency</option>
+    <option value="Independent childminder">Independent childminder</option>
+    <option value="Free school">Free school</option>
+    <option value="Local authority maintained school">Local authority maintained school</option>
+    <option value="Academy">Academy</option>
+    <option value="Independent school">Independent school</option>
+    <option value="Special school">Special school</option>
+    <option value="Local authority">Local authority</option>
+    <option value="Training provider">Training provider</option>
+    <option value="Central government">Training provider</option>
+    <option value="DFE">Central government</option>
+    <option value="Daycare">Daycare</option>
+    <option value="Preschool">Preschool</option>
+    <option value="Playgroup">Playgroup</option>
+    <option value="Expert and mentor programme">Expert and mentor programme</option>
+    <option value="Childcare centre">Childcare centre</option>
+    <option value="Nursery school">Nursery school</option>                                                      
+  </select>
+</div>
 
 
 
-
-          <div class="govuk-!-margin-bottom-8"></div>
+          <div class="govuk-!-margin-bottom-6"></div>
   
-          <a href="" class="govuk-body govuk-link">My setting is not in the list<a>
+          <a href="other-setting" class="govuk-body govuk-link">My setting is not in the list<a>
             <br>
             <a href="local-authority" class="govuk-button govuk-!-margin-top-6">Continue</a>
         </div>
@@ -38,3 +65,21 @@
 			</main>
 	</div>
 {% endblock %}
+{% block pageScripts %}
+    <link rel="stylesheet" href="/public/javascripts/accessible-autocomplete.min.css">
+    <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+    <script>
+        accessibleAutocomplete.enhanceSelectElement({
+            defaultValue: '',
+            selectElement: document.getElementById('setting-type'),
+            minLength: 3,
+            tNoResults: function() { return 'No settings found.'; }
+        });
+    </script>
+     <script>
+        function goBack() {
+         window.history.back();
+        }
+     </script>
+{% endblock %}
+
