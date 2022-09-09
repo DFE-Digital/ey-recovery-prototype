@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+{% block main %}
+<div class="govuk-width-container">
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Brain development and how children learn",
+        href: "#"
+      },
+      {
+        text: "The developing brain",
+        href: "#"
+      },
+      {
+        text: "Check your learning",
+        href: "#"
+      }
+    ]
+  }) }}
+</div>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l">Page 5 of 10</span>
+        <div class="govuk-prompt govuk-prompt__grey">
+          <div class="govuk-prompt__icon">
+            <i style="color:white;"class="fa-solid fa-question icon fa-2x" ></i>
+          </div>
+          <h1 class="govuk-heading-m">
+          Check your understanding
+        </h1>
+
+        <form class="form" action="3-1-1-3b-answer" method="post">
+
+        
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <p class="govuk-body"><strong>
+                  Read the scenario and answer the question: Yusuf and Noah are playing together outside when Noah trips and bumps his knee, which causes him to cry. Yusuf is quick to try to comfort Noah and looks for help from an adult. Later, Yusuf recreates the situation with dolls and uses the opportunity to express his worries about the accident. At around what age would you expect to start seeing Yusuf’s behaviour?
+                </p></strong>
+              </legend>
+              <div class="govuk-radios" style="padding-left:45px;" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live" name="quiz-answer" type="radio"
+                    value="filled">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                   4
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="quiz-answer" type="radio"
+                    value="filled">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                   1
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-3" name="quiz-answer" type="radio"
+                    value="filled">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                   5
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-4" name="quiz-answer" type="radio"
+                    value="filled">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                    3
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            </fieldset>
+          </div>
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="3-1-1-3a">Previous</a>
+          <button class="govuk-button align-right" data-module="govuk-button" type="submit">Submit answer</a>
+
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{{super()}}
+{% endblock %}
