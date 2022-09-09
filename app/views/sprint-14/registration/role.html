@@ -21,7 +21,7 @@
 
 
 <h1 class="govuk-heading-l">Which of the following best describes your role?</h1>
-<p class="govuk-hint">Role means XYZ.</p>
+
 					
 {{ govukRadios({
   idPrefix: "role",
@@ -31,9 +31,7 @@
       text: "Your role"
     }
   },
-  hint: {
-    text: "Select one."
-  },
+
   items: [
     {
       value: "roledirector",
@@ -54,8 +52,11 @@
     {
       value: "roleschool",
       text: "Student or studying"
+    },
+    {
+      value: "roletrainer",
+      text: "Trainer or lecturer"
     }
-  
   
     
   ]
