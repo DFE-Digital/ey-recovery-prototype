@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+{% block breadcrumbs %}
+<div class="govuk-width-container">
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Module 3",
+        href: "#"
+      },
+      {
+        text: "Development of personal, social and emotional skills",
+        href: "#"
+      },
+      {
+        text: "Before birth and young babies",
+        href: "#"
+      }
+    ]
+  }) }}
+</div>
+{% endblock %}
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+         
+          <span class="govuk-caption-l">Page 2 of 10</span>
+          <h1 class="govuk-heading-l">
+            Before birth and young babies
+
+          </h1>
+          <img src="/public/images/baby.jpg" alt="A practitioner smiling and holding a baby" class="govuk-!-margin-bottom-2">
+          <p class="govuk-body">Research suggests that emotional development begins even before a baby is born. By the sixth month of pregnancy, babies’ hearing is nearly fully formed and they are becoming more aware of their environment in the womb.</p>
+
+          <p class="govuk-body">At birth, a baby will communicate and show their feelings by crying. At first, they will only smile as a reflex, but by 6 to 8 weeks smiling becomes a controlled response to show happiness and pleasure.</p>
+          
+          <div class="govuk-prompt">
+						<div class="govuk-prompt__icon">
+							<i style="color:white;"class="fa-solid fa-exclamation icon fa-2x" ></i>
+						</div>
+					
+						<h2 class="govuk-heading-m" style="padding-left:30px!important">In your setting</h2>
+						<p class="govuk-body" style="padding-left:30px!important">To help with their emotional development, make sure that you give babies lots of:</p>
+            <ul style="padding-left:50px!important;"class="govuk-list govuk-list--bullet">
+            <li>eye contact</li>
+            <li>positive facial expressions</li>
+            <li>reassurance</li>
+            <li>cuddles</li>
+            <li>comfort when crying</li>
+            </ul>
+					
+					</div>
+          
+          
+       
+         
+          
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="3-1-1">Previous</a>
+
+          <a class="govuk-button align-right" data-module="govuk-button" href="3-1-1-2">Save and continue</a>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  {{super()}}
+{% endblock %}

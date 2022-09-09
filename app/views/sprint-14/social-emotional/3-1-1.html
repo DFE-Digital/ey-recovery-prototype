@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+{% block breadcrumbs %}
+<div class="govuk-width-container">
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Module 3",
+        href: "#"
+      },
+      {
+        text: "Development of personal, social and emotional skills",
+        href: "#"
+      },
+      {
+        text: "The stages of children's social and emotional development",
+        href: "#"
+      }
+    ]
+  }) }}
+</div>
+{% endblock %}
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+         
+          <span class="govuk-caption-l">Page 1 of 10</span>
+          <h1 class="govuk-heading-l">
+            The stages of children’s personal, social and emotional development
+
+          </h1>
+          <img src="/public/images/practitioner-scarf.jpg" alt="A practitioner smiling and holding a baby" class="govuk-!-margin-bottom-2">
+          <p class="govuk-body">Your role as a practitioner is to help children become self-aware, confident communicators, who are curious to try new things and able to build positive relationships with others.</p>
+
+          <p class="govuk-body">Over the next few pages we will take a closer look at the expected milestones for personal, social and emotional development between birth and the age of 5.</p>
+          <p class="govuk-body">As always, it is important to remember that while we will discuss the expected milestones of development, every child will develop at their own rate. No child should be considered as low ability in comparison to these milestones. Some children may require additional support to reduce gaps in learning that have occurred during the COVID-19 pandemic, and every child should be supported to achieve their full potential.</p>
+          
+          
+          <p class="govuk-body">This topic includes:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>before birth and young babies</li>
+            <li>12 months to 2 year olds</li>
+            <li>2 to 3 years old</li>
+            <li>4 years old</li>
+            <li>5 years old</li>
+
+          </ul>
+         
+          
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="3-1">Previous</a>
+
+          <a class="govuk-button align-right" data-module="govuk-button" href="3-1-1-1">Save and continue</a>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  {{super()}}
+{% endblock %}
