@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-6' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+{% block beforeContent %}
+  {# beforeContent is reseting default phase banner #}
+{% endblock %}
+
+{% block main %}
+
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Supporting children's personal, social and emotional development",
+        href: "1"
+      }
+    ]
+  }) }}
+  </div>
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-l">Before you start</h1>
+
+          <p class="govuk-body">You can expect to see various icons throughout the training course.</p>
+
+          <h2 class="govuk-heading-m">In your setting</h2>
+          <ul class="govuk-list govuk-icon__list ">
+            <li class="govuk-icon__list-item"> 	
+              <i class="fa-solid fa-exclamation icon fa-2x"></i>
+              <p>The exclamation point icon highlights practical tips to use in your setting.</p>
+           </li> 
+          </ul>
+     
+
+          <h2 class="govuk-heading-m">Reflection point</h2>
+          <ul class="govuk-list govuk-icon__list ">
+            <li class="govuk-icon__list-item"> 	
+              <i class="fa-solid fa-brain icon fa-2x"></i>
+              <p>The brain icon signals a chance to reflect on what you’ve learned and how it applies to your practice.</p>
+           </li> 
+          </ul>
+
+          <h2 class="govuk-heading-m">Learning log</h2>
+          <ul class="govuk-list govuk-icon__list ">
+            <li class="govuk-icon__list-item"> 	
+              <i class="fa-solid fa-pencil icon fa-2x"></i>
+              <p>When you see the pencil icon, you can use the space to make notes on the reflection point. You can view all your notes in your personal learning log. </p>
+           </li> 
+          </ul>
+          
+          <h2 class="govuk-heading-m">Learning check</h2>
+          <ul class="govuk-list govuk-icon__list ">
+            <li class="govuk-icon__list-item"> 	
+              <i class="fa-solid fa-question icon fa-2x"></i>
+              <p>You’ll see the question mark icon next to quiz questions throughout the module. These questions are to check you understand what you have learned.You will be able to see if you get these questions right or wrong. Your scores are not recorded and they do not count towards the certificate of achievem </p>
+           </li> 
+          </ul>
+          <hr>
+
+          <a class="govuk-button govuk-button--secondary" href="about-interrupt">Previous</a>
+          <a class="govuk-button align-right" href="module-intro">Save and continue</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  {{super()}}
+{% endblock %}

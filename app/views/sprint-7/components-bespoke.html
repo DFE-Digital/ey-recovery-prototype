@@ -1,6 +1,9 @@
 {% extends "layout.html" %}
 
 {% set milestone = 'sprint-6' %}
+{% block pageScripts %}
+<script src="https://kit.fontawesome.com/c87b5c47e2.js" crossorigin="anonymous"></script>
+{% endblock %} 
 {% block main %}
 
 <div class="govuk-width-container">
@@ -98,10 +101,22 @@
 						</div>
 					</div>
 				</a>
-
-
+			</div>
 			</div>
 
+			<div class="govuk-grid-row">
+				<div class="govuk-grid-column-two-thirds">
+					<div class="govuk-prompt">
+						<div class="govuk-prompt__icon">
+							<i style="color:white; height: 30px;"class="fa-solid fa-brain icon" ></i>
+						</div>
+						<div class="govuk-prompt-title">
+						<h2 class="govuk-heading-m">Practitioner prompt</h2>
+						<p class="govuk-body">Advice goes here</p>
+					</div>
+					</div>
+				</div>
+			</div>
 	</main>
 </div>
 {% endblock %} 

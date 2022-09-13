@@ -1,0 +1,207 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "/sprint-14/home-existing"
+      },
+      {
+        text: "Supporting children’s personal, social and emotional development",
+        href: "#"
+      }
+    ]
+  }) }}
+  </div>
+
+</br>
+<!-- START MAST -->
+<div class="full-BGstrip BGstrip-grey">
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+
+        <!-- START INTRO -->
+        <div class="govuk-width-container ">
+          <h1 class="govuk-heading-l ">Supporting children’s personal, social and emotional development</h1>
+          <p class="govuk-caption-m">This module explores how you can best support children to learn, develop and rehearse their key personal, social and emotional skills in your everyday practice.
+
+          </p>
+
+          {{ govukButton({
+          "text": "Start training",
+          href: "about-interrupt"
+          }) }}
+        </div>
+      </main>
+    </div>
+  </div>
+  <!-- END BESPOKE MAST -->
+
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row"></br>
+    {{govukTag({
+    text: "5 topics",
+    classes: "govuk-tag--green"
+    })}}
+
+    {{govukTag({
+    text: "2 hours",
+    classes: "govuk-tag--green"
+    })}}
+
+  </div>
+</div>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      {{ govukAccordion({
+        id: "accordion-with-summary-sections",
+        items: [
+          {
+            heading: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <h2 class="govuk-heading-m">Development of personal, social and emotional skills</h2>
+
+                    <strong class="govuk-tag govuk-tag--purple align-right">
+                      Not started
+                    </strong>
+                  </li>
+
+              </ul>'
+            },
+           
+            content: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <a class="govuk-link" href="">Factors affecting child development</a>
+
+                    <strong class="govuk-tag align-right">
+                      Not started
+                    </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="">Limited development knowledge</a>
+
+                    <strong class="govuk-tag align-right">
+                      Not started
+                    </strong>
+                  </li>
+                  <li>
+                    <a class="govuk-link" href="">Enabling environments</a>
+
+                    <strong class="govuk-tag align-right">
+                      Not started
+                    </strong>
+                  </li>
+
+              </ul>'
+            }
+          },
+              {
+            heading: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <h2 class="govuk-heading-m">Building secure relationships</h2>
+
+                    <strong class="govuk-tag govuk-tag--purple align-right">
+                     Not started
+                    </strong>
+                  </li>
+
+              </ul>'
+
+            },
+            summary: {
+              text: "Development of personal, social and emotional skills must be completed before you begin this section "
+            },
+            content: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <a class="govuk-link" href="#">How secure relationships affect learning and behaviour</a>
+                    <strong class="govuk-tag align-right">
+                     Not started
+                      </strong>
+                  </li>
+
+                  <li>
+                    <a class="govuk-link" href="#"> Social and emotional development: 2 to 3 years old </a> 
+                    <strong class="govuk-tag align-right">
+                    Not started
+                    </strong>
+                  </li>
+                 
+
+              </ul>'
+            }
+          },
+
+          {
+            heading: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <h2 class="govuk-heading-m">Summary and next steps</h2>
+
+                    <strong class="govuk-tag govuk-tag--purple align-right">
+                     Not started
+                    </strong>
+                  </li>
+
+              </ul>'
+
+            },
+            summary: {
+              text: "Building secure relationships must be completed before you begin this section "
+            },
+            content: {
+              html:
+              '<ul class="govuk-list">
+                  <li>
+                    <a class="govuk-link" href="#">Recap and further reading</a>
+                    <strong class="govuk-tag align-right">
+                     Not started
+                      </strong>
+                  </li>
+
+                  <li>
+                    <a class="govuk-link" href="#"> End of module quiz </a> 
+                    <strong class="govuk-tag align-right">
+                    Not started
+                    </strong>
+                  </li>
+                 
+
+              </ul>'
+            }
+          }
+           
+          
+          
+          
+        ]
+      }) }}
+    </div>
+  </div>
+</div>
+
+{# pulls in default gov uk template #}
+{{super()}}
+{% endblock %}

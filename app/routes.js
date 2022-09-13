@@ -64,4 +64,51 @@ router.post('/sprint-7/brain-development/quiz-answer-2', (req, res) => {
   }
 });
 
+//routing for incorrect/correct quiz result sprint 14 q1
+router.post('/sprint-14/social-emotional/3-1-1-3b-answer', (req, res) => {
+  // Make a variable and give it the value from answer value in radio buttons'
+  const quizAnswer = req.session.data['answer'];
+
+  // Check whether the variable matches a condition
+  if (quizAnswer === 'three') {
+    // Send user to next page
+    res.redirect('/sprint-14/social-emotional/3-1-1-3b-correct');
+  } else {
+    // Send user to ineligible page
+    res.redirect('/sprint-14/social-emotional/3-1-1-3b-incorrect');
+  }
+});
+
+
+//routing for incorrect/correct quiz result sprint 14 q2
+router.post('/sprint-14/social-emotional/3-1-1-4b-answer', (req, res) => {
+  // Make a variable and give it the value from answer value in radio buttons'
+  const quizAnswer = req.session.data['answer'];
+
+  // Check whether the variable matches a condition
+  if (quizAnswer === 'four') {
+    // Send user to next page
+    res.redirect('/sprint-14/social-emotional/3-1-1-4b-correct');
+  } else {
+    // Send user to ineligible page
+    res.redirect('/sprint-14/social-emotional/3-1-1-4b-incorrect');
+  }
+});
+
+
+//routing for incorrect/correct quiz result sprint 14 q3
+router.post('/sprint-14/social-emotional/3-1-1-5b-answer', (req, res) => {
+  // Make a variable and give it the value from answer value in radio buttons'
+  const quizAnswer = req.session.data['answer'];
+
+  // Check whether the variable matches a condition
+  if (quizAnswer === 'true') {
+    // Send user to next page
+    res.redirect('/sprint-14/social-emotional/3-1-1-5b-correct');
+  } else {
+    // Send user to ineligible page
+    res.redirect('/sprint-14/social-emotional/3-1-1-5b-incorrect');
+  }
+});
+
 module.exports = router

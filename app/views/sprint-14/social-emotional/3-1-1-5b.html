@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+{% block main %}
+<div class="govuk-width-container">
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Module 3",
+        href: "#"
+      },
+      {
+        text: "Development of personal, social and emotional skills",
+        href: "#"
+      },
+      {
+        text: "Learning check",
+        href: "#"
+      }
+    ]
+  }) }}
+</div>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l">Page 9 of 10</span>
+        <h1 class="govuk-heading-l">Learning check</h1>
+        <div class="govuk-prompt govuk-prompt__grey">
+          <div class="govuk-prompt__icon">
+            <i style="color:white;"class="fa-solid fa-question icon fa-2x" ></i>
+          </div>
+          <h2 class="govuk-heading-m">
+          Check your understanding
+        </h2>
+
+        <form class="form" action="3-1-1-5b-answer" method="post">
+
+        
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <p class="govuk-body"><strong>
+                  True or false? Around the age of 5, a child will begin to choose their friends based upon characteristics they would like for themselves.
+                </p></strong>
+              </legend>
+              <div class="govuk-radios" style="padding-left:45px;" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="four" name="answer" type="radio"
+                    value="true">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                  True
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="two" name="answer" type="radio"
+                    value="false">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                  False
+                  </label>
+                </div>
+             
+              </div>
+            </div>
+
+            </fieldset>
+          </div>
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="3-1-1-5a">Previous</a>
+          <button class="govuk-button align-right" data-module="govuk-button" type="submit">Submit answer</a>
+
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{{super()}}
+{% endblock %}

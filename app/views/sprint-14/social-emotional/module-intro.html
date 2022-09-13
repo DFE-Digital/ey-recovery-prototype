@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+  
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+         
+          <h1 class="govuk-heading-l">
+           Supporting children's personal, social and emotional development
+
+          </h1>
+          <img src="/public/images/dancing.jpg" alt="A practitioner smiling and holding a baby" class="govuk-!-margin-bottom-2">
+          <p class="govuk-body">On completion of this modue you will be able to:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>establish and explore the stages of children's personal, social and emotional development</li>
+            <li>discuss the importance of effective relationships</li>
+            <li>explore factors affecting behaviour</li>
+            <li>explain and explore the role of self-regulation</li>
+            
+          </ul>
+          <p class="govuk-body">From birth to 5 years old children will experience rapid growth in all areas of development, including their awareness of personal, social and emotional skills.</p>
+          <p class="govuk-body">It's important to understand developmental patterns and how progress in this area with impact children holistically. Children will need support to learn, develop and rehearse key skills, including how to:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>understand and manage their feelings</li>
+            <li>build and maintain relationships</li>
+            <li>manage their behaviour in line with social expectations</li>
+
+          </ul>
+          <p class="govuk-body">The impact of any difficulty in mastering these skills will be seen across all other areas of development.</p>
+          <p class="govuk-body">As communication and language underpin all other areas of development it is essential that children develop the skills to express themselves and their needs.</p>
+          
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="before-you-start">Previous</a>
+
+          <a class="govuk-button align-right" data-module="govuk-button" href="3-1">Save and continue</a>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  {{super()}}
+{% endblock %}

@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+{% block breadcrumbs %}
+<div class="govuk-width-container">
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "Module 3",
+        href: "#"
+      },
+      {
+        text: "Development of personal, social and emotional skills",
+        href: "#"
+      },
+      {
+        text: "5 years old",
+        href: "#"
+      }
+    ]
+  }) }}
+</div>
+{% endblock %}
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+         
+          <span class="govuk-caption-l">Page 8 of 10</span>
+          <h1 class="govuk-heading-l">
+           5 years old
+
+          </h1>
+          
+          <img src="/public/images/older-children.jpg" alt="A practitioner smiling and holding a baby" class="govuk-!-margin-bottom-2">
+          
+          <p class="govuk-body">By 5 years old, children will be more likely to follow rules, but will still move between periods of cooperation and periods of demanding behaviour. </p>
+ 
+          
+          <div class="govuk-prompt govuk-prompt__grey">
+						<div class="govuk-prompt__icon">
+							<i style="color:white;"class="fa-solid fa-exclamation icon fa-2x" ></i>
+						</div>
+					
+						<h2 class="govuk-heading-m" style="padding-left:30px!important">In your setting</h2>
+						<p class="govuk-body" style="padding-left:30px!important">You should encourage children to explore and understand their feelings.</p>
+            <p class="govuk-body" style="padding-left:30px!important">You can do this by:</p>
+            <ul style="padding-left:70px!important; padding-right:20px;"class="govuk-list govuk-list--bullet">
+              <li>talking about feelings, which will help children to manage challenging emotions like disappointment and frustration </li>
+              <li>encouraging children to embrace mistakes and learn from them, which will make them less afraid to make mistakes in the future </li>
+              <li>giving children responsibility</li>
+              <li>supporting children to understand that their actions have consequences</li>
+  
+            </ul>
+          
+					</div>
+
+          <p class="govuk-body">At this age, children will want to please others and will be able to take part in activities and tasks that involve cooperation and direction. They will be choosing their own friends and will see characteristics in friends that they would like for themselves. </p>
+          <p class="govuk-body">Children of this age will also be able to distinguish between what is real and imaginary, and will show concern and sympathy for others.</p>
+          <p class="govuk-body">They will have their own opinions to share and will be asking lots of questions to shape their thoughts. </p>
+       
+
+          <div class="govuk-prompt govuk-prompt__grey">
+						<div class="govuk-prompt__icon">
+							<i style="color:white;"class="fa-solid fa-exclamation icon fa-2x" ></i>
+						</div>
+					
+						<h2 class="govuk-heading-m" style="padding-left:30px!important">In your setting</h2>
+						<p class="govuk-body" style="padding-left:30px!important">You should continue to encourage children’s curiosity. You should make sure that they experience diverse environments, conversations and roles to help them to develop broad and informed opinions and views. </p>
+         </div>
+
+
+        <div class="govuk-prompt">
+          <div class="govuk-prompt__icon">
+            <i style="color:white;"class="fa-solid fa-brain icon fa-2x" ></i>
+          </div>
+        
+          <h2 class="govuk-heading-m">Reflection point</h2>
+          <p class="govuk-body">Reflect on what you have read about the social and emotional development of children aged 5.  </p>
+          <p class="govuk-body">Think of a child around the age of 5 in your care (where applicable).  </p>
+          <p class="govuk-body">Consider the following questions:</p>
+          <ul style="padding-left:70px!important; padding-right:20px;"class="govuk-list govuk-list--bullet">
+            <li>To what extent do you think this child meets the expected level of development for their age range?   </li>
+            <li>What makes you think this?   </li>
+            <li>What are this child's next steps?  </li>
+            <li>What opportunities and support can you offer to help them progress and develop?</li>
+
+          </ul>
+          </div>
+          <form action="3-1-1-5b" method="post">
+          <div class="govuk-prompt govuk-prompt__grey">
+            <div class="govuk-prompt__icon">
+              <i style="color:white;"class="fa-solid fa-pencil icon fa-2x" ></i>
+            </div>
+            <h2 class="govuk-heading-m">Add to your learning log</h2>
+           
+             
+              
+                <p class="govuk-body" >Use this space to take notes on what you've learned.</p>
+                <p class="govuk-body" >All your notes will be added to your personal <a href="/sprint-14/learning-log">learning log.</a></p>
+    
+           
+                  <div class="govuk-form-group govuk-log-text">
+                    <label class="govuk-label" for="label-as-page-heading">
+                      Your notes
+                    </label>
+                    <textarea class="govuk-textarea govuk-js-character-count" id="label-as-page-heading" name="log-reflect-3" rows="5" aria-describedby="label-as-page-heading-info">{{ data['log-reflect-3'] }}</textarea>
+                  </div>
+                
+               
+                
+           
+    
+         
+           
+            </div>
+          
+         
+         <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="3-1-1-4b-correct">Previous</a>
+
+          <button class="govuk-button align-right" data-module="govuk-button" type="submit">Save and continue</a>
+        </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  {{super()}}
+{% endblock %}
