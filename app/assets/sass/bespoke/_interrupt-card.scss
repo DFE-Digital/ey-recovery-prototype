@@ -3,7 +3,9 @@
   padding: 30px;
   background: #005ea5;
   color: #fff !important;
-
+  overflow: hidden;
+  width: auto;
+  
 }
 
 .interrupt-panel h1,
@@ -24,3 +26,6 @@
 a:visited {
   color: #005ea5
 }
+
+
+
