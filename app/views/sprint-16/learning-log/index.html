@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-14' %}
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+<!-- START MAST -->
+<div class="full-BGstrip">
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-l">Your learning log</h1>
+          <p class="govuk-body">View your notes from all modules here. You can also use the links provided to revisit a specific topic.</p>
+          <div class="govuk-tabs" data-module="govuk-tabs">
+            <h2 class="govuk-tabs__title">
+              Contents
+            </h2>
+            <ul class="govuk-tabs__list">
+              <li class="govuk-tabs__list-item ">
+                <a class="govuk-tabs__tab" href="#module1">
+                  Module 1
+                </a>
+              </li>
+        
+            
+            
+            </ul>
+      
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="module1">
+              <h2 class="govuk-heading-m">Notes for Module 1: Supporting children’s personal, social and emotional development</h2>
+
+              <h3 class="govuk-heading-s">20 September 2022</h3>
+              <p class="govuk-body"><strong>Page:</strong> <a href="/sprint-14/social-emotional/3-1-1-3a">2 to 3 years old</a></p>
+              
+              <div class="govuk-log-entry">
+                <h4 class="govuk-heading-s">You wrote:</h4>
+                <p class="govuk-body">{{ data['log-reflect-1'] }}</p>
+              </div>
+
+            
+              <h3 class="govuk-heading-s">20 September 2022</h3>
+              <p class="govuk-body"><strong>Page:</strong> <a href="/sprint-14/social-emotional/3-1-1-4a">4 years old</a></p>
+              
+              <div class="govuk-log-entry">
+                <h4 class="govuk-heading-s">You wrote:</h4>
+                <p class="govuk-body">{{ data['log-reflect-2'] }}</p>
+              </div>
+
+              <h3 class="govuk-heading-s">20 September 2022</h3>
+              <p class="govuk-body"><strong>Page:</strong> <a href="/sprint-14/social-emotional/3-1-1-5a">5 years old</a></p>
+              
+              <div class="govuk-log-entry">
+                <h4 class="govuk-heading-s">You wrote:</h4>
+                <p class="govuk-body">{{ data['log-reflect-3'] }}</p>
+              </div>
+
+              <button class="govuk-link govuk-body-s print-link__button" data-track-category="printButton" data-track-action="clicked" data-track-label="Print this page" data-module="print-link" data-print-link-module-started="true">Print this page</button>
+            </div>
+       
+          </div>
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+      
+
+
+    </main>
+  </div>
+</div>
+<!-- END BESPOKE MAST -->
+
+{# pulls in default gov uk template #}
+{{super()}}
+{% endblock %}

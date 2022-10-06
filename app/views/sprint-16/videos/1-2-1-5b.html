@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-16' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+{% block main %}
+<div class="govuk-width-container">
+ 
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-caption-l">Page 10 of 18</span>
+        <h1 class="govuk-heading-l">Learning check</h1>
+        <div class="govuk-prompt govuk-prompt__grey">
+          <div class="govuk-prompt__icon">
+            <i style="color:white;"class="fa-solid fa-question icon fa-2x" ></i>
+          </div>
+          <h2 class="govuk-heading-m">
+          Check your understanding
+        </h2>
+
+        <form class="form" action="1-2-1-6" method="post">
+
+        
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                
+                <p class="govuk-body">
+                  Which of the following are benefits of child led play? <br> (Select all answers that apply)
+                </p>
+              </legend>
+              <div class="govuk-checkboxes"  style="padding-left:45px;" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="play" name="play" type="checkbox" value="emotional">
+                  <label class="govuk-label govuk-checkboxes__label" for="play">
+                    Increased social and emotional development
+                  </label>
+                </div>
+                <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="play-1" name="play" type="checkbox" value="scaffolding">
+                    <label class="govuk-label govuk-checkboxes__label" for="play-1">
+                      Increased opportunities for scaffolding learning
+                    </label>
+                  </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="play-2" name="play" type="checkbox" value="concentration">
+                  <label class="govuk-label govuk-checkboxes__label" for="play-2">
+                    Increased concentration
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="play-3" name="play" type="checkbox" value="imagine">
+                  <label class="govuk-label govuk-checkboxes__label" for="play-3">
+                    Increased imagination and creativity
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            </fieldset>
+          </div>
+        </div>
+     
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="3-1-1-5">Previous</a>
+          <button class="govuk-button align-right" data-module="govuk-button" type="submit">Submit answer</a>
+
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{{super()}}
+{% endblock %}

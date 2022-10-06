@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+{% block beforeContent %}
+  {# beforeContent is reseting default phase banner #}
+{% endblock %}
+
+{% block main %}
+
+  <div class="govuk-width-container">
+    {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Supporting children's personal, social and emotional development",
+        href: "1"
+      }
+    ]
+  }) }}
+  </div>
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-two-thirds">
+          <div class="interrupt-panel">
+
+          <h1 class="govuk-heading-l">
+            What to expect during the training 
+          </h1>
+
+          <h2 class="govuk-heading-m">
+            End of module test
+          </h2>
+
+          <p class="govuk-body">Once you have completed all topics, there is an end of module test and an opportunity to download a certificate of achievement.  </p>
+
+          <h2 class="govuk-heading-m">
+            Your progress is saved automatically
+          </h2>
+
+          <p class="govuk-body">Your progress is automatically saved as you move through the module. You can sign out or close the browser at any time without losing your progress. When you next login, you can restart from where you left off. </p>
+
+          
+
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+          <a class="govuk-button" style="background-color:white; color:black" data-module="govuk-button" href="module-overview">Previous</a>
+
+          <a class="govuk-button align-right" style="background-color:white; color:black" data-module="govuk-button" href="before-you-start">Save and continue</a>
+        </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  {{super()}}
+{% endblock %}
