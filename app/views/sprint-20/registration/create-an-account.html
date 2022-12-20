@@ -1,0 +1,98 @@
+{% extends "layout-dfe-blank.html" %}
+
+{% set loggedIn = false %}
+{% set milestone = 'sprint-20' %}
+
+{% block main %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-!-margin-bottom-8">
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+        {{ govukBackLink({
+          text: "Back",
+          href: "sign-in"
+        }) }}
+        {% call govukFieldset({
+          legend: {
+            text: "Create an early years training account",
+            classes: "govuk-fieldset__legend--l",
+            isPageHeading: true
+          }
+        }) %}
+
+        <p class="govuk-body">Create an account to access training courses.</p>
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
+              Email address
+            </label>
+          </h1>
+          <div id="event-name-hint" class="govuk-hint">
+            We’ll send you an email with an account activation link.
+          </div>
+          <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+        </div>
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
+              Create a password
+            </label>
+          </h1>
+          <div id="event-name-hint" class="govuk-hint">
+            Requires upper and lower case letters, a number and at least 8 characters.
+          </div>
+          <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+        </div>
+
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
+              Confirm your password
+            </label>
+          </h1>
+
+          <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-two-thirds">
+
+        <div class="app-search-form-container govuk-!-margin-bottom-4">
+          
+       
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <legend class="govuk-fieldset__legend">
+                To use this service you must accept the <a href="#">terms and conditions</a> and <a href="#">privacy policy</a>.
+              </legend>
+            
+              <div class="govuk-checkboxes govuk-!-margin-top-2" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste">
+                    I confirm that I accept the terms and conditions and privacy policy.
+                  </label>
+                </div>
+           
+              </div>
+          
+            </fieldset>
+          </div>
+          </div>
+        <a class="govuk-button" data-module="govuk-button" href="check-your-email">Create account</a>
+
+
+        {% endcall %}
+
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

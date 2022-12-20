@@ -1,0 +1,86 @@
+
+{% extends "layout-dfe-blank.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+
+
+{% block main %}
+
+	<div class="govuk-width-container">
+    {{ govukBackLink({
+      text: "Back",
+      href: "about-you"
+    }) }}
+    
+			<main class="govuk-main-wrapper govuk-!-margin-bottom-8">
+
+				<div class="govuk-grid-row">
+
+					<div class="govuk-grid-column-two-thirds-from-desktop">
+
+
+<h1 class="govuk-heading-l">What setting type do you work in?</h1>
+<p class="govuk-hint">Search for the type of setting or organisation you work in, for example childminder or nursery.</p>
+<p class="govuk-hint">If you work in more than one early years setting, enter the one where you work most often.</p>
+<p class="govuk-hint">Your training progress won’t be shared with anyone without your permission.</p>
+					
+<div class="govuk-!-margin-bottom-5">
+  <label for="setting-type" class="govuk-visually-hidden">
+      Setting type
+  </label>
+
+  <select class="govuk-select form-control" name="setting-type" id="setting-type">
+    <option value="" selected>Select your setting type</option>
+    <option value="Private nursery">Private nursery</option>
+    <option value="Public nursery">Public nursery</option>
+    <option value="Childminder as part of an agency">Childminder as part of an agency</option>
+    <option value="Independent childminder">Independent childminder</option>
+    <option value="Free school">Free school</option>
+    <option value="Local authority maintained school">Local authority maintained school</option>
+    <option value="Academy">Academy</option>
+    <option value="Independent school">Independent school</option>
+    <option value="Special school">Special school</option>
+    <option value="Local authority">Local authority</option>
+    <option value="Training provider">Training provider</option>
+    <option value="Central government">Training provider</option>
+    <option value="DfE">Central government</option>
+    <option value="Daycare">Daycare</option>
+    <option value="Preschool">Preschool</option>
+    <option value="Playgroup">Playgroup</option>
+    <option value="Expert and mentor programme">Expert and mentor programme</option>
+    <option value="Childcare centre">Childcare centre</option>
+    <option value="Nursery attached to a school">Nursery attached to a school</option>                                                      
+  </select>
+</div>
+
+
+
+          <div class="govuk-!-margin-bottom-6"></div>
+  
+          <a href="other-setting" class="govuk-body govuk-link">I cannot find my setting or organisation<a>
+            <br>
+            <a href="local-authority" class="govuk-button govuk-!-margin-top-6">Continue</a>
+        </div>
+      </div>
+			</main>
+	</div>
+{% endblock %}
+{% block pageScripts %}
+    <link rel="stylesheet" href="/public/javascripts/accessible-autocomplete.min.css">
+    <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+    <script>
+        accessibleAutocomplete.enhanceSelectElement({
+            defaultValue: '',
+            selectElement: document.getElementById('setting-type'),
+            minLength: 3,
+            tNoResults: function() { return 'No settings found.'; }
+        });
+    </script>
+     <script>
+        function goBack() {
+         window.history.back();
+        }
+     </script>
+{% endblock %}
+

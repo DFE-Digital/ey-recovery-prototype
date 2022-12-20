@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+  
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+         
+          <h1 class="govuk-heading-l">
+           Development of personal, social and emotional skills
+
+          </h1>
+          <img src="/public/images/reading.jpg" alt="A practitioner smiling and holding a baby" class="govuk-!-margin-bottom-2">
+          <p class="govuk-body">Developing their personal, social and emotional skills is crucial in helping children to:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>understand and process their own feelings and the feelings of others</li>
+            <li>build and maintain positive relationships</li>
+            <li>understand social situations</li>
+            <li>develop self-control</li>
+            <li>manage their behaviour</li>
+            
+          </ul>
+          
+          <p class="govuk-body">The first section of this module includes:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>how children develop personal, social and emotional skills</li>
+            <li>how you can support children’s skill development</li>
+            <li>how social and emotional skills affect children’s behaviour</li>
+
+          </ul>
+          <p class="govuk-body">The impact of any difficulty in mastering these skills will be seen across all other areas of development.</p>
+          <p class="govuk-body">As communication and language underpin all other areas of development it is essential that children develop the skills to express themselves and their needs.</p>
+          
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="module-intro">Previous</a>
+
+          <a class="govuk-button align-right" data-module="govuk-button" href="3-1-1">Save and continue</a>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  {{super()}}
+{% endblock %}
