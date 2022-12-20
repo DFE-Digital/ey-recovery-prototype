@@ -67,6 +67,10 @@
   z-index: 0;
 }
 
+.govuk-card--clickable{
+  background-color: #E5E5E5;
+}
+
 .govuk-card--selectable > a:focus {
   background-color: initial !important;
 }
@@ -96,6 +100,10 @@
 .govuk-card__actions {
   padding-top:10px;
   padding-bottom: 0;
+}
+
+.govuk-card__actions-clickable{
+  text-align: right;
 }
 
 

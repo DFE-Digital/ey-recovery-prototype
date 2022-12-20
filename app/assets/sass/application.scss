@@ -31,8 +31,91 @@ $govuk-assets-path: '/govuk/assets/';
 @import "bespoke/print";
 @import "bespoke/log-entry";
 @import "bespoke/icons.scss";
+@import "bespoke/hmcts-progress-bar.scss";
+@import "bespoke/progress-bar.scss";
+
 
 // USED ACROSS PAGES
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+div,
+table,
+th,
+td,
+blockquote,
+li,
+tr {
+  font-family:
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    'Helvetica Neue',
+    sans-serif !important;
+}
+
+$dfe-blue: #003a69;
+$accent: #347ca9;
+
+.dfe-template__body {
+
+  .govuk-header {
+    background-color: $dfe-blue;
+  }
+
+  .govuk-header__container {
+    position: relative;
+    margin-bottom: -10px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border-bottom: 10px solid $accent;
+  }
+
+  .govuk-header__product-name,
+  .govuk-header__logotype-text,
+  .govuk-header__content {
+    line-height: 2.5rem !important;
+    font-size: 1.2rem;
+  }
+
+  .govuk-header__logotype-crown-fallback-image {
+    height: 45px;
+    width: 45px;
+  }
+
+  .govuk-header__logotype {
+    margin-right: 0;
+  }
+
+  .govuk-header__logo {
+    @include mq ($from: desktop) {
+      width: 70%;
+    }
+  }
+
+  .govuk-header__content {
+    @include mq ($from: desktop) {
+      width: 30%;
+      float: right;
+    }
+  }
+
+  .govuk-header nav {
+    display: inline-block;
+    float: right;
+  }
+}
 
 .course-creator-image {
   width: 90px;
@@ -81,7 +164,7 @@ $govuk-assets-path: '/govuk/assets/';
 
 .gem-c-feedback__prompt-link {
   position: relative;
-  font-family: "GDS Transport",arial,sans-serif;
+  font-family: "GDS Transport", arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -101,7 +184,7 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 .BGstrip-grey {
-  background-color:	#f3f2f1;
+  background-color: #f3f2f1;
 }
 
 .width-auto {

@@ -1,0 +1,76 @@
+
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+
+
+{% block main %}
+
+	<div class="govuk-width-container">
+    {{ govukBackLink({
+      text: "Back",
+      href: "about-you"
+    }) }}
+    
+			<main class="govuk-main-wrapper govuk-!-margin-bottom-8">
+
+				<div class="govuk-grid-row">
+
+					<div class="govuk-grid-column-two-thirds-from-desktop">
+
+
+<h1 class="govuk-heading-l">Which of the following best describes your role?</h1>
+
+					
+{{ govukRadios({
+  idPrefix: "role",
+  name: "role",
+  fieldset: {
+    legend: {
+      text: "Your role"
+    }
+  },
+
+  items: [
+    {
+      value: "roledirector",
+      text: "Owner or director"
+    },
+    {
+      value: "rolemanager",
+      text: "Manager or team leader"
+    },
+    {
+      value: "rolepractitioner",
+      text: "Practitioner"
+    },
+    {
+      value: "roletrainee",
+      text: "Trainee"
+    },
+    {
+      value: "roleschool",
+      text: "Student or studying"
+    },
+    {
+      value: "roletrainer",
+      text: "Trainer or lecturer"
+    }
+  
+    
+  ]
+}) }}
+
+
+<a href="other-role" class="govuk-body govuk-link">I would describe my role in another way</a>
+
+  
+        
+            <br>
+            <a href="training-email" class="govuk-button govuk-!-margin-top-4">Continue</a>
+        </div>
+      </div>
+			</main>
+	</div>
+{% endblock %}

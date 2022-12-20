@@ -1,0 +1,124 @@
+{% extends "layout-dfe.html" %}
+
+{% set milestone = 'sprint-20' %}
+{% block main %}
+
+<div class="govuk-width-container">
+	<main class="govuk-main-wrapper govuk-!-margin-bottom-8">
+
+		<div class="govuk-grid-row">
+
+			<div class="govuk-grid-column-two-thirds-from-desktop">
+
+				{{ govukBackLink({
+				text: "Back",
+				href: "sign-in"
+				}) }}
+				<h1 class="govuk-heading-l">Bespoke components for EYFS</h1>
+				<p>Components unique to EYFS training courses</p>
+				<h2 class="govuk-heading-m">Progress bar</h2>
+
+		</div>
+		</div>
+
+		<div class="govuk-grid-row">
+			<div class="govuk-grid-column-full">
+
+				<ol class="progress-bar--container govuk-list" role="progressbar">
+					<li class="progress-bar"><span class="fa-stack fa-1x" aria-label="completed">
+						<i  style="color:white" class="fa-solid fa-stack-2x fa-circle"></i>
+							<!-- <i class="fa-solid fa-stack-2x fa-circle"></i> Font Awesome fontawesome.com --><svg
+								class="svg-inline--fa fa-circle-check fa-stack-2x green" aria-hidden="true"
+								focusable="false" data-prefix="fas" data-icon="circle-check" role="img"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+								<path fill="currentColor"
+									d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+								</path>
+							</svg>
+							<!-- <i class="fa-solid fa-stack-2x fa-circle-check green"></i> Font Awesome fontawesome.com --></span>
+						<div></div>
+						<p class="govuk-body progress--heading"><span class="govuk-visually-hidden">Step 1</span>Module
+							introduction</p>
+					</li>
+					<li class="progress-bar"><span class="fa-stack fa-1x" aria-label="started"><svg
+								class="svg-inline--fa fa-circle fa-stack-2x green" aria-hidden="true" focusable="false"
+								data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 512 512" data-fa-i2svg="">
+								<path fill="currentColor"
+									d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z">
+								</path>
+							</svg>
+							<i style="color:green;"class="fa-solid fa-stack-2x fa-circle green"></i>
+							<i class="inner-circle fa-solid fa-stack-2x fa-circle "></i>
+						</span>
+						<div class="line line--green"></div>
+						<p class="govuk-body progress--heading govuk-!-font-weight-bold"><span
+								class="govuk-visually-hidden">Step 2</span>An informed approach to care and education
+						</p>
+					</li>
+					<li class="progress-bar"><span class="fa-stack fa-1x" aria-label="not started"><svg
+								class="svg-inline--fa fa-circle fa-stack-2x" aria-hidden="true" focusable="false"
+								data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 512 512" data-fa-i2svg="">
+								<path fill="currentColor"
+									d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z">
+								</path>
+							</svg>
+							<i style="color:white" class="fa-solid fa-stack-2x fa-circle"></i>
+							<i style="color:grey;"class="fa-regular fa-stack-2x fa-circle grey"></i></span>
+						<div class="line line--grey"></div>
+						<p class="govuk-body progress--heading"><span class="govuk-visually-hidden">Step 3</span>A
+							positive approach to care and education</p>
+					</li>
+					<li class="progress-bar"><span class="fa-stack fa-1x" aria-label="not started"><svg
+								class="svg-inline--fa fa-circle fa-stack-2x" aria-hidden="true" focusable="false"
+								data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 512 512" data-fa-i2svg="">
+								<path fill="currentColor"
+									d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z">
+								</path>
+							</svg>
+							<i style="color:white" class="fa-solid fa-stack-2x fa-circle"></i>
+							<i style="color:grey;"class="fa-regular fa-stack-2x fa-circle grey"></i></span>
+						<div class="line line--grey"></div>
+						<p class="govuk-body progress--heading"><span class="govuk-visually-hidden">Step 4</span>Summary
+							and next steps</p>
+					</li>
+				</ol>
+				<h2 class="govuk-heading-m">Flippable cards</h2>
+			</div>
+		</div>
+
+		<div class="govuk-grid-row">
+			<div class="govuk-grid-column-one-third">
+				
+				<div class="govuk-card govuk-card--clickable govuk-!-margin-top-7">
+
+					<div class="govuk-card__content">
+						
+						<p class="govuk-body govuk-!-margin-bottom-9">The first method of learning is enactive.
+						</p>
+					</div>
+					<div class="govuk-card__actions govuk-!-padding-top-9 govuk-!-margin-bottom-5">
+						<a class="govuk-body govuk-link " href="">Read more about enactive learning</a>
+					</div>
+				</div>
+			</div>
+			<div class="govuk-grid-column-one-third">
+				<div class="govuk-card govuk-card--clickable govuk-!-margin-top-7">
+					<div class="govuk-card__actions govuk-card__actions-clickable govuk-!-margin-bottom-">
+						<a class="govuk-body govuk-link " href="">Close</a>
+					</div>
+					<div class="govuk-card__content">
+						
+						<p class="govuk-body govuk-!-margin-top-2"> This is where children build on the memories of the hands on experience and reinforce this imagery. This means that when they think about an object or concept they can picture a relevant image.
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</main>
+	</main>
+</div>
+{% endblock %}

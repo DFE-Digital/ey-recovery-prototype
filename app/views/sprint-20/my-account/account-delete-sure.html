@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% set milestone = 'sprint-20' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">
+          Confirm you want to close your account
+        </h1>
+
+        <p>After you close your account you will no longer be able to access the training modules. </p>
+        <p>Any certificates you have earned will be permanently deleted.</p>
+        <p>We will delete your personal information within 10 working days. The personal information we will delete includes:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>your name</li>
+          <li>your email address</li>
+          <li>your postcode, if you provided it when you registered</li>
+          <li>any notes you have written in your learning log</li>
+        </ul>
+
+        <p>We will keep some anonymous information about:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>your role</li>
+          <li>your local authority</li>
+          <li>your usage of the training modules</li>
+          <li>why you closed your account</li>
+        </ul>
+        <p>This is to help us improve the training. None of this information will be personally identifiable to you.</p>
+        <p>You may still receive emails while we are processing your account closure. After your personal information is deleted, you will not receive any further emails from Early years child development training. </p>
+
+
+
+        <a class="govuk-button govuk-button--warning" href="account-deleted">Close my account</a> <br>
+        <a class="govuk-body govuk-link" href="manage-account">Cancel and go back to my account</a>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{{super()}}
+{% endblock %}
