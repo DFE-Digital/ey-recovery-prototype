@@ -1,0 +1,38 @@
+{% extends "layout-dfe.html" %}
+
+{% set loggedIn = false %}
+{% set milestone = 'sprint-20' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+{% block main %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-l">
+          Account closed
+        </h1>
+
+        <p>We have received your request to close your account.</p>
+        <p>Your data will be deleted within 10 working days.</p>
+        <p>You ahve been logged out.</p>
+
+        <a class="govuk-body" href="/home-existing" class="govuk-link">Go to the Early years child development training homepage</a>
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{{super()}}
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
