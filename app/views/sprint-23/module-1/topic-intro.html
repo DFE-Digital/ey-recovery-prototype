@@ -12,47 +12,84 @@ Early Years Foundation
 
 {% block breadcrumbs %}
 <div class="govuk-width-container">
-  {{ govukBreadcrumbs({
-    items: [
-      {
-        text: "Home",
-        href: "#"
-      },
-      {
-        text: "Brain development and how children learn",
-        href: "#"
-      },
-      {
-        text: "The developing brain",
-        href: "#"
-      },
-      {
-        text: "End of module test",
-        href: "#"
-      }
-    ]
-  }) }}
+  <a href="module-overview" class="govuk-back-link">Back to Module 2 overview</a>
 </div>
 {% endblock %}
 
 <div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <ol class="progress-bar--container govuk-list" role="progressbar">
+        <li class="progress-bar"><span class="fa-stack fa-1x" aria-label="completed">
+          <i  style="color:white" class="fa-solid fa-stack-2x fa-circle"></i>
+            <!-- <i class="fa-solid fa-stack-2x fa-circle"></i> Font Awesome fontawesome.com --><svg
+              class="svg-inline--fa fa-circle-check fa-stack-2x green" aria-hidden="true"
+              focusable="false" data-prefix="fas" data-icon="circle-check" role="img"
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+              <path fill="currentColor"
+                d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+              </path>
+            </svg>
+            <!-- <i class="fa-solid fa-stack-2x fa-circle-check green"></i> Font Awesome fontawesome.com --></span>
+          <div></div>
+          <p class="govuk-body progress--heading"><span class="govuk-visually-hidden">Step 1</span>Module
+            introduction</p>
+        </li>
+        <li class="progress-bar"><span class="fa-stack fa-1x" aria-label="started"><svg
+              class="svg-inline--fa fa-circle fa-stack-2x green" aria-hidden="true" focusable="false"
+              data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512" data-fa-i2svg="">
+              <path fill="currentColor"
+                d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z">
+              </path>
+            </svg>
+            <i style="color:green;"class="fa-solid fa-stack-2x fa-circle green"></i>
+            <i class="inner-circle fa-solid fa-stack-2x fa-circle "></i>
+          </span>
+          <div class="line line--green"></div>
+          <p class="govuk-body progress--heading govuk-!-font-weight-bold"><span
+              class="govuk-visually-hidden">Step 2</span>An informed approach to care and education
+          </p>
+        </li>
+        <li class="progress-bar"><span class="fa-stack fa-1x" aria-label="not started"><svg
+              class="svg-inline--fa fa-circle fa-stack-2x" aria-hidden="true" focusable="false"
+              data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512" data-fa-i2svg="">
+              <path fill="currentColor"
+                d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z">
+              </path>
+            </svg>
+            <i style="color:white" class="fa-solid fa-stack-2x fa-circle"></i>
+            <i style="color:grey;"class="fa-regular fa-stack-2x fa-circle grey"></i></span>
+          <div class="line line--grey"></div>
+          <p class="govuk-body progress--heading"><span class="govuk-visually-hidden">Step 3</span>Summary and next steps</p>
+        </li>
+     
+      </ol>
+      
+    </div>
+  </div>
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
 
       <div class="govuk-grid-column-two-thirds">
 
-        <span class="govuk-caption-l">Page 3 of 12</span>
+        <span class="govuk-caption-l">Page 1 of 3</span>
         <h1 class="govuk-heading-l">
           Brain development before birth
         </h1>
-        <p class="govuk-body">Over the following pages we will identify and explain the expected patterns of brain and early language development 
-          and then consider the influences that may impact on a child’s brain development even before they are born. </p>
+        <p class="govuk-body">Babies’ brain development is a complex process that starts at around 2 weeks after conception and continues throughout pregnancy. </p>
+        <p class="govuk-body">This topic includes:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>parts of the brain</li>
+          <li>brain development in the early years</li>
+    
+        </ul>
+        <hr class="govuk-!-margin-top-4 govuk-!-margin-bottom-6">
+        <a class="govuk-button govuk-button--secondary" style="margin-right:10px;" data-module="govuk-button" href="module-overview">Previous</a>
 
-        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
-
-        <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="submodule-intro">Previous</a>
-        <a class="govuk-button align-right" data-module="govuk-button" href="brain-parts">Save and continue</a>
-
+          <a class="govuk-button" data-module="govuk-button" href="brain-parts">Save and continue</a>
       </div>
     </div>
   </main>

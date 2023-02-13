@@ -10,34 +10,69 @@ Early Years Foundation
 
 {% block main %}
 
-  <div class="govuk-width-container">
-    {{ govukBreadcrumbs({
-      items: [
-        {
-          text: "Home",
-          href: "#"
-        },
-        {
-          text: "Brain development and how children learn",
-          href: "#"
-        },
-        {
-          text: "The developing brain",
-          href: "#"
-        },
-        {
-          text: "Parts of the brain",
-          href: "#"
-        }
-      ]
-    }) }}
-  </div>
+<div class="govuk-width-container">
+  <a href="module-overview" class="govuk-back-link">Back to Module 2 overview</a>
+</div>
 
   <div class="govuk-width-container">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+  
+        <ol class="progress-bar--container govuk-list" role="progressbar">
+          <li class="progress-bar"><span class="fa-stack fa-1x" aria-label="completed">
+            <i  style="color:white" class="fa-solid fa-stack-2x fa-circle"></i>
+              <!-- <i class="fa-solid fa-stack-2x fa-circle"></i> Font Awesome fontawesome.com --><svg
+                class="svg-inline--fa fa-circle-check fa-stack-2x green" aria-hidden="true"
+                focusable="false" data-prefix="fas" data-icon="circle-check" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                <path fill="currentColor"
+                  d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z">
+                </path>
+              </svg>
+              <!-- <i class="fa-solid fa-stack-2x fa-circle-check green"></i> Font Awesome fontawesome.com --></span>
+            <div></div>
+            <p class="govuk-body progress--heading"><span class="govuk-visually-hidden">Step 1</span>Module
+              introduction</p>
+          </li>
+          <li class="progress-bar"><span class="fa-stack fa-1x" aria-label="started"><svg
+                class="svg-inline--fa fa-circle fa-stack-2x green" aria-hidden="true" focusable="false"
+                data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512" data-fa-i2svg="">
+                <path fill="currentColor"
+                  d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z">
+                </path>
+              </svg>
+              <i style="color:green;"class="fa-solid fa-stack-2x fa-circle green"></i>
+              <i class="inner-circle fa-solid fa-stack-2x fa-circle "></i>
+            </span>
+            <div class="line line--green"></div>
+            <p class="govuk-body progress--heading govuk-!-font-weight-bold"><span
+                class="govuk-visually-hidden">Step 2</span>An informed approach to care and education
+            </p>
+          </li>
+          <li class="progress-bar"><span class="fa-stack fa-1x" aria-label="not started"><svg
+                class="svg-inline--fa fa-circle fa-stack-2x" aria-hidden="true" focusable="false"
+                data-prefix="fas" data-icon="circle" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512" data-fa-i2svg="">
+                <path fill="currentColor"
+                  d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512z">
+                </path>
+              </svg>
+              <i style="color:white" class="fa-solid fa-stack-2x fa-circle"></i>
+              <i style="color:grey;"class="fa-regular fa-stack-2x fa-circle grey"></i></span>
+            <div class="line line--grey"></div>
+            <p class="govuk-body progress--heading"><span class="govuk-visually-hidden">Step 3</span>Summary and next steps</p>
+          </li>
+       
+        </ol>
+        
+      </div>
+    </div>
     <main class="govuk-main-wrapper">
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-two-thirds">
-          <span class="govuk-caption-l">Page 4 of 12</span>
+          <span class="govuk-caption-l">Page 2 of 3</span>
           <h1 class="govuk-heading-l">
               Parts of the brain
             </h1>
@@ -45,17 +80,17 @@ Early Years Foundation
           <br>
           <br>
 
-          <h3 class="govuk-heading-s">Brain stem</h3/>
+          <h2 class="govuk-heading-m">Brain stem</h2/>
 
-          <p class="govuk-body">The brain stem at the top of your spinal cord where your head joins your neck. This is the most developed section of your brain at birth. This vital part of the brain controls your breathing, heart rate and blood pressure.</p>
-          <p class="govuk-body">It also supports newborn reflexes such as crying, startling and sucking.</p>
+          <p class="govuk-body">The brain stem is at the top of your spinal cord where your head joins your neck. This is the most developed section of your brain at birth. This vital part of the brain controls your breathing, heart rate and blood pressure. It also supports newborn reflexes such as crying, startling and sucking.</p>
+        
 
-          <h3 class="govuk-heading-s">Cerebellum</h3/>
+          <h2 class="govuk-heading-m">Cerebellum</h2/>
 
-          <p class="govuk-body">The cerebellum is at the back of your head. This is the area in charge of motor development. It controls balance and coordinates movements. The cerebellum combines the signals from the eyes, ears and muscles with motor commands.</p>
-          <p class="govuk-body">This is the area of the brain that supports babies to progress with motor skills such as the progression from rolling to crawling to walking. Repeating challenging activities helps this area of the brain to develop.</p>
+          <p class="govuk-body">The cerebellum is at the back of your head. This is the area in charge of motor development. It controls balance and coordinates movements. The cerebellum combines the signals from the eyes, ears and muscles with motor commands. This area of the brain supports babies to progress with motor skills such as the progression from rolling to crawling to walking. Repeating challenging activities helps this area of the brain to develop.</p>
 
-          <h3 class="govuk-heading-s">Frontal lobes</h3/>
+
+          <h2 class="govuk-heading-m">Frontal lobes</h2/>
 
           <p class="govuk-body">The frontal lobes are located behind your forehead and are the largest part of your brain. They are involved in:</p>
           <ul class = "govuk-list govuk-list--bullet">
@@ -69,25 +104,36 @@ Early Years Foundation
           <p class="govuk-body">The frontal lobes continue to develop until you are in your twenties or thirties- 
             shaped by your experiences and environment.</p>
 
-          <h3 class="govuk-heading-s">Occipital lobes</h3/>
+          <h2 class="govuk-heading-m">Occipital lobes</h2/>
 
           <p class="govuk-body">The occipital lobes are the back part of the brain. They allow us to make sense of information that comes from our eyes.</p>
           <p class="govuk-body">At birth, the neural pathways used to carry the information from the eyes to the brain are not fully developed. 
             Babies can only see 20 to 30 cm in front of them. To develop these neural pathways babies needs to use them,and they can do this by 
             looking at a variety of objects. Babies’ vision improves steadily, and by 8 months they will see almost as well as an adult.</p>
 
-          <h3 class="govuk-heading-s">Temporal lobes</h3/>
+          <h2 class="govuk-heading-m">Temporal lobes</h2/>
 
-          <p class="govuk-body">The temporal lobes are at the side of your brain, just above your ears. One of their important functions is to 
-            help us understand and process sounds.</p>
-          <p class="govuk-body">Other functions include recognising faces and objects, as well as memory acquisition.</p>
-          <p class="govuk-body">It’s essential that a child is exposed to a wide variety of visual, auditory and practical tasks that enable 
-            them to test concepts and build memory skills.</p>
+          <p class="govuk-body">The temporal lobes are at the side of your brain, just above your ears. One of their important functions is to help us understand and process sounds. Other functions include recognising faces and objects, as well as memory acquisition.</p>
+          <p class="govuk-body">It’s essential that a child is exposed to a wide variety of visual, auditory and practical stimuli that enable them to test concepts and build memory skills.</p>
+          <p class="govuk-body">To support children, you can:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>sing songs and rhymes</li>
+            <li>encourage discussion and ask questions</li>
+            <li>share stories</li>
+            <li>use visual aids, such as puppets and story sacks</li>
+            <li>go on sensory walks</li>
+            <li>support creative activities that use a wide varieties of textures and colours</li>
+          </ul>
 
-          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+        
+          <h2 class="govuk-heading-m">Parietal lobes</h2/>
+            <p class="govuk-body">The parietal lobes are located behind the frontal lobes and above the temporal lobes. One of their main functions is to make sense of things we touch. They also tell us where our body is in relation to objects around us.</p>
 
-          <a class="govuk-button govuk-button--secondary" data-module="govuk-button" href="topic-intro">Previous</a>
-          <a class="govuk-button align-right" data-module="govuk-button" href="piaget-sensorimotor">Save and continue</a>
+
+            <hr class="govuk-!-margin-top-4 govuk-!-margin-bottom-6">
+            <a class="govuk-button govuk-button--secondary" style="margin-right:10px;" data-module="govuk-button" href="module-overview">Previous</a>
+    
+              <a class="govuk-button" data-module="govuk-button" href="sensormotor">Save and continue</a>
         </div>
       </div>
     </main>
