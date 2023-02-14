@@ -10,34 +10,36 @@ Early Years Foundation
 
 {% block main %}
 
-  <div class="govuk-width-container">
-    {{ govukBreadcrumbs({
-    items: [
-      {
-        text: "Home",
-        href: "/sprint-23/home-existing"
-      },
-      {
-        text: "Brain development and how children learn",
-        href: "#"
-      }
-    ]
+<div class="govuk-width-container">
+  {{ govukBreadcrumbs({
+  items: [
+  {
+  text: "Home",
+  href: "/sprint-23/home-existing"
+  },
+  {
+  text: "Brain development and how children learn",
+  href: "#"
+  }
+  ]
   }) }}
-  </div>
+</div>
 
 </br>
 <!-- START MAST -->
 
-  <div class="govuk-width-container">
-    <div class="full-BGstrip BGstrip-grey">
+<div class="govuk-width-container">
+  <div class="full-BGstrip BGstrip-grey">
     <main class="govuk-main-wrapper">
-     
+
       <div class="govuk-grid-row">
 
         <!-- START INTRO -->
         <div class="govuk-width-container ">
           <h1 class="govuk-heading-l ">Brain development and how children learn</h1>
-          <p class="govuk-body">The rapid changes that happen in the brain in a child’s first years lay critical foundations for later childhood and adult life. As an early years practitioner, you can play a significant role in encouraging and supporting children’s brain development.
+          <p class="govuk-body">The rapid changes that happen in the brain in a child’s first years lay critical
+            foundations for later childhood and adult life. As an early years practitioner, you can play a significant
+            role in encouraging and supporting children’s brain development.
 
           </p>
           <p class="govuk-body">On completion of this module, you will be able to:</p>
@@ -53,141 +55,77 @@ Early Years Foundation
           href: "about-interrupt"
           }) }}
         </div>
-      </main>
-    </div>
+    </main>
   </div>
-  <!-- END BESPOKE MAST -->
+</div>
+<!-- END BESPOKE MAST -->
 
 
 
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
     <div class="govuk-grid-row">
-      {{ govukAccordion({
-        id: "accordion-with-summary-sections",
-        items: [
-          {
-            heading: {
-              html:
-              '<ul class="govuk-list">
-                  <li>
-                    <h2 class="govuk-heading-m">The developing brain</h2>
+      <div class="govuk-grid-column-full">
 
-                 
-                  </li>
+        <section class="module-overview--section">
+          <div class="progress-bar"><span class="icon not_started"><span class="number">1</span></span>
+            <div class="line"></div>
+          </div>
+          <div class="module-section--content" id="section-content-1">
+            <h4 class="govuk-heading-s">The developing brain</h4>
+            <p class="govuk-body">This section of this module includes:</p>
+            <div class="module-section--container"><span class="module-section--item">Recap and further
+              reading</span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not
+                started</strong></span><span class="module-section--item">End of module test</span><span
+              class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span></div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+          </div>
+        </section>
+        <section class="module-overview--section">
+          <div class="progress-bar"><span class="icon not_started"><span class="number">2</span></span>
+            <div class="line"></div>
+          </div>
+          <div class="module-section--content" id="section-content-1">
+            <h4 class="govuk-heading-s">How children learn</h4>
+            <p class="govuk-body">This section of this module includes:</p>
+            <div class="module-section--container"><span class="module-section--item">Recap and further
+              reading</span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not
+                started</strong></span></div>
+                <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-              </ul>'
-            },
-           
-            content: {
-              html:
-              '<ul class="govuk-list">
-                  <li>
-                    <a class="govuk-link" href="">Brain development before birth</a>
+        </section>
 
-                    <strong class="govuk-tag align-right">
-                      Not started
-                    </strong>
-                  </li>
-                  <li>
-                    <a class="govuk-link" href="">Parts of the brain</a>
+        <section class="module-overview--section">
+          <div class="progress-bar"><span class="icon not_started"><span class="number">3</span></span></div>
+          <div class="module-section--content" id="section-content-4">
+            <h4 class="govuk-heading-s">Summary and next steps</h4>
+            <p class="govuk-body">This section of this module includes:</p>
+            <div class="module-section--container"><span class="module-section--item">Recap and further
+                reading</span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not
+                  started</strong></span><span class="module-section--item">End of module test</span><span
+                class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span><span
+                class="module-section--item">Reflect on your learning</span><span class="progress-indicator"><strong
+                  class="govuk-tag govuk-tag--grey">not started</strong></span><span
+                class="module-section--item">Download your certificate</span><span class="progress-indicator"><strong
+                  class="govuk-tag govuk-tag--grey">not started</strong></span></div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+          </div>
+        </section>
 
-                    <strong class="govuk-tag align-right">
-                      Not started
-                    </strong>
-                  </li>
-                  <li>
-                    <a class="govuk-link" href="">Brain development from 0 to 2 years old: the sensorimotor stage</a>
 
-                    <strong class="govuk-tag align-right">
-                      Not started
-                    </strong>
-                  </li>
-
-              </ul>'
-            }
-          },
-              {
-            heading: {
-              html:
-              '<ul class="govuk-list">
-                  <li>
-                    <h2 class="govuk-heading-m">How children learn</h2>
-
-                  
-                  </li>
-
-              </ul>'
-
-            },
-          
-            content: {
-              html:
-              '<ul class="govuk-list">
-                  <li>
-                    <a class="govuk-link" href="#">How secure relationships affect learning and behaviour</a>
-                    <strong class="govuk-tag align-right">
-                     Not started
-                      </strong>
-                  </li>
-
-                  <li>
-                    <a class="govuk-link" href="#"> Social and emotional development: 2 to 3 years old </a> 
-                    <strong class="govuk-tag align-right">
-                    Not started
-                    </strong>
-                  </li>
-                 
-
-              </ul>'
-            }
-          },
-
-          {
-            heading: {
-              html:
-              '<ul class="govuk-list">
-                  <li>
-                    <h2 class="govuk-heading-m">Summary and next steps</h2>
-
-                 
-                  </li>
-
-              </ul>'
-
-            },
-           
-            content: {
-              html:
-              '<ul class="govuk-list">
-                  <li>
-                    <a class="govuk-link" href="#">Recap and further reading</a>
-                    <strong class="govuk-tag align-right">
-                     Not started
-                      </strong>
-                  </li>
-
-                  <li>
-                    <a class="govuk-link" href="#"> End of module quiz </a> 
-                    <strong class="govuk-tag align-right">
-                    Not started
-                    </strong>
-                  </li>
-                 
-
-              </ul>'
-            }
-          }
-           
-          
-          
-          
-        ]
-      }) }}
-      
-
+      </div>
     </div>
-  </div>
+
+
+
+
+
+
+
+
+
+</div>
+</div>
 </div>
 
 {# pulls in default gov uk template #}
