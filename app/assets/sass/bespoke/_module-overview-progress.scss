@@ -18,6 +18,7 @@ $progress-bar-container-width: 81px;
     align-items: center;
     font-weight: bold;
     z-index: 2;
+    position:absolute;
   
     &.completed {
       background-color: govuk-colour('black');
@@ -26,14 +27,14 @@ $progress-bar-container-width: 81px;
     
     &.started {
       background-color: govuk-colour('white');
-      color: govuk-color('black');
+      color: govuk-colour('black');
       outline: 4px solid govuk-colour('black');
       outline-offset: -4px;
     }
     
     &.not_started {
       background-color: govuk-colour('white');
-      color: govuk-color('black');
+      color: govuk-colour('black');
       outline: 1px solid govuk-colour('mid-grey');
       outline-offset: -1px;
     }
@@ -44,10 +45,10 @@ $progress-bar-container-width: 81px;
     border-left: 1px solid govuk-colour('mid-grey');
     position: relative;
     z-index: 1;
-    right: 7.5px + ($icon-diameter + 1px)/2;
+    right: -18px;
     
     @include govuk-media-query($from: tablet) {
-      right: 10px + ($icon-diameter + 1px)/2;
+      right: -18px;
     }
   }
 
