@@ -1,0 +1,102 @@
+{% extends "layout-dfe.html" %}
+
+{% set milestone = 'sprint-23' %}
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+<!-- START MAST -->
+<div class="full-BGstrip">
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-l">Module 2: additional learning resources</h1>
+          <p class="govuk-body">View all available learning resources for <a
+              href="/sprint-23/module-1/module-overview">Module 2: Brain development and how children learn</a>.</p>
+
+          <p class="govuk-body">You can also use the topic links to revisit each section of the module.</p>
+
+          <h2 class="govuk-heading-m"><a href="/sprint-23/module-1/topic-intro">Topic 1: Brain development before birth</a></h2>
+
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <div class="resources-container govuk-!-margin-bottom-3">
+            <section>
+              <a href="/public/images/activity-sheet.png" target="_blank">
+                <img class="thumbnail--image" src="/public/images/activity-sheet.png">
+                <h3 class="govuk-link"> Brain development worksheet
+                </h3>
+              </a>
+              <p class="govuk-body-s">Web accessible PDF, 1.3MB, 1 page</p>
+              <p class=="govuk-body">Use this worksheet to reinforce your understanding of the different areas of the
+                brain and how children's brains develop in the early years.</p>
+              
+
+
+
+            </section>
+          </div>
+
+          <div class="resources-container govuk-!-margin-bottom-3">
+            <section>
+              <a href="/public/images/key-learnings.png" target="_blank">
+                <img class="thumbnail--image" src="/public/images/key-learnings.png">
+                <h3 class="govuk-link"> Brain development before birth - Key concepts poster
+                </h3>
+              </a>
+              <p class="govuk-body-s">Web accessible PDF, 599KB, 1 page</p>
+              <p class=="govuk-body">This poster recaps key learnings from the first topic of module 2, The developing
+                brain. Download or print it to display in your setting.</p>
+              
+
+
+
+            </section>
+          </div>
+          <hr class="govuk-!-margin-bottom-6">
+
+          <h2 class="govuk-heading-m"><a href="/sprint-23/module-1/topic-intro-2nd">Topic 2: Theories of how children
+            learn</a></h2>
+            <div class="resources-container govuk-!-margin-bottom-3">
+              <section>
+                <a href="/public/images/activity-cards.png" target="_blank">
+                  <img class="thumbnail--image" src="/public/images/activity-cards.png">
+                  <h3 class="govuk-link"> Theories of how children learn: Flash cards
+                  </h3>
+                </a>
+                <p class="govuk-body-s">Web accessible PDF, 69KB, 1 page</p>
+                <p class=="govuk-body">Use these flash cards to review key concepts from this topic.</p>
+                
+  
+  
+  
+              </section>
+            </div>
+        </div>
+      </div>
+
+
+
+
+      <hr>
+
+     
+
+    
+
+    </main>
+  </div>
+</div>
+<!-- END BESPOKE MAST -->
+
+{# pulls in default gov uk template #}
+{{super()}}
+{% endblock %}
