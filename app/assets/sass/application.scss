@@ -36,6 +36,10 @@ $govuk-assets-path: '/govuk/assets/';
 @import "bespoke/resources.scss";
 @import "bespoke/module-overview-progress";
 
+//images
+.image-width{
+  width:100%;
+}
 
 // USED ACROSS PAGES
 
