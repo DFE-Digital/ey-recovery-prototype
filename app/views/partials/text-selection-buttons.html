@@ -1,0 +1,41 @@
+
+<form action="export" class="vote-buttons {{ 'colour-distinction' if data['colour-distinction'] == 'true' }}">
+
+  <input id="export-field" type="hidden" name="export-json" value="{{ data['export-json'] }}">
+
+  {{ govukButton({
+    text: 'GOOD',
+    type: 'button',
+    classes: 'button--good',
+    attributes: {
+      'onclick': 'javascript:CFObject.voteUp();'
+    }
+  }) }}
+
+  {{ govukButton({
+    text: 'BAD',
+    classes: 'govuk-button--warning button--bad',
+    type: 'button',
+    attributes: {
+      'onclick': 'javascript:CFObject.voteDown();'
+    }
+  }) }}
+
+  {{ govukButton({
+    text: 'MAYBE',
+    classes: 'govuk-button--secondary button--maybe',
+    type: 'button',
+    attributes: {
+      'onclick': 'javascript:CFObject.voteMaybe();'
+    }
+  }) }}
+
+  <div class="spacer"></div>
+
+  {{ govukButton({
+    text: 'I am finished',
+    type: 'submit',
+    classes: 'govuk-button--secondary'
+  }) }}
+
+</form>

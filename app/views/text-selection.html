@@ -1,0 +1,18 @@
+{% extends "layout-dfe.html" %}
+
+{% block pageTitle %}
+Early Years Foundation - Text selection
+{% endblock %}
+
+
+
+{% block main %}
+  {% include "partials/text-selection-buttons.html" %}
+
+   <div id="textSelection" class="content-letter {{ 'colour-distinction' if data['colour-distinction'] == 'true' }}">
+    {% include "sprint-26/home.html" %}
+  </div>
+
+
+{{super()}}
+{% endblock %}
