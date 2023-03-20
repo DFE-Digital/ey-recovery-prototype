@@ -1,0 +1,399 @@
+
+{% extends "layout-dfe-blank.html" %}
+
+{% set milestone = 'sprint-14' %}
+
+
+
+{% block main %}
+
+	<div class="govuk-width-container">
+    {{ govukBackLink({
+      text: "Back",
+      href: "your-setting"
+    }) }}
+    
+			<main class="govuk-main-wrapper govuk-!-margin-bottom-8">
+
+				<div class="govuk-grid-row">
+
+					<div class="govuk-grid-column-two-thirds-from-desktop">
+
+
+<h1 class="govuk-heading-l">What local authority area do you work in?</h1>
+<p class="govuk-hint">This could be your county council, district council or London borough.</p>
+
+<div class="govuk-!-margin-bottom-5">
+  <label for="local-authority" class="govuk-visually-hidden">
+      Local authority area
+  </label>
+
+  <select class="govuk-select form-control" name="local-authority" id="local-authority">
+    <option value="" selected>Search for your local authority</option>
+    <option value="Cambridgeshire County Council">Cambridgeshire County Council</option>
+    <option value="Cumbria County Council">Cumbria County Council</option>
+    <option value="Derbyshire County Council">Derbyshire County Council</option>
+    <option value="Devon County Council">Devon County Council</option>
+    <option value="East Sussex County Council">East Sussex County Council</option>
+    <option value="Essex County Council">Essex County Council</option>
+    <option value="Gloucestershire County Council">Gloucestershire County Council</option>
+    <option value="Hampshire County Council">Hampshire County Council</option>
+    <option value="Hertfordshire County Council">Hertfordshire County Council</option>
+    <option value="Kent County Council">Kent County Council</option>
+    <option value="Lancashire County Council">Lancashire County Council</option>
+    <option value="Leicestershire County Council">Leicestershire County Council</option>
+    <option value="Lincolnshire County Council">Lincolnshire County Council</option>
+    <option value="Norfolk County Council">Norfolk County Council</option>
+    <option value="North Yorkshire County Council">North Yorkshire County Council</option>
+    <option value="Nottinghamshire County Council">Nottinghamshire County Council</option>
+    <option value="Oxfordshire County Council">Oxfordshire County Council</option>
+    <option value="Somerset County Council">Somerset County Council</option>
+    <option value="Staffordshire County Council">Staffordshire County Council</option>
+    <option value="Suffolk County Council">Suffolk County Council</option>
+    <option value="Surrey County Council">Surrey County Council</option>
+    <option value="Warwickshire County Council">Warwickshire County Council</option>
+    <option value="West Sussex County Council">West Sussex County Council</option>
+    <option value="Worcestershire County Council">Worcestershire County Council</option>
+    <option value="Adur District Council">Adur District Council</option>
+    <option value="Allerdale District Council">Allerdale District Council</option>
+    <option value="Amber Valley Borough Council">Amber Valley Borough Council</option>
+    <option value="Arun District Council">Arun District Council</option>
+    <option value="Ashfield District Council">Ashfield District Council</option>
+    <option value="Ashford Borough Council">Ashford Borough Council</option>
+    <option value="Babergh District Council">Babergh District Council</option>
+    <option value="Barrow-in-Furness Borough Council">Barrow-in-Furness Borough Council</option>
+    <option value="Basildon Borough Council">Basildon Borough Council</option>
+    <option value="Basingstoke & Deane Borough Council">Basingstoke & Deane Borough Council</option>
+    <option value="Bassetlaw District Council">Bassetlaw District Council</option>
+    <option value="Blaby District Council">Blaby District Council</option>
+    <option value="Bolsover District Council">Bolsover District Council</option>
+    <option value="Boston Borough Council">Boston Borough Council</option>
+    <option value="Braintree District Council">Braintree District Council</option>
+    <option value="Breckland District Council">Breckland District Council</option>
+    <option value="Brentwood Borough Council">Brentwood Borough Council</option>
+    <option value="Broadland District Council">Broadland District Council</option>
+    <option value="Bromsgrove District Council">Bromsgrove District Council</option>
+    <option value="Broxbourne Borough Council">Broxbourne Borough Council</option>
+    <option value="Broxtowe Borough Council">Broxtowe Borough Council</option>
+    <option value="Burnley Borough Council">Burnley Borough Council</option>
+    <option value="Cambridge City Council">Cambridge City Council</option>
+    <option value="Cannock Chase District Council">Cannock Chase District Council</option>
+    <option value="Canterbury City Council">Canterbury City Council</option>
+    <option value="Carlisle City Council">Carlisle City Council</option>
+    <option value="Castle Point District Council">Castle Point District Council</option>
+    <option value="Charnwood Borough Council">Charnwood Borough Council</option>
+    <option value="Chelmsford City Council">Chelmsford City Council</option>
+    <option value="Cheltenham Borough Council">Cheltenham Borough Council</option>
+    <option value="Cherwell District Council">Cherwell District Council</option>
+    <option value="Chesterfield Borough Council">Chesterfield Borough Council</option>
+    <option value="Chichester District Council">Chichester District Council</option>
+    <option value="Chorley Borough Council">Chorley Borough Council</option>
+    <option value="Colchester Borough Council">Colchester Borough Council</option>
+    <option value="Copeland Borough Council">Copeland Borough Council</option>
+    <option value="Cotswold District Council">Cotswold District Council</option>
+    <option value="Craven District Council">Craven District Council</option>
+    <option value="Crawley Borough Council">Crawley Borough Council</option>
+    <option value="Dacorum Borough Council">Dacorum Borough Council</option>
+    <option value="Dartford Borough Council">Dartford Borough Council</option>
+    <option value="Derbyshire Dales District Council">Derbyshire Dales District Council</option>
+    <option value="Dover District Council">Dover District Council</option>
+    <option value="East Cambridgeshire District Council">East Cambridgeshire District Council</option>
+    <option value="East Devon District Council">East Devon District Council</option>
+    <option value="East Hampshire District Council">East Hampshire District Council</option>
+    <option value="East Hertfordshire District Council">East Hertfordshire District Council</option>
+    <option value="East Lindsey District Council">East Lindsey District Council</option>
+    <option value="East Staffordshire Borough Council">East Staffordshire Borough Council</option>
+    <option value="East Suffolk Council">East Suffolk Council</option>
+    <option value="Eastbourne Borough Council">Eastbourne Borough Council</option>
+    <option value="Eastleigh Borough Council">Eastleigh Borough Council</option>
+    <option value="Eden District Council">Eden District Council</option>
+    <option value="Elmbridge Borough Council">Elmbridge Borough Council</option>
+    <option value="Epping Forest District Council">Epping Forest District Council</option>
+    <option value="Epsom & Ewell Borough Council">Epsom & Ewell Borough Council</option>
+    <option value="Erewash Borough Council">Erewash Borough Council</option>
+    <option value="Exeter City Council">Exeter City Council</option>
+    <option value="Fareham Borough Council">Fareham Borough Council</option>
+    <option value="Fenland District Council">Fenland District Council</option>
+    <option value="Folkestone and Hythe District Council">Folkestone and Hythe District Council</option>
+    <option value="Forest of Dean District Council">Forest of Dean District Council</option>
+    <option value="Fylde Borough Council">Fylde Borough Council</option>
+    <option value="Gedling Borough Council">Gedling Borough Council</option>
+    <option value="Gloucester City Council">Gloucester City Council</option>
+    <option value="Gosport Borough Council">Gosport Borough Council</option>
+    <option value="Gravesham Borough Council">Gravesham Borough Council</option>
+    <option value="Great Yarmouth Borough Council">Great Yarmouth Borough Council</option>
+    <option value="Guildford Borough Council">Guildford Borough Council</option>
+    <option value="Hambleton District Council">Hambleton District Council</option>
+    <option value="Harborough District Council">Harborough District Council</option>
+    <option value="Harlow District Council">Harlow District Council</option>
+    <option value="Harrogate Borough Council">Harrogate Borough Council</option>
+    <option value="Hart District Council">Hart District Council</option>
+    <option value="Hastings Borough Council">Hastings Borough Council</option>
+    <option value="Havant Borough Council">Havant Borough Council</option>
+    <option value="Hertsmere Borough Council">Hertsmere Borough Council</option>
+    <option value="High Peak Borough Council">High Peak Borough Council</option>
+    <option value="Hinckley and Bosworth Borough Council">Hinckley and Bosworth Borough Council</option>
+    <option value="Horsham District Council">Horsham District Council</option>
+    <option value="Huntingdonshire District Council">Huntingdonshire District Council</option>
+    <option value="Hyndburn Borough Council">Hyndburn Borough Council</option>
+    <option value="Ipswich Borough Council">Ipswich Borough Council</option>
+    <option value="Kings Lynn & West Norfolk Borough Council">Kings Lynn & West Norfolk Borough Council</option>
+    <option value="Lancaster City Council">Lancaster City Council</option>
+    <option value="Lewes District Council">Lewes District Council</option>
+    <option value="Lichfield City Council">Lichfield City Council</option>
+    <option value="Lincoln City Council">Lincoln City Council</option>
+    <option value="Maidstone Borough Council">Maidstone Borough Council</option>
+    <option value="Maldon District Council">Maldon District Council</option>
+    <option value="Malvern Hills District Council">Malvern Hills District Council</option>
+    <option value="Mansfield District Council">Mansfield District Council</option>
+    <option value="Melton Borough Council">Melton Borough Council</option>
+    <option value="Mendip District Council">Mendip District Council</option>
+    <option value="Mid Devon District Council">Mid Devon District Council</option>
+    <option value="Mid Suffolk District Council">Mid Suffolk District Council</option>
+    <option value="Mid Sussex District Council">Mid Sussex District Council</option>
+    <option value="Mole Valley District Council">Mole Valley District Council</option>
+    <option value="North Devon District Council">North Devon District Council</option>
+    <option value="North East Derbyshire District Council">North East Derbyshire District Council</option>
+    <option value="North Hertfordshire District Council">North Hertfordshire District Council</option>
+    <option value="North Kesteven District Council">North Kesteven District Council</option>
+    <option value="North Norfolk District Council">North Norfolk District Council</option>
+    <option value="North West Leicestershire District Council">North West Leicestershire District Council</option>
+    <option value="North Warwickshire Borough Council">North Warwickshire Borough Council</option>
+    <option value="New Forest District Council">New Forest District Council</option>
+    <option value="Newark & Sherwood District Council">Newark & Sherwood District Council</option>
+    <option value="Newcastle-Under-Lyme Borough Council">Newcastle-Under-Lyme Borough Council</option>
+    <option value="Norwich City Council">Norwich City Council</option>
+    <option value="Nuneaton & Bedworth Borough Council">Nuneaton & Bedworth Borough Council</option>
+    <option value="Oadby & Wigston Borough Council">Oadby & Wigston Borough Council</option>
+    <option value="Oxford City Council">Oxford City Council</option>
+    <option value="Pendle Borough Council">Pendle Borough Council</option>
+    <option value="Preston City Council">Preston City Council</option>
+    <option value="Redditch Borough Council">Redditch Borough Council</option>
+    <option value="Reigate & Banstead Borough Council">Reigate & Banstead Borough Council</option>
+    <option value="Ribble Valley Borough Council">Ribble Valley Borough Council</option>
+    <option value="Richmondshire District Council">Richmondshire District Council</option>
+    <option value="Rochford District Council">Rochford District Council</option>
+    <option value="Rossendale Borough Council">Rossendale Borough Council</option>
+    <option value="Rother District Council">Rother District Council</option>
+    <option value="Rugby Borough Council">Rugby Borough Council</option>
+    <option value="Runnymede Borough Council">Runnymede Borough Council</option>
+    <option value="Rushcliffe Borough Council">Rushcliffe Borough Council</option>
+    <option value="Rushmoor Borough Council">Rushmoor Borough Council</option>
+    <option value="Ryedale District Council">Ryedale District Council</option>
+    <option value="Somerset West and Taunton Council">Somerset West and Taunton Council</option>
+    <option value="South Cambridgeshire District Council">South Cambridgeshire District Council</option>
+    <option value="South Derbyshire District Council">South Derbyshire District Council</option>
+    <option value="South Hams District Council">South Hams District Council</option>
+    <option value="South Holland District Council">South Holland District Council</option>
+    <option value="South Kesteven District Council">South Kesteven District Council</option>
+    <option value="South Lakeland District Council">South Lakeland District Council</option>
+    <option value="South Norfolk District Council">South Norfolk District Council</option>
+    <option value="South Oxfordshire District Council">South Oxfordshire District Council</option>
+    <option value="South Ribble Borough Council">South Ribble Borough Council</option>
+    <option value="South Somerset District Council">South Somerset District Council</option>
+    <option value="South Staffordshire District Council">South Staffordshire District Council</option>
+    <option value="Scarborough Borough Council">Scarborough Borough Council</option>
+    <option value="Sedgemoor District Council">Sedgemoor District Council</option>
+    <option value="Selby District Council">Selby District Council</option>
+    <option value="Sevenoaks District Council">Sevenoaks District Council</option>
+    <option value="Spelthorne Borough Council">Spelthorne Borough Council</option>
+    <option value="St Albans City Council">St Albans City Council</option>
+    <option value="Stafford Borough Council">Stafford Borough Council</option>
+    <option value="Staffordshire Moorlands District Council">Staffordshire Moorlands District Council</option>
+    <option value="Stevenage Borough Council">Stevenage Borough Council</option>
+    <option value="Stratford on Avon District Council">Stratford on Avon District Council</option>
+    <option value="Stroud District Council">Stroud District Council</option>
+    <option value="Surrey Heath Borough Council">Surrey Heath Borough Council</option>
+    <option value="Swale Borough Council">Swale Borough Council</option>
+    <option value="Tamworth Borough Council">Tamworth Borough Council</option>
+    <option value="Tandridge District Council">Tandridge District Council</option>
+    <option value="Teignbridge District Council">Teignbridge District Council</option>
+    <option value="Tendring District Council">Tendring District Council</option>
+    <option value="Test Valley Borough Council">Test Valley Borough Council</option>
+    <option value="Tewkesbury Borough Council">Tewkesbury Borough Council</option>
+    <option value="Thanet District Council">Thanet District Council</option>
+    <option value="Three Rivers District Council">Three Rivers District Council</option>
+    <option value="Tonbridge & Malling Borough Council">Tonbridge & Malling Borough Council</option>
+    <option value="Torridge District Council">Torridge District Council</option>
+    <option value="Tunbridge Wells Borough Council">Tunbridge Wells Borough Council</option>
+    <option value="Uttlesford District Council">Uttlesford District Council</option>
+    <option value="Vale of White Horse District Council">Vale of White Horse District Council</option>
+    <option value="Warwick District Council">Warwick District Council</option>
+    <option value="Watford Borough Council">Watford Borough Council</option>
+    <option value="Waverley Borough Council">Waverley Borough Council</option>
+    <option value="Wealden District Council">Wealden District Council</option>
+    <option value="Welwyn Hatfield Borough Council">Welwyn Hatfield Borough Council</option>
+    <option value="West Devon District Council">West Devon District Council</option>
+    <option value="West Lancashire District Council">West Lancashire District Council</option>
+    <option value="West Lindsey District Council">West Lindsey District Council</option>
+    <option value="West Oxfordshire District Council">West Oxfordshire District Council</option>
+    <option value="West Suffolk Council">West Suffolk Council</option>
+    <option value="Winchester City Council">Winchester City Council</option>
+    <option value="Woking Borough Council">Woking Borough Council</option>
+    <option value="Worcester City Council">Worcester City Council</option>
+    <option value="Worthing Borough Council">Worthing Borough Council</option>
+    <option value="Wychavon District Council">Wychavon District Council</option>
+    <option value="Wyre Borough Council">Wyre Borough Council</option>
+    <option value="Wyre Forest District Council">Wyre Forest District Council</option>
+    <option value="Barking and Dagenham">Barking and Dagenham</option>
+    <option value="Barnet">Barnet</option>
+    <option value="Bexley">Bexley</option>
+    <option value="Brent">Brent</option>
+    <option value="Bromley">Bromley</option>
+    <option value="Camden">Camden</option>
+    <option value="Croydon">Croydon</option>
+    <option value="Ealing">Ealing</option>
+    <option value="Enfield">Enfield</option>
+    <option value="Greenwich">Greenwich</option>
+    <option value="Hackney">Hackney</option>
+    <option value="Hammersmith and Fulham">Hammersmith and Fulham</option>
+    <option value="Haringey">Haringey</option>
+    <option value="Harrow">Harrow</option>
+    <option value="Havering">Havering</option>
+    <option value="Hillingdon">Hillingdon</option>
+    <option value="Hounslow">Hounslow</option>
+    <option value="Islington">Islington</option>
+    <option value="Kensington and Chelsea">Kensington and Chelsea</option>
+    <option value="Kingston upon Thames">Kingston upon Thames</option>
+    <option value="Lambeth">Lambeth</option>
+    <option value="Lewisham">Lewisham</option>
+    <option value="Merton">Merton</option>
+    <option value="Newham">Newham</option>
+    <option value="Redbridge">Redbridge</option>
+    <option value="Richmond upon Thames">Richmond upon Thames</option>
+    <option value="Southwark">Southwark</option>
+    <option value="Sutton">Sutton</option>
+    <option value="Tower Hamlets">Tower Hamlets</option>
+    <option value="Waltham Forest">Waltham Forest</option>
+    <option value="Wandsworth">Wandsworth</option>
+    <option value="Westminster">Westminster</option>
+    <option value="Barnsley Borough Council">Barnsley Borough Council</option>
+    <option value="Birmingham City Council">Birmingham City Council</option>
+    <option value="Bolton Borough Council">Bolton Borough Council</option>
+    <option value="Bradford City Council">Bradford City Council</option>
+    <option value="Bury Borough Council">Bury Borough Council</option>
+    <option value="Calderdale Borough Council">Calderdale Borough Council</option>
+    <option value="Coventry City Council">Coventry City Council</option>
+    <option value="Doncaster Borough Council">Doncaster Borough Council</option>
+    <option value="Dudley Borough Council">Dudley Borough Council</option>
+    <option value="Gateshead Borough Council">Gateshead Borough Council</option>
+    <option value="Kirklees Borough Council">Kirklees Borough Council</option>
+    <option value="Knowsley Borough Council">Knowsley Borough Council</option>
+    <option value="Leeds City Council">Leeds City Council</option>
+    <option value="Liverpool City Council">Liverpool City Council</option>
+    <option value="Manchester City Council">Manchester City Council</option>
+    <option value="North Tyneside Borough Council">North Tyneside Borough Council</option>
+    <option value="Newcastle Upon Tyne City Council">Newcastle Upon Tyne City Council</option>
+    <option value="Oldham Borough Council">Oldham Borough Council</option>
+    <option value="Rochdale Borough Council">Rochdale Borough Council</option>
+    <option value="Rotherham Borough Council">Rotherham Borough Council</option>
+    <option value="SouthTyneside Borough Council">SouthTyneside Borough Council</option>
+    <option value="Salford City Council">Salford City Council</option>
+    <option value="Sandwell Borough Council">Sandwell Borough Council</option>
+    <option value="Sefton Borough Council">Sefton Borough Council</option>
+    <option value="Sheffield City Council">Sheffield City Council</option>
+    <option value="Solihull Borough Council">Solihull Borough Council</option>
+    <option value="St Helens Borough Council">St Helens Borough Council</option>
+    <option value="Stockport Borough Council">Stockport Borough Council</option>
+    <option value="Sunderland City Council">Sunderland City Council</option>
+    <option value="Tameside Borough Council">Tameside Borough Council</option>
+    <option value="Trafford Borough Council">Trafford Borough Council</option>
+    <option value="Wakefield City Council">Wakefield City Council</option>
+    <option value="Walsall Borough Council">Walsall Borough Council</option>
+    <option value="Wigan Borough Council">Wigan Borough Council</option>
+    <option value="Wirral Borough Council">Wirral Borough Council</option>
+    <option value="Wolverhampton City Council">Wolverhampton City Council</option>
+    <option value="Bath and North East Somerset Council">Bath and North East Somerset Council</option>
+    <option value="Bedford Borough Council">Bedford Borough Council</option>
+    <option value="Blackburn with Darwen Borough Council">Blackburn with Darwen Borough Council</option>
+    <option value="Blackpool Council">Blackpool Council</option>
+    <option value="Bournemouth, Christchurch and Poole Council">Bournemouth, Christchurch and Poole Council</option>
+    <option value="Bracknell Forest Borough Council">Bracknell Forest Borough Council</option>
+    <option value="Brighton and Hove City Council">Brighton and Hove City Council</option>
+    <option value="Bristol City Council">Bristol City Council</option>
+    <option value="Buckinghamshire Council">Buckinghamshire Council</option>
+    <option value="Central Bedfordshire Council">Central Bedfordshire Council</option>
+    <option value="Cheshire East Council">Cheshire East Council</option>
+    <option value="Cheshire West and Chester Council">Cheshire West and Chester Council</option>
+    <option value="Cornwall Council">Cornwall Council</option>
+    <option value="Durham County Council">Durham County Council</option>
+    <option value="Darlington Borough Council">Darlington Borough Council</option>
+    <option value="Derby City Council">Derby City Council</option>
+    <option value="Dorset Council">Dorset Council</option>
+    <option value="East Riding of Yorkshire Council">East Riding of Yorkshire Council</option>
+    <option value="Halton Borough Council">Halton Borough Council</option>
+    <option value="Hartlepool Borough Council">Hartlepool Borough Council</option>
+    <option value="Herefordshire Council">Herefordshire Council</option>
+    <option value="Isle of Wight Council">Isle of Wight Council</option>
+    <option value="Hull City Council">Hull City Council</option>
+    <option value="Leicester City Council">Leicester City Council</option>
+    <option value="Luton Borough Council">Luton Borough Council</option>
+    <option value="Medway Council">Medway Council</option>
+    <option value="Middlesbrough Borough Council">Middlesbrough Borough Council</option>
+    <option value="Milton Keynes Council">Milton Keynes Council</option>
+    <option value="North East Lincolnshire Council">North East Lincolnshire Council</option>
+    <option value="North Lincolnshire Council">North Lincolnshire Council</option>
+    <option value="North Northamptonshire Council">North Northamptonshire Council</option>
+    <option value="North Somerset Council">North Somerset Council</option>
+    <option value="Northumberland County Council">Northumberland County Council</option>
+    <option value="Nottingham City Council">Nottingham City Council</option>
+    <option value="Peterborough City Council">Peterborough City Council</option>
+    <option value="Plymouth City Council">Plymouth City Council</option>
+    <option value="Portsmouth City Council">Portsmouth City Council</option>
+    <option value="Reading Borough Council">Reading Borough Council</option>
+    <option value="Redcar and Cleveland Borough Council">Redcar and Cleveland Borough Council</option>
+    <option value="Rutland County Council">Rutland County Council</option>
+    <option value="Shropshire Council">Shropshire Council</option>
+    <option value="Slough Borough Council">Slough Borough Council</option>
+    <option value="Southampton City Council">Southampton City Council</option>
+    <option value="Southend-on-Sea Borough Council">Southend-on-Sea Borough Council</option>
+    <option value="South Gloucestershire Council">South Gloucestershire Council</option>
+    <option value="Stockton-on-Tees Borough Council">Stockton-on-Tees Borough Council</option>
+    <option value="Stoke-on-Trent City Council">Stoke-on-Trent City Council</option>
+    <option value="Swindon Borough Council">Swindon Borough Council</option>
+    <option value="Telford and Wrekin Borough Council">Telford and Wrekin Borough Council</option>
+    <option value="Thurrock Council">Thurrock Council</option>
+    <option value="Torbay Council">Torbay Council</option>
+    <option value="Warrington Borough Council">Warrington Borough Council</option>
+    <option value="West Berkshire Council">West Berkshire Council</option>
+    <option value="West Northamptonshire Council">West Northamptonshire Council</option>
+    <option value="Wiltshire Council">Wiltshire Council</option>
+    <option value="Windsor and Maidenhead Borough Council">Windsor and Maidenhead Borough Council</option>
+    <option value="Wokingham Borough Council">Wokingham Borough Council</option>
+    <option value="City of York Council">City of York Council</option>
+    <option value="City of London">City of London</option>                                                    
+  </select>
+</div>
+
+
+
+
+
+          <div class="govuk-!-margin-bottom-6"></div>
+  
+          <a href="role" class="govuk-body govuk-link">I work across more than one local authority<a>
+            <br>
+            <!-- This link will go to my learning -->
+            <a href="role" class="govuk-button govuk-!-margin-top-6">Continue</a>
+        </div>
+      </div>
+			</main>
+	</div>
+{% endblock %}
+{% block pageScripts %}
+    <link rel="stylesheet" href="/public/javascripts/accessible-autocomplete.min.css">
+    <script src="/public/javascripts/accessible-autocomplete.min.js"></script>
+    <script>
+        accessibleAutocomplete.enhanceSelectElement({
+            defaultValue: '',
+            selectElement: document.getElementById('local-authority'),
+            minLength: 3,
+            tNoResults: function() { return 'No local authorities found.'; }
+        });
+    </script>
+     <script>
+        function goBack() {
+         window.history.back();
+        }
+     </script>
+{% endblock %}

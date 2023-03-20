@@ -1,0 +1,133 @@
+{% extends "layout-dfe.html" %}
+
+{% set milestone = 'sprint-23' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+<div class="govuk-width-container">
+  {{ govukBreadcrumbs({
+  items: [
+  {
+  text: "Home",
+  href: "/sprint-23/home-existing"
+  },
+  {
+  text: "Brain development and how children learn",
+  href: "#"
+  }
+  ]
+  }) }}
+</div>
+
+</br>
+<!-- START MAST -->
+
+<div class="govuk-width-container">
+  <div class="full-BGstrip BGstrip-grey">
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+
+        <!-- START INTRO -->
+        <div class="govuk-width-container ">
+          <h1 class="govuk-heading-l ">Brain development and how children learn</h1>
+          <p class="govuk-body">The rapid changes that happen in the brain in a child’s first years lay critical
+            foundations for later childhood and adult life. As an early years practitioner, you can play a significant
+            role in encouraging and supporting children’s brain development.
+
+          </p>
+          <p class="govuk-body">On completion of this module, you will be able to:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>establish and explore the stages of children’s brain development</li>
+            <li>explore the impact of brain development on children’s holistic development</li>
+            <li>examine the connection between brain development and children’s learning</li>
+            <li>explore a range of theories underpinning best practice</li>
+          </ul>
+
+          {{ govukButton({
+          "text": "Start module",
+          href: "about-interrupt"
+          }) }}
+        </div>
+    </main>
+  </div>
+</div>
+<!-- END BESPOKE MAST -->
+
+
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+
+        <section class="module-overview--section">
+          <div class="progress-bar"><span class="icon not_started"><span class="number">1</span></span>
+            <div class="line"></div>
+          </div>
+          <div class="module-section--content" id="section-content-1">
+            <h4 class="govuk-heading-s">The developing brain</h4>
+            <p class="govuk-body">This section of this module includes:</p>
+            <div class="module-section--container"><span class="module-section--item">Brain development before birth</span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not
+                started</strong></span><span class="module-section--item">Brain development in the early years</span><span
+              class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span></div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+          </div>
+        </section>
+        <section class="module-overview--section">
+          <div class="progress-bar"><span class="icon not_started"><span class="number">2</span></span>
+            <div class="line"></div>
+          </div>
+          <div class="module-section--content" id="section-content-1">
+            <h4 class="govuk-heading-s">How children learn</h4>
+            <p class="govuk-body">This section of this module includes:</p>
+            <div class="module-section--container">
+              <span class="module-section--item">Theories of how children learn: Maslow</span><span class="progress-indicator">
+                <strong class="govuk-tag govuk-tag--grey">not
+                started</strong></span></div>
+                <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        </section>
+
+        <section class="module-overview--section">
+          <div class="progress-bar"><span class="icon not_started"><span class="number">3</span></span></div>
+          <div class="module-section--content" id="section-content-4">
+            <h4 class="govuk-heading-s">Summary and next steps</h4>
+            <p class="govuk-body">This section of this module includes:</p>
+            <div class="module-section--container"><span class="module-section--item">Recap and further
+                reading</span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not
+                  started</strong></span><span class="module-section--item">End of module test</span><span
+                class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span><span
+                class="module-section--item">Reflect on your learning</span><span class="progress-indicator"><strong
+                  class="govuk-tag govuk-tag--grey">not started</strong></span><span
+                class="module-section--item">Download your certificate</span><span class="progress-indicator"><strong
+                  class="govuk-tag govuk-tag--grey">not started</strong></span></div>
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+          </div>
+        </section>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+{# pulls in default gov uk template #}
+{{super()}}
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends "layout-dfe.html" %}
+
+{% set milestone = 'sprint-23' %}
+
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+{% block beforeContent %}
+  {# beforeContent is reseting default phase banner #}
+{% endblock %}
+
+{% block main %}
+
+  <div class="govuk-width-container">
+    <a href="module-overview" class="govuk-back-link">Back to Module 2 overview</a>
+  </div>
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+
+        <div class="govuk-grid-column-full">
+          <div class="interrupt-panel">
+
+          <h1 class="govuk-heading-l">
+            What to expect during the training 
+          </h1>
+
+          <h2 class="govuk-heading-m">
+            End of module test
+          </h2>
+
+          <p class="govuk-body">Once you have completed all topics, there is an end of module test and an opportunity to download a certificate of achievement.  </p>
+
+          <h2 class="govuk-heading-m">
+            Your progress is saved automatically
+          </h2>
+
+          <p class="govuk-body">Your progress is automatically saved as you move through the module. You can sign out or close the browser at any time without losing your progress. When you next login, you can restart from where you left off. </p>
+
+          <h2 class="govuk-heading-m">
+            Videos and mobile data usage
+          </h2>
+          <p class="govuk-body">This module contains videos. Connect to wifi before starting the module to watch the videos without using any mobile data. If you are not able or prefer not to play the videos, you can use the full transcripts provided.</p>
+
+          <h2 class="govuk-heading-m">
+            Free wifi, internet and data resources
+          </h2>
+          <p class="govuk-body">Our <a href="">free wifi, internet and data resources</a> may help if you have limited or no access to the internet.</p>
+
+          <h2 class="govuk-heading-m">
+            Learning check
+          </h2>
+          <p class="govuk-body">You’ll see the question mark icon next to quiz questions throughout the module. These questions are to check you understand what you have learned. You will be able to see if you get these questions right or wrong. Your scores are not recorded and they do not count towards the certificate of achievement.</p>
+
+
+          
+        </div>
+        <hr class="govuk-!-margin-top-4 govuk-!-margin-bottom-6">
+        <a class="govuk-button govuk-button--secondary" style="margin-right:10px;" data-module="govuk-button" href="module-overview">Previous</a>
+
+          <a class="govuk-button" data-module="govuk-button" href="section-intro">Save and continue</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  {{super()}}
+{% endblock %}
