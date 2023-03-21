@@ -1,0 +1,127 @@
+{% extends "layout-dfe-new.html" %}
+
+{% set milestone = 'sprint-26' %}
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+<!-- START MAST -->
+<div class="full-BGstrip">
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-l">Update action plan objective</h1>
+        
+          <form action="/sprint-26/learning-dashboard/learning-goals/goal-added" method="post">
+          <div class="govuk-form-group">
+            <h1 class="govuk-label-wrapper">
+              <label class="govuk-label govuk-label--s" for="event-name">
+                Change objective
+              </label>
+            </h1>
+            <input class="govuk-input" id="event-name" name="goal-name" type="text" value="{{ data['objective-name'] }}"">
+          </div>
+
+      
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+              <legend class="govuk-fieldset__legend govuk-label--s"">
+                What date would you like to complete this goal by?
+              </legend>
+              <div id="passport-issued-hint" class="govuk-hint">
+                For example, 27 3 2023
+              </div>
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="target-day" type="text" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="target-month" type="text" inputmode="numeric">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="target-year" type="text" inputmode="numeric">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+         
+          </div>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend">
+                What is the current status of your objective?
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england" checked>
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                    Not started
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                    In progress
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                  <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                    Done
+                  </label>
+                </div>
+             
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="govuk-button-group">
+            <a class="govuk-button govuk-!-margin-top-6" href="plan-updated#past-week">Save objective</a>
+            <a class="govuk-button govuk-button--warning" href="">Delete objective</a>
+            </div>
+      </div>
+      </div>
+    </form>
+       
+
+    
+
+
+      
+              
+
+    
+       
+
+  
+
+
+    </main>
+    </div>
+    </div>
+ 
+<!-- END BESPOKE MAST -->
+
+{# pulls in default gov uk template #}
+{{super()}}
+{% endblock %}

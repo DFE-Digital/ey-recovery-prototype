@@ -1,0 +1,73 @@
+{% extends "layout-dfe-new.html" %}
+
+{% set milestone = 'sprint-26' %}
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+<!-- START MAST -->
+<div class="full-BGstrip">
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-l">My achievements</h1>
+
+          <h2 class="govuk-heading-m">Achievements <span><a class="govuk-link govuk-body" href="">View all achievements in the course</a></span></h2> 
+        </div>
+      </div>
+
+      <div class="govuk-grid-row govuk-!-margin-bottom-7 govuk-!-margin-top-4">
+        <div class="govuk-grid-column-one-quarter">
+          <div class="app-search-form-container govuk-!-margin-bottom-4">
+            <h3 class="govuk-heading-s">Test success</h2>
+            <p class="govuk-body">You completed your first end of module quiz</p>
+            <a class="govuk-body" href="/sprint-26/module-1/test-intro">Download</a>
+            </div>
+          </div>
+          <div class="govuk-grid-column-one-quarter">
+            <div class="app-search-form-container govuk-!-margin-bottom-4">
+              <h3 class="govuk-heading-s">Test success</h2>
+              <p class="govuk-body">You completed your first end of module quiz</p>
+              <a class="govuk-body" href="/sprint-26/module-1/test-intro">Download</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+              <h2 class="govuk-heading-m">Certificates</h2>
+              <ul class="govuk-list">
+                <li><a href=="">Certificate for Module 1: Child development in the early years</a></li>
+              </ul>
+              </div>
+              </div>
+
+  
+
+      
+
+    
+
+
+      
+              
+
+    
+       
+
+  
+
+
+    </main>
+  </div>
+</div>
+<!-- END BESPOKE MAST -->
+
+{# pulls in default gov uk template #}
+{{super()}}
+{% endblock %}

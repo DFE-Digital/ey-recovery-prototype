@@ -1,0 +1,136 @@
+{% extends "layout-dfe-new.html" %}
+
+{% set milestone = 'sprint-26' %}
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+<!-- START MAST -->
+<div class="full-BGstrip">
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-l">My learning goals and action plan</h1>
+        <p class="govuk-body">Create or edit your learning goals. These are goals you set and track yourself.</p>
+
+
+        <div class="govuk-tabs" data-module="govuk-tabs">
+          <h2 class="govuk-tabs__title">
+            Contents
+          </h2>
+          <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+              <a class="govuk-tabs__tab" href="#past-day">
+               Learning goals
+              </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+              <a class="govuk-tabs__tab" href="#past-week">
+                Action plan
+              </a>
+            </li>
+         
+          </ul>
+          <div class="govuk-tabs__panel" id="past-day">
+            <h2 class="govuk-heading-l">Learning goals</h2>
+            <p class="govuk-caption-m">Example learning goals could be the progress you want to make through the training or number of questions you answer correctly.</p>
+            <a class="govuk-button" href="add-goal">Add a new learning goal</a>
+            
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-half">Learning goal</th>
+                  <th scope="col" class="govuk-table__header">Target date</th>
+                  <th scope="col" class="govuk-table__header">Status</th>
+                  <th scope="col" class="govuk-table__header">Action</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-width-one-half">I want to complete 3 modules in 1 month</td>
+                  <td class="govuk-table__cell">13 March 2023</td>
+                  <td class="govuk-table__cell"><span class="govuk-tag govuk-tag--grey">Not started</span></td>
+                  <td class="govuk-table__cell"><a href="update-goal">Update</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-width-one-half">Pass a quiz first time</td>
+                  <td class="govuk-table__cell">7 March 2023</td>
+                  <td class="govuk-table__cell"><span class="govuk-tag">Completed</span></td>
+                  <td class="govuk-table__cell"><a href="update-goal">Update</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-width-one-half">{{ data['goal-name'] }}</td>
+                  <td class="govuk-table__cell">30 March 2023</td>
+                  <td class="govuk-table__cell"><span class="govuk-tag govuk-tag--grey">Not started</span></td>
+                  <td class="govuk-table__cell"><a href="/update-goal">Update</a></td>
+                </tr>
+             
+              </tbody>
+            </table>
+          </div>
+          <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+            <h2 class="govuk-heading-l">Action plan</h2>
+            <p class="govuk-caption-m">This is for you to use with your manager or colleagues.</p>
+            <a class="govuk-button" href="add-objective">Add an objective to your action plan</a>
+            <table class="govuk-table">
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th scope="col" class="govuk-table__header govuk-!-width-one-half">Objective</th>
+                  <th scope="col" class="govuk-table__header">Target date</th>
+                  <th scope="col" class="govuk-table__header">Status</th>
+                  <th scope="col" class="govuk-table__header">Action</th>
+                </tr>
+              </thead>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-width-one-half"  value="{{ data['objective-name'] }}"">I want to implement more actions to help babies with their emotional development</td>
+                  <td class="govuk-table__cell">24 April 2023</td>
+                  <td class="govuk-table__cell"><span class="govuk-tag govuk-tag--grey">Not started</span></td>
+                  <td class="govuk-table__cell"><a href="update-plan">Update</a></td>
+                </tr>
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell govuk-!-width-one-half">I want to increase my vocabulary so that I can use more descriptive words when reading to the children</td>
+                  <td class="govuk-table__cell">16 May 2023</td>
+                  <td class="govuk-table__cell"><span class="govuk-tag">Completed</span></td>
+                  <td class="govuk-table__cell"><a href="update-goal">Update</a></td>
+                </tr>
+             
+              </tbody>
+            </table>
+          </div>
+    
+
+        </div>
+
+        
+        </div>
+      </div>
+
+       
+
+    
+
+
+      
+              
+
+    
+       
+
+  
+
+
+    </main>
+    </div>
+    </div>
+ 
+<!-- END BESPOKE MAST -->
+
+{# pulls in default gov uk template #}
+{{super()}}
+{% endblock %}
