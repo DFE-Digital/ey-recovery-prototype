@@ -1,0 +1,123 @@
+{% extends "layout-dfe-new.html" %}
+
+{% set milestone = 'sprint-26' %}
+{% block pageTitle %}
+Early Years Foundation
+{% endblock %}
+
+
+
+{% block main %}
+
+<!-- START MAST -->
+<div class="full-BGstrip">
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-l">Learning dashboard</h1>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row govuk-!-margin-bottom-7">
+        <div class="govuk-grid-column-one-half">
+          <div class="app-search-form-container govuk-!-margin-bottom-4">
+            <h2 class="govuk-heading-m">Your progress in Module 1</h2>
+            <p class="govuk-body"><strong>2 out of 3</strong> <br>sub-modules completed</p>
+            <a class="govuk-button" href="/sprint-26/module-1/1-2-2">Resume training</a>
+            </div>
+          </div>
+          </div>
+
+      
+
+      <div class="govuk-grid-row govuk-!-margin-bottom-4">
+        <div class="govuk-grid-column-one-half govuk-!-margin-bottom-4">
+          <div class="govuk-card__flex-container">
+            <div class="govuk-card__flex-item" style="min-width: 100%;">
+              <div class="govuk-card govuk-card--contained govuk-card--selectable card__dashboard">
+                <a href="/sprint-26/learning-dashboard/my-modules"></a>
+                
+                <div class="govuk-card__content">
+                  <h3 class="govuk-heading-m">My modules</h3>
+                  <p>View modules that are in progress, available or completed.    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="govuk-grid-column-one-half">
+          <div class="govuk-card__flex-container">
+            <div class="govuk-card__flex-item" style="min-width: 100%;">
+              <div class="govuk-card govuk-card--contained govuk-card--selectable card__dashboard">
+                <a href="/sprint-26/learning-dashboard/my-achievements"></a>
+                
+                <div class="govuk-card__content">
+                  <h3 class="govuk-heading-m">My achievements</h3>
+                  <p>View certificates and achievements you have received in the training course.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row govuk-!-margin-bottom-7">
+
+        <div class="govuk-grid-column-one-half govuk-!-margin-bottom-4">
+          <div class="govuk-card__flex-container">
+            <div class="govuk-card__flex-item" style="min-width: 100%;">
+              <div class="govuk-card govuk-card--contained govuk-card--selectable card__dashboard">
+                <a href="/sprint-26/learning-log"></a>
+                
+                <div class="govuk-card__content">
+                  <h3 class="govuk-heading-m">My learning log</h3>
+                  <p>View your learning log entries for the training course.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="govuk-grid-column-one-half">
+          <div class="govuk-card__flex-container">
+            <div class="govuk-card__flex-item" style="min-width: 100%;">
+              <div class="govuk-card govuk-card--contained govuk-card--selectable card__dashboard">
+                <a href="/sprint-26/learning-dashboard/learning-goals"></a>
+                
+                <div class="govuk-card__content">
+                  <h3 class="govuk-heading-m">My learning goals and action plan</h3>
+                  <p>View and edit your learning goals and action plan.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+    
+
+
+      
+              
+
+    
+       
+
+  
+
+
+    </main>
+  </div>
+</div>
+<!-- END BESPOKE MAST -->
+
+{# pulls in default gov uk template #}
+{{super()}}
+{% endblock %}
