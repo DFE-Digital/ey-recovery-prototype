@@ -8,6 +8,9 @@ $govuk-assets-path: '/govuk/assets/';
 // Import GOV.UK Frontend and any extension styles if extensions have been configured
 @import "lib/extensions/extensions";
 
+// Import new DfE Frontend and any extension styles if extensions have been configured
+@import 'node_modules/dfe-frontend-alpha/packages/dfefrontend';
+
 // Patterns that aren't in Frontend
 @import "patterns/step-by-step-header";
 @import "patterns/step-by-step-nav";

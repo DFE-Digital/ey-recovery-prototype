@@ -21,6 +21,7 @@
     "cookie-parser": "^1.4.6",
     "cross-spawn": "^7.0.2",
     "del": "^6.0.0",
+    "dfe-frontend-alpha": "^0.1.8",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-session": "^1.13.0",
