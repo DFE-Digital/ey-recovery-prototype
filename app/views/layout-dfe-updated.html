@@ -1,36 +1,9 @@
-{# 1 #}
-{% from 'node_modules/dfe-frontend-alpha/packages/components/header/macro.njk' import header %}
-
-{# 2 #}
-{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
-
-{# 3 #}
-{% block header %}
-  {{ header({
-    "showNav": "false",
-    "showSearch": "false",
-    "showUserName": "false",
-    "userName": "",
-    "userNameURL": "",
-    "selectedNav": pageNav,
-    "logoPath": "public/images",
-    "homeHref": "/",
-    "service": {
-      "name": "My service"
-    },
-    "primaryLinks": [
-      {
-        "url"  : "",
-        "label" : ""
-      }
-    ]
-  })
-}}
-
-{% endblock %}
-
-{# 4 #} 
-{% block scripts %}
-  {{ super() }}
-  <script src="/public/javascripts/dfefrontend.js"></script>
+{# 1 #} {% from alphaHeader import header %} {# 2 #} {% extends
+"govuk-prototype-kit/layouts/govuk-branded.njk" %} {# 3 #} {% block header %} {{
+header({ "showNav": "false", "showSearch": "false", "showUserName": "false",
+"userName": "", "userNameURL": "", "selectedNav": pageNav, "logoPath":
+"public/images", "homeHref": "/", "service": { "name": "My service" },
+"primaryLinks": [ { "url" : "", "label" : "" } ] }) }} {% endblock %} {# 4 #} {%
+block scripts %} {{ super() }}
+<script src="/public/javascripts/dfefrontend.js"></script>
 {% endblock %}
