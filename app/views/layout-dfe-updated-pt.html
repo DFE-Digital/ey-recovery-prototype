@@ -5,28 +5,16 @@ header({ "showNav": "true", "showSearch": "false", "showHeaderActionLinks": "tru
 "public/images", "homeHref": "/", "service": { "name": serviceName },
 "headerActionLinks": [
       {
-        "url"  : "#",
-        "label" : "My Account"
-      },
-      {
-        "url"  : "/june-23/",
-        "label" : "Sign out"
+        "url"  : "/june-23/users/sign-in",
+        "label" : "Sign in"
       }
     ],
     "primaryLinks": [
-      {
-        "url"  : "/june-23/",
-        "label" : "Home"
-      },
-      {
-        "url"  : "/june-23/my-modules/",
-        "label" : "My modules"
-      },
-      {
-        "url"  : "#",
-        "label" : "Learning log"
-      }
-    ] }) }} {% endblock %} {# 4 #} {%
+    {
+    "url"  : "/june-23/",
+    "label" : "Home"
+  }
+] }) }} {% endblock %} {# 4 #} {%
 block scripts %} {{ super() }}
 <script src="/public/javascripts/dfefrontend.js"></script>
 {% endblock %}
