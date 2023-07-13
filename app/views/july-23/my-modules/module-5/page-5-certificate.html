@@ -1,0 +1,73 @@
+{% extends "layout-dfe-updated.html" %}
+{% set removeAllLinks = true %}
+
+{% block pageTitle %}
+Early years child development training : Supporting physical development in the early years : Download your certificate
+{% endblock %}
+
+
+{% block header %}
+{% include "july-23/includes/new-header.html" %}
+<div class="dfe-content-page--header">
+    <div class="dfe-width-container ">
+        {% include "july-23/includes/new-phase-banner.html" %}
+      <div class="govuk-grid-row ">
+        <div class="govuk-grid-column-three-quarters"><div class="noprint"><a class="govuk-back-link" href="/july-23/my-modules/module-5/">Back to Module 5 overview</a></div></div>
+      </div>
+
+      <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-full">
+            <h1 class="govuk-heading-l">Get your certificate </h1>
+            <p>Congratulations! You have now completed this module.</p>
+            <p class="govuk_body">If the name on your certificate is not what you expect, you can update it in <a class="govuk-link" href="#">My account</a>.</p>
+         </div>
+      </div>
+      <div class="govuk-grid-row govuk-!-padding-top-0 govuk-!-padding-bottom-7">
+        <div class="govuk-grid-column-full"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row old-correction">
+
+    <h3>Certificate of achievement</h3>
+    <h1 class="data-hj-suppress cert-heading govuk-heading-xl">Angela Foster</h1>
+    <p>has completed the following module:</p>
+    <h2>Supporting physical development in the early years</h2>
+    <p>Date completed: 3 May 2023</p>
+    <p>This module has covered:</p>
+    <ul>
+        <li>the typical stages of physical development in the early years</li>
+        <li>potential factors that can affect physical development</li>
+        <li>how physical skills impact on learning, development and behaviour</li>
+        <li>the importance of the curriculum, environment and relationships for promoting physical development</li>
+    </ul>
+    <p class="govuk-!-margin-top-7"></p>
+    <h3>Certified by the Department for Education</h3>
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third-from-desktop">
+            <img width="220" alt="" title="" src="/public/images/department-for-education-certificate.png">
+        </div>
+    </div>
+    <div class="noprint">
+        <div class="govuk-button-group">
+            <div class="gem-c-print-link print-button">
+                <button class="govuk-link gem-c-print-link__button" onclick="window.print()" data-module="print-link">Print this page</button>
+            </div>
+            <a aria-describedby="pdf-details" class="govuk-link" href="#">Download certificate</a>
+        </div>
+        <p class="govuk-body" id="pdf-details">
+            <span aria-label="file type"><abbr title="Portable Document Format">PDF</abbr></span>, <span aria-label="file size">0.4 MB</span>, <span aria-label="page size">1 page</span>
+        </p>
+        <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+        <a draggable="false" data-module="govuk-button" role="button" class="govuk-button" href="/july-23/my-modules">Go to My modules</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% include "july-23/includes/new-footer.html" %}
+{% endblock %}

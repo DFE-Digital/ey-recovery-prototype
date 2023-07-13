@@ -1,0 +1,80 @@
+{% extends "layout-dfe-updated-pt.html" %}
+{% set removeAllLinks = true %}
+
+{% block pageTitle %}
+  Home – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block beforeContent %}
+<div class="govuk-phase-banner noprint">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">Beta</strong>
+      <span class="govuk-phase-banner__text">This is a new service, your <a target="_blank" class="govuk-link" href="#">feedback</a> will help us improve it.</span>
+    </p>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+        <form data-turbo="false" class="new_user" id="new_user" action="/users/sign-in" accept-charset="UTF-8" method="post">
+            <input type="hidden" name="authenticity_token" value="wFV4fjrmPRyx8cpN12_XDUuyMfomgy0snpmervQAQ8yIfvPc3HNCZsAj-j7ImrGH0w1mmEfmepewmIiF5N8OXA" autocomplete="off">
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">Sign in to Early years child development training</h1>
+                </legend>
+                <p class="govuk-body">Enter your details to sign in to your personal Early years child development training account. These details are different to any other GOV.UK accounts you may use.</p>
+                <div class="govuk-form-group">
+                    <label for="user-email-field" class="govuk-label">Email address</label>
+                    <input id="user-email-field" class="govuk-input govuk-!-width-two-thirds" aria-required="true" autofocus="autofocus" autocomplete="email" type="email" value="" name="user[email]">
+                </div>
+                <div class="govuk-form-group">
+                    <label for="user-password-field" class="govuk-label">Password</label>
+                    <input id="user-password-field" class="govuk-input govuk-!-width-two-thirds" aria-required="true" type="password" name="user[password]">
+                </div>
+                <details data-module="govuk-details" class="govuk-details">
+                    <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">Problems signing in</span>
+                    </summary>
+                    <div class="govuk-details__text">
+                        <a class="govuk-link" href="#">I have forgotten my password</a><br>
+                        <a class="govuk-link" href="#">Didn't receive confirmation instructions?</a><br>
+                        <a class="govuk-link" href="#">Other problems signing in</a>
+                    </div>
+                </details>
+                <a draggable="false" data-module="govuk-button" role="button" class="govuk-button" href="/june-23/my-modules">Sign in</a>
+            </fieldset>
+            <br>
+        </form>
+    </div>
+    <div class="govuk-grid-column-one-third-from-desktop app-sidebar">
+        <h2 class="govuk-heading-m">Don't have an account yet?</h2>
+        <a class="govuk-link" href="#">Create an Early years child development training account</a> to access training material.
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer role="contentinfo" class="govuk-footer noprint">
+    <div class="govuk-width-container">
+        <div class="govuk-footer__navigation">
+          <div class="govuk-footer__section govuk-grid-column-two-thirds"><ul class="govuk-footer__list govuk-footer__list--columns-3"><li class="govuk-footer__list-item"><a class="govuk-link govuk-footer__link" href="#">Accessibility statement</a></li><li class="govuk-footer__list-item"><a class="govuk-link govuk-footer__link" href="#">Free internet, wifi and data resources</a></li><li class="govuk-footer__list-item"><a class="govuk-link govuk-footer__link" href="#">Privacy policy</a></li><li class="govuk-footer__list-item"><a class="govuk-link govuk-footer__link" href="#">Sitemap</a></li><li class="govuk-footer__list-item"><a class="govuk-link govuk-footer__link" href="#">Terms and conditions</a></li><li class="govuk-footer__list-item"><a class="govuk-link govuk-footer__link" href="#">Cookies</a></li><li class="govuk-footer__list-item"><a class="govuk-link govuk-footer__link" target="_blank" href="#">Contact</a></li><li class="govuk-footer__list-item"><a class="govuk-link govuk-footer__link" target="_blank" href="#">Feedback</a></li></ul></div>
+        </div>
+  
+        <hr class="govuk-footer__section-break">
+  
+      <div class="govuk-footer__meta">
+          <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+  
+              <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+                <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"></path>
+              </svg>
+  
+              <span class="govuk-footer__licence-description">All content is available under the <a class="govuk-footer__link" href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>, except where otherwise stated</span>
+  
+          </div>
+  
+          <div class="govuk-footer__meta-item"><a class="govuk-footer__link govuk-footer__copyright-logo" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">© Crown copyright</a></div>
+  </div></div></footer>
+{% endblock %}

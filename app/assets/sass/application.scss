@@ -393,7 +393,7 @@ h1.old-dfe-heading {
 }
 h1.cert-heading {
   display: block;
-  font-size: 2.375em;
+  font-size: 3em;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
   margin-inline-start: 0px;
@@ -559,4 +559,39 @@ iframe {
   line-height: 1.1428571429;
   margin-top: 0;
   margin-bottom: 15px;
+}
+
+.dfe-content-page--header {
+  background: #ebf2f6;
+}
+
+.pb-pre-text {color: $govuk-secondary-text-colour}
+
+.pb-outer {
+  width: 100%;
+  position: relative;
+  height: 10px;
+  background-color: #347ba9;
+}
+.pb-progress {
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-color: $govuk-success-colour;
+  border-right: 3px #FFF solid;
+  height: 10px;
+}
+
+.module-section--item {
+  font-size: 1.1875rem;
+}
+
+.interrupt-panel {
+  width: 100%;
+  padding: 30px;
+  background: #1b68ab;
+}
+
+.dfe-width-container {
+  margin: 0 auto;
 }
