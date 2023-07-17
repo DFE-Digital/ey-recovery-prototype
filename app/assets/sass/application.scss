@@ -595,3 +595,8 @@ iframe {
 .dfe-width-container {
   margin: 0 auto;
 }
+
+.card:hover .govuk-tag.govuk-tag--ey {
+  color: #1d70b8;
+  background-color: #fff;
+}
