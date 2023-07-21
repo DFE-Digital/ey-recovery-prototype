@@ -38,6 +38,7 @@ $govuk-assets-path: '/govuk/assets/';
 @import "bespoke/progress-bar.scss";
 @import "bespoke/resources.scss";
 @import "bespoke/module-overview-progress";
+@import "bespoke/dfe-header-fixes";
 
 //images
 .image-width{
@@ -592,9 +593,11 @@ iframe {
   background: #1b68ab;
 }
 
+/*
 .dfe-width-container {
   margin: 0 auto;
 }
+*/
 
 .card:hover .govuk-tag.govuk-tag--ey {
   color: #1d70b8;
