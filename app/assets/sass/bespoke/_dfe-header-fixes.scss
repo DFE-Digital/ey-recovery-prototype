@@ -9,11 +9,12 @@
     align-self: flex-end;
     width: 100%
 }
-.move-me .dfe-header__link--service {
+.move-me .dfe-header__link--service, .move-me .dfe-header__link--service:hover {
     color: #fff;
     font-size: 1.125em;
     margin-top: 12px;
 }
+.move-me .dfe-header__link--service:focus {color: #000}
 
 .dfe-header__logo {order: 1}
 .move-me {order: 3}
