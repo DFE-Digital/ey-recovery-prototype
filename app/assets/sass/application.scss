@@ -603,3 +603,19 @@ iframe {
   color: #1d70b8;
   background-color: #fff;
 }
+
+.dfe-ey-section-start {
+  padding: govuk-spacing(7);
+  background-color: govuk-colour("light-grey");
+  border-radius: 6px;
+}
+.dfe-ey-section-start img {
+  max-width: 100%;
+}
+
+.dfe-button--previous {
+  background-color: $color_dfe-secondary-blue;
+}
+.dfe-button--previous:hover, .dfe-button--previous:focus {
+  background-color: $color_dfe-blue;
+}
