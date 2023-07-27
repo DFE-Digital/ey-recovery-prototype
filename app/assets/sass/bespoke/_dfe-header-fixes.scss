@@ -34,7 +34,7 @@
 
 .dfe-header__logo {order: 1}
 .move-me {order: 2; width: auto; padding-left: 30px; margin-bottom: -6px;}
-.move-me .dfe-header__link--service {font-size: 1.375em; margin-top: 0;}
+.move-me .dfe-header__link--service, .move-me .dfe-header__link--service:hover {font-size: 1.375em; margin-top: 0;}
 .dfe-header-f-toplinks {order: 3}
 
 .dfe-width-container.dfe-header__container.dfe-header-f-header-flex {
