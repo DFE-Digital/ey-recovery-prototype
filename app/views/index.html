@@ -7,235 +7,46 @@
 {% endblock %}
 
 {% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <h1 class="govuk-heading-xl">
+                Help for early years providers prototype
+                <span class="govuk-caption-xl">{{ releaseVersion }}</span>
+            </h1>
+            {{ releaseVersion | log }}
+            <h2 class="govuk-heading-m">Mental health content testing</h2>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>
+                    <a href="v1/home-old-1">Homepage</a>
+                </li>
+                <li>
+                    <a href="v1/text-selection">Mental health content page with highlighter tool</a>
+                </li>
+            
+                <li>
+                    <a href="v1/load">Load a participant's response from research session</a>
+                </li>
+            </ul>
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
-      <h1 class="govuk-heading-xl">
-        Prototype your service using GOV.UK Prototype Kit
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
+            <h2 class="govuk-heading-m">New proposed IA</h2>
+
+            <ul class="govuk-list govuk-list--bullet">
+                <li>
+                    <a href="v1/home">Homepage</a>
+                </li>
+                </ul>
+            <!-- <h2 class="govuk-heading-m">Version 1</h2>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>
+                    <a href="v1/home">New site structure: Home page</a>
+                </li>
+                <li>
+                    <a href="">Parent topic hub</a>
+                </li>
+                <li>
+                    <a href="">Child topic hub</a>
+                </li>
+            </ul> -->
+        </div>
     </div>
-  
-    <div class="govuk-grid-column-two-thirds">
-      <h2 class="govuk-heading-m">Prototypes</h2>
-
-      <h2 class="govuk-heading-s">July 23</h2>
-      <p>Prototypes for UR testing supporting NLF</p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="july-23/my-modules">My modules page leading to NLF for UR testing</a></li>
-        <li><a href="july-23/new-tag">NEW tag example</a></li>
-        <li><a href="july-23/header">Header experiments</a></li>
-        <li><a href="july-23/section-start">New section start page</a></li>
-      </ul>
-
-      <h2 class="govuk-heading-s">June 23</h2>
-      <p>Prototypes for UR Reception discovery</p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="june-23/">Simple sign in with new DFE header and non-linear flow</a></li>
-        <li><a href="june-23/my-modules">My modules page leading to Module 5 for UR testing</a></li>
-      </ul>
-
-      <h2 class="govuk-heading-s">Sprint 27</h2>
-      <p>We were working on the design history this sprint.</p>
-
-      <h2 class="govuk-heading-s">Sprint 26</h2>
-      <p>Testing how can we best motivate and engage users</p>
-      <ul class="govuk-list govuk-list--bullet">
-      <li> <a href="sprint-26/learning-dashboard">Learning dashboard</a></li>
-
-      </ul>
-
-      <h2 class="govuk-heading-s">Sprint 24</h2>
-      <p>This sprint we were creating a prototype for Help for Early Years Providers</p>
-      
-
-      <h2 class="govuk-heading-s">Sprint 23</h2>
-      <p>Testing downloadable resources and sharing the training externally</p>
-      <ul class="govuk-list govuk-list--bullet">
-      <li> <a href="sprint-23/module-1/my-learning">Starting a new module</a></li>
-
-      </ul>
-
-      <h2 class="govuk-heading-s">Sprint 20</h2>
-      <p>Updating the prototype with all of the work done between sprints 17-19</p>
-      <ul class="govuk-list govuk-list--bullet">
-      <li><a href="sprint-20/my-account/manage-account">Account deletion </a></li>
-      <li><a href="sprint-20/my-account/manage-account">Manage email marketing choice </a></li>
-      <li><a href="sprint-20/registration/training-email">Make email choice </a></li>
-      <li><a href="sprint-20/components-bespoke">Flippable cards and progress bar WiP</a></li>
-      </ul>
-
-    
-
-      <h2 class="govuk-heading-s">Sprint 16</h2>
-      <ul class="govuk-list govuk-list--bullet">
-      <li><a href="sprint-16/videos/start">Videos in the service </a></li>
-      </ul>
-
-      <h2 class="govuk-heading-s">Sprint 15</h2>
-      <p>The focus for this sprint was to prepare for Beta assessment.</p>
-
-      <h2 class="govuk-heading-s">Sprint 14</h2>
-      <ul class="govuk-list govuk-list--bullet">
-      <li><a href="sprint-14/home-signed-out">End to end of a single topic </a></li>
-      <li><a href="sprint-14/social-emotional/before-you-start">Before you start icon overview</a></li>
-      <li><a href="sprint-14/learning-log">Learning log</a></li>
-      <li><a href="sprint-14/registration/your-setting">Your setting type autocomplete</a></li>
-      <li><a href="sprint-14/registration/local-authority">Local authority autocomplete</a></li>
-      <li><a href="sprint-14/components-bespoke">Bespoke components</a></li>
-      <li><a href="sprint-14/whats-new">What's new page</a></li>
-      </ul>   
-
-      <h2 class="govuk-heading-s">Sprint 13</h2>
-      <p class="govuk-body">This sprint, we focussed on creating designs for the HfEYP IA redesign </p>
-
-      <h2 class="govuk-heading-s">Sprint 12</h2>
-      <p class="govuk-body">This sprint, we were refining designs of icons, and the registration journey</p>
-
-      <h2 class="govuk-heading-s">Sprint 11</h2>
-      <ul class="govuk-list govuk-list--bullet">
-      <li><a href="sprint-11/prompts/the-environment">Selection of practitioner prompts </a></li>
-      <li><a href="sprint-11/social-emotional/my-training-m3">My learning - activity and reflections within module </a></li>
-      <li><a href="sprint/11/learning-log">Learning log</a></li>
-    </ul>     
-
-      <h2 class="govuk-heading-s">Sprint 10</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="sprint-10/home-signed-out">User returning to log in - has a new module been added yet? </a></li>
-        <li><a href="sprint-10/emails/notification-new-module-">Email notification: New module - user is ready to start newest module </a></li>
-        <li><a href="sprint-10/emails/notification-module-3">Email notification: New module - user hasn't completed first 3 modules </a></li>
-        <li><a href="sprint-10/emails/notification-nudge">Email notification: Nudge user who hasn't logged in for a while </a></li>
-        <li><a href="sprint-10/emails/notification-finish-signup">Email notification: Finish signing up </a></li>
-
-        
-        <li><a href="sprint-10/emails/notification-new-module-image">Email notification: New module - user is ready to start newest module (Gmail background)</a></li>
-        <li><a href="sprint-10/emails/notification-module-3-image">Email notification: New module - user hasn't completed first 3 modules  (Gmail background)</a></li>
-        <li><a href="sprint-10/emails/notification-nudge-image">Email notification: Nudge user who hasn't logged in for a while (Gmail background)</a></li>
-        <li><a href="sprint-10/emails/notification-finish-signup-image">Email notification: Finish signing up (Gmail background)</a></li>
-        </ul>
-
-
-      
-     
-      <h2 class="govuk-heading-s">Sprint 9</h2>
-      <p>Design work for this sprint was static marketing communications</p>
-     
-      <h2 class="govuk-heading-s">Sprint 8</h2>
-      <p>This sprint was focussed on getting our private beta launched</p>
-
-       
-      <h2 class="govuk-heading-s">Sprint 7 scenarios</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="sprint-7/brain-development/my-training">User returning to 2nd module - 1st module already completed </a></li>
-        <li><a href="sprint-7/brain-development/video-content">Video with transcript</a></li>
-        <li><a href="sprint-7/reforms/article-2">Reforms: Article with Harvard referencing</a></li>
-        <li><a href="sprint-7/reforms/article-1">Reforms: Article with footnotes</a></li>
-        <li><a href="sprint-7/components-bespoke">Bespoke components (quotes styling & cards)</a></li>
-        <li><a href="sprint-7/brain-development/my-learning-fail">User fails first attempt at module test</a></li>
-        <li><a href="sprint-7/interim-unavailable">Interim solution unavailable</a></li>
-        <li><a href="sprint-7/my-account/sign-in-change-success">User successfully changes email adress</a></li>
-
-      </ul>
-
-
-
-      <h2 class="govuk-heading-s">Sprint 6 scenarios</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="sprint-6/home-signed-out">User sent course by a manager - start from beginning </a></li>
-        <li><a href="sprint-6/home-signed-out">You've started the training and want to carry on </a></li>
-      </ul>
-
-      <h2 class="govuk-heading-s">Sprint 5 scenarios</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="sprint-5/home-existing" class="govuk-link">User enrolling from the home page</a></li>
-        <li><a href="sprint-5/brain-development/my-training" class="govuk-link">Finished module 1 and module 2 in progress</a></li>
-        <li><a href="sprint-5/brain-development/my-learning-not-started" class="govuk-link">User not started any modules</a></li>
-        <li><a href="sprint-5/brain-development/my-training-in-progress" class="govuk-link">1st module in progress</a></li>
-        <li><a href="sprint-5/brain-development/my-training-completed" class="govuk-link">1st module completed and module 2 not started</a></li>
-        <li><a href="sprint-5/brain-development/my-learning-all-completed" class="govuk-link">All available modules completed</a></li>
-      </ul>
-
-      <h2 class="govuk-heading-s">Sprint 4 scenarios</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          <a href="sprint-4/home-existing" class="govuk-link">Existing user and they have already started the course via my training
-            page - Fail</a>
-        </li>
-      </ul>
-
-      <h2 class="govuk-heading-s">Not navigable errors or unhappy paths</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="sprint-7/registration/sign-in-errors/unlock-link-expired" class="govuk-link">Account lock link expired</a></li>
-        <li><a href="sprint-6/registration/sign-in-errors/account-locked" class="govuk-link">Account has been locked</a></li>
-        <li><a href="sprint-5/registration/email-errors/reset-link-expired" class="govuk-link">Reset link expired</a></li>
-        <li><a href="sprint-5/registration/email-errors/reset-link-used" class="govuk-link">Reset link used</a></li>
-        <li><a href="sprint-5/service-unavailable" class="govuk-link">Service unavailable</a></li>
-        <li><a href="sprint-5/registration/email-errors/email-used">Email already registered</a></li>
-        <li><a href="sprint-5/registration/email-errors/password-mismatch">Passwords don't match</a></li>
-        <li><a href="sprint-5/registration/email-errors/email-invalid">Email not valid</a></li>
-        <li><a href="sprint-5/registration/sign-in-errors/ofsted-error" class="govuk-link">Ofsted error</a></li>
-        <li><a href="sprint-5/registration/new-password" class="govuk-link">Choose a new password</a></li>
-      </ul>
-
-      <h3 class="govuk-heading-s">Sprint 3</h3>
-      <ul class="govuk-list govuk-list--number">
-        <li><a href="./sprint-3/home-existing" class="govuk-link">Existing user and they have already started the course via my training page - Fail</a></li>
-      </ul>
-
-      <h3 class="govuk-heading-s">Sprint 2</h3>
-      <ol class="govuk-list govuk-list--number">
-        <li><a href="./sprint-2/home-existing.html">Existing user and they have already started the course via my training page - Fail</a></li>
-        <li><a href="./sprint-2/brain-development/test-pass/home-existing">Existing user and they have already started the course view overview page - Pass</a></li>
-      </ol>
-      
-      <h3 class="govuk-heading-s">Sprint 1</h3>
-      <ol class="govuk-list govuk-list--number">
-        <li><a href="./sprint-1/home.html">User already has a training account and has started a course</a></li>
-        <li><a href="./sprint-1/start/email">User is finding service for the first time - Email 1</a></li>
-        <li><a href="./sprint-1/start/email1">User is finding service for the first time - Email 2</a></li>
-      </ol>
-      
-      <h3 class="govuk-heading-s">Alpha Sprint 26 Week 2</h3>
-      <ol class="govuk-list govuk-list--number">
-        <li><a href="./alpha-sprint-26-week-2/home.html">User already has a training account and has started a course</a></li>
-        <li><a href="./alpha-sprint-26-week-2/email">User is finding service for the first time - Email 1</a></li>
-        <li><a href="./alpha-sprint-26-week-2/email1">User is finding service for the first time - Email 2</a></li>
-      </ol>
-
-      <h3 class="govuk-heading-s">Alpha Sprint 26</h3>
-      <ol class="govuk-list govuk-list--number">
-        <li><a href="./alpha-sprint-26/home.html">User already has a training account and has started a course</a></li>
-        <li><a href="./alpha-sprint-26/email">User is finding service for the first time - Email 1</a></li>
-        <li><a href="./alpha-sprint-26/email1">User is finding service for the first time - Email 2</a></li>
-      </ol>
-      
-      <h3 class="govuk-heading-s">Alpha Sprint 25</h3>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="./alpha-sprint-25/home.html">Service start page</a></li>
-      </ul>
-
-      <h3 class="govuk-heading-s">Alpha Sprint 24</h3>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="./alpha-sprint-24/training-overview.html">Service start page</a></li>
-      </ul>
-
-
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>
-          <a href="/docs/tutorials-and-examples">Tutorials and templates</a>
-        </li>
-        <li>
-          <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="govuk-grid-column-one-third">
-      <h2 class="govuk-heading-m">Notes on prototype</h2>
-      <p classs="govuk-body"></p>
-      <p>New header on Sprint 20 onwards, but font will change everywhere</p>
-    </div>
-  </div>
-</div>
 {% endblock %}
