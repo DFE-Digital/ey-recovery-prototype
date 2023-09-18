@@ -1,6 +1,6 @@
 .dfe-cust-image-box {display: flex; flex-direction: column;}
 .ib-left-pane {order: 2}
-.ib-right-pane {order: 1}
+.ib-right-pane {order: 1; min-height: 150px;}
 .dfe-cust-image-box-inner {flex: 100%; padding: 1.5em; background-size: cover; background-position: center;}
 .dfe-light-bg {background: #ebf2f6;}
 
