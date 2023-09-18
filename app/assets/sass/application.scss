@@ -39,6 +39,8 @@ $govuk-assets-path: '/govuk/assets/';
 @import "bespoke/resources.scss";
 @import "bespoke/module-overview-progress";
 @import "bespoke/dfe-header-fixes";
+@import "bespoke/dfe-side-nav";
+@import "bespoke/image-box";
 
 //images
 .image-width{
@@ -215,7 +217,7 @@ $accent: #347ca9;
   width: auto;
 }
 
-.dfe-width-container, .govuk-width-container {max-width: 960px !important;}
+.dfe-width-container, .govuk-width-container {max-width: 1200px !important;}
 
 
 .govuk-footer .govuk-footer__list-item {
@@ -227,6 +229,7 @@ $accent: #347ca9;
   padding: 25px;
   margin-bottom: 25px;
   background: #f3f2f1;
+  border-radius: 8px;
 }
 
 .full-width-img {
