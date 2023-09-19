@@ -170,3 +170,32 @@
 .dfe-vertical-nav__section .dfe-vertical-nav__section.dfe-vertical-nav__section-item--current .dfe-vertical-nav__link {
     font-weight: 700
 }
+.dfe-vertical-nav, .content-with-side-menu {margin-top: 20px;}
+.menu-btn {
+    display: none;
+}
+.menu-btn:checked ~ .dfe-vertical-nav {
+    display: block
+  }
+.menu-btn:not(:checked) ~ .dfe-vertical-nav {
+    display: none
+  }
+
+label.menu-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $govuk-link-colour;
+    font-weight: bold;
+}
+@media (min-width: 40.0625em) {
+    label.menu-icon {display: none;}
+    .menu-btn:checked ~ .dfe-vertical-nav {
+        display: block
+      }
+    .menu-btn:not(:checked) ~ .dfe-vertical-nav {
+        display: block
+      }
+    .dfe-vertical-nav, .content-with-side-menu {margin-top: 0px;}
+}
+
