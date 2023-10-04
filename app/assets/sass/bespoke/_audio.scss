@@ -1,0 +1,27 @@
+.audio-holder audio {
+    width: 100%;
+}
+
+.audio-holder {
+    width: 100%;
+    float: none;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 40.0625em) {
+    .audio-holder audio {
+        width: 240px;
+    }
+    
+    .audio-holder {
+        width: 240px;
+        float: right;
+        text-align: left;
+        padding-left: 20px;
+        border-left: 1px solid $govuk-border-colour;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
