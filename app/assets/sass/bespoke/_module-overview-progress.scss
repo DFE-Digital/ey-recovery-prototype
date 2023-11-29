@@ -21,14 +21,14 @@ $progress-bar-container-width: 81px;
     position:absolute;
   
     &.completed {
-      background-color: govuk-colour('black');
+      background-color: govuk-colour('blue');
       color: govuk-colour('white');
     }
     
     &.started {
       background-color: govuk-colour('white');
-      color: govuk-colour('black');
-      outline: 4px solid govuk-colour('black');
+      color: govuk-colour('blue');
+      outline: 4px solid govuk-colour('blue');
       outline-offset: -4px;
     }
     

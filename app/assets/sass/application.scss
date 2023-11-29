@@ -46,6 +46,7 @@ $govuk-assets-path: '/govuk/assets/';
 @import "bespoke/card-progress";
 @import "bespoke/key-concept";
 @import "bespoke/completed-modules";
+@import "bespoke/access-needs";
 
 //images
 .image-width{
@@ -240,12 +241,13 @@ $accent: #347ca9;
 .full-width-img {
   width: 100%;
 }
-
+/*
 .govuk-heading-l {
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 1.1111111111;
 }
+*/
 
 .light-grey-box .govuk-button, .light-grey-box .gem-c-govspeak .gem-c-button, .gem-c-govspeak .light-grey-box .gem-c-button {
   margin: 0;
@@ -257,7 +259,10 @@ $accent: #347ca9;
   position: relative;
   background-color: #f3f2f1;
   border-bottom: 3px solid #1d70b8;
-  max-width: 300px;
+  /* max-width: 300px; */
+}
+.card-container a {
+  width: 100%;
 }
 .card-container {
   padding: 20px;
@@ -469,7 +474,7 @@ https://design-system.service.gov.uk/styles/colour/
   left: -30px;
 }
 .prompt .govuk-grid-column-one-quarter {
-  margin-right: -90px;
+  margin-right: -120px;
 }
 .prompt .govuk-grid-column-three-quarters {
   padding: 15px 0;

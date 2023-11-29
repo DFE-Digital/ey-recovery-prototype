@@ -1,0 +1,231 @@
+{% extends "layout-dfe-updated.html" %}
+{% set removeAllLinks = true %}
+
+{% block pageTitle %}
+Early years child development training : Supporting physical development in the early years : Download your certificate
+{% endblock %}
+
+
+{% block header %}
+<header class="dfe-header" role="banner">
+    <div class="dfe-width-container dfe-header__container dfe-header-f-header-flex">
+      <div class="dfe-header__logo">
+        <a class="dfe-header__link dfe-header__link--service " href="/" aria-label="DfE homepage">
+        <img src="/public/images/dfe-logo.png" class="dfe-logo" alt="DfE Homepage">
+        <img src="/public/images/dfe-logo-alt.png" class="dfe-logo-hover" alt="DfE Homepage">
+        </a>
+      </div>
+      <div class="move-me"><a class="dfe-header__link dfe-header__link--service" href="/" aria-label="DfE homepage">Early years child development training</a></div>
+      <div class="dfe-header__content dfe-header-f-dtonly dfe-header-f-toplinks" id="content-header">
+        <div class="dfe-header-f-top-links">
+        <ul class="dfe-header__action-links">
+          <li>
+            <a href="#" class="govuk-link govuk-link--inverse">My account</a>
+          </li>
+          <li>
+            <a href="#" class="govuk-link govuk-link--inverse">Sign out</a>
+          </li>
+        </ul>
+        </div>
+        <div class="dfe-header__menu">
+          <button class="dfe-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    
+    <nav class="dfe-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+      <div class="dfe-width-container">
+        <p class="dfe-header__navigation-title">
+          <span id="label-navigation">Menu</span>
+          <button class="dfe-header__navigation-close" id="close-menu">
+            <svg class="dfe-icon dfe-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+              <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+            </svg>
+            <span class="govuk-visually-hidden">Close menu</span>
+          </button>
+        </p>
+        <ul class="dfe-header__navigation-list">
+          <li class="dfe-header__navigation-item ">
+            <a class="dfe-header__navigation-link" href="#">
+              Home 
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item">
+            <a class="dfe-header__navigation-link" href="my-modules">
+              My modules
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item ">
+            <a class="dfe-header__navigation-link" href="#">
+              Learning log
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item dfe-header-f-mob">
+            <a class="dfe-header__navigation-link" href="#">
+              My account
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item dfe-header-f-mob">
+            <a class="dfe-header__navigation-link" href="#">
+              Sign out
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<div class="dfe-content-page--header">
+    <div class="dfe-width-container ">
+        {% include "july-23/includes/new-phase-banner.html" %}
+      <div class="govuk-grid-row ">
+        <div class="govuk-grid-column-three-quarters"><div class="noprint"><a class="govuk-back-link" href="module-summary">Back to Module 5 overview</a></div></div>
+      </div>
+
+      <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-full">
+            <h1 class="govuk-heading-l">Get your certificate </h1>
+            <p>Congratulations! You have now completed this module.</p>
+            <p class="govuk_body">If the name on your certificate is not what you expect, you can update it in <a class="govuk-link" href="#">My account</a>.</p>
+         </div>
+      </div>
+      <div class="govuk-grid-row govuk-!-padding-top-0 govuk-!-padding-bottom-7">
+        <div class="govuk-grid-column-full"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row old-correction">
+    <div class="govuk-grid-column-full">
+        <h3>Certificate of achievement</h3>
+        <h1 class="data-hj-suppress cert-heading govuk-heading-xl">Angela Foster</h1>
+        <p>has completed the following module:</p>
+        <h2>Supporting physical development in the early years</h2>
+        <p>Date completed: 3 May 2023</p>
+        <p>This module has covered:</p>
+        <ul>
+            <li>the typical stages of physical development in the early years</li>
+            <li>potential factors that can affect physical development</li>
+            <li>how physical skills impact on learning, development and behaviour</li>
+            <li>the importance of the curriculum, environment and relationships for promoting physical development</li>
+        </ul>
+        <p class="govuk-!-margin-top-7"></p>
+        <h3>Certified by the Department for Education</h3>
+    </div>
+</div>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third-from-desktop">
+        <img width="220" alt="" title="" src="/public/images/department-for-education-certificate.png">
+    </div>
+</div>
+
+<div class="noprint">
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+
+            <div class="govuk-button-group">
+                <div class="gem-c-print-link print-button">
+                    <button class="govuk-link gem-c-print-link__button" onclick="window.print()" data-module="print-link">Print this page</button>
+                </div>
+                <a aria-describedby="pdf-details" class="govuk-link" href="#">Download certificate</a>
+            </div>
+            <p class="govuk-body" id="pdf-details">
+                <span aria-label="file type"><abbr title="Portable Document Format">PDF</abbr></span>, <span aria-label="file size">0.4 MB</span>, <span aria-label="page size">1 page</span>
+            </p>
+        </div>
+    </div>
+    <div class="govuk-grid-row" id="available">
+        <div class="govuk-grid-column-full govuk-!-margin-top-9">
+            <h2 class="govuk-heading-m">Your modules in progress</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <a href="javascript: void(0)">
+                        <div class="card-container">
+                            <img class="full-width-img" width="200" alt="A photograph of a baby boy playing with wooden blocks." title="A photograph of a baby boy playing with wooden blocks." src="/public/images/module-1.jpg">
+                            
+                                <p class="govuk-!-font-weight-bold"><a class="govuk-link govuk-link--no-visited-state card-link--header" href="javascript: void(0)">Module 1: Understanding child development and the EYFS</a></p>
+                            
+                                <div class="card-progress-bar">
+                                    <div class="govuk-!-font-weight-bold">Your progress: 50%</div>
+                                    <div class="bar-settings">
+                                        <div class="bar-bg"></div>
+                                        <div class="bar-progress" style="width: 50%;"><div class="bar-ball"></div></div>
+                                    </div>
+                                    <div class="govuk-!-font-size-14">You have read 40 pages</div>
+                                </div>
+                            
+                        </div>
+                    </a>
+                </div>
+                    
+                    
+                   
+            </div>
+        </div>
+    </div>
+        
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-6">
+
+    <div class="govuk-grid-row govuk-!-margin-top-6" id="available">
+        <div class="govuk-grid-column-full">
+            <h2 class="govuk-heading-m">Start a new module</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <a href="module-summary">
+                    <div class="card-container">
+                        <img class="full-width-img" width="200" alt="A photograph of a young girl being read a story by an early years practioner" title="A photograph of a young girl being read a story by an early years practioner" src="/public/images/module-2.jpg">
+                        <p class="govuk-!-font-weight-bold"><a class="govuk-link govuk-link--no-visited-state card-link--header" href="module-summary">Module 2: Brain development and how children learn</a></p>
+                    </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <div class="card-container">
+                        <img class="full-width-img" width="200" alt="A photograph of a group of young children with their arms raised." title="A photograph of a group of young children with their arms raised." src="/public/images/module-3.jpg">
+                        <p class="govuk-!-font-weight-bold"><a class="govuk-link govuk-link--no-visited-state card-link--header" href="javascript: void(0)">Module 3: Supporting children’s personal, social and emotional development</a></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-container">
+                        <img class="full-width-img" width="200" alt="A photograph of a group of young children sat cross legged smiling and enjoying a story" title="A photograph of a group of young children sat cross legged smiling and enjoying a story" src="/public/images/module-4.jpg">
+                        <span class="govuk-tag govuk-tag--ey govuk-!-margin-top-1 govuk-!-margin-bottom-1">New</span>
+                        <p class="govuk-!-font-weight-bold"><a class="govuk-link govuk-link--no-visited-state card-link--header" href="javascript: void(0)">Module 4: Supporting language development in the early years</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+            <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-6">
+            <a draggable="false" data-module="govuk-button" role="button" class="govuk-button" href="my-modules">Go to My modules</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{% include "july-23/includes/new-footer.html" %}
+{% endblock %}

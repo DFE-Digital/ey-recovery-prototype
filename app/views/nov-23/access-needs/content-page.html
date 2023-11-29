@@ -1,0 +1,207 @@
+{% extends "layout-dfe-updated.html" %}
+{% set removeAllLinks = true %}
+
+{% block pageTitle %}
+Early years child development training : Supporting physical development in the early years : Child led activity
+{% endblock %}
+
+
+
+{% block header %}
+<header class="dfe-header" role="banner">
+    <div class="dfe-width-container dfe-header__container dfe-header-f-header-flex">
+      <div class="dfe-header__logo">
+        <a class="dfe-header__link dfe-header__link--service " href="/" aria-label="DfE homepage">
+        <img src="/public/images/dfe-logo.png" class="dfe-logo" alt="DfE Homepage">
+        <img src="/public/images/dfe-logo-alt.png" class="dfe-logo-hover" alt="DfE Homepage">
+        </a>
+      </div>
+      <div class="move-me"><a class="dfe-header__link dfe-header__link--service" href="/" aria-label="DfE homepage">Early years child development training</a></div>
+      <div class="dfe-header__content dfe-header-f-dtonly dfe-header-f-toplinks" id="content-header">
+        <div class="dfe-header-f-top-links">
+        <ul class="dfe-header__action-links">
+          <li>
+            <a href="#" class="govuk-link govuk-link--inverse">My account</a>
+          </li>
+          <li>
+            <a href="#" class="govuk-link govuk-link--inverse">Sign out</a>
+          </li>
+        </ul>
+        </div>
+        <div class="dfe-header__menu">
+          <button class="dfe-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    
+    <nav class="dfe-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+      <div class="dfe-width-container">
+        <p class="dfe-header__navigation-title">
+          <span id="label-navigation">Menu</span>
+          <button class="dfe-header__navigation-close" id="close-menu">
+            <svg class="dfe-icon dfe-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+              <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+            </svg>
+            <span class="govuk-visually-hidden">Close menu</span>
+          </button>
+        </p>
+        <ul class="dfe-header__navigation-list">
+          <li class="dfe-header__navigation-item ">
+            <a class="dfe-header__navigation-link" href="#">
+              Home 
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item">
+            <a class="dfe-header__navigation-link" href="my-modules">
+              My modules
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item ">
+            <a class="dfe-header__navigation-link" href="#">
+              Learning log
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item dfe-header-f-mob">
+            <a class="dfe-header__navigation-link" href="#">
+              My account
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item dfe-header-f-mob">
+            <a class="dfe-header__navigation-link" href="#">
+              Sign out
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<div class="dfe-content-page--header">
+    <div class="dfe-width-container ">
+        {% include "july-23/includes/new-phase-banner.html" %}
+      <div class="govuk-grid-row ">
+        <div class="govuk-grid-column-three-quarters"><div class="noprint"><a class="govuk-back-link" href="module-summary">Back to Module 5 overview</a></div></div>
+      </div>
+
+      <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-full">
+          <p class="pb-pre-text"><span class="govuk-!-font-weight-regular">Section 3 of 4</span><br>
+            <span class="govuk-!-font-weight-bold">Supporting children’s physical development</span></p>
+          <p class="govuk-!-font-weight-bold">Page 6 of 23</p>
+          <div class="pb-outer"><div class="pb-progress" style="width: 27.2%"></div></div>
+         </div>
+      </div>
+      <div class="govuk-grid-row govuk-!-padding-top-0 govuk-!-padding-bottom-7">
+        <div class="govuk-grid-column-full"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row old-correction"><div class="govuk-grid-column-two-thirds-from-desktop"><h1 class="old-dfe-heading">Child led activity
+</h1><div class="gem-c-govspeak"><p><img src="/public/images/5-3-2-1b.jpg" alt="A child doing a puzzle"></p>
+
+<p>You have learned about child led activity in previous modules. Sometimes this will be play initiated by the child from the start, sometimes it will be an activity that was adult initiated and then the child chooses or leads next steps.</p>
+
+<p>Child led activity can give children freedom to explore, try things out for themselves and to feel the satisfication of being able to make and apply their own choices and decisions. This can bring the wonders of new and unfamiliar experiences, and the fun, practice or predictability of engaging in activities that the child already knows they enjoy.</p>
+
+<p>You will need to plan your curriculum, activities and environment to give children opportunitities to explore and find what interests, surprises and excites them. You should identify opportunities to respond warmly to children’s self-initiated play and to extend learning by following their lead and being responsive to their ideas.</p>
+<div class="prompt"><div class="govuk-grid-row">
+<div class="govuk-grid-column-one-quarter"><svg aria-describedby="info icon" class="svg-inline--fa fa-info fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" data-fa-i2svg=""><path fill="currentColor" d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z"></path></svg><!-- <i aria-describedby="info icon" class="fa-2x fa-solid fa-info"></i> Font Awesome fontawesome.com --></div>
+<div class="govuk-grid-column-three-quarters">
+<h2 class="govuk-heading-m">In your setting</h2>
+<div class="gem-c-govspeak">
+<p>For babies, child led activities could include:</p>
+
+<ul>
+  <li>treasure baskets</li>
+  <li>push or pull along toys</li>
+  <li>a wide variety of sensory items, such as textured books, musical instruments or baby rattles</li>
+  <li>opportunities to lie down and roll</li>
+  <li>opportunities to reach for hanging items, such as toys dangling on a baby gym, to promote movement, grabbing, pushing, and pulling</li>
+  <li>stackable equipment, such as rings or blocks</li>
+</ul>
+
+<p>For toddlers and older children child led activities could include:</p>
+
+<ul>
+  <li>access to equipment to build their own outdoor obstacle course, such as cones or ramps</li>
+  <li>a mark making table or painting station</li>
+  <li>role play clothes with a variety of fasteners</li>
+  <li>materials for construction activities, such as making craft models or building with wooden blocks</li>
+  <li>puzzles</li>
+  <li>modelling materials, such as clay, plasticine and dough</li>
+  <li>water, sand and messy play materials, such as gloop and foam</li>
+  <li>items to thread, such as beads or pasta shapes</li>
+</ul>
+
+<p>Children must always be supervised when taking part in these activities.</p>
+
+</div>
+</div>
+</div></div>
+<p>All of the activities that have been listed as child led can also be used as adult led activities. This is because you can scaffold the children’s learning as needed.</p>
+
+<details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Read more about scaffolding
+      </span>
+    </summary>
+    <div class="govuk-details__text key-concept">
+        Scaffolding learning is a technique where, as a practitioner, you support and guide children’s learning, building on the starting point of what they already know. As the child learns and becomes more confident, you should gradually reduce support. The child will then have built the knowledge and skills to complete the task alone.
+    </div>
+  </details>
+
+<p>For example, an obstacle course has been listed in both the adult and child led ideas. You might begin by planning an obstacle course to specifically help a child to improve their balance and coordination and you will guide the child throughout the obstacle course.</p>
+
+<p>You can do this by demonstrating how to place one foot in front of the other on the beam or how to jump and land on both feet. The next time you help the child you might use prompts to ask them “do you remember how to place your feet to balance on the beam?”</p>
+
+<p>After the child has developed the necessary skills you might watch from further away. Eventually the child may create the course themselves or join in with no adult support. This has now become a child led activity that they can use to continue to master their skills.</p>
+<div class="prompt prompt-bg"><div class="govuk-grid-row">
+<div class="govuk-grid-column-one-quarter"><svg aria-describedby="brain icon" class="svg-inline--fa fa-brain fa-2x" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="brain" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M184 0c30.9 0 56 25.1 56 56V456c0 30.9-25.1 56-56 56c-28.9 0-52.7-21.9-55.7-50.1c-5.2 1.4-10.7 2.1-16.3 2.1c-35.3 0-64-28.7-64-64c0-7.4 1.3-14.6 3.6-21.2C21.4 367.4 0 338.2 0 304c0-31.9 18.7-59.5 45.8-72.3C37.1 220.8 32 207 32 192c0-30.7 21.6-56.3 50.4-62.6C80.8 123.9 80 118 80 112c0-29.9 20.6-55.1 48.3-62.1C131.3 21.9 155.1 0 184 0zM328 0c28.9 0 52.6 21.9 55.7 49.9c27.8 7 48.3 32.1 48.3 62.1c0 6-.8 11.9-2.4 17.4c28.8 6.2 50.4 31.9 50.4 62.6c0 15-5.1 28.8-13.8 39.7C493.3 244.5 512 272.1 512 304c0 34.2-21.4 63.4-51.6 74.8c2.3 6.6 3.6 13.8 3.6 21.2c0 35.3-28.7 64-64 64c-5.6 0-11.1-.7-16.3-2.1c-3 28.2-26.8 50.1-55.7 50.1c-30.9 0-56-25.1-56-56V56c0-30.9 25.1-56 56-56z"></path></svg><!-- <i aria-describedby="brain icon" class="fa-2x fa-solid fa-brain"></i> Font Awesome fontawesome.com --></div>
+<div class="govuk-grid-column-three-quarters">
+<h2 class="govuk-heading-m">Reflection point</h2>
+<div class="gem-c-govspeak">
+<p>Reflect on what you have read about balancing adult and child led activities for physical development.</p>
+
+<p>Think about the activities that you planned for a recent day in your setting.</p>
+
+<p>Consider the following questions:</p>
+
+<ul>
+  <li>What opportunities did the activities include for children to develop their physical skills?</li>
+  <li>Did children use their physical skills naturally, or because you specifically planned opportunities for them to do so?</li>
+  <li>How could you develop your planning to extend or improve on these activities?</li>
+</ul>
+
+</div>
+</div>
+</div></div>
+</div><form action="/my-account/learning-log" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="LBHtCmmq1hEjr7s2WfVsJPoKFj68mho8wqrjGtiwqRTzkd8Ihrnq4TILzhF3NXZ1nogcc5VkFwYgqEPIY1wV7A" autocomplete="off"><div class="prompt"><div class="govuk-grid-row"><div class="govuk-grid-column-one-quarter"><svg class="svg-inline--fa fa-pencil fa-2x icon" aria-label="pencil icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M410.3 231l11.3-11.3-33.9-33.9-62.1-62.1L291.7 89.8l-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L387.7 253.7 410.3 231zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9L59.4 452l23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7L348.3 33.2 325.7 55.8 314.3 67.1l33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5L453.3 18.7c-25-25-65.5-25-90.5 0zm-47.4 168l-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6z"></path></svg><!-- <i class="fa-solid fa-2x fa-pencil icon" aria-label="pencil icon"></i> Font Awesome fontawesome.com --></div><div class="govuk-grid-column-three-quarters"><div class="govuk-!-margin-bottom-4"><h2 class="govuk-heading-m">Add to your learning log</h2><div class="govuk-form-group small-screen-padding-right"><label for="note-body-field" class="govuk-label">Use this space to make notes on the reflection point. Do not enter any personal or sensitive information like children's names.</label><div id="note-body-supplemental"><p class="govuk_body">All your notes will be added to your personal <a class="govuk-link" href="#">learning log</a>.</p><p class="govuk-body">Your notes</p></div><textarea id="note-body-field" class="govuk-textarea" rows="5" aria-describedby="note-body-supplemental" name="note[body]"></textarea></div><input value="mcAiRm49sAx1fmy7u9FRX" autocomplete="off" type="hidden" name="note[module_item_id]" id="note_module_item_id"><input autocomplete="off" type="hidden" value="Child led activity
+" name="note[title]" id="note_title"><input autocomplete="off" type="hidden" value="module-5" name="note[training_module]" id="note_training_module"><input autocomplete="off" type="hidden" value="5-3-2-1b" name="note[name]" id="note_name"></div></div></div></div><hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4"><div class="govuk-button-group"><a draggable="false" data-module="govuk-button" role="button" class="govuk-button govuk-button--secondary" aria-label="Go to the previous page" href="section-start">Previous</a><a draggable="false" data-module="govuk-button" role="button" id="next-action" aria-label="Go to the next page" class="govuk-button" href="audio">Save and continue</a></div></form></div></div>
+    
+{% endblock %}
+
+{% block footer %}
+{% include "july-23/includes/new-footer.html" %}
+{% endblock %}

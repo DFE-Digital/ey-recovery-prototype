@@ -1,0 +1,128 @@
+{% extends "layout-dfe-updated.html" %}
+{% set removeAllLinks = true %}
+
+{% block pageTitle %}
+Early years child development training : Supporting physical development in the early years : 5-3-2-4b
+{% endblock %}
+
+{% block header %}
+<header class="dfe-header" role="banner">
+    <div class="dfe-width-container dfe-header__container dfe-header-f-header-flex">
+      <div class="dfe-header__logo">
+        <a class="dfe-header__link dfe-header__link--service " href="/" aria-label="DfE homepage">
+        <img src="/public/images/dfe-logo.png" class="dfe-logo" alt="DfE Homepage">
+        <img src="/public/images/dfe-logo-alt.png" class="dfe-logo-hover" alt="DfE Homepage">
+        </a>
+      </div>
+      <div class="move-me"><a class="dfe-header__link dfe-header__link--service" href="/" aria-label="DfE homepage">Early years child development training</a></div>
+      <div class="dfe-header__content dfe-header-f-dtonly dfe-header-f-toplinks" id="content-header">
+        <div class="dfe-header-f-top-links">
+        <ul class="dfe-header__action-links">
+          <li>
+            <a href="#" class="govuk-link govuk-link--inverse">My account</a>
+          </li>
+          <li>
+            <a href="#" class="govuk-link govuk-link--inverse">Sign out</a>
+          </li>
+        </ul>
+        </div>
+        <div class="dfe-header__menu">
+          <button class="dfe-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    
+    <nav class="dfe-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+      <div class="dfe-width-container">
+        <p class="dfe-header__navigation-title">
+          <span id="label-navigation">Menu</span>
+          <button class="dfe-header__navigation-close" id="close-menu">
+            <svg class="dfe-icon dfe-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+              <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+            </svg>
+            <span class="govuk-visually-hidden">Close menu</span>
+          </button>
+        </p>
+        <ul class="dfe-header__navigation-list">
+          <li class="dfe-header__navigation-item ">
+            <a class="dfe-header__navigation-link" href="#">
+              Home 
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item">
+            <a class="dfe-header__navigation-link" href="my-modules">
+              My modules
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item ">
+            <a class="dfe-header__navigation-link" href="#">
+              Learning log
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item dfe-header-f-mob">
+            <a class="dfe-header__navigation-link" href="#">
+              My account
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item dfe-header-f-mob">
+            <a class="dfe-header__navigation-link" href="#">
+              Sign out
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<div class="dfe-content-page--header">
+    <div class="dfe-width-container ">
+        {% include "july-23/includes/new-phase-banner.html" %}
+        <div class="govuk-grid-row ">
+            <div class="govuk-grid-column-three-quarters"><div class="noprint"><a class="govuk-back-link" href="module-summary">Back to Module 5 overview</a></div></div>
+          </div>
+
+      <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-full">
+            <p class="pb-pre-text"><span class="govuk-!-font-weight-regular">Section 3 of 4</span><br>
+              <span class="govuk-!-font-weight-bold">Supporting children’s physical development</span></p>
+            <p class="govuk-!-font-weight-bold">Page 8 of 23</p>
+            <div class="pb-outer"><div class="pb-progress" style="width: 35%"></div></div>
+           </div>
+      </div>
+      <div class="govuk-grid-row govuk-!-padding-top-0 govuk-!-padding-bottom-7">
+        <div class="govuk-grid-column-full"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row old-correction"><div class="govuk-grid-column-two-thirds-from-desktop"><form action="/modules/module-5/responses/5-3-2-4b" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch" autocomplete="off"><input type="hidden" name="authenticity_token" value="7qDFmx6zoGCWHZ8kU2m-HhkXpCGlyMpxLDiE3NatzBPb0w-eTTqFQNXG8KOJF1faBmzYppsE-whbi33NjircMQ" autocomplete="off"><h1 class="govuk-heading-l old-dfe-heading">Learning check</h1><div class="prompt gem-c-govspeak"><div class="govuk-grid-row"><div class="govuk-grid-column-one-quarter"><svg class="svg-inline--fa fa-question fa-2x icon" aria-label="question icon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="question" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"></path></svg><!-- <i class="fa-solid fa-2x fa-question icon" aria-label="question icon"></i> Font Awesome fontawesome.com --></div><div class="govuk-grid-column-three-quarters"><h2 class="govuk-heading-m">Check your understanding</h2><div class="govuk-!-margin-4"><p>Which of the following is most effective for supporting children’s physical development?</p>
+    <div class="govuk-form-group"><fieldset class="govuk-fieldset"><legend class="govuk-fieldset__legend govuk-fieldset__legend--l govuk-visually-hidden"><h1 class="govuk-fieldset__heading"><p>Which of the following is most effective for supporting children’s physical development?</p>
+    </h1></legend><div class="govuk-radios" data-module="govuk-radios"><input autocomplete="off" type="hidden" value="" name="user_answer[answers]" id="user_answer_answers"><div class="govuk-radios__item"><input id="user-answer-answers-1-field" class="govuk-radios__input" type="radio" value="1" name="user_answer[answers]"><label for="user-answer-answers-1-field" class="govuk-label govuk-radios__label">Child led activity</label></div><div class="govuk-radios__item"><input id="user-answer-answers-2-field" class="govuk-radios__input" type="radio" value="2" name="user_answer[answers]"><label for="user-answer-answers-2-field" class="govuk-label govuk-radios__label">Adult led activity</label></div><div class="govuk-radios__item"><input id="user-answer-answers-3-field" class="govuk-radios__input" type="radio" value="3" name="user_answer[answers]"><label for="user-answer-answers-3-field" class="govuk-label govuk-radios__label">Unplanned opportunities</label></div><div class="govuk-radios__item"><input id="user-answer-answers-4-field" class="govuk-radios__input" type="radio" value="4" name="user_answer[answers]"><label for="user-answer-answers-4-field" class="govuk-label govuk-radios__label">A combination of child led, adult led and unplanned opportunities</label></div></div></fieldset></div></div></div></div></div><hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4"><div class="govuk-button-group"><a draggable="false" data-module="govuk-button" role="button" class="govuk-button govuk-button--secondary" aria-label="Go to the previous page" href="audio">Previous</a><a draggable="false" data-module="govuk-button" role="button" id="next-action" aria-label="Go to the next page" class="govuk-button" href="certificate">Next</a></div></form></div></div>
+    
+{% endblock %}
+
+{% block footer %}
+{% include "july-23/includes/new-footer.html" %}
+{% endblock %}

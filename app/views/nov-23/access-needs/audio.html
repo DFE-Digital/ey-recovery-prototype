@@ -1,0 +1,172 @@
+{% extends "layout-dfe-updated.html" %}
+{% set removeAllLinks = true %}
+
+{% block pageTitle %}
+Early years child development training : Brain development and how children learn : Parts of the brain
+{% endblock %}
+
+
+{% block header %}
+<header class="dfe-header" role="banner">
+    <div class="dfe-width-container dfe-header__container dfe-header-f-header-flex">
+      <div class="dfe-header__logo">
+        <a class="dfe-header__link dfe-header__link--service " href="/" aria-label="DfE homepage">
+        <img src="/public/images/dfe-logo.png" class="dfe-logo" alt="DfE Homepage">
+        <img src="/public/images/dfe-logo-alt.png" class="dfe-logo-hover" alt="DfE Homepage">
+        </a>
+      </div>
+      <div class="move-me"><a class="dfe-header__link dfe-header__link--service" href="/" aria-label="DfE homepage">Early years child development training</a></div>
+      <div class="dfe-header__content dfe-header-f-dtonly dfe-header-f-toplinks" id="content-header">
+        <div class="dfe-header-f-top-links">
+        <ul class="dfe-header__action-links">
+          <li>
+            <a href="#" class="govuk-link govuk-link--inverse">My account</a>
+          </li>
+          <li>
+            <a href="#" class="govuk-link govuk-link--inverse">Sign out</a>
+          </li>
+        </ul>
+        </div>
+        <div class="dfe-header__menu">
+          <button class="dfe-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    
+    <nav class="dfe-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+      <div class="dfe-width-container">
+        <p class="dfe-header__navigation-title">
+          <span id="label-navigation">Menu</span>
+          <button class="dfe-header__navigation-close" id="close-menu">
+            <svg class="dfe-icon dfe-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+              <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+            </svg>
+            <span class="govuk-visually-hidden">Close menu</span>
+          </button>
+        </p>
+        <ul class="dfe-header__navigation-list">
+          <li class="dfe-header__navigation-item ">
+            <a class="dfe-header__navigation-link" href="#">
+              Home 
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item">
+            <a class="dfe-header__navigation-link" href="my-modules">
+              My modules
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item ">
+            <a class="dfe-header__navigation-link" href="#">
+              Learning log
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item dfe-header-f-mob">
+            <a class="dfe-header__navigation-link" href="#">
+              My account
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item dfe-header-f-mob">
+            <a class="dfe-header__navigation-link" href="#">
+              Sign out
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<div class="dfe-content-page--header">
+    <div class="dfe-width-container ">
+        {% include "july-23/includes/new-phase-banner.html" %}
+        <div class="govuk-grid-row ">
+            <div class="govuk-grid-column-three-quarters"><div class="noprint"><a class="govuk-back-link" href="module-summary">Back to Module 5 overview</a></div></div>
+          </div>
+
+      <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-full">
+            <p class="pb-pre-text"><span class="govuk-!-font-weight-regular">Section 3 of 4</span><br>
+              <span class="govuk-!-font-weight-bold">Supporting children’s physical development</span></p>
+            <p class="govuk-!-font-weight-bold">Page 7 of 23</p>
+            <div class="pb-outer"><div class="pb-progress" style="width: 30%"></div></div>
+           </div>
+      </div>
+      <div class="govuk-grid-row govuk-!-padding-top-0 govuk-!-padding-bottom-7">
+        <div class="govuk-grid-column-full"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row old-correction">
+    <div class="govuk-grid-column-two-thirds-from-desktop">
+        <h1 class="govuk-heading-l">Social and emotional development: before birth and young babies</h1>
+        <div class="gem-c-govspeak"><p><img src="/public/images/audio-test-image.jpg" alt="A baby lying on its tummy on a sofa. There are some toys in front of the baby and the baby is smiing."></p>
+  
+            <p>Research suggests that emotional development begins even before a baby is born. By the sixth month of pregnancy, babies’ hearing is nearly fully formed and they are becoming more aware of their environment in the womb.</p>
+
+            <p>At birth, a baby will communicate and show their feelings by crying. At first, they will only smile as a reflex, but by 6 to 8 weeks smiling becomes a controlled response to show happiness and pleasure.</p>
+
+            <p>To help with their emotional development, babies need lots of:</p>
+
+            <ul>
+            <li>eye contact</li>
+            <li>positive facial expression</li>
+            <li>reassurance</li>
+            <li>cuddles</li>
+            <li>comfort when crying</li>
+            </ul>
+
+            <p>In your setting, babies also need to hear lots of new language to help them to learn, develop and rehearse new vocabulary. Babies will benefit from plenty of talking, singing and general conversation to reinforce their understanding.</p>
+            </div>
+
+    </div>
+    <div class="govuk-grid-column-one-third-from-desktop sticky">
+        <div class="audio-holder">
+            <h3 class="govuk-heading-s govuk-!-static-margin-bottom-1">Listen to this page</h3>
+            <audio controls>
+                <source src="https://eye-recovery.herokuapp.com/public/images/page2of30.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</div>
+
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible govuk-!-margin-top-4">
+
+<div class="govuk-button-group">
+    <a draggable="false" data-module="govuk-button" role="button" class="govuk-button govuk-button--secondary" aria-label="Go to the previous page" href="content-page">Previous</a>
+    <a draggable="false" data-module="govuk-button" role="button" id="next-action" aria-label="Go to the next page" class="govuk-button" href="learning-check">Next</a>
+</div>
+
+
+
+</div>
+
+
+
+</div>
+    
+{% endblock %}
+
+{% block footer %}
+{% include "july-23/includes/new-footer.html" %}
+{% endblock %}
