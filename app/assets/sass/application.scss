@@ -633,3 +633,8 @@ iframe {
 .dfe-button--previous:hover, .dfe-button--previous:focus {
   background-color: $color_dfe-blue;
 }
+
+.govuk-notification-banner__content > * {
+  box-sizing: border-box;
+  max-width: 100%;
+}
