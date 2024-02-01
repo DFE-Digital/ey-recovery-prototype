@@ -6,7 +6,91 @@ Early years child development training
 {% endblock %}
 
 {% block header %}
-{% include "july-23/includes/new-header.html" %}
+<header class="dfe-header" role="banner">
+    <div class="dfe-width-container dfe-header__container dfe-header-f-header-flex">
+      <div class="dfe-header__logo">
+        <a class="dfe-header__link dfe-header__link--service " href="/" aria-label="DfE homepage">
+        <img src="/public/images/dfe-logo.png" class="dfe-logo" alt="DfE Homepage">
+        <img src="/public/images/dfe-logo-alt.png" class="dfe-logo-hover" alt="DfE Homepage">
+        </a>
+      </div>
+      <div class="move-me"><a class="dfe-header__link dfe-header__link--service" href="/" aria-label="DfE homepage">Early years child development training</a></div>
+      <div class="dfe-header__content dfe-header-f-dtonly dfe-header-f-toplinks" id="content-header">
+        <div class="dfe-header-f-top-links">
+        <ul class="dfe-header__action-links">
+          <li>
+            <a href="/" class="govuk-link govuk-link--inverse">My account</a>
+          </li>
+          <li>
+            <a href="/" class="govuk-link govuk-link--inverse">Sign out</a>
+          </li>
+        </ul>
+        </div>
+        <div class="dfe-header__menu">
+          <button class="dfe-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+        </div>
+        
+      </div>
+      
+    </div>
+
+    
+    <nav class="dfe-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+      <div class="dfe-width-container">
+        <p class="dfe-header__navigation-title">
+          <span id="label-navigation">Menu</span>
+          <button class="dfe-header__navigation-close" id="close-menu">
+            <svg class="dfe-icon dfe-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="27" height="27">
+              <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+            </svg>
+            <span class="govuk-visually-hidden">Close menu</span>
+          </button>
+        </p>
+        <ul class="dfe-header__navigation-list">
+          <li class="dfe-header__navigation-item ">
+            <a class="dfe-header__navigation-link" href="#">
+              Home 
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item dfe-header__navigation-item--current">
+            <a class="dfe-header__navigation-link" href="#">
+              My modules
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item ">
+            <a class="dfe-header__navigation-link" href="#">
+              Learning log
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item dfe-header-f-mob">
+            <a class="dfe-header__navigation-link" href="#">
+              My account
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfe-header__navigation-item dfe-header-f-mob">
+            <a class="dfe-header__navigation-link" href="#">
+              Sign out
+              <svg class="dfe-icon dfe-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 <div class="dfe-content-page--header">
     <div class="dfe-width-container ">
         {% include "july-23/includes/new-phase-banner.html" %}
@@ -59,10 +143,10 @@ Early years child development training
                     <h4 class="govuk-heading-s">Introducing special educational needs and disabilities (SEND)</h4>
                     <p class="govuk-body">This section of this module includes:</p>
                     <div class="module-section--container">
-                        <span class="module-section--item"><li><a href="javascript:void(0)">What is SEND?</a></li></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
-                        <span class="module-section--item"><li><a href="javascript:void(0)">Legislation and guidance</a></li></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
-                        <span class="module-section--item"><li><a href="javascript:void(0)">Why is it important to identify differences and needs in a child’s learning and development?</a></li></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
-                        <span class="module-section--item"><li><a href="javascript:void(0)">Developmental differences and needs</a></li></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
+                        <span class="module-section--item"><ul><li><a href="javascript:void(0)">What is SEND?</a></li></ul></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
+                        <span class="module-section--item"><ul><li><a href="javascript:void(0)">Legislation and guidance</a></li></ul></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
+                        <span class="module-section--item"><ul><li><a href="javascript:void(0)">Why is it important to identify differences and needs in a child’s learning and development?</a></li></ul></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
+                        <span class="module-section--item"><ul><li><a href="javascript:void(0)">Developmental differences and needs</a></li></ul></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
                     </div>
                     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
                 </div>
@@ -75,9 +159,9 @@ Early years child development training
                     <h4 class="govuk-heading-s">The impact of knowledge and learning gaps on children’s development</h4>
                     <p class="govuk-body">This section of this module includes:</p>
                     <div class="module-section--container">
-                        <span class="module-section--item"><li><a href="javascript:void(0)">The holistic impact of any delays on child’s learning, development and behaviour</a></li></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
-                        <span class="module-section--item"><li><a href="javascript:void(0)">How to identify and support gaps in learning and development</a></li></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
-                        <span class="module-section--item"><li><a href="javascript:void(0)">What to do once a referral is made</a></li></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
+                        <span class="module-section--item"><ul><li><a href="javascript:void(0)">The holistic impact of any delays on child’s learning, development and behaviour</a></li></ul></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
+                        <span class="module-section--item"><ul><li><a href="javascript:void(0)">How to identify and support gaps in learning and development</a></li></ul></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
+                        <span class="module-section--item"><ul><li><a href="javascript:void(0)">What to do once a referral is made</a></li></ul></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
                     </div>
                     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
                 </div>
@@ -90,10 +174,10 @@ Early years child development training
                     <h4 class="govuk-heading-s">Supporting children’s individual differences and needs</h4>
                     <p class="govuk-body">This section of this module includes:</p>
                     <div class="module-section--container">
-                        <span class="module-section--item"><li><a href="javascript:void(0)">Your role in supporting children’s individual differences and needs</a></li></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
-                        <span class="module-section--item"><li>Importance of (ongoing) assessment and professional curiosity</li></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--yellow">in progress</strong></span>
-                        <span class="module-section--item"><li>Creating inclusive environments</li></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span>
-                        <span class="module-section--item"><li>Maintaining effective partnerships with other professionals involved</li></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span>
+                        <span class="module-section--item"><ul><li><a href="javascript:void(0)">Your role in supporting children’s individual differences and needs</a></li></ul></span><span class="progress-indicator"><strong class="govuk-tag">completed</strong></span>
+                        <span class="module-section--item"><ul><li>Importance of (ongoing) assessment and professional curiosity</li></ul></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--yellow">in progress</strong></span>
+                        <span class="module-section--item"><ul><li>Creating inclusive environments</li></ul></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span>
+                        <span class="module-section--item"><ul><li>Maintaining effective partnerships with other professionals involved</li></ul></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span>
                     </div>
                     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
                 </div>
@@ -104,10 +188,10 @@ Early years child development training
                     <h4 class="govuk-heading-s">Summary and next steps</h4>
                     <p class="govuk-body">This section of this module includes:</p>
                     <div class="module-section--container">
-                        <span class="module-section--item"><li>Recap and further reading</li></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span>
-                        <span class="module-section--item"><li>End of module test</li></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span>
-                        <span class="module-section--item"><li>Reflect on your learning</li></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span>
-                        <span class="module-section--item"><li>Download your certificate</li></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span>
+                        <span class="module-section--item"><ul><li>Recap and further reading</li></ul></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span>
+                        <span class="module-section--item"><ul><li>End of module test</li></ul></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span>
+                        <span class="module-section--item"><ul><li>Reflect on your learning</li></ul></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span>
+                        <span class="module-section--item"><ul><li>Download your certificate</li></ul></span><span class="progress-indicator"><strong class="govuk-tag govuk-tag--grey">not started</strong></span>
                     </div>
                     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
                 </div>

@@ -68,3 +68,22 @@ $progress-bar-container-width: 81px;
 }
 
 .module-section--item li {list-style: square;}
+.module-section--item ul {margin-bottom: 0;}
+
+@media (max-width: 40.0625em) {
+
+.module-overview--section {
+  grid-template-columns: 50px auto;
+}
+.module-section--container li {
+  font-size: 1rem;
+}
+.module-overview--section .module-section--container {
+  grid-template-columns: auto 110px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.module-overview--section .dfe-list--bullet {
+  padding-left: 18px;
+}
+}
