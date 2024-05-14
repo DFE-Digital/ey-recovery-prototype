@@ -1,16 +1,15 @@
+{% extends "layouts/main.html" %}
 
-{% extends "layout-dfe-updated.html" %}
-{% set removeAllLinks = true %}
-
-{% block pageTitle %}
-  Home – GOV.UK Prototype Kit
-{% endblock %}
+{% set pageName="Home" %}
 
 {% block content %}
+    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
+    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-full">
                   <h1 class="govuk-heading-xl">
-                    Prototype your service using GOV.UK Prototype Kit.
+                    {{ serviceName }}
                     <span class="govuk-caption-xl">{{ releaseVersion }}</span>
                   </h1>{{ releaseVersion | log }}
                 </div>
@@ -23,6 +22,8 @@
                   <ul class="govuk-list govuk-list--bullet">
                     <li><a href="jan-24/">Module summary page and content pages</a></li>
                   </ul>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
 
                   <h2 class="govuk-heading-s">November 23</h2>
                   <p>Prototypes for design improvements.</p>
@@ -272,4 +273,10 @@
             
         </div>
     </div>
+
+
+
+  </div>
+</div>
+
 {% endblock %}

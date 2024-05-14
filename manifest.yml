@@ -1,9 +1,0 @@
----
- applications:
- - name: eye-recovery
-   memory: 256M
-   buildpacks:
-   - nodejs_buildpack
-   env:
-     USERNAME: early
-     PASSWORD: recovery
