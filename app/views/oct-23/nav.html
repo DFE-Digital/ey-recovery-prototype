@@ -1,18 +1,7 @@
-{#
-For guidance on how to use layouts see:
-https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
-#}
-
-{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
-
-{# https://design.education.gov.uk/design-system/dfe-frontend/components/header#nunjucks #}
-{% from 'node_modules/dfe-frontend/packages/components/header/macro.njk' import header %}
-{% block header %}
-
 {{ header({
     "showNav": "true",
     "showSearch": "false",
-    "showHeaderActionLinks": "false",
+    "showHeaderActionLinks": "true",
     "logoPath": "public/images",
     "searchAction": "/search/",
     "searchInputName": "q",
@@ -37,15 +26,15 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
         {
         "url"  : "#",
         "label" : "Home"
+      },
+      {
+        "url"  : "#",
+        "label" : "My modules"
+      },
+      {
+        "url"  : "#",
+        "label" : "Learning log"
       }
     ]
   })
 }}
-{% endblock %}
-
-
-
-{% block scripts %}
-  <script src="/node_modules/dfe-frontend/dist/dfefrontend.min.js"></script>
-  {{ super() }}
-{% endblock %}
