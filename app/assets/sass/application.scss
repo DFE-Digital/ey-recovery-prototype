@@ -631,3 +631,9 @@ iframe {
 .govuk-tag {
     max-width: 100%;
 }
+
+@media (max-width: 40.0525em) {
+  .dfe-header__menu-toggle {
+  right: auto;
+}
+}
