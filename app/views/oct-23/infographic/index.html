@@ -1,13 +1,12 @@
-{% extends "layout-dfe-updated.html" %}
+{% extends 'layouts/main.html' %}
 {% set removeAllLinks = true %}
 
 {% block pageTitle %}
-Early years child development training : Brain development and how children learn : Parts of the brain
+Early years child development training : My modules
 {% endblock %}
 
-
 {% block header %}
-{% include "july-23/includes/new-header.html" %}
+{% include "oct-23/nav.html" %}
 <div class="dfe-content-page--header">
     <div class="dfe-width-container ">
         {% include "july-23/includes/new-phase-banner.html" %}
@@ -63,5 +62,5 @@ Early years child development training : Brain development and how children lear
 {% endblock %}
 
 {% block footer %}
-{% include "july-23/includes/new-footer.html" %}
+{% include "includes/new-footer.html" %}
 {% endblock %}

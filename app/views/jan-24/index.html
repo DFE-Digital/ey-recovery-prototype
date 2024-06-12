@@ -1,15 +1,18 @@
-{% extends "layout-dfe-updated.html" %}
+{% extends "layouts/main.html" %}
 {% set removeAllLinks = true %}
 
 {% block pageTitle %}
 Early years child development training
 {% endblock %}
 
+{% from 'node_modules/dfe-frontend/packages/components/header/macro.njk' import header %}
 {% block header %}
-{% include "includes/fixed-header.html" %}
+
+{% include "jan-24/nav.html" %}
 <div class="dfe-content-page--header">
     <div class="dfe-width-container ">
-        {% include "july-23/includes/new-phase-banner.html" %}
+        {% include "includes/phase.html" %}
+        
       <div class="govuk-grid-row ">
         <div class="govuk-grid-column-three-quarters"> <a class="govuk-back-link" href="javascript:void(0)">Back to My modules</a></div>
       </div>
@@ -125,5 +128,5 @@ Early years child development training
 
 
 {% block footer %}
-{% include "july-23/includes/new-footer.html" %}
+{% include "includes/new-footer.html" %}
 {% endblock %}

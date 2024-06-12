@@ -1,3 +1,4 @@
+
 /* global $ */
 $('body').on('submit', 'form', function (e) {
   // On form submit, add hidden inputs for checkboxes so the server knows if

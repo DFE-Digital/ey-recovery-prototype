@@ -1,3 +1,7 @@
+//
+// For guidance on how to add CSS and SCSS see:
+// https://prototype-kit.service.gov.uk/docs/adding-css-javascript-and-images
+//
 // global styles for <a> and <p> tags
 $govuk-global-styles: true;
 $govuk-new-link-styles: true;
@@ -5,11 +9,12 @@ $govuk-new-link-styles: true;
 // We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
 $govuk-assets-path: '/govuk/assets/';
 
-// Import GOV.UK Frontend and any extension styles if extensions have been configured
-@import "lib/extensions/extensions";
 
-// Import new DfE Frontend and any extension styles if extensions have been configured
-@import 'node_modules/dfe-frontend-alpha/packages/dfefrontend';
+@import 'node_modules/dfe-frontend/packages/dfefrontend';
+
+.govuk-width-container { @include govuk-width-container; }
+
+// Add extra styles here
 
 // Patterns that aren't in Frontend
 @import "patterns/step-by-step-header";
@@ -19,32 +24,33 @@ $govuk-assets-path: '/govuk/assets/';
 @import "patterns/related-items";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
-@import "brain-development-start1";
-@import "brain-development";
-@import "home";
-@import "layout";
+//@import "brain-development-start1";
+//@import "brain-development";
+//@import "home";
+//@import "layout";
 @import "sign-in";
 @import "training-overview";
-@import "bespoke/interrupt-card";
-@import "bespoke/info-bubble";
+
+//@import "bespoke/interrupt-card";
+//@import "bespoke/info-bubble";
 @import "bespoke/prompt";
-@import "bespoke/cards";
-@import "bespoke/subnav";
+//@import "bespoke/cards";
+//@import "bespoke/subnav";
 @import "bespoke/quotes";
-@import "bespoke/print";
-@import "bespoke/log-entry";
-@import "bespoke/icons.scss";
-@import "bespoke/hmcts-progress-bar.scss";
-@import "bespoke/progress-bar.scss";
-@import "bespoke/resources.scss";
+//@import "bespoke/print";
+//@import "bespoke/log-entry";
+//@import "bespoke/icons.scss";
+//@import "bespoke/hmcts-progress-bar.scss";
+//@import "bespoke/progress-bar.scss";
+//@import "bespoke/resources.scss";
 @import "bespoke/module-overview-progress";
-@import "bespoke/dfe-header-fixes";
-@import "bespoke/dfe-side-nav";
-@import "bespoke/image-box";
+//@import "bespoke/dfe-header-fixes";
+//@import "bespoke/dfe-side-nav";
+//@import "bespoke/image-box";
 @import "bespoke/audio";
 @import "bespoke/infographic";
 @import "bespoke/card-progress";
-@import "bespoke/key-concept";
+//@import "bespoke/key-concept";
 @import "bespoke/completed-modules";
 @import "bespoke/access-needs";
 
@@ -241,13 +247,7 @@ $accent: #347ca9;
 .full-width-img {
   width: 100%;
 }
-/*
-.govuk-heading-l {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 1.1111111111;
-}
-*/
+
 
 .light-grey-box .govuk-button, .light-grey-box .gem-c-govspeak .gem-c-button, .gem-c-govspeak .light-grey-box .gem-c-button {
   margin: 0;
@@ -259,7 +259,6 @@ $accent: #347ca9;
   position: relative;
   background-color: #f3f2f1;
   border-bottom: 3px solid #1d70b8;
-  /* max-width: 300px; */
 }
 .card-container a {
   width: 100%;
@@ -456,10 +455,6 @@ h1.cert-heading {
   max-width: 100%;
 }
 
-/*
-https://design-system.service.gov.uk/styles/colour/
------------------------------------------------
-*/
 .prompt {
   background-color: #f3f2f1;
   border-top: #28a197 solid 10px;
@@ -607,12 +602,6 @@ iframe {
   background: #1b68ab;
 }
 
-/*
-.dfe-width-container {
-  margin: 0 auto;
-}
-*/
-
 .card:hover .govuk-tag.govuk-tag--ey {
   color: #1d70b8;
   background-color: #fff;
@@ -637,4 +626,14 @@ iframe {
 .govuk-notification-banner__content > * {
   box-sizing: border-box;
   max-width: 100%;
+}
+
+.govuk-tag {
+    max-width: 100%;
+}
+
+@media (max-width: 40.0525em) {
+  .dfe-header__menu-toggle {
+  right: auto;
+}
 }
