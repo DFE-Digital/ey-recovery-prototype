@@ -7,3 +7,14 @@ section.completed {
     border-radius: 6px;
     padding: govuk-spacing(7);
 }
+
+
+@media (max-width: 40em) {
+    section.completed {
+        padding: govuk-spacing(4);
+    }
+
+    section.completed td, section.completed th {
+        font-size: 14px;
+    }
+}
