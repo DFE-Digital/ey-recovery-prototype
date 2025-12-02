@@ -1,0 +1,165 @@
+{% extends 'layouts/main.html' %}
+{% set removeAllLinks = true %}
+
+{% block pageTitle %}
+Early years child development training : My modules
+{% endblock %}
+
+{% block header %}
+  {% include "nov-23/nav.html" %}
+<div class="dfe-content-page--header">
+    <div class="dfe-width-container ">
+      {% include "includes/phase.html" %}
+      <div class="govuk-grid-row ">
+        <div class="govuk-grid-column-three-quarters"></div>
+      </div>
+
+      <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-three-quarters">
+          <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">My modules</h1>
+          <p>You can complete the Early years child development training in any order. However, to support your understanding of the training, you may find it helpful to complete the modules in order.</p>
+         </div>
+      </div>
+      <div class="govuk-grid-row govuk-!-padding-top-0 govuk-!-padding-bottom-7">
+        <div class="govuk-grid-column-full"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row" id="started">
+    <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-m">Modules in progress</h2>
+        <div class="grid-container">
+            <div class="card">
+                <a href="module-summary">
+                    <div class="card-container">
+                        <img class="full-width-img" width="200" alt="A photograph of a baby boy playing with wooden blocks." title="Module 1: Understanding child development and the EYFS" src="/public/images/module-1.jpg">
+                       
+                            <p class="govuk-!-font-weight-bold"><a class="govuk-link govuk-link--no-visited-state card-link--header" href="module-summary">Module 1: Understanding child development and the EYFS</a></p>
+                        
+                            <div class="card-progress-bar">
+                                <div class="govuk-!-font-weight-bold">Your progress: 50%</div>
+                                <div class="bar-settings">
+                                    <div class="bar-bg"></div>
+                                    <div class="bar-progress" style="width: 50%;"><div class="bar-ball"></div></div>
+                                </div>
+                                <div class="govuk-!-font-size-14">You have read 40 pages</div>
+                            </div>
+                        
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="module-summary">
+                    <div class="card-container">
+                    <img class="full-width-img" width="200" alt="A photograph of a young boy playing on a brightly coloured climbing frame." title="A photograph of a young boy playing on a brightly coloured climbing frame." src="/public/images/module-5.jpg">
+                    <p class="govuk-!-font-weight-bold"><a class="govuk-link govuk-link--no-visited-state card-link--header" href="module-summary">Module 5: Supporting physical development in the early years</a></p>
+                    <div class="card-progress-bar">
+                        <div class="govuk-!-font-weight-bold">Your progress: 80%</div>
+                        <div class="bar-settings">
+                            <div class="bar-bg"></div>
+                            <div class="bar-progress" style="width: 80%;"><div class="bar-ball"></div></div>
+                        </div>
+                        <div class="govuk-!-font-size-14">20 pages left</div>
+                    </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="govuk-section-break govuk-section-break--visible govuk-section-break--l">
+<div class="govuk-grid-row" id="available">
+    <div class="govuk-grid-column-full">
+        <h2 class="govuk-heading-m">Available modules <span class="govuk-tag govuk-!-margin-top-1 govuk-!-margin-bottom-1">New module available</span></h2>
+        <div class="grid-container">
+            <div class="card">
+                <a href="module-summary">
+                <div class="card-container">
+                    <img class="full-width-img" width="200" alt="A photograph of a young girl being read a story by an early years practioner" title="A photograph of a young girl being read a story by an early years practioner" src="/public/images/module-2.jpg">
+                    <p class="govuk-!-font-weight-bold"><a class="govuk-link govuk-link--no-visited-state card-link--header" href="module-summary">Module 2: Brain development and how children learn</a></p>
+                </div>
+                </a>
+            </div>
+            <div class="card">
+                <div class="card-container">
+                    <img class="full-width-img" width="200" alt="A photograph of a group of young children with their arms raised." title="A photograph of a group of young children with their arms raised." src="/public/images/module-3.jpg">
+                    <p class="govuk-!-font-weight-bold"><a class="govuk-link govuk-link--no-visited-state card-link--header" href="javascript: void(0)">Module 3: Supporting children’s personal, social and emotional development</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-container">
+                    <img class="full-width-img" width="200" alt="A photograph of a group of young children sat cross legged smiling and enjoying a story" title="A photograph of a group of young children sat cross legged smiling and enjoying a story" src="/public/images/module-4.jpg">
+                    <span class="govuk-tag govuk-tag--ey govuk-!-margin-top-1 govuk-!-margin-bottom-1">New</span>
+                    <p class="govuk-!-font-weight-bold"><a class="govuk-link govuk-link--no-visited-state card-link--header" href="javascript: void(0)">Module 4: Supporting language development in the early years</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="govuk-section-break govuk-section-break--visible govuk-section-break--l">
+<div class="govuk-grid-row" id="upcoming">
+<div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-m">Future modules in this course</h2>
+    <div class="grid-container">
+        <div class="govuk-card" id="module-6">
+            <h3 class="govuk-heading-s">Coming soon - Module 6: Mathematics</h3>
+            <p class="govuk-body">This module explores how you can teach mathematics in combination with other areas of the early years foundation stage (EYFS). It also considers how you can help children to develop their understanding of number in your setting.</p>
+        </div>
+        <div class="govuk-card" id="module-7">
+            <h3 class="govuk-heading-s">Coming soon - Module 7: Effective curriculum and practice</h3>
+            <p class="govuk-body">This module considers how to plan and deliver an ambitious curriculum for the children in your setting. It also explores how an holistic approach can support all children to thrive.</p>
+        </div>
+        <div class="govuk-card" id="module-8">
+            <h3 class="govuk-heading-s">Coming soon - Module 8: Effective observation and assessment</h3>
+            <p class="govuk-body">This module explores different types of observation and assessment, including when and how to use these effectively. It also considers how to ensure that observation does not disrupt children’s learning.</p>
+        </div>
+        <div class="govuk-card" id="module-9">
+            <h3 class="govuk-heading-s">Coming soon - Module 9: Supporting individual needs</h3>
+            <p class="govuk-body">This module explores the importance of identifying children’s individual starting points and needs. It also considers how your knowledge of each child can help you support them to reach their full potential.</p>
+        </div>
+    </div>
+</div>
+</div>
+<section class="completed govuk-!-margin-top-7">
+    <div class="govuk-grid-row" id="completed">
+        <div class="govuk-grid-column-full">
+            <table class="govuk-table govuk-!-margin-bottom-0">
+                <caption class="govuk-table__caption govuk-table__caption--m">Completed modules</caption>
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="col">Module name</th>
+                        <th class="govuk-table__header" scope="col">Date completed</th>
+                        <th class="govuk-table__header" scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell"><a class="govuk-link" href="#">Understanding child development and the EYFS</a></td>
+                        <td class="govuk-table__cell">3 May 2023</td>
+                        <td class="govuk-table__cell"><a class="govuk-link" href="#">View certificate</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell"><a class="govuk-link" href="#">Brain development and how children learn</a></td>
+                        <td class="govuk-table__cell">4 May 2023</td>
+                        <td class="govuk-table__cell"><a class="govuk-link" href="#">View certificate</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </section>
+
+{% endblock %}
+
+{% block footer %}
+{% include "includes/new-footer.html" %}
+{% endblock %}
