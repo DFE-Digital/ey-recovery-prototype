@@ -1,0 +1,117 @@
+{% extends "layouts/main.html" %}
+{% set removeAllLinks = true %}
+
+{% block pageTitle %}
+Early years child development training
+{% endblock %}
+
+{% from 'node_modules/dfe-frontend/packages/components/header/macro.njk' import header %}
+{% block header %}
+
+{% include "jan-24/nav.html" %}
+<div class="dfe-content-page--header">
+    <div class="dfe-width-container ">
+      {% include "includes/phase.html" %}
+      <div class="govuk-grid-row ">
+        <div class="govuk-grid-column-three-quarters"><div class="noprint"><a class="govuk-back-link" href="/jan-24">Back to Module 3 overview</a></div></div>
+      </div>
+
+      <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-0">
+        <div class="govuk-grid-column-full">
+          <p class="pb-pre-text"><span class="govuk-!-font-weight-regular">Section 1 of 6</span><br>
+            <span class="govuk-!-font-weight-bold">Confidence check</span></p>
+          <p class="govuk-!-font-weight-bold">Page 7 of 7</p>
+          <div class="pb-outer"><div class="pb-progress" style="width: 75%"></div></div>
+         </div>
+      </div>
+      <div class="govuk-grid-row govuk-!-padding-top-0 govuk-!-padding-bottom-7">
+        <div class="govuk-grid-column-full"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds-from-desktop">
+        <h1 class="govuk-heading-l">Check your answers</h1>
+        <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" style="width:60%;">
+              How confident do you feel about understanding children’s development?
+            </dt>
+            <dd class="govuk-summary-list__value" style="width:30%;">
+              Not confident at all
+            </dd>
+            <dd class="govuk-summary-list__actions" style="width:20%;">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden">Change your confidence level for understanding children’s development</span></a>
+            </dd>
+          </div>
+           <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" style="width:60%;">
+              How confident do you feel about supporting children’s development?
+            </dt>
+            <dd class="govuk-summary-list__value" style="width:30%;">
+              Not very confident
+            </dd>
+            <dd class="govuk-summary-list__actions" style="width:20%;">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden">Change your confidence level for supporting children’s development</span></a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" style="width:50%;">
+              How confident do you feel about understanding of self regulation and executive functions? 
+            </dt>
+            <dd class="govuk-summary-list__value" style="width:30%;">
+              Not very confident
+            </dd>
+            <dd class="govuk-summary-list__actions" style="width:20%;">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden">Change your confidence level for understanding self regulation and executive functions</span></a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" style="width:50%;">
+              How confident do you feel about supporting children’s self regulation and executive functions? 
+            </dt>
+            <dd class="govuk-summary-list__value" style="width:30%;">
+              Not very confident
+            </dd>
+            <dd class="govuk-summary-list__actions" style="width:20%;">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden">Change your confidence level for supporting self regulation and executive functions</span></a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" style="width:50%;">
+              How confident do you feel about understanding attachment theory?
+            </dt>
+            <dd class="govuk-summary-list__value" style="width:30%;">
+              Not very confident
+            </dd>
+            <dd class="govuk-summary-list__actions" style="width:20%;">
+              <a class="govuk-link" href="#">Change<span class="govuk-visually-hidden">Change your confidence level for understanding of attachment theory</span></a>
+            </dd>
+          </div>
+        </dl>
+
+        <form action="/form-handler" method="post" novalidate>
+          <input type="hidden" name="answers-checked" value="true">
+          <div class="govuk-button-group">
+            <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Previous
+            </button>
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+              Confirm and start training
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}
+
+{% block footer %}
+{% include "includes/new-footer.html" %}
+{% endblock %}
