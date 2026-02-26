@@ -592,6 +592,20 @@ iframe {
   height: 10px;
 }
 
+.pb-outer-v2 {
+  width: 100%;
+  position: relative;
+  height: 10px;
+  background-color: #ffffff;
+  border: #0b0c0c solid 2px;
+}
+.pb-progress-v2 {
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-color: $govuk-success-colour;
+  height: 10px;
+}
 .module-section--item {
   font-size: 1.1875rem;
 }
